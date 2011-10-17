@@ -1,0 +1,172 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://vocab.e.gov.br/siorg#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://vocab.e.gov.br/siorg> .
+
+<http://vocab.e.gov.br/siorg> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+<http://umbel.org/umbel#definition> rdf:type owl:AnnotationProperty .
+
+
+
+<http://umbel.org/umbel#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://purl.org/dc/terms/isPartOf
+
+<http://purl.org/dc/terms/isPartOf> rdf:type owl:ObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://umbel.org/umbel#altLabel
+
+<http://umbel.org/umbel#altLabel> rdf:type owl:DatatypeProperty .
+
+
+
+###  http://umbel.org/umbel#definition
+
+<http://umbel.org/umbel#definition> rdf:type owl:DatatypeProperty .
+
+
+
+###  http://umbel.org/umbel#prefLabel
+
+<http://umbel.org/umbel#prefLabel> rdf:type owl:DatatypeProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://umbel.org/umbel/rc/GovernmentalOrganization
+
+<http://umbel.org/umbel/rc/GovernmentalOrganization> rdf:type owl:Class .
+
+
+
+###  http://vocab.e.gov.br/siorg#OrgaoExecutivoFederal
+
+:OrgaoExecutivoFederal rdf:type owl:Class ;
+                       
+                       rdfs:subClassOf :OrgaoPublico ;
+                       
+                       <http://umbel.org/umbel#definition> "Denominação dada aos Ministérios, Ministério Público, Entidades Supervisionadas (Autarquias e Fundações), Tribunais do Poder Judiciário, Casas do Poder Legislativo e as Secretarias da Presidência da República. (adaptado do manual do SIAFI)"@pt-br ;
+                       
+                       <http://umbel.org/umbel#prefLabel> "órgão do Poder Executivo Federal"@pt-br ,
+                                                          "órgão do poder executivo federal"@pt-br .
+
+
+
+###  http://vocab.e.gov.br/siorg#OrgaoPublico
+
+:OrgaoPublico rdf:type owl:Class ;
+              
+              rdfs:subClassOf <http://umbel.org/umbel/rc/GovernmentalOrganization> .
+
+
+
+###  http://vocab.e.gov.br/siorg#UnidadeOrganizacionalGovernamental
+
+:UnidadeOrganizacionalGovernamental rdf:type owl:Class ;
+                                    
+                                    rdfs:subClassOf <http://umbel.org/umbel/rc/GovernmentalOrganization> ;
+                                    
+                                    <http://umbel.org/umbel#definition> "Organismo integrante da estrutura formal de uma organização governamental. Exemplos: secretaria, departamento, divisão, coordenação, etc."@pt-br ,
+                                                                        "Toda e qualquer unidade organizacional que compõe a estrutura do Poder Executivo Federal. Ministério, Autarquia, Fundação ou Empresa Pública, aos quais estão vinculadas as respectivas Unidades Orçamentárias (UnidadeOrcamentaria). - MGD Exemplos: secretaria, departamento, divisão, coordenação, etc."@pt-br ;
+                                    
+                                    <http://umbel.org/umbel#prefLabel> "unidade organizacional governamental"@pt-br .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://vocab.e.gov.br/siorg#OrgaoExecutivoFederal
+
+:OrgaoExecutivoFederal rdf:type owl:NamedIndividual ;
+                       
+                       <http://umbel.org/umbel#definition> "Denominação dada aos Ministérios, Ministério Público, Entidades Supervisionadas (Autarquias e Fundações), Tribunais do Poder Judiciário, Casas do Poder Legislativo e as Secretarias da Presidência da República. (adaptado do manual do SIAFI)"@pt-br ;
+                       
+                       <http://umbel.org/umbel#prefLabel> "órgão do Poder Executivo Federal"@pt-br ,
+                                                          "órgão do poder executivo federal"@pt-br .
+
+
+
+###  http://vocab.e.gov.br/siorg#UnidadeOrganizacionalGovernamental
+
+:UnidadeOrganizacionalGovernamental rdf:type owl:NamedIndividual ;
+                                    
+                                    <http://umbel.org/umbel#definition> "Organismo integrante da estrutura formal de uma organização governamental. Exemplos: secretaria, departamento, divisão, coordenação, etc."@pt-br ,
+                                                                        "Toda e qualquer unidade organizacional que compõe a estrutura do Poder Executivo Federal. Ministério, Autarquia, Fundação ou Empresa Pública, aos quais estão vinculadas as respectivas Unidades Orçamentárias (UnidadeOrcamentaria). - MGD Exemplos: secretaria, departamento, divisão, coordenação, etc."@pt-br ;
+                                    
+                                    <http://umbel.org/umbel#altLabel> "UO"@pt-br ,
+                                                                      "UOrg"@pt-br ;
+                                    
+                                    <http://umbel.org/umbel#prefLabel> "unidade organizacional governamental"@pt-br .
+
+
+
+
+
+#################################################################
+#
+#    Annotations
+#
+#################################################################
+
+
+<genid0> <http://purl.org/dc/elements/1.1/title> "vocabulário SIORG"@pt-br .
+
+
+
+
+###  Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net
+

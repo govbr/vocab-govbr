@@ -1,0 +1,152 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://vocab.e.gov.br/siafi#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://vocab.e.gov.br/siafi#> .
+
+<http://vocab.e.gov.br/siafi> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://umbel.org/umbel#altLabel
+
+<http://umbel.org/umbel#altLabel> rdf:type owl:DatatypeProperty .
+
+
+
+###  http://umbel.org/umbel#definition
+
+<http://umbel.org/umbel#definition> rdf:type owl:DatatypeProperty .
+
+
+
+###  http://umbel.org/umbel#prefLabel
+
+<http://umbel.org/umbel#prefLabel> rdf:type owl:DatatypeProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://vocab.e.gov.br/siafi##UnidadeAdministrativa
+
+:UnidadeAdministrativa rdf:type owl:Class ;
+                        
+                        rdfs:subClassOf <http://vocab.e.gov.br/siorg#UnidadeOrganizacionalGovernamental> ;
+                        
+                        owl:disjointWith :UnidadeOrcamentaria .
+
+
+
+###  http://vocab.e.gov.br/siafi##UnidadeAdministrativaServicosGerais
+
+:UnidadeAdministrativaServicosGerais rdf:type owl:Class ;
+                                      
+                                      rdfs:subClassOf :UnidadeGestora .
+
+
+
+###  http://vocab.e.gov.br/siafi##UnidadeGestora
+
+:UnidadeGestora rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf <http://vocab.e.gov.br/siorg#UnidadeOrganizacionalGovernamental> ,
+                                 [ rdf:type owl:Class ;
+                                   owl:unionOf ( :UnidadeAdministrativa
+                                                 :UnidadeOrcamentaria
+                                               )
+                                 ] .
+
+
+
+###  http://vocab.e.gov.br/siafi##UnidadeOrcamentaria
+
+:UnidadeOrcamentaria rdf:type owl:Class ;
+                      
+                      rdfs:subClassOf <http://vocab.e.gov.br/siorg#UnidadeOrganizacionalGovernamental> .
+
+
+
+###  http://vocab.e.gov.br/siorg#UnidadeOrganizacionalGovernamental
+
+<http://vocab.e.gov.br/siorg#UnidadeOrganizacionalGovernamental> rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://vocab.e.gov.br/siafi##UnidadeAdministrativa
+
+:UnidadeAdministrativa rdf:type owl:NamedIndividual ;
+                        
+                        <http://umbel.org/umbel#definition> "Segmento da administração direta ao qual a lei orçamentária anual não consigna recursos e que depende de destaques ou provisões para executar seus programas de trabalho."@pt-br ;
+                        
+                        <http://umbel.org/umbel#prefLabel> "unidade administrativa"@pt-br .
+
+
+
+###  http://vocab.e.gov.br/siafi##UnidadeAdministrativaServicosGerais
+
+:UnidadeAdministrativaServicosGerais rdf:type owl:NamedIndividual ;
+                                      
+                                      <http://umbel.org/umbel#altLabel> "UASG"@pt-br ;
+                                      
+                                      <http://umbel.org/umbel#definition> "Unidades Administrativas de Serviços Gerais que registram, controlam, compatibilizam e consultam as atividades, procedimentos e registros da execução das atividades de logística e serviços gerais."@pt-br ,
+                                                                          "Unidades integrantes de órgãos do governo federal que utilizam o Sistema SIASG para publicação das suas licitações no Diário Oficial da União, geração de empenhos e contratos ou Unidades/Órgão que somente divulgam no sítio comprasnet as suas licitações."@pt-br ;
+                                      
+                                      <http://umbel.org/umbel#prefLabel> "unidade administrativa de serviços gerais"@pt-br ;
+                                      
+                                      <http://umbel.org/umbel#altLabel> "unidade de administração de serviços gerais"@pt-br ,
+                                                                        "unidade de administração e serviços gerais"@pt-br ,
+                                                                        "unidades administrativas de serviços gerais"@pt-br ,
+                                                                        "unidades de administração de serviços gerais"@pt-br ,
+                                                                        "unidades de administração e serviços gerais"@pt-br .
+
+
+
+###  http://vocab.e.gov.br/siafi##UnidadeGestora
+
+:UnidadeGestora rdf:type owl:NamedIndividual ;
+                 
+                 <http://umbel.org/umbel#definition> "UnidadeOrcamentaria ou UnidadeAdministrativa investida do poder de gerir recursos orçamentários e financeiros, próprios ou sob descentralização."@pt-br ;
+                 
+                 <http://umbel.org/umbel#prefLabel> "unidade gestora"@pt-br .
+
+
+
+###  http://vocab.e.gov.br/siafi##UnidadeOrcamentaria
+
+:UnidadeOrcamentaria rdf:type owl:NamedIndividual ;
+                      
+                      <http://umbel.org/umbel#definition> "O segmento da administração direta a que o orçamento da União consigna dotações especificas para a realização de seus programas de trabalho e sobre os quais exerce o poder de disposição."@pt-br ;
+                      
+                      <http://umbel.org/umbel#prefLabel> "unidade orçamentária"@pt-br .
+
+
+
+
+###  Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net
+

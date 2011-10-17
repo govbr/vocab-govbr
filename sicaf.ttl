@@ -1,0 +1,282 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://vocab.e.gov.br/sicaf#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@base <http://vocab.e.gov.br/sicaf> .
+
+<http://vocab.e.gov.br/sicaf> rdf:type owl:Ontology ;
+                              
+  <http://purl.org/dc/elements/1.1/title> "Vocabulário SICAF"@pt-br ;
+  
+  <http://purl.org/dc/elements/1.1/description> "Vocabulário para o domínio da aplicação SICAF, descrito utilizando os padrões do W3C RDF Schema e Web Ontology Language."@pt-br ;
+  
+  owl:imports <http://vocab.e.gov.br/siafi> ,
+              <http://vocab.e.gov.br/siorg> ;
+  
+  <http://purl.org/dc/elements/1.1/contributor>
+    [
+        a foaf:Person ;
+        foaf:mbox <mailto:alexandre.silveira@planejamento.gov.br> ;
+        foaf:name "Alexandre Quaresma Inácio Silveira"
+    ] ,
+    [
+        a foaf:Person ;
+        foaf:mbox <mailto:carlos.moreira@planejamento.gov.br> ;
+        foaf:name "Carlos Henrique de Azevedo Moreira"
+    ] ,
+    [
+        a foaf:Person ;
+        foaf:mbox <mailto:helena.silva@planejamento.gov.br> ;
+        foaf:name "Helena Soares e Silva"
+    ] ,
+    [
+        a foaf:Person ;
+        foaf:mbox <mailto:nitai.silva@planejamento.gov.br> ;
+        foaf:name "Nitai Bezerra da Silva"
+    ] ,
+    [
+        a foaf:Person ;
+        foaf:mbox <mailto:susana.filgueiras@planejamento.gov.br> ;
+        foaf:name "Susana Rocha Filgueiras"
+    ] ;
+  dc:creator
+    [
+        a foaf:Person ;
+        foaf:mbox <mailto:augusto.herrmann@planejamento.gov.br> ;
+        foaf:name "Augusto Herrmann"
+    ] .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+
+<http://umbel.org/umbel#definition> rdf:type owl:AnnotationProperty .
+
+
+
+<http://umbel.org/umbel#altLabel> rdf:type owl:AnnotationProperty .
+
+
+
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+
+<http://umbel.org/umbel#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://purl.org/dc/terms/isPartOf
+
+<http://purl.org/dc/terms/isPartOf> rdf:type owl:ObjectProperty .
+
+
+
+###  http://vocab.e.gov.br/sicaf#linhaFornecimento
+
+:linhaFornecimento rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:comment "Indica uma LinhaFornecimento que um Fornecedor pode fornecer."@pt-br ;
+                   
+                   <http://umbel.org/umbel#prefLabel> "linha de fornecimento"@pt-br ;
+                   
+                   rdfs:range :LinhaFornecimento .
+
+
+
+###  http://vocab.e.gov.br/sicaf#registradoEm
+
+:registradoEm rdf:type owl:ObjectProperty ;
+              
+              <http://umbel.org/umbel#definition> "Indica que o Fornecedor está ou esteve registrado na UnidadeCadastradora especificada."@pt-br ;
+              
+              <http://umbel.org/umbel#prefLabel> "está registrado em"@pt-br ;
+              
+              rdfs:domain :Fornecedor ;
+              
+              rdfs:range :UnidadeCadastradora ;
+              
+              owl:inverseOf :responsavelPeloRegistroDe .
+
+
+
+###  http://vocab.e.gov.br/sicaf#responsavelPeloRegistroDe
+
+:responsavelPeloRegistroDe rdf:type owl:ObjectProperty ;
+                           
+                           <http://umbel.org/umbel#definition> "Indica que a UnidadeCadastradora é responsável pelo registro do Fornecedor no SICAF."@pt-br ;
+                           
+                           <http://umbel.org/umbel#prefLabel> "é responsável pelo registro de"@pt-br ;
+                           
+                           rdfs:range :Fornecedor ;
+                           
+                           rdfs:domain :UnidadeCadastradora .
+
+
+
+###  http://xmlns.com/foaf/0.1/mbox
+
+<http://xmlns.com/foaf/0.1/mbox> rdf:type owl:ObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://vocab.e.gov.br/sicaf#recadastrado2011
+
+:recadastrado2011 rdf:type owl:DatatypeProperty ;
+                  
+                  rdfs:label "recadastrado em 2011"@pt-br ;
+                  
+                  rdfs:comment "Se utilizado tendo o valor true^^xsd:boolean como objeto, indica que o Fornecedor passou pelo processo de recadastramento no SICAF em 2011."@pt-br ;
+                  
+                  rdfs:range xsd:boolean .
+
+
+
+###  http://xmlns.com/foaf/0.1/name
+
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:DatatypeProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://umbel.org/umbel/rc/CommercialOrganization
+
+<http://umbel.org/umbel/rc/CommercialOrganization> rdf:type owl:Class ;
+                                                   
+                                                   owl:equivalentClass :OrganizacaoComercial .
+
+
+
+###  http://umbel.org/umbel/rc/GovernmentalOrganization
+
+<http://umbel.org/umbel/rc/GovernmentalOrganization> rdf:type owl:Class .
+
+
+
+###  http://vocab.e.gov.br/licitacoes#Contrato
+
+<http://vocab.e.gov.br/licitacoes#Contrato> rdf:type owl:Class .
+
+
+
+###  http://vocab.e.gov.br/siafi#UnidadeAdministrativaServicosGerais
+
+<http://vocab.e.gov.br/siafi#UnidadeAdministrativaServicosGerais> rdf:type owl:Class .
+
+
+
+###  http://vocab.e.gov.br/sicaf#Fornecedor
+
+:Fornecedor rdf:type owl:Class ;
+            
+            rdfs:subClassOf [ rdf:type owl:Class ;
+                              owl:unionOf ( :OrganizacaoComercial
+                                            <http://xmlns.com/foaf/0.1/Person>
+                                          )
+                            ] ;
+            
+            <http://umbel.org/umbel#definition> "Empresa ou profissional liberal que pode ou não fornecer material ou prestar serviço a Administração Pública, e se registra voluntariamente sob essa condição perante o cadastro oficial do governo federal."@pt-br ;
+            
+            <http://umbel.org/umbel#prefLabel> "fornecedor"@pt-br .
+
+
+
+###  http://vocab.e.gov.br/sicaf#LinhaFornecimento
+
+:LinhaFornecimento rdf:type owl:Class ;
+                   
+                   rdfs:comment "Um tipo de natureza de bem ou de serviço que um potencial Fornecedor pode oferecer."@pt-br .
+
+
+
+###  http://vocab.e.gov.br/sicaf#OrganizacaoComercial
+
+:OrganizacaoComercial rdf:type owl:Class ;
+                      
+                      rdfs:comment "Uma OrganizacaoComercial é denominada \"Fornecedor\" no sistema SICAF."@pt-br ;
+                      
+                      <http://umbel.org/umbel#definition> "Uma especialização de Organization. Cada instância de CommercialOrganization é uma organização cujo principal objetivo é gerar lucro para seus proprietários, normalmente através da compra e venda de bens ou serviços. Uma determinada instância de CommercialOrganization também pode ser uma instância de Business, ou pode ser simplesmente uma sub-organização de alguma instância de Business."@pt-br ;
+                      
+                      <http://umbel.org/umbel#altLabel> "fornecedor"@pt-br ;
+                      
+                      <http://umbel.org/umbel#prefLabel> "organização comercial"@pt-br ;
+                      
+                      <http://umbel.org/umbel#altLabel> "organizações comerciais"@pt-br .
+
+
+
+###  http://vocab.e.gov.br/sicaf#RamoNegocio
+
+:RamoNegocio rdf:type owl:Class ;
+             
+             rdfs:comment "Um ramo de negócio de uma empresa. Exemplos: Agricultura, Fabricação de Produtos Químicos, Obras de infraestrutura, atividades e serviços de TI, atividade científica."@pt-br .
+
+
+
+###  http://vocab.e.gov.br/sicaf#UnidadeCadastradora
+
+:UnidadeCadastradora rdf:type owl:Class ;
+                     
+                     rdfs:subClassOf <http://vocab.e.gov.br/siafi#UnidadeAdministrativaServicosGerais> ;
+                     
+                     <http://umbel.org/umbel#definition> "UnidadesAdministrativasServicosGerais que realizem frequentemente licitações do governo federal, Art 34 da Lei 8.666/93, e integrantes do SISG (Sistema Integrado de Serviços Gerais) que licitam e cadastram os fornecedores no SICAF (Sistema de Cadastro de Fornecedores)."@pt-br ;
+                     
+                     <http://umbel.org/umbel#prefLabel> "unidade cadastradora"@pt-br ;
+                     
+                     <http://umbel.org/umbel#altLabel> "unidades cadastradoras"@pt-br .
+

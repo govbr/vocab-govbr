@@ -1,0 +1,8 @@
+AddType application/rdf+xml .rdf
+AddType application/json .json
+AddType text/turtle .ttl
+AddType text/css .css
+AddType application/x-javascript .js
+AddType text/javascript .js
+
+AddType text/n3 .n3

@@ -1,0 +1,137 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://vocab.e.gov.br/licitacoes#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://vocab.e.gov.br/licitacoes> .
+
+<http://vocab.e.gov.br/licitacoes> rdf:type owl:Ontology ;
+                                   
+                                   rdfs:comment "Ontologia de licitações brasileiras."@pt-br .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+<http://umbel.org/umbel#definition> rdf:type owl:AnnotationProperty .
+
+
+
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:AnnotationProperty .
+
+
+
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+###  http://www.w3.org/2001/XMLSchema#date
+
+xsd:date rdf:type rdfs:Datatype .
+
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://purl.org/dc/terms/isPartOf
+
+<http://purl.org/dc/terms/isPartOf> rdf:type owl:ObjectProperty .
+
+
+
+###  http://purl.org/dc/terms/references
+
+<http://purl.org/dc/terms/references> rdf:type owl:ObjectProperty .
+
+
+
+###  http://vocab.e.gov.br/licitacoes#eContratadaEm
+
+:eContratadaEm rdf:type owl:ObjectProperty ;
+               
+               <http://umbel.org/umbel#definition> "Relaciona o Fornecedor contratado a um Contrato com a Administração Pública."@pt-br ;
+               
+               rdfs:range :Contrato ;
+               
+               rdfs:domain :Fornecedor .
+
+
+
+###  http://vocab.e.gov.br/licitacoes#fundamentacaoLegal
+
+:fundamentacaoLegal rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:comment "Indica a fundamentação legal do recurso. A imagem deve ser um membro da classe frbr:LegalWork, especificado no formato URN do padrão LexML."@pt-br ;
+                    
+                    rdfs:subPropertyOf <http://purl.org/dc/terms/references> ;
+                    
+                    rdfs:range :DispositivoLegal .
+
+
+
+###  http://vocab.e.gov.br/licitacoes#modalidade
+
+:modalidade rdf:type owl:ObjectProperty ;
+            
+            rdfs:label "modalidade de licitação"@pt-br ;
+            
+            rdfs:comment "Indica a modalidade de licitação (Art. 22 da Lei nº 8.666, de 21 de junho de 1993)."@pt-br ;
+            
+            rdfs:range :Modalidade .
+
+
+
+###  http://www.w3.org/2002/07/owl#subClassOf
+
+owl:subClassOf rdf:type owl:ObjectProperty .
+
+
+
+###  http://xmlns.com/foaf/0.1/page
+
+<http://xmlns.com/foaf/0.1/page> rdf:type owl:ObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://purl.org/dc/elements/1.1/date
+
+<http://purl.org/dc/elements/1.1/date> rdf:type owl:DatatypeProperty .
