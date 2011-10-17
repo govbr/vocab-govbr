@@ -399,8 +399,8 @@ float: left;
 }
 
 #info {
-border: 3px solid #d5d5d5;
-min-width:49%;
+min-width:50%;
+max-width:50%;
 float: left;
 }
 
