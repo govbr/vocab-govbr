@@ -357,42 +357,6 @@ h2 {
     color: black;
 }
 
-/* FORMATAÇÃO PARA REDES SOCIAIS E RSS */
-#redes_sociais {
-    padding: 0;
-}
-
-#redes_sociais li {
-    float: left;
-    list-style-type: none;
-    margin-top: 1.8em;
-    width: 32px;
-    height: 32px;
-    overflow: hidden;
-}
-
-#redes_sociais .icone a {
-    padding-top: 32px;
-    text-decoration: none;
-    display: block;
-}
-
-#redes_sociais .feed {
-    background: url('../img/redes_sociais/icones_rede_s.png') 0 -96px no-repeat transparent;
-}
-
-#redes_sociais .facebook {
-    background: url('../img/redes_sociais/icones_rede_s.png') 0 -32px no-repeat transparent;
-}
-
-#redes_sociais .twitter {
-    background: url('../img/redes_sociais/icones_rede_s.png') 0 0 no-repeat transparent;
-}
-
-#redes_sociais .identica {
-    background: url('../img/redes_sociais/icones_rede_s.png') 0 -64px no-repeat transparent;
-}
-
 #treeVCGE {
 width: 50%;
 float: left;
@@ -403,6 +367,8 @@ min-width:50%;
 max-width:50%;
 float: left;
 }
+
+
 
 /* ==|== primary styles =====================================================
    Authors: Ozzy, Herrmann, Paty
@@ -577,6 +543,12 @@ coluna deslocada de meia unidade do grid. */
     float: left;
     margin: 0 10px 0 0;
     border: 2px solid #b5eaf1;
+}
+
+.listProdutos li {
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
 }
 
 overflow:hidden;
