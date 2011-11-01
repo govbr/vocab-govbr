@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="utf-8" />
+    <title>Esboço de Modelagem Conceitual para
+Estruturas Organizacionais Governamentais Brasileiras e o
+SIORG</title>
+    <link type="text/css" rel="stylesheet" href="../../css/doc-style.css">
+
+</head>
+<body>
+
+<header>
+    <img src="../../img/bg/govbr_2011_e-PING.png" alt="e-VoG" />
+    <h1>Esboço de Modelagem Conceitual para
+    Estruturas Organizacionais Governamentais Brasileiras e o
+    SIORG</h1>
+    <dl>
+        <dt>Versão</dt>
+        <dd>Setembro 2011 (<a href="org.pdf">PDF</a>)</dd>
+    </dl>
+</header>
+
+<article>
+    <h2>Introdução</h2>
+
+    <p>Este documento é o resultado das discussões acerca do tema Estruturas Organizacionais Governamentais e o SIORG, abordados durante três reuniões, nos dias 8, 13 e 20 de setembro de 2011, entre participantes da Secretaria-Executiva (SE) e das Secretarias de Gestão (SEGES) e de Logística e Tecnologia da Informação (SLTI).</p>
+    <p>Esta modelagem não pretende ser uma posição oficial do Ministério do Planejamento sobre o assunto, e nem representar um consenso institucional, mas tão somente servir de um ponto de partida para as discussões futuras e uma evolução do modelo. O estado atual do modelo, representado aqui, representa apenas o consenso dos participantes na data da última reunião sobre os assuntos discutidos.</p>
+    <p>Houve a preocupação de não só em representar os conceitos necessários ao SIORG, como também em se desenvolver um modelo que fosse geral o suficiente para permitir o seu reaproveitamento em futuras modelagens conceituais de estruturas organizacionais governamentais em outras esferas e outros poderes da administração pública no Brasil. Outra diretriz foi a de relacionar, sempre que possível, as classes e propriedades aqui definidas com ontologias internacionalmente utilizadas pelas comunidades de prática em Web Semântica e Linked Data.</p>
+
+    <h2>Participantes</h2>
+
+    <p>Participaram das reuniões e discussões sobre o modelo os seguintes servidores:</p>
+    <ul>
+        <li>Augusto Herrmann Batista – <abbr title="Secretaria de Logística e Tecnologia da Informação">SLTI</abbr>;</li>
+        <li>Christian Moryah Contiero Miranda – <abbr title="Secretaria de Logística e Tecnologia da Informação">SLTI</abbr>;</li>
+        <li>Danilo Barreto de Araujo – <abbr title="Secretaria de Logística e Tecnologia da Informação">SLTI</abbr>;</li>
+        <li>Frederico Porto de Souza – <abbr title="Secretaria de Gestão">SEGES</abbr>;</li>
+        <li>Nitai Bezerra da Silva – <abbr title="Secretaria de Logística e Tecnologia da Informação">SLTI</abbr>;</li>
+        <li>Renan Mendes Gaya Lopes do Santos – <abbr title="Secretaria Executiva">SE</abbr>;</li>
+        <li>Valter Muchagata – <abbr title="Secretaria de Gestão">SEGES</abbr></li>
+    </ul>
+
+    <h2>Trabalhos relacionados</h2>
+    <p>Foram considerados os trabalhos de modelagem de ontologias de estruturas organizacionais governamentais dos governos dos Estados Unidos da América (FEA-RMO) e do Reino Unido (Central Government Ontology).</p>
+
+    <h3 lang="en">Federal Enterprise Architecture Reference Model Ontology (EUA)</h3>
+    <p>O primeiro, chamado Federal Enterprise Architecture Reference Model Ontology (em tradução livre, Ontologia de Modelo de Referência da Arquitetura Corporativa Federal), foi desenvolvido pela empresa Top Quandrant para o governo dos EUA, em 2005. O desenvolvimento da FEA-RMO teve foco principal na Web Semântica e nos recursos de expressividade que a linguagem de ontologias da web (OWL) e seu modelo de inferências permite representar. O modelo também partiu de uma arquitetura corporativa já documentada, FEA, para então representá-la num modelo ontológico formal. Essa arquitetura se divide em um núcleo, cinco perspectivas (modelos de referência) sobre a estrutura organizacional e modelos de “ponte” que fazem os mapeamentos entre estas. O núcleo não é explicitamente definido na arquitetura original, mas foi explicitada na modelagem OWL a partir de conceitos e propriedades comuns entre as cinco perspectivas, que são: aferição de desempenho, negócio, componente de serviço, tecnologia e dados.
+    O trabalho antecede o movimento internacional em favor do conceito Linked Data e, talvez por isso, não defina identificadores (URIs) canônicos para as classes e propriedades. Foram utilizadas no documento OWL identificadores locais.</p>
+
+    <h3><span lang="en">Central Government Ontology</span> (Reino Unido)</h3>
+    <p>O modelo de estrutura organizacional do governo do Reino Unido se deu durante o desenvolvimento do projeto de Linked Data para o portal <a href="data.gov.uk">data.gov.uk</a>, que também desenvolveu ontologias para outras áreas de governo. Sendo assim, ele define identificadores (URIs), baseados no esquema HTTP, para as classes e propriedades que define. Esses identificadores, quanto acessados, retornam um documento com informações relevantes ao conceito identificado, seguindo as boas práticas de Linked Data. Além disso, referenciam conceitos de ontologias externas que são utilizadas pelas comunidades de prática (e.g., <abbr title="Friend of a Friend">FOAF</abbr>, Dublin Core, <abbr title="Vocabulary of Interlinked Datasets">VOID</abbr>, <abbr title="Simple Knowledge Organization Systems">SKOS</abbr>, ontologia de organizações do <abbr title="World Wide Web Consortium">W3C</abbr>, etc.).</p>
+
+    <h2>Núcleo do modelo</h2>
+    <p>A modelagem abaixo representa apenas os conceitos-chave, numa visualização que visa facilitar o entendimento do modelo.</p>
+
+    <img class="diagrama" src="organizacoes-siorg-nucleo.png" alt="Diagrama do Núcleo do modelo" />
+
+    <h2>Referências Externas do Modelo</h2>
+    <p>O modelo a seguir representa apenas os conceitos que podem ser relacionados com outros conceitos existentes em ontologias externas, o que pode vir a evidenciar potenciais pontos de integração com essas ontologias.</p>
+
+    <img class="diagrama" src="organizacoes-siorg-externos.png" alt="Diagrama das Referências Externas do modelo" />
+
+    <h2>Modelo Completo</h2>
+    <p>A modelagem abaixo pretende representar a completude dos conceitos discutidos no âmbito das reuniões.</p>
+
+    <img class="diagrama" src="organizacoes-siorg-completo.png" alt="Diagrama Completo do modelo" />
+
+    <h2>Modelo Conceitual</h2>
+
+    <h3>Escopo:</h3>
+    <p>Realizar uma modelagem conceitual dos conceitos do SIORG, especificando também e ligando conceitos gerais acerca de Estruturas Organizacionais Governamentais o suficiente para possibilitar a interoperabilidade com outras esferas e poderes de governo.</p>
+
+    <h3>Não-escopo:</h3>
+    <p>Nesse primeiro momento da modelagem não estão sendo consideradas as mudanças na estrutura organizacional ao longo do tempo.</p>
+
+    <h3>Perguntas-requisito:</h3>
+    <p>As perguntas requisito (também conhecidas como “competency questions”) são perguntas às quais deve ser possível responder com os dados representados no modelo. As seguintes perguntas devem ser respondidas por uma modelagem do SIORG:</p>
+    <ol>
+        <li>Qual é o nome de uma unidade hierárquica governamental?</li>
+        <li>Qual é a sigla de uma unidade hierárquica governamental?</li>
+        <li>Quais são as competências legais de uma unidade hierárquica governamental?</li>
+        <li>Qual diploma legal criou a unidade hierárquica governamental?</li>
+        <li>De que maneira uma unidade hierárquica governamental se relaciona hierarquicamente com outras atualmente no governo federal?</li>
+        <li>Quais organizações públicas estão representadas em um órgão colegiado?</li>
+        <li>A qual organização pública um órgão colegiado está vinculado?</li>
+        <li>A qual Órgão uma Entidade Pública está vinculada?</li>
+    </ol>
+
+    <h3>Conceitos:</h3>
+    <dl>
+        <dt>Unidade Organizacional Pública:</dt>
+        <dd>“Unidade formal da Administração Pública, criada por instrumento normativo específico de estrutura regimental, constituinte de estrutura hierarquizada.” É uma categoria que agrega tanto organizações quanto as unidades que a compõem, de maneira a permitir uma visão integrada da hierarquia no governo.</dd>
+        <dt>Organização Pública:</dt>
+        <dd>“Unidade orgânica da Administração Pública, provida de estrutura hierarquizada, com a prerrogativa de propor alterações na sua própria estrutura organizacional.” No poder executivo federal, pode ser considerada extensionalmente equivalente ao conjunto de unidades no SIORG que têm o atributo organização com o valor “O”.</dd>
+        <dt>Órgão:</dt>
+        <dd>“Organização Pública que faz parte da Administração Direta, tais como, na esfera federal, os Ministérios”.</dd>
+        <dt>Entidade Pública:</dt>
+        <dd>“Organização Pública com personalidade jurídica própria, autonomia administrativa e financeira”.</dd>
+        <dt>Entidade Pública não-Empresarial:</dt>
+        <dd>“Organização Pública com personalidade jurídica própria, mas que não pode ser caracterizada como uma empresa, tais como Autarquias e Fundações.”</dd>
+        <dt>Autarquia:</dt>
+        <dd>“O serviço autônomo, criado por lei, com personalidade jurídica, patrimônio e receita próprios, para executar atividades típicas da Administração Pública, que requeiram, para seu melhor funcionamento, gestão administrativa e financeira descentralizada. (Decreto-Lei 200/1969, art. 5º, inciso I)”</dd>
+        <dt>Fundação Pública:</dt>
+        <dd>“A entidade dotada de personalidade jurídica de direito privado, sem fins lucrativos, criada em virtude de autorização legislativa, para o desenvolvimento de atividades que não exijam execução por órgãos ou entidades de direito público, com autonomia administrativa, patrimônio próprio gerido pelos respectivos órgãos de direção, e funcionamento custeado por recursos da União e de outras fontes. (<a href="http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto.lei:1967-02-25;200">Decreto-Lei 200</a>/1969, art. 5º, inciso IV)”</dd>
+        <dt>Estatal:</dt>
+        <dd>“Organização Pública com personalidade jurídica própria, e que possui características de empresa, tais como Empresas Públicas e Sociedades de Economia Mista.”</dd>
+        <dt>Empresa Pública:</dt>
+        <dd>“A entidade dotada de personalidade jurídica de direito privado, com patrimônio próprio e capital exclusivo da União, criado por lei para a exploração de atividade econômica que o Governo seja levado a exercer por força de contingência ou de conveniência administrativa podendo revestir-se de qualquer das formas admitidas em direito. (<a href="http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto.lei:1967-02-25;200">Decreto-Lei 200</a>/1969, art. 5º, inciso II)”</dd>
+        <dt>Sociedade de Economia Mista:</dt>
+        <dd>“A entidade dotada de personalidade jurídica de direito privado, criada por lei para a exploração de atividade econômica, sob a forma de sociedade anônima, cujas ações com direito a voto pertençam em sua maioria à União ou a entidade da Administração Indireta. (<a href="http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto.lei:1967-02-25;200">Decreto-Lei 200</a>/1969, art. 5º, inciso III)”</dd>
+        <dt>Órgão Colegiado:</dt>
+        <dd>“Por Órgão Colegiado entende-se aquele que tem composição pluripessoal, constituído por representantes de órgãos ou entidades do Poder Público e, se for o caso, também de entidades privadas. Não possui estrutura formal, sendo que os seus serviços de secretaria executiva são, obrigatoriamente, providos por unidades administrativas já integrantes da estrutura de algum de seus representantes.”</dd>
+        <dt>Unidade Administrativa Pública:</dt>
+        <dd>“Unidade formal integrante da Administração Pública, criada por instrumento normativo específico de estrutura regimental. A Unidade Administrativa Pública é parte de uma Organização Pública, dela depende existencialmente, e só tem amplo reconhecimento dentro do contexto dessa Organização.” É uma especialização de org:OrganizationalUnit.</dd>
+    </dl>
+
+    <h3>Relacionamentos:</h3>
+    <dl>
+        <dt>Composição</dt>
+        <dt>Subordinação</dt>
+        <dt>Vinculação “forte”</dt>
+        <dt>Vinculação “fraca”</dt>
+        <dt>Supervisão</dt>
+        <dt>Descendência hierárquica:</dt>
+        <dd>superpropriedade de todas as acima, que se manifesta apenas no momento em que se pretende exibir a hierarquia de Unidades Hierárquicas Governamentais, tal como no SIORG.</dd>
+    </dl>
+
+    <h3>Ligações com Conceitos Externos:</h3>
+    <p>Seguem alguns conceitos definidos em ontologias externas que são candidatos a ligação com a ontologia de Estruturas Organizacionais Governamentais.</p>
+
+    <h4>Organização:</h4>
+    <blockquote><a href="http://umbel.org/umbel#">umbel</a>:<a href="http://umbel.org/umbel#Organization">Organization</a> “The collection of all organizations.  Each instance of Organization is a group whose group-members are instances of IntelligentAgent. In each instance of Organization, certain relationships and obligations exist between the members of the organization, or between the organization and its members.  Instances of Organization include both informal and legally constituted organizations.  Each instance of Organization can undertake projects, enter into agreements, own property, and do other tasks characteristic of agents; consequently, Organization is a specialization of the collection Agent_PartiallyTangible.  Notable specializations of Organization include LegalGovernmentOrganization, CommercialOrganization, and GeopoliticalEntity.”</blockquote>
+
+    <blockquote><a href="http://xmlns.com/foaf/0.1/">foaf</a>:<a href="http://xmlns.com/foaf/0.1/Organization">Organization</a> “The Organization class represents a kind of Agent corresponding to social instititutions such as companies, societies etc.”</blockquote>
+
+    <blockquote><a href="http://www.w3.org/ns/org#">org</a>:<a href="http://www.w3.org/ns/org#FormalOrganization">FormalOrganization</a> “An Organization which is recognized in the world at large, in particular in legal jurisdictions, with associated rights and responsibilities. Examples include a Corporation, Charity, Government or Church. Note that this is a super class of `gr:BusinessEntity` and it is recommended to use the GoodRelations vocabulary to denote Business classifications such as DUNS or NAICS.”</blockquote>
+
+    <h4>Companhia:</h4>
+
+    <blockquote><a href="http://umbel.org/umbel#">umbel</a>:<a href="http://umbel.org/umbel#CommercialOrganization">CommercialOrganization</a> “A specialization of Organization.  Each instance of CommercialOrganization is an organization whose primary goal is to generate a profit for its owners, usually through the buying and selling of goods or services.  A given instance of CommercialOrganization may also be an instance of Business, or it may merely be a sub-organization of some instance of Business.”</blockquote>
+
+    <blockquote><a href="http://purl.org/goodrelations/v1#">goodrelations</a>:<a href="http://purl.org/goodrelations/v1#BusinessEntity">BusinessEntity</a> “An instance of this class represents the legal agent making (or seeking) a particular offering. This can be a legal body or a person. A business entity has at least a primary mailing address and contact details. For this, typical address standards (vCard) and location data (geo, WGS84) can be attached. Note that the location of the business entity is not necessarily the location from which the product or service is being available (e.g. the branch or store). Use gr:Location for stores and branches. Example: Siemens Austria AG, Volkswagen Ltd., Peter Miller's Cell phone Shop LLC”</blockquote>
+
+    <h4>Unidade de Organização:</h4>
+
+    <blockquote><a href="http://umbel.org/umbel#">umbel</a>:<a href="http://umbel.org/umbel#AdministrativeUnit">AdministrativeUnit</a> “A sub-collection of (SubcollectionOfWithRelationFromTypeFn Organization subOrganizations Organization). Each instance is a unit with administrative responsibilities.”</blockquote>
+
+    <blockquote><a href="http://www.w3.org/ns/org#">org</a>:<a href="http://www.w3.org/ns/org#OrganizationalUnit">OrganizationalUnit</a> “An Organization such as a University Support Unit which is part of some larger FormalOrganization and only has full recognition within the context of that FormalOrganization, it is not a Legal Entity in its own right. Units can be large and complex containing other Units and even FormalOrganizations. Alternative names: _OU_ _Unit_ _Department_” (obs.: referenciado pela Central Government Ontology, do Reino Unido)</blockquote>
+
+    <h4>Unidade Organizacional (SIAPE):</h4>
+    <p>a definir em ontologia específica.</p>
+
+    <h4>Unidade Orçamentária (SIAFI):</h4>
+    <p>a definir em ontologia específica.</p>
+
+    <h3>Questionamentos:</h3>
+    <ul>
+        <li>Empresas públicas e sociedades de economia mista têm sua composição hierárquica determinada por Lei? Possuem autonomia para propor alterações na sua estrutura interna? Essa informação é necessária para modelar o conceito de “composição legal”, existente na modelagem anterior, que permitiria armazenar o histórico da hierarquia. Se a composição histórica da estrutura organizacional for um requisito, precisaremos dessa resposta.</li>
+    </ul>
+
+    <h3>Próximos passos:</h3>
+    <ul>
+        <li>Evoluir do modelo para possibilitar a representação de alterações na estrutura organizacional no decorrer do tempo, possibilitando o registro do histórico;</li>
+        <li>implementação e disponibilização em OWL;</li>
+        <li>modelar interseções do modelo com domínios dos sistemas estruturantes (ex.: SIAPE, SIAFI, SIOP, SICONV, etc.).</li>
+    </ul>
+
+</article>
+
+</body>
+</html>
