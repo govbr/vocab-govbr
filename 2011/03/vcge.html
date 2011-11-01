@@ -27,6 +27,8 @@
   <!-- CSS concatenated and minified via ant build script-->
   <link rel="stylesheet" type="text/css" href="../../css/960_24_col.css" />
   <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  <link type="text/css" href="../../css/custom-theme/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+
   <!-- end CSS-->
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
@@ -36,7 +38,8 @@
        For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
   <script type="text/javascript" src="_lib/jquery.js"></script>
   <script type="text/javascript" src="_lib/jquery.jstree.js"></script>
-  <link type="text/css" href="../../css/custom-theme/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
+  <script type="text/javascript" src="_lib/jquery-ui-1.8.16.custom.min.js"></script>
+  	
   <script type="text/javascript" src="../../js/jquery-ui-1.8.16.custom.min.js"></script>
 
   <link rel="canonical" href="http://www.jstree.com/documentation/json_data" />
@@ -44,7 +47,8 @@
     function showDiv(e, data){
 	$("#termoautorizado").text(data.args[0].childNodes[1].wholeText);
 	document.getElementById("URI").value = "http://vocab.e.gov.br/2011/03/vcge#" + data.rslt.obj[0].attributes[0].firstChild.data.replace("#","");
-	//$("#info").show();
+	$("#nomeRecurso").text(data.rslt.obj[0].attributes[0].firstChild.data.replace("#",""));
+
     }
 
     $(function () {
@@ -71,6 +75,12 @@
 	//}).bind("select_node.jstree", function (e, data) { alert("OIIII"); });
 	}).bind("select_node.jstree", showDiv);
     });
+
+
+    $(function() {
+        $( "#accordion" ).accordion();
+    });
+
   </script>
 <script type="text/javascript">
 
@@ -110,6 +120,7 @@ O VCGE ajuda os cidadãos a encontrar informações mesmo sem o conhecimento de qua
 responsabilidade. 
 </p>
 
+<form action="http://localhost:6543/nota_explicativa/" method="POST">
 
 <div class="vocabulary-node node">
   <h2><a href="http://vocab.e.gov.br/2011/03/vcge">VCGE</a></h2>
@@ -139,7 +150,7 @@ responsabilidade.
 
 <div id="info">
   <br/>
-  <div class="content clear-block">
+
      <div id="tabs">
 	<ul>
 	  <li><a href="#tabs-1">Informa&ccedil;&otilde;es</a></li>
@@ -151,14 +162,31 @@ responsabilidade.
         <span id="termoautorizado"></span>
 	<div class="abstract">
 	<h3><abbr title="Unified Resource Identifier">URI:</abbr></h3>
-	<br> <input type="text" value="" id="URI" size="47">
+	<br> <input type="text" value="" id="URI" name="uri_vcge" size="47">
 	</div>
      </div>
-     <div id="tabs-2">Exemplos de utiliza&ccedil;&otilde;es.</div>
-     <div id="tabs-3">Caso deseje sugerir um conceito para o termo participe do GT4 da <a href="http://www.eping.e.gov.br">ePING</a> ou mande um email para eping@planejamento.gov.br.</div>
+     <div id="tabs-2">
+
+          <div id="accordion">
+
+               <h3><a href="#">Section 1</a></h3>
+               <div class="conteudoAcordeon"> <p>teste teste teste</p> </div>
+
+               <h3><a href="#">Section 2</a></h3>
+               <div class="conteudoAcordeon"> <p>teste teste teste</p> </div>
+
+          </div>
+     </div>
+     <div id="tabs-3">
+          Faça aqui sua sugestão de descrição para o conceito: <p><span id="nomeRecurso">clique em um termo para fazer sua sugestão</span></p>
+          <textarea cols="40" name="texto" rows="4"> </textarea>
+	   Autor: <input type="text" value="Anônimo" name="autor" />
+          <input type="submit" value="enviar" />
+    </div>
     </div>
 
- </div>
+</form>
+
 </div>
 </div>
 </body></html>

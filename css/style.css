@@ -368,6 +368,11 @@ max-width:50%;
 float: left;
 }
 
+.conteudoAcordeon {
+min-height: 50px;
+}
+
+
 
 
 /* ==|== primary styles =====================================================
