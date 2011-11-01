@@ -26,3 +26,8 @@ img.diagrama {
     width: 900px;
     margin: 2em 6em;
 }
+
+footer {
+    margin-top: 6em;
+    border-top: 1px solid black;
+}
