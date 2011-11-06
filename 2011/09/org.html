@@ -22,16 +22,59 @@ SIORG</title>
         <dt>Versão referenciada no piloto de dados abertos do SICAF:</dt>
         <dd><a href="/2011/02/siorg">Fevereiro 2011</a></dd>
     </dl>
+
+    <h2><a id="sumario" name="sumario">Sumário</a><a class="headerlink" href="#sumario" title="Link para este título">¶</a></h2>
+    <ul>
+        <li><a href="#intro">Introdução</a></li>
+        <li><a href="#participantes">Participantes</a></li>
+        <li><a href="#relacionados">Trabalhos relacionados</a>
+            <ul>
+                <li><a href="#fearmo"><span lang="en">Federal Enterprise Architecture Reference Model Ontology</span> (<abbr title="Estados Unidos da América">EUA</abbr>)</a></li>
+                <li><a href="#cgo-uk"><span lang="en">Central Government Ontology</span> (Reino Unido)</a></li>
+            </ul>
+        </li>
+        <li><a href="#nucleo">Núcleo do modelo</a></li>
+        <li><a href="#referencias-externas">Referências Externas do Modelo</a></li>
+        <li><a href="#completo">Modelo Completo</a></li>
+        <li><a href="#modelo-conceitual">Modelo Conceitual</a>
+            <ul>
+                <li><a href="#escopo">Escopo</a></li>
+                <li><a href="#nao-escopo">Não-escopo</a></li>
+                <li><a href="#perguntas-requisito">Perguntas-requisito</a></li>
+                <li><a href="#conceitos">Conceitos</a>
+                    <ul>
+                        <li><a href="#UnidadeOrganizacionalPublica">Unidade Organizacional Pública</a></li>
+                        <li><a href="#OrganizacaoPublica">Organização Pública</a></li>
+                        <li><a href="#Orgao">Órgão</a></li>
+                        <li><a href="#EntidadePublica">Entidade Pública</a></li>
+                        <li><a href="#EntidadePublicaNaoEmpresarial">Entidade Pública não-Empresarial</a></li>
+                        <li><a href="#Autarquia">Autarquia</a></li>
+                        <li><a href="#FundacaoPublica">Fundação Pública</a></li>
+                        <li><a href="#Estatal">Estatal</a></li>
+                        <li><a href="#EmpresaPublica">Empresa Pública</a></li>
+                        <li><a href="#SociedadeEconomiaMista">Sociedade de Economia Mista</a></li>
+                        <li><a href="#OrgaoColegiado">Órgão Colegiado</a></li>
+                        <li><a href="#UnidadeAdministrativaPublica">Unidade Administrativa Pública</a></li>
+                    </ul>
+                </li>
+                <li><a href="#relacionamentos">Relacionamentos</a></li>
+                <li><a href="#conceitos-externos">Ligações com Conceitos Externos</a></li>
+                <li><a href="#questionamentos">Questionamentos</a></li>
+                <li><a href="#proximos-passos">Próximos Passos</a></li>
+                <li><a href="#referencias">Referências</a></li>
+            </ul>
+        </li>
+    </ul>
 </header>
 
 <article>
-    <h2>Introdução</h2>
+    <h2><a id="intro" name="intro">Introdução</a><a class="headerlink" href="#intro" title="Link para este título">¶</a></h2>
 
-    <p>Este documento é o resultado das discussões acerca do tema Estruturas Organizacionais Governamentais e o SIORG, abordados durante três reuniões, nos dias 8, 13 e 20 de setembro de 2011, entre participantes da Secretaria-Executiva (SE) e das Secretarias de Gestão (SEGES) e de Logística e Tecnologia da Informação (SLTI).</p>
+    <p>Este documento é o resultado das discussões acerca do tema Estruturas Organizacionais Governamentais e o <abbr title="Sistema de Informações Organizacionais do Governo Federal">SIORG</abbr><sup><a href="#ref-1">[1]</a></sup><sup><a href="#ref-3">[3]</a></sup>, abordados durante três reuniões, nos dias 8, 13 e 20 de setembro de 2011, entre participantes da Secretaria-Executiva (SE) e das Secretarias de Gestão (SEGES) e de Logística e Tecnologia da Informação (SLTI).</p>
     <p>Esta modelagem não pretende ser uma posição oficial do Ministério do Planejamento sobre o assunto, e nem representar um consenso institucional, mas tão somente servir de um ponto de partida para as discussões futuras e uma evolução do modelo. O estado atual do modelo, representado aqui, representa apenas o consenso dos participantes na data da última reunião sobre os assuntos discutidos.</p>
     <p>Houve a preocupação de não só em representar os conceitos necessários ao SIORG, como também em se desenvolver um modelo que fosse geral o suficiente para permitir o seu reaproveitamento em futuras modelagens conceituais de estruturas organizacionais governamentais em outras esferas e outros poderes da administração pública no Brasil. Outra diretriz foi a de relacionar, sempre que possível, as classes e propriedades aqui definidas com ontologias internacionalmente utilizadas pelas comunidades de prática em Web Semântica e Linked Data.</p>
 
-    <h2>Participantes</h2>
+    <h2><a id="participantes" name="participantes">Participantes</a><a class="headerlink" href="#participantes" title="Link para este título">¶</a></h2>
 
     <p>Participaram das reuniões e discussões sobre o modelo os seguintes servidores:</p>
     <ul>
@@ -44,41 +87,41 @@ SIORG</title>
         <li>Valter Muchagata – <abbr title="Secretaria de Gestão">SEGES</abbr></li>
     </ul>
 
-    <h2>Trabalhos relacionados</h2>
+    <h2><a id="relacionados" name="relacionados">Trabalhos relacionados</a><a class="headerlink" href="#relacionados" title="Link para este título">¶</a></h2>
     <p>Foram considerados os trabalhos de modelagem de ontologias de estruturas organizacionais governamentais dos governos dos Estados Unidos da América (FEA-RMO) e do Reino Unido (Central Government Ontology).</p>
 
-    <h3 lang="en">Federal Enterprise Architecture Reference Model Ontology (EUA)</h3>
-    <p>O primeiro, chamado Federal Enterprise Architecture Reference Model Ontology (em tradução livre, Ontologia de Modelo de Referência da Arquitetura Corporativa Federal), foi desenvolvido pela empresa Top Quandrant para o governo dos EUA, em 2005. O desenvolvimento da FEA-RMO teve foco principal na Web Semântica e nos recursos de expressividade que a linguagem de ontologias da web (OWL) e seu modelo de inferências permite representar. O modelo também partiu de uma arquitetura corporativa já documentada, FEA, para então representá-la num modelo ontológico formal. Essa arquitetura se divide em um núcleo, cinco perspectivas (modelos de referência) sobre a estrutura organizacional e modelos de “ponte” que fazem os mapeamentos entre estas. O núcleo não é explicitamente definido na arquitetura original, mas foi explicitada na modelagem OWL a partir de conceitos e propriedades comuns entre as cinco perspectivas, que são: aferição de desempenho, negócio, componente de serviço, tecnologia e dados.
-    O trabalho antecede o movimento internacional em favor do conceito Linked Data e, talvez por isso, não defina identificadores (URIs) canônicos para as classes e propriedades. Foram utilizadas no documento OWL identificadores locais.</p>
+    <h3><a id="fearmo" name="fearmo"><span lang="en">Federal Enterprise Architecture Reference Model Ontology</span> (<abbr title="Estados Unidos da América">EUA</abbr>)</a><a class="headerlink" href="#fearmo" title="Link para este título">¶</a></h3>
+    <p>O primeiro, chamado Federal Enterprise Architecture Reference Model Ontology (em tradução livre, Ontologia de Modelo de Referência da Arquitetura Corporativa Federal), foi desenvolvido pela empresa Top Quandrant para o governo dos EUA, em 2005. O desenvolvimento da FEA-RMO teve foco principal na Web Semântica e nos recursos de expressividade que a linguagem de ontologias da web (<abbr title="Web Ontology Language">OWL</abbr>) e seu modelo de inferências permite representar. O modelo também partiu de uma arquitetura corporativa já documentada, FEA, para então representá-la num modelo ontológico formal. Essa arquitetura se divide em um núcleo, cinco perspectivas (modelos de referência) sobre a estrutura organizacional e modelos de “ponte” que fazem os mapeamentos entre estas. O núcleo não é explicitamente definido na arquitetura original, mas foi explicitada na modelagem OWL a partir de conceitos e propriedades comuns entre as cinco perspectivas, que são: aferição de desempenho, negócio, componente de serviço, tecnologia e dados.
+    O trabalho antecede o movimento internacional em favor do conceito Linked Data e, talvez por isso, não defina identificadores (<abbr title="Uniform Resource Identifier">URI</abbr>s) canônicos para as classes e propriedades. Foram utilizadas no documento OWL identificadores locais.</p>
 
-    <h3><span lang="en">Central Government Ontology</span> (Reino Unido)</h3>
+    <h3><a id="cgo-uk" name="cgo-uk"><span lang="en">Central Government Ontology</span> (Reino Unido)</a><a class="headerlink" href="#cgo-uk" title="Link para este título">¶</a></h3>
     <p>O modelo de estrutura organizacional do governo do Reino Unido se deu durante o desenvolvimento do projeto de Linked Data para o portal <a href="data.gov.uk">data.gov.uk</a>, que também desenvolveu ontologias para outras áreas de governo. Sendo assim, ele define identificadores (URIs), baseados no esquema HTTP, para as classes e propriedades que define. Esses identificadores, quanto acessados, retornam um documento com informações relevantes ao conceito identificado, seguindo as boas práticas de Linked Data. Além disso, referenciam conceitos de ontologias externas que são utilizadas pelas comunidades de prática (e.g., <abbr title="Friend of a Friend">FOAF</abbr>, Dublin Core, <abbr title="Vocabulary of Interlinked Datasets">VOID</abbr>, <abbr title="Simple Knowledge Organization Systems">SKOS</abbr>, ontologia de organizações do <abbr title="World Wide Web Consortium">W3C</abbr>, etc.).</p>
 
-    <h2>Núcleo do modelo</h2>
+    <h2><a id="nucleo" name="nucleo">Núcleo do modelo</a><a class="headerlink" href="#nucleo" title="Link para este título">¶</a></h2>
     <p>A modelagem abaixo representa apenas os conceitos-chave, numa visualização que visa facilitar o entendimento do modelo.</p>
 
     <img class="diagrama" src="organizacoes-siorg-nucleo.png" alt="Diagrama do Núcleo do modelo" />
 
-    <h2>Referências Externas do Modelo</h2>
+    <h2><a id="referencias-externas" name="referencias-externas">Referências Externas do Modelo</a><a class="headerlink" href="#referencias-externas" title="Link para este título">¶</a></h2>
     <p>O modelo a seguir representa apenas os conceitos que podem ser relacionados com outros conceitos existentes em ontologias externas, o que pode vir a evidenciar potenciais pontos de integração com essas ontologias.</p>
 
     <img class="diagrama" src="organizacoes-siorg-externos.png" alt="Diagrama das Referências Externas do modelo" />
 
-    <h2>Modelo Completo</h2>
+    <h2><a id="completo" name="completo">Modelo Completo</a><a class="headerlink" href="#completo" title="Link para este título">¶</a></h2>
     <p>A modelagem abaixo pretende representar a completude dos conceitos discutidos no âmbito das reuniões.</p>
 
     <img class="diagrama" src="organizacoes-siorg-completo.png" alt="Diagrama Completo do modelo" />
 
-    <h2>Modelo Conceitual</h2>
+    <h2><a id="modelo-conceitual" name="modelo-conceitual">Modelo Conceitual</a><a class="headerlink" href="#modelo-conceitual" title="Link para este título">¶</a></h2>
 
-    <h3>Escopo:</h3>
+    <h3><a id="escopo" name="escopo">Escopo:</a><a class="headerlink" href="#escopo" title="Link para este título">¶</a></h3>
     <p>Realizar uma modelagem conceitual dos conceitos do SIORG, especificando também e ligando conceitos gerais acerca de Estruturas Organizacionais Governamentais o suficiente para possibilitar a interoperabilidade com outras esferas e poderes de governo.</p>
 
-    <h3>Não-escopo:</h3>
+    <h3><a id="nao-escopo" name="nao-escopo">Não-escopo:</a><a class="headerlink" href="#nao-escopo" title="Link para este título">¶</a></h3>
     <p>Nesse primeiro momento da modelagem não estão sendo consideradas as mudanças na estrutura organizacional ao longo do tempo.</p>
 
-    <h3>Perguntas-requisito:</h3>
-    <p>As perguntas requisito (também conhecidas como “competency questions”) são perguntas às quais deve ser possível responder com os dados representados no modelo. As seguintes perguntas devem ser respondidas por uma modelagem do SIORG:</p>
+    <h3><a id="perguntas-requisito" name="perguntas-requisito">Perguntas-requisito:</a><a class="headerlink" href="#perguntas-requisito" title="Link para este título">¶</a></h3>
+    <p>As perguntas requisito (também conhecidas como “<span lang="en"><em>competency questions</em></span>”) são perguntas às quais deve ser possível responder com os dados representados no modelo <sup><a href="#ref-4">[4]</a></sup>. As seguintes perguntas devem ser respondidas por uma modelagem do SIORG:</p>
     <ol>
         <li>Qual é o nome de uma unidade hierárquica governamental?</li>
         <li>Qual é a sigla de uma unidade hierárquica governamental?</li>
@@ -90,35 +133,35 @@ SIORG</title>
         <li>A qual Órgão uma Entidade Pública está vinculada?</li>
     </ol>
 
-    <h3>Conceitos:</h3>
+    <h3><a id="conceitos" name="conceitos">Conceitos:</a><a class="headerlink" href="#conceitos" title="Link para este título">¶</a></h3>
     <dl>
-        <dt>Unidade Organizacional Pública:</dt>
+        <dt><a id="UnidadeOrganizacionalPublica" name="UnidadeOrganizacionalPublica">Unidade Organizacional Pública:</a><a class="headerlink" href="#UnidadeOrganizacionalPublica" title="Link para este título">¶</a></dt>
         <dd>“Unidade formal da Administração Pública, criada por instrumento normativo específico de estrutura regimental, constituinte de estrutura hierarquizada.” É uma categoria que agrega tanto organizações quanto as unidades que a compõem, de maneira a permitir uma visão integrada da hierarquia no governo.</dd>
-        <dt>Organização Pública:</dt>
+        <dt><a id="OrganizacaoPublica" name="OrganizacaoPublica">Organização Pública:</a><a class="headerlink" href="#OrganizacaoPublica" title="Link para este título">¶</a></dt>
         <dd>“Unidade orgânica da Administração Pública, provida de estrutura hierarquizada, com a prerrogativa de propor alterações na sua própria estrutura organizacional.” No poder executivo federal, pode ser considerada extensionalmente equivalente ao conjunto de unidades no SIORG que têm o atributo organização com o valor “O”.</dd>
-        <dt>Órgão:</dt>
+        <dt><a id="Orgao" name="Orgao">Órgão:</a><a class="headerlink" href="#Orgao" title="Link para este título">¶</a></dt>
         <dd>“Organização Pública que faz parte da Administração Direta, tais como, na esfera federal, os Ministérios”.</dd>
-        <dt>Entidade Pública:</dt>
+        <dt><a id="EntidadePublica" name="EntidadePublica">Entidade Pública:</a><a class="headerlink" href="#EntidadePublica" title="Link para este título">¶</a></dt>
         <dd>“Organização Pública com personalidade jurídica própria, autonomia administrativa e financeira”.</dd>
-        <dt>Entidade Pública não-Empresarial:</dt>
+        <dt><a id="EntidadePublicaNaoEmpresarial" name="EntidadePublicaNaoEmpresarial">Entidade Pública não-Empresarial:</a><a class="headerlink" href="#EntidadePublicaNaoEmpresarial" title="Link para este título">¶</a></dt>
         <dd>“Organização Pública com personalidade jurídica própria, mas que não pode ser caracterizada como uma empresa, tais como Autarquias e Fundações.”</dd>
-        <dt>Autarquia:</dt>
+        <dt><a id="Autarquia" name="Autarquia">Autarquia:</a><a class="headerlink" href="#Autarquia" title="Link para este título">¶</a></dt>
         <dd>“O serviço autônomo, criado por lei, com personalidade jurídica, patrimônio e receita próprios, para executar atividades típicas da Administração Pública, que requeiram, para seu melhor funcionamento, gestão administrativa e financeira descentralizada. (Decreto-Lei 200/1969, art. 5º, inciso I)”</dd>
-        <dt>Fundação Pública:</dt>
-        <dd>“A entidade dotada de personalidade jurídica de direito privado, sem fins lucrativos, criada em virtude de autorização legislativa, para o desenvolvimento de atividades que não exijam execução por órgãos ou entidades de direito público, com autonomia administrativa, patrimônio próprio gerido pelos respectivos órgãos de direção, e funcionamento custeado por recursos da União e de outras fontes. (<a href="http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto.lei:1967-02-25;200">Decreto-Lei 200</a>/1969, art. 5º, inciso IV)”</dd>
-        <dt>Estatal:</dt>
+        <dt><a id="FundacaoPublica" name="FundacaoPublica">Fundação Pública:</a><a class="headerlink" href="#FundacaoPublica" title="Link para este título">¶</a></dt>
+        <dd>“A entidade dotada de personalidade jurídica de direito privado, sem fins lucrativos, criada em virtude de autorização legislativa, para o desenvolvimento de atividades que não exijam execução por órgãos ou entidades de direito público, com autonomia administrativa, patrimônio próprio gerido pelos respectivos órgãos de direção, e funcionamento custeado por recursos da União e de outras fontes. (Decreto-Lei 200/1969<sup><a href="#ref-2">[2]</a></sup>, art. 5º, inciso IV)”</dd>
+        <dt><a id="Estatal" name="Estatal">Estatal:</a><a class="headerlink" href="#Estatal" title="Link para este título">¶</a></dt>
         <dd>“Organização Pública com personalidade jurídica própria, e que possui características de empresa, tais como Empresas Públicas e Sociedades de Economia Mista.”</dd>
-        <dt>Empresa Pública:</dt>
-        <dd>“A entidade dotada de personalidade jurídica de direito privado, com patrimônio próprio e capital exclusivo da União, criado por lei para a exploração de atividade econômica que o Governo seja levado a exercer por força de contingência ou de conveniência administrativa podendo revestir-se de qualquer das formas admitidas em direito. (<a href="http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto.lei:1967-02-25;200">Decreto-Lei 200</a>/1969, art. 5º, inciso II)”</dd>
-        <dt>Sociedade de Economia Mista:</dt>
-        <dd>“A entidade dotada de personalidade jurídica de direito privado, criada por lei para a exploração de atividade econômica, sob a forma de sociedade anônima, cujas ações com direito a voto pertençam em sua maioria à União ou a entidade da Administração Indireta. (<a href="http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto.lei:1967-02-25;200">Decreto-Lei 200</a>/1969, art. 5º, inciso III)”</dd>
-        <dt>Órgão Colegiado:</dt>
+        <dt><a id="EmpresaPublica" name="EmpresaPublica">Empresa Pública:</a><a class="headerlink" href="#EmpresaPublica" title="Link para este título">¶</a></dt>
+        <dd>“A entidade dotada de personalidade jurídica de direito privado, com patrimônio próprio e capital exclusivo da União, criado por lei para a exploração de atividade econômica que o Governo seja levado a exercer por força de contingência ou de conveniência administrativa podendo revestir-se de qualquer das formas admitidas em direito. (Decreto-Lei 200/1969<sup><a href="#ref-2">[2]</a></sup>, art. 5º, inciso II)”</dd>
+        <dt><a id="SociedadeEconomiaMista" name="SociedadeEconomiaMista">Sociedade de Economia Mista:</a><a class="headerlink" href="#SociedadeEconomiaMista" title="Link para este título">¶</a></dt>
+        <dd>“A entidade dotada de personalidade jurídica de direito privado, criada por lei para a exploração de atividade econômica, sob a forma de sociedade anônima, cujas ações com direito a voto pertençam em sua maioria à União ou a entidade da Administração Indireta. (Decreto-Lei 200/1969<sup><a href="#ref-2">[2]</a></sup>, art. 5º, inciso III)”</dd>
+        <dt><a id="OrgaoColegiado" name="OrgaoColegiado">Órgão Colegiado:</a><a class="headerlink" href="#OrgaoColegiado" title="Link para este título">¶</a></dt>
         <dd>“Por Órgão Colegiado entende-se aquele que tem composição pluripessoal, constituído por representantes de órgãos ou entidades do Poder Público e, se for o caso, também de entidades privadas. Não possui estrutura formal, sendo que os seus serviços de secretaria executiva são, obrigatoriamente, providos por unidades administrativas já integrantes da estrutura de algum de seus representantes.”</dd>
-        <dt>Unidade Administrativa Pública:</dt>
+        <dt><a id="UnidadeAdministrativaPublica" name="UnidadeAdministrativaPublica">Unidade Administrativa Pública:</a><a class="headerlink" href="#UnidadeAdministrativaPublica" title="Link para este título">¶</a></dt>
         <dd>“Unidade formal integrante da Administração Pública, criada por instrumento normativo específico de estrutura regimental. A Unidade Administrativa Pública é parte de uma Organização Pública, dela depende existencialmente, e só tem amplo reconhecimento dentro do contexto dessa Organização.” É uma especialização de org:OrganizationalUnit.</dd>
     </dl>
 
-    <h3>Relacionamentos:</h3>
+    <h3><a id="relacionamentos" name="relacionamentos">Relacionamentos:</a><a class="headerlink" href="#relacionamentos" title="Link para este título">¶</a></h3>
     <dl>
         <dt>Composição</dt>
         <dt>Subordinação</dt>
@@ -129,7 +172,7 @@ SIORG</title>
         <dd>superpropriedade de todas as acima, que se manifesta apenas no momento em que se pretende exibir a hierarquia de Unidades Hierárquicas Governamentais, tal como no SIORG.</dd>
     </dl>
 
-    <h3>Ligações com Conceitos Externos:</h3>
+    <h3><a id="conceitos-externos" name="conceitos-externos">Ligações com Conceitos Externos:</a><a class="headerlink" href="#conceitos-externos" title="Link para este título">¶</a></h3>
     <p>Seguem alguns conceitos definidos em ontologias externas que são candidatos a ligação com a ontologia de Estruturas Organizacionais Governamentais.</p>
 
     <h4>Organização:</h4>
@@ -157,12 +200,12 @@ SIORG</title>
     <h4>Unidade Orçamentária (SIAFI):</h4>
     <p>a definir em ontologia específica.</p>
 
-    <h3>Questionamentos:</h3>
+    <h3><a id="questionamentos" name="questionamentos">Questionamentos:</a><a class="headerlink" href="#questionamentos" title="Link para este título">¶</a></h3>
     <ul>
         <li>Empresas públicas e sociedades de economia mista têm sua composição hierárquica determinada por Lei? Possuem autonomia para propor alterações na sua estrutura interna? Essa informação é necessária para modelar o conceito de “composição legal”, existente na modelagem anterior, que permitiria armazenar o histórico da hierarquia. Se a composição histórica da estrutura organizacional for um requisito, precisaremos dessa resposta.</li>
     </ul>
 
-    <h3>Próximos passos:</h3>
+    <h3><a id="proximos-passos" name="proximos-passos">Próximos passos:</a><a class="headerlink" href="#proximos-passos" title="Link para este título">¶</a></h3>
     <ul>
         <li>Evoluir do modelo para possibilitar a representação de alterações na estrutura organizacional no decorrer do tempo, possibilitando o registro do histórico;</li>
         <li>implementação e disponibilização em OWL;</li>
@@ -171,6 +214,15 @@ SIORG</title>
 
 </article>
 <footer>
+    
+    <h3><a id="referencias" name="referencias">Referências:</a><a class="headerlink" href="#referencias" title="Link para este título">¶</a></h3>
+    <ol>
+        <li><a id="ref-1" name="ref-1">BRASIL.</a> <a href="http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto:2003-11-25;4896">Decreto nº 4.896, de 25 de Novembro de 2003</a>: Dispõe sobre a institucionalização do Sistema de Informações Organizacionais do Governo Federal &mdash; SIORG, e dá outras providências. 2003.</li>
+        <li><a id="ref-2" name="ref-2">BRASIL.</a> <a href="http://www.lexml.gov.br/urn/urn:lex:br:federal:decreto.lei:1967-02-25;200">Decreto-Lei nº 200, de 25 de Fevereiro de 1967</a>: Dispõe sobre a organização da Administração Federal, estabelece diretrizes para a Reforma Administrativa e dá outras providências. 1967.</li>
+        <li><a id="ref-3" name="ref-3">BRASIL.</a> <a href="http://www.siorg.redegoverno.gov.br/">Sistema de Informações Organizacionais do Governo Federal &mdash; SIORG</a>, 2002. Recuperado em setembro de 2011.</li>
+        <li><a id="ref-4" name="ref-4">NOY, Natalya F.; MCGUINNESS, Deborah L.</a> <span lang="en"><a href="http://protege.stanford.edu/publications/ontology_development/ontology101-noy-mcguinness.html">Ontology Development 101: A Guide to Creating Your First Ontology</a></span>, 2001.</li>
+    </ol>
+    
     Conteúdo licenciado sob uma Licença
     <a href="http://creativecommons.org/licenses/by/3.0/" rel="license">
         <img src="http://i.creativecommons.org/l/by/3.0/80x15.png" style="border-width: 0pt;" alt="Licença Creative Commons">
