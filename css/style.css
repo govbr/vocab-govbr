@@ -368,12 +368,6 @@ max-width:50%;
 float: left;
 }
 
-.conteudoAcordeon {
-min-height: 50px;
-}
-
-
-
 
 /* ==|== primary styles =====================================================
    Authors: Ozzy, Herrmann, Paty
@@ -594,6 +588,23 @@ footer {
     margin-top: 1em;
     clear: both;
     text-align: center;
+}
+
+/* ==|== estilos p/ VCGE=====================================================
+   Authors: Cadu Vieira, Herrmann
+   ========================================================================== */
+
+.conteudoAcordeon {
+min-height: 100px;
+}
+
+.hilite {
+    color: red;
+}
+
+.var_exemplo {
+    color: red;
+    font-weight: bold;
 }
 
 /* ==|== non-semantic helper classes ========================================
