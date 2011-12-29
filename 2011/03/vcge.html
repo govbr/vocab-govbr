@@ -229,6 +229,20 @@ O VCGE ajuda os cidadãos a encontrar informações mesmo sem o conhecimento de qua
 <p>Vocabulários utilizados: <a href="http://dublincore.org/documents/dcmi-terms/" target="_blank">Dublin Core Terms</a>, <a href="http://xmlns.com/foaf/spec/" target="_blank">Friend of a Friend</a>, <a href="http://vocab.e.gov.br/2011/03/vcge">VCGE</a></p>
                </div>
 
+               <h3><a href="#">SQL</a></h3>
+               <div class="conteudoAcordeon">
+                <pre id="exemplo_sql" class="code">
+INSERT INTO documentos (arquivo, titulo, assunto)
+VALUES (
+  'documento-sobre-<span class="nomeRecurso">assunto</span>.odt',
+  'Documento sobre <span class="var_exemplo termo_autorizado">XXX</span>',
+  '<span class="var_exemplo uri_assunto">http://vocab.e.gov.br/2011/03/vcge#XXX</span>'
+);</pre>
+<p>Mais informações sobre essa sintaxe: <a href="http://pt.wikipedia.org/wiki/Insert_(SQL)" target="_blank"><abbr title="Structured Query Language">SQL</abbr></a></p>
+<p>Vocabulários utilizados: <a href="http://vocab.e.gov.br/2011/03/vcge">VCGE</a></p>
+               </div>
+
+
           </div>
      </div>
      <div id="tabs-3">
@@ -238,7 +252,7 @@ O VCGE ajuda os cidadãos a encontrar informações mesmo sem o conhecimento de qua
             relaciona.</p>
         <form action="http://vocab.e.gov.br/api_vcge/nota_explicativa/" method="POST">
         <p>Faça aqui sua sugestão de descrição para o conceito:</p>
-        <p><span id="nomeRecurso">clique em um termo para fazer sua sugestão</span></p>
+        <p><span class="nomeRecurso">clique em um termo para fazer sua sugestão</span></p>
           <textarea cols="40" name="texto" rows="4"> </textarea>
 	   Autor: <input type="text" value="Anônimo" name="autor" />
           <input type="submit" value="enviar" />
