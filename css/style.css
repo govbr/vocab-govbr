@@ -594,6 +594,11 @@ footer {
    Authors: Cadu Vieira, Herrmann
    ========================================================================== */
 
+#tabs {
+    visibility: hidden;
+    margin-left: 1em;
+}
+
 .conteudoAcordeon {
     min-height: 300px;
 }
@@ -603,7 +608,7 @@ footer {
 }
 
 .conteudoAcordeon a:hover {
-    text-decoration: underline;
+    color: #EB8F00;
 }
 
 .hilite {
