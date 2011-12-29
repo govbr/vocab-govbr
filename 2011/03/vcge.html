@@ -84,18 +84,15 @@
         </div>
   </header>
 
-<div class="grid_22 prefix_1 suffix_1" >
+<article class="grid_22 prefix_1 suffix_1">
 
-<p>O VCGE é um esquema para ser utilizado no elemento assunto.categoria (subject.category) do Padrão de
-Metadados do Governo Eletrônico (e-PMG). Termos retirados do VCGE tornarão mais direta para os
-gerentes de sítios e portais governamentais, a apresentação dos serviços disponibilizados em uma estrutura
-de diretório baseada nos indexadores do VCGE.</p>
+<p>O <abbr title="Vocabulário Controlado do Governo Eletrônico">VCGE</abbr> é um esquema para ser utilizado no elemento assunto.categoria (subject.category) do Padrão de Metadados do Governo Eletrônico (<abbr title="Padrão de Metadados do Governo Eletrônico">e-PMG</abbr>)<sup><a id="ref-nota-1" href="#nota-1">1</a></sup>. Termos retirados do VCGE tornarão mais direta, para os gerentes de sítios e portais governamentais, a apresentação dos serviços disponibilizados em uma estrutura de diretório baseada nos indexadores do VCGE.</p>
+
 <p>
-O VCGE ajuda os cidadãos a encontrar informações mesmo sem o conhecimento de qual órgão o assunto é
-responsabilidade. 
+O VCGE ajuda os cidadãos a encontrar informações mesmo sem o conhecimento de qual órgão o assunto é responsabilidade. 
 </p>
 
-<form action="http://vocab.e.gov.br/api_vcge/nota_explicativa/" method="POST">
+<p>O VCGE está organizado em uma <a href="http://eurovoc.europa.eu/drupal/?q=pt/node/924" target="_blank">poli-hierarquia</a>. Isto é, um dado termo pode ter um ou mais de um Termos Gerais (<abbr title="Termo Geral">TG</abbr>).</p>
 
 <div class="vocabulary-node node">
   <h2><a href="http://vocab.e.gov.br/2011/03/vcge">VCGE</a></h2>
@@ -110,7 +107,7 @@ responsabilidade.
       </div>
       <div class="abstract">
         <h3>Formatos:</h3>
-        <span class="value"><a href="vcge.json">JSON,</a> <a href="vcge.n3">N3,</a> <a href="vcge.rdf">RDF</a></span>
+        <span class="value"><a href="vcge.json"><abbr title="Javascript Object Notation">JSON</abbr></a>, <a href="vcge.n3"><abbr title="Simple Knowledge Organization System">SKOS</abbr> (<abbr title="Resource Description Framework">RDF</abbr>/<abbr title="Notation 3">N3</abbr>)</a>, SKOS (<a href="vcge.rdf">RDF/<abbr title="Extensible Markup Language">XML</abbr>)</a>, <a href="http://www.governoeletronico.gov.br/biblioteca/arquivos/vocabulario-controlado-do-governo-eletronico-vcge/download"><abbr title="Portable Document Format">PDF</abbr></a></span>
       </div>
       <div class="namespace-uri">
         <h3>Namespace URI:</h3>
@@ -239,6 +236,7 @@ responsabilidade.
             </abbr> atualmente não possui descrições ou Notas de Escopo
             (<abbr title="Nota de Escopo">NE</abbr>) para os termos que
             relaciona.</p>
+        <form action="http://vocab.e.gov.br/api_vcge/nota_explicativa/" method="POST">
         <p>Faça aqui sua sugestão de descrição para o conceito:</p>
         <p><span id="nomeRecurso">clique em um termo para fazer sua sugestão</span></p>
           <textarea cols="40" name="texto" rows="4"> </textarea>
@@ -250,11 +248,13 @@ responsabilidade.
         mesma e concorda expressamente em contribui-la ao domínio público
         (<a href="http://creativecommons.org/choose/zero/?lang=pt"
         target="_blank">CC0</a>).</p>
+        </form>
     </div>
     </div>
+  </div>
 
-</form>
+<p><a id="nota-1" href="#ref-nota-1"><sup>1</sup></a><strong>Nota:</strong> Até a definição das <abbr title="Uniform Resource Identifier">URI</abbr>s canônicas a serem usadas para as propriedades do e-PMG, possibilitando a sua utilização em páginas web e documentos <abbr title="Resource Description Framework">RDF</abbr>, os exemplos nesta página utilizarão as propriedades <code>subject</code>, <code>primaryTopic</code> e <code>about</code> dos vocabulários <a href="http://dublincore.org/documents/dcmi-terms/" target="_blank">Dublin Core Terms</a>, <a href="http://xmlns.com/foaf/spec/" target="_blank">Friend of a Friend</a> e <a href="http://schema.org/" target="_blank">schema.org</a>, respectivamente.</p>
 
-</div>
+</article>
 </div>
 </body></html>
