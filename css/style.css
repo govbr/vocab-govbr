@@ -599,15 +599,41 @@ footer {
     margin-left: 1em;
 }
 
+#tabs-1 dt {
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+#tabs-1 dd {
+    margin-top: 0.5em;
+}
+
+#tabs-1 input {
+    font-size: 12px;
+}
+
+#termo-geral {
+    display: none;
+}
+
+#termos-especificos {
+    display: none;
+}
+
+ul.termos_especificos {
+    margin: 0;
+    padding: 0;
+}
+
 .conteudoAcordeon {
     min-height: 300px;
 }
 
-.conteudoAcordeon a, .conteudoAcordeon a:visited {
+#tabs .ui-tabs-panel a, #tabs .ui-tabs-panel a:visited {
     color: #1C94C4;
 }
 
-.conteudoAcordeon a:hover {
+#tabs .ui-tabs-panel a:hover {
     color: #EB8F00;
 }
 
