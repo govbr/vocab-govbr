@@ -595,7 +595,15 @@ footer {
    ========================================================================== */
 
 .conteudoAcordeon {
-min-height: 100px;
+    min-height: 300px;
+}
+
+.conteudoAcordeon a, .conteudoAcordeon a:visited {
+    color: #1C94C4;
+}
+
+.conteudoAcordeon a:hover {
+    text-decoration: underline;
 }
 
 .hilite {
@@ -603,8 +611,7 @@ min-height: 100px;
 }
 
 .var_exemplo {
-    color: red;
-    font-weight: bold;
+    background-color: yellow;
 }
 
 /* ==|== non-semantic helper classes ========================================
