@@ -58,7 +58,7 @@
   <link rel="canonical" href="http://www.jstree.com/documentation/json_data" />
   <script>
     function showDiv(e, data){
-        var termoAutorizado = data.args[0].childNodes[1].wholeText;
+        var termoAutorizado = $(data.args[0] + " a:first").text();
         var nomeRecurso = data.rslt.obj[0].attributes[0].firstChild.data.replace("#", "");
         var uri = "http://vocab.e.gov.br/2011/03/vcge#" + nomeRecurso;
         $("#tabs").css('visibility', 'visible');
