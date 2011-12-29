@@ -42,7 +42,7 @@ function showDiv(e, data){
     // exemplos
     $(".uri_assunto").text(uri);
     // sugestoes
-    $("#nomeRecurso").text(nomeRecurso);
+    $(".nomeRecurso").text(nomeRecurso);
     $.history.load(nomeRecurso);
 }
 
@@ -109,9 +109,10 @@ $(function() {
 
 // syntax highlighter
 $(function() {
-    $( "#exemplo_html_rdfa" ).snippet("html", {style: "acid", box: "4"});
-    $( "#exemplo_html_rdfa_lite" ).snippet("html", {style: "acid", box: "4"});
-    $( "#exemplo_html_microdata" ).snippet("html", {style: "acid", box: "4"});
+    $( "#exemplo_html_rdfa" ).snippet("html", {style: "acid", box: "5"});
+    $( "#exemplo_html_rdfa_lite" ).snippet("html", {style: "acid", box: "5"});
+    $( "#exemplo_html_microdata" ).snippet("html", {style: "acid", box: "5"});
     $( "#exemplo_rdf_turtle" ).snippet("turtle", {style: "acid", box:"5-6"});
     $( "#exemplo_rdf_xml" ).snippet("xml", {style: "acid", box:"4-5"});
+    $( "#exemplo_sql" ).snippet("sql", {style: "acid", box:"5"});
 });
