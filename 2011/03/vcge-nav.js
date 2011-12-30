@@ -17,11 +17,38 @@ function showDiv(e, data){
         $("#termo-geral").hide();
     } else {
         $("#termo-geral").show();
-        var parent = $(data.rslt.obj[0]).parents()[1];
-        var TG = $(parent).children("a:first").text().trim();
-        var TG_hash = $(parent).attr("id");
-        $(".termo_geral").html('<a href="#'+ TG_hash +'">' + TG + '</a>');
-        $(".termo_geral a:first").click(updateHash);
+        var parents = []
+        var clones = $("li[id='" + nomeRecurso + "']");
+        clones.each(function(i, clone){
+            parents[i] = $(clone).parents()[1];
+        });
+        var TG;
+        var TG_hash;
+        var lista = $(".termo_geral");
+        lista.html("");
+        $(parents).each(function(i, parent){
+            TG = $(parent).children("a:first").text().trim();
+            TG_hash = $(parent).attr("id");
+            lista.append('<li><a href="#'+ TG_hash +'">' + TG + '</a></li>');
+            lista.filter("a:last").click(updateHash);
+            if (clones.length > 1) {
+                var ANC;
+                var ancestors = $(parent).parents("li[class^=jstree]");
+                ancestors.splice(ancestors.length-1,1);
+                var bloco = lista.children("li:last");
+                if (ancestors.length > 0) {
+                    bloco.append(' (');
+                    $(ancestors).each(function(i, ancestor) {
+                        if (i > 0) {
+                            bloco.append(" ");
+                        }
+                        ANC = $(ancestor).children("a:first").text().trim();
+                        bloco.append('&larr; <span class="ancestral">' + ANC + '</span>');
+                    });
+                    bloco.append(")");
+                }
+            }
+        });
     }
     var children = $(data.rslt.obj[0]).children("ul").children();
     if (children.length > 0) {
