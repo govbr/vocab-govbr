@@ -73,6 +73,23 @@ function showDiv(e, data){
     $.history.load(nomeRecurso);
 }
 
+function highLightHash(event, data) {
+        // when loaded sets initial state based off of priority hash first OR url
+        if (window.location.hash) { // if hash defined then set tree state
+            $.jstree._focused().select_node(window.location.hash);
+            $(window.location.hash + ' a:first').trigger('click');
+        } else { // otherwise base state off of URL
+            $.jstree._focused().select_node("#esquema");
+            $('#esquema a:first').trigger('click');
+        }
+}
+
+function highLight(event, data) {
+		
+        alert("Found " + data.rslt.nodes.length + " nodes matching '" + data.rslt.str + "'.");
+	highLightHash(event,data);
+}
+
 // $(document).ready();
 $(function () {
     // Tabs
@@ -94,19 +111,13 @@ $(function () {
 		    "dots" : true,
 		    "icons" : true
 	    },
-	    "plugins" : [ "themes", "json_data","ui" ]
+	    "plugins" : [ "themes", "json_data","ui", "search" ]
     //}).bind("select_node.jstree", function (e, data) { alert("OIIII"); });
     }).bind("select_node.jstree", showDiv
-    ).bind("loaded.jstree", function (event, data) {
-        // when loaded sets initial state based off of priority hash first OR url
-        if (window.location.hash) { // if hash defined then set tree state
-            $.jstree._focused().select_node(window.location.hash);
-            $(window.location.hash + ' a:first').trigger('click');
-        } else { // otherwise base state off of URL
-            $.jstree._focused().select_node("#esquema");
-            $('#esquema a:first').trigger('click');
-        }
-    });
+    ).bind("loaded.jstree", highLightHash
+    ).bind("search.jstree", highLight);
+
+
 
     // browser history
     function loadContent(hash) {
@@ -128,6 +139,11 @@ $(function () {
     });
 
 }); // $(document).ready();
+
+// Busca na árvore do VCGE
+function busca() {
+	$("#treeVCGE").jstree("search", $("#buscaTXT").val());
+}
 
 
 $(function() {
