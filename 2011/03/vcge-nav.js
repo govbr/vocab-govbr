@@ -85,8 +85,7 @@ function highLightHash(event, data) {
 }
 
 function highLight(event, data) {
-		
-        alert("Found " + data.rslt.nodes.length + " nodes matching '" + data.rslt.str + "'.");
+        $("#busca_span").text("Encontrado " + data.rslt.nodes.length + " nós com o texto '" + data.rslt.str + "'.");
 	highLightHash(event,data);
 }
 
@@ -112,7 +111,6 @@ $(function () {
 		    "icons" : true
 	    },
 	    "plugins" : [ "themes", "json_data","ui", "search" ]
-    //}).bind("select_node.jstree", function (e, data) { alert("OIIII"); });
     }).bind("select_node.jstree", showDiv
     ).bind("loaded.jstree", highLightHash
     ).bind("search.jstree", highLight);
