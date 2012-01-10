@@ -62,7 +62,7 @@
   <script type="text/javascript" src="_lib/jquery.history.js"></script>
 
   <link rel="canonical" href="http://www.jstree.com/documentation/json_data" />
-  <script type="text/javascript" src="vcge-nav.js"></script>
+  <script type="text/javascript" src="vcge-nav.js" charset="utf-8"></script>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -124,7 +124,7 @@ O VCGE ajuda os cidadãos a encontrar informações mesmo sem o conhecimento de qua
 
 <p>Abaixo segue uma representação dos termos do VCGE em forma de árvore utilizando o <a href="vcge-treeview.json">JSON no formato do jsTree</a>.</p>
 
-<div id="busca"> Busca na árvore: <input type="text" value="" id="buscaTXT" /> <input type="submit" value="Pesquisar" onclick="busca()"/></div>
+<div id="busca"> <label for="buscaTXT">Busca na árvore:</label> <input type="text" value="" id="buscaTXT" /> <input type="submit" value="Pesquisar" onclick="busca()"/> <br/> <span id="busca_span"> </span><br/></div>
 <div id="treeVCGE"> </div>
 
 <div id="info">
