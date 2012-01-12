@@ -52,8 +52,6 @@
   <script type="text/javascript" src="_lib/jquery.jstree.js"></script>
   <script type="text/javascript" src="_lib/jquery-ui-1.8.16.custom.min.js"></script>
   	
-  <script type="text/javascript" src="../../js/jquery-ui-1.8.16.custom.min.js"></script>
-
   <!-- syntax highlighter -->
   <script type="text/javascript" src="_lib/jquery.snippet.js"></script>
   <link rel="stylesheet" type="text/css" href="_lib/jquery.snippet.css" />
@@ -61,7 +59,6 @@
   <!-- browser history -->
   <script type="text/javascript" src="_lib/jquery.history.js"></script>
 
-  <link rel="canonical" href="http://vocab.e.gov.br/2011/03/vcge" />
   <script type="text/javascript" src="vcge-nav.js" charset="utf-8"></script>
 <script type="text/javascript">
 
@@ -124,7 +121,7 @@ O VCGE ajuda os cidadãos a encontrar informações mesmo sem o conhecimento de qua
 
 <p>Abaixo segue uma representação dos termos do VCGE em forma de árvore utilizando o <a href="vcge-treeview.json">JSON no formato do jsTree</a>.</p>
 
-<div id="busca"> <form action=""><label for="buscaTXT">Busca na árvore: </label><input type="text" value="" id="buscaTXT" /> <input type="submit" value="Pesquisar" onclick="busca()"/></form> <br/> <span id="busca_span"> </span><br/></div>
+<div id="busca"> <form onSubmit="return busca()"><label for="buscaTXT">Busca na árvore: </label><input type="text" value="" id="buscaTXT" /> <input type="submit" value="Pesquisar" onclick="busca()"/></form> <br/> <span id="busca_span"> </span><br/></div>
 <div id="treeVCGE"> </div>
 
 <div id="info">
