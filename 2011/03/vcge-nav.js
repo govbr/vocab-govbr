@@ -141,7 +141,6 @@ $(function () {
 // Busca na árvore do VCGE
 function busca() {
 	$("#treeVCGE").jstree("search", $("#buscaTXT").val());
-	//return false;
 }
 
 
