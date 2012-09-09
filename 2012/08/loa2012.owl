@@ -1,0 +1,509 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY siop "http://vocab.e.gov.br/2012/08/loa2012.owl#" >
+]>
+<rdf:RDF xmlns="http://vocab.e.gov.br/2012/08/loa2012.owl#"
+     xml:base="http://vocab.e.gov.br/2012/08/loa2012.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:siop="http://vocab.e.gov.br/2012/08/loa2012.owl#">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <owl:ObjectProperty rdf:about="#temAcao">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Propriedade funcional que tem como dominio a classe ItemDeDespesa e range a classe Acao.</rdfs:comment>
+        <rdfs:range rdf:resource="#Acao"/>
+        <rdfs:subPropertyOf rdf:resource="#temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+    <owl:ObjectProperty rdf:about="#temCategoriaEconomica">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Propriedade (object property) que relaciona elementos da classe GrupoNatDespesa (domain) aos elementos da classe CategoriaEconomica (range).</rdfs:comment>
+        <rdfs:range rdf:resource="#CategoriaEconomica"/>
+        <rdfs:domain rdf:resource="#GrupoNatDespesa"/>
+    </owl:ObjectProperty>
+    
+
+    <owl:ObjectProperty rdf:about="#temClassificador">
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Essa object property relaciona a classe ItemDeDespesa (domain) com a classe Classificadores (range)</rdfs:comment>
+        <rdfs:range rdf:resource="#Classificador"/>
+        <rdfs:domain rdf:resource="#ItemDeDespesa"/>
+    </owl:ObjectProperty>
+    
+
+    <owl:ObjectProperty rdf:about="#temElementoDespesa">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Propriedade funcional que tem como dominio a classe ItemDeDespesa e range a classe ElementoDespesa.</rdfs:comment>
+        <rdfs:range rdf:resource="#ElementoDespesa"/>
+        <rdfs:subPropertyOf rdf:resource="#temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+    <owl:ObjectProperty rdf:about="#temEsfera">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Propriedade funcional que tem como dominio a classe ItemDeDespesa e range a classe Esfera.</rdfs:comment>
+        <rdfs:range rdf:resource="#Esfera"/>
+        <rdfs:subPropertyOf rdf:resource="#temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+    <owl:ObjectProperty rdf:about="#temFonteRecursos">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Propriedade funcional que tem como dominio a classe ItemDeDespesa e range a classe FonteRecursos.</rdfs:comment>
+        <rdfs:range rdf:resource="#FonteRecursos"/>
+        <rdfs:subPropertyOf rdf:resource="#temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+    <owl:ObjectProperty rdf:about="#temFuncao">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Propriedade funcional que tem como dominio a classe ItemDeDespesa e range a classe Funcao.</rdfs:comment>
+        <rdfs:range rdf:resource="#Funcao"/>
+        <rdfs:subPropertyOf rdf:resource="#temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+    <owl:ObjectProperty rdf:about="#temGND">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Propriedade funcional que tem como dominio a classe ItemDeDespesa e range a classe GrupoNatDespesa.</rdfs:comment>
+        <rdfs:range rdf:resource="#GrupoNatDespesa"/>
+        <rdfs:subPropertyOf rdf:resource="#temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+    <owl:ObjectProperty rdf:about="#temIndicadorUso">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Propriedade funcional que tem como dominio a classe ItemDeDespesa e range a classe IndicadorUso.</rdfs:comment>
+        <rdfs:range rdf:resource="#IndicadorUso"/>
+        <rdfs:subPropertyOf rdf:resource="#temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+    <owl:ObjectProperty rdf:about="#temLocalizador">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Propriedade funcional que tem como dominio a classe ItemDeDespesa e range a classe Localizador.</rdfs:comment>
+        <rdfs:range rdf:resource="#Localizador"/>
+        <rdfs:subPropertyOf rdf:resource="#temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+    <owl:ObjectProperty rdf:about="#temModalidadeAplicacao">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Propriedade funcional que tem como dominio a classe ItemDeDespesa e range a classe ModalidadeAplicacao.</rdfs:comment>
+        <rdfs:range rdf:resource="#ModalidadeAplicacao"/>
+        <rdfs:subPropertyOf rdf:resource="#temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+    <owl:ObjectProperty rdf:about="#temOrgao">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Object Property que relaciona elementos da classe (domain) UnidadeOrcamentaria com os elementos da classe (range) Orgao.</rdfs:comment>
+        <rdfs:range rdf:resource="#Orgao"/>
+        <rdfs:domain rdf:resource="#UnidadeOrcamentaria"/>
+    </owl:ObjectProperty>
+    
+
+    <owl:ObjectProperty rdf:about="#temPrograma">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Propriedade funcional que tem como dominio a classe ItemDeDespesa e range a classe Programa.</rdfs:comment>
+        <rdfs:range rdf:resource="#Programa"/>
+        <rdfs:subPropertyOf rdf:resource="#temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+    <owl:ObjectProperty rdf:about="#temResultadoPrimario">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Propriedade funcional que tem como dominio a classe ItemDeDespesa e range a classe ResultadoPrimario.</rdfs:comment>
+        <rdfs:range rdf:resource="#ResultadoPrimario"/>
+        <rdfs:subPropertyOf rdf:resource="#temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+    <owl:ObjectProperty rdf:about="#temSubfuncao">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Propriedade funcional que tem como dominio a classe ItemDeDespesa e range a classe SubFuncao.</rdfs:comment>
+        <rdfs:range rdf:resource="#Subfuncao"/>
+        <rdfs:subPropertyOf rdf:resource="#temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+    <owl:ObjectProperty rdf:about="#temUnidadeOrcamentaria">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Propriedade funcional que tem como dominio a classe ItemDeDespesa e range a classe UnidadeOrcamentaria.</rdfs:comment>
+        <rdfs:range rdf:resource="#UnidadeOrcamentaria"/>
+        <rdfs:subPropertyOf rdf:resource="#temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+    <owl:DatatypeProperty rdf:about="#codigo">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Codigo do classificador. Esse DataType e herdado para as subclasses da classe Classificador e e utilizado como uma restricao para definir essas subclasses.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+    <owl:DatatypeProperty rdf:about="#label">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Refere-se ao nome do classificador. Esse DataType e herdado para as subclasses da classe Classificador e e utilizado como uma restricao para definir subclasses.</rdfs:comment>
+        <rdfs:domain rdf:resource="#Classificador"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+    <owl:DatatypeProperty rdf:about="#valorDotacaoInicial">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Refere-se ao valor aprovado inicialmente para o referido item de despesa dentro do or&#231;amento anual.</rdfs:comment>
+        <rdfs:domain rdf:resource="#ItemDeDespesa"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+    <owl:Class rdf:about="#Acao">
+        <rdfs:subClassOf rdf:resource="#Classificador"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Os elementos dessa classe sao operacoes da qual resultam produtos (bens ou servicos) que contribuem para atender ao objetivo de um programa. Incluem-se aqui as transferencias obrigatorias ou voluntarias a outros entes da Federacao e a pessoas fisicas ou juridicas, na forma de subsidios, subvencoes, auxilios, contribuicos, entre outros e financiamentos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <owl:Class rdf:about="#Atividade">
+        <rdfs:subClassOf rdf:resource="#Acao"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Tipo de acao que se realiza de modo continuo e permanente, das quais resulta um produto ou servico necessario a manutencao da acao do Governo.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <owl:Class rdf:about="#CategoriaEconomica">
+        <rdfs:subClassOf rdf:resource="#Classificador"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Classe nomeada que contem dois elementos, em principio, cujos labels e codigos sao: (i) despesas correntes - codigo 3, e (ii) despesas de capital - codigo 4.</rdfs:comment>
+    </owl:Class>
+    
+
+    <owl:Class rdf:about="#Classificador">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#codigo"/>
+                        <owl:someValuesFrom rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#label"/>
+                        <owl:someValuesFrom rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="#ItemDeDespesa"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >O orcamento anual pode ser visto sob diferentes tipos de classificacoes. A classe Classificadores possui as subclasses relativas aos tipos de classificacao que o or&#231;amento de 2012 pode ter. Nesse caso, a classe Classificadores &#233; definida pela restricao de DataType property. Ou seja, os elementos dessa classe precisam ter um label e um codigo (DataType properties) para pertencerem a essa classe.</rdfs:comment>
+    </owl:Class>
+    
+
+    <owl:Class rdf:about="#ElementoDespesa">
+        <rdfs:subClassOf rdf:resource="#Classificador"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Classe nomeada cujos elementos referem-se a individuos que tem por finalidade identificar os objetos de gasto tais como vencimentos e vantagens fixas, juros, diarias, material de consumo, servicos de terceiros prestados sob qualquer forma, subvencoes sociais, obras e instalacoes, equipamentos e material permanente, auxilios, amortizacao e outros que a Administracao Publica utiliza para consecucao de seus fins.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <owl:Class rdf:about="#Esfera">
+        <rdfs:subClassOf rdf:resource="#Classificador"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Classe nomeada cujos elementos representam os tipos de orcamento definidos para o Governo: orcamento fiscal (10), orcamento da seguridade social (20, e orcamento de investimento (30).</rdfs:comment>
+    </owl:Class>
+    
+
+    <owl:Class rdf:about="#FonteRecursos">
+        <rdfs:subClassOf rdf:resource="#Classificador"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Classe nomeada cujos elementos referem-se aos individuos que representam a origem dos recursos para a realizar a despesa declarada para o individuo relacionado da classe ItemDeDespesa. Em outras palavras, essa classe define a origem do dinheiro a ser gasto no item de despesa relacionado.</rdfs:comment>
+    </owl:Class>
+    
+
+    <owl:Class rdf:about="#Funcao">
+        <rdfs:subClassOf rdf:resource="#Classificador"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Classe de elementos que representam o maior nivel de agregacao das diversas areas de atuacao do setor publico. Reflete a competencia institucional do orgao, como, por exemplo, cultura, educacao, saude, defesa, que guarda relacao como os respectivos Ministerios.</rdfs:comment>
+    </owl:Class>
+    
+
+    <owl:Class rdf:about="#GrupoNatDespesa">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Classificador"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#temCategoriaEconomica"/>
+                        <owl:someValuesFrom rdf:resource="#CategoriaEconomica"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Classe nomeada cujos elementos sao agregadores de elemento de despesa com as mesmas caracteristicas quanto ao objeto de gasto, conforme a seguinte discriminacao: 1 - Pessoal e encargos sociais; 2 - Juros e encargos da divida; 3 - Outras despesas correntes; 4 - Investimentos; 5 - Inversoes financeiras; 6 - Amortizacao da divida.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <owl:Class rdf:about="#IndicadorUso">
+        <rdfs:subClassOf rdf:resource="#Classificador"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Classe nomeada cujos elementos completam a informacao concernente a aplicacao dos recursos e destina-se a indicar se os recursos compoem contrapartida nacinoal de emprestimos ou de doacoes ou destinam-se a outras aplicacoes, constando da LOA e de seus creditos adicionais.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <owl:Class rdf:about="#ItemDeDespesa">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#temAcao"/>
+                        <owl:someValuesFrom rdf:resource="#Acao"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#temElementoDespesa"/>
+                        <owl:someValuesFrom rdf:resource="#ElementoDespesa"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#temEsfera"/>
+                        <owl:someValuesFrom rdf:resource="#Esfera"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#temFonteRecursos"/>
+                        <owl:someValuesFrom rdf:resource="#FonteRecursos"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#temFuncao"/>
+                        <owl:someValuesFrom rdf:resource="#Funcao"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#temGND"/>
+                        <owl:someValuesFrom rdf:resource="#GrupoNatDespesa"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#temIndicadorUso"/>
+                        <owl:someValuesFrom rdf:resource="#IndicadorUso"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#temLocalizador"/>
+                        <owl:someValuesFrom rdf:resource="#Localizador"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#temModalidadeAplicacao"/>
+                        <owl:someValuesFrom rdf:resource="#ModalidadeAplicacao"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#temPrograma"/>
+                        <owl:someValuesFrom rdf:resource="#Programa"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#temResultadoPrimario"/>
+                        <owl:someValuesFrom rdf:resource="#ResultadoPrimario"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#temSubfuncao"/>
+                        <owl:someValuesFrom rdf:resource="#Subfuncao"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#temUnidadeOrcamentaria"/>
+                        <owl:someValuesFrom rdf:resource="#UnidadeOrcamentaria"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#valorDotacaoInicial"/>
+                        <owl:someValuesFrom rdf:resource="&xsd;double"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Classe definida por restricoes cujos individuos representam os itens de despesa definidos para cada orcamento anual, com enfase especial para a LOA 2012. Cada elemento da classe ItemDeDespesa &#233; caracterizado por ter object properties especificas para cada uma das subclasses da classe Classificadores, alem de possuir um data type property denominado valor de dotacao inicial que eh do tipo double.</rdfs:comment>
+    </owl:Class>
+    
+
+    <owl:Class rdf:about="#Localizador">
+        <rdfs:subClassOf rdf:resource="#Classificador"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Elementos dessa classe s&#227;o objetos que identificam o local definido para realizacao de uma determinada acao.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <owl:Class rdf:about="#ModalidadeAplicacao">
+        <rdfs:subClassOf rdf:resource="#Classificador"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Indica se os recursos serao aplicados mediante transferencia financeira, inclusive a decorrente de descentralizacao orcamentaria para outros niveis de Governo, seus orgaos ou entidades, ou diretamente para entidades privadas sem fins lucrativos e outras instituicoes; ou entao diretamente pela unidade dententora do credito orcamentario, ou por outro orgao ou entidade no ambito do mesmo nivel de Governo. Seu principal objetivo e eliminar a dupla contagem dos recursos transferidos ou descentralizados.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <owl:Class rdf:about="#OperacaoEspecial">
+        <rdfs:subClassOf rdf:resource="#Acao"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Tipo de acao cujas despesas nao contribuem para a manutencao, expansao ou aperfeicoamento das acoes de governo. Acoes dessa subclasse nao resultam em produto e nao geram contraprestacao direta sob a forma de bens ou servicos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <owl:Class rdf:about="#Orgao">
+        <rdfs:subClassOf rdf:resource="#Classificador"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Os elementos dessa classe referem-se aos orgaos orcamentarios que possuem vinculados a si, os elementos da classe UnidadeOrcamentaria atraves da propriedade temOrgao. Orgaos nao correspondem necessariamente a uma estrutura administrativa, como ocorre, por exemplo, com alguns fundos especiais e com alguns orgaos tais como  (i) Transferencias a Estados, Distrito Federal e Municipios, (ii) Encargos financeiros da Uniao, (iii) Operacoes oficiais de credito, (iv) Refinanciamento da divida publica mobiliaria federal, e (v) Reserva de contingencia.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <owl:Class rdf:about="#Programa">
+        <rdfs:subClassOf rdf:resource="#Classificador"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Os elementos dessa classe sao programas orientados para a realizacao dos objetivos estrategicos definidos para o periodo do PPA (Plano Plurianual), ou seja, quatro anos. Programas podem ser tematicos (que retratam no PPA a agenda de governo e orienta a acao governamental), ou de gestao, manutencao e servicos (instrumentos do PPA que classificam um conjunto de acoes destinadas ao apoio, gestao e manutencao da atuacao governamental).</rdfs:comment>
+    </owl:Class>
+    
+
+    <owl:Class rdf:about="#Projeto">
+        <rdfs:subClassOf rdf:resource="#Acao"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Os elementos dessa classe sao acoes limitadas no tempo e das quais resulta um produto que concorre para a expansao ou aperfeicoamento da acao do governo.</rdfs:comment>
+    </owl:Class>
+    
+
+    <owl:Class rdf:about="#ResultadoPrimario">
+        <rdfs:subClassOf rdf:resource="#Classificador"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Classe nomeada cujos elementos referem-se a apuracao de resultado primario previsto na LDO (Lei de Diretrizes Orcamentarias), devendo constar no PLOA e na respectiva Lei em todos os GNDS, identificando, de acordo com a metodologia de calculo de necessidades de financiamento, cujo demonstrativo constara em anexo a LOA.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <owl:Class rdf:about="#Subfuncao">
+        <rdfs:subClassOf rdf:resource="#Classificador"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Classe de elementos que representam um nivel de agregacao imeditamente inferior a classe Funcao e deve evidenciar cada area de atuacao governamental, por intermedio da identificacao da natureza das acoes.</rdfs:comment>
+    </owl:Class>
+    
+
+    <owl:Class rdf:about="#UnidadeOrcamentaria">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Classificador"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#temOrgao"/>
+                        <owl:someValuesFrom rdf:resource="#Orgao"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Classe nomeada que representa os orgaos, denominados aqui de Unidades Orcamentarias, que sao os destinatarios das dotacoes orcamentarias declaradas ou autorizacoes de gasto declaradas na classe ElementosDeDespesa.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Atividade"/>
+            <rdf:Description rdf:about="#OperacaoEspecial"/>
+            <rdf:Description rdf:about="#Projeto"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Acao"/>
+            <rdf:Description rdf:about="#CategoriaEconomica"/>
+            <rdf:Description rdf:about="#ElementoDespesa"/>
+            <rdf:Description rdf:about="#Esfera"/>
+            <rdf:Description rdf:about="#FonteRecursos"/>
+            <rdf:Description rdf:about="#Funcao"/>
+            <rdf:Description rdf:about="#GrupoNatDespesa"/>
+            <rdf:Description rdf:about="#IndicadorUso"/>
+            <rdf:Description rdf:about="#Localizador"/>
+            <rdf:Description rdf:about="#ModalidadeAplicacao"/>
+            <rdf:Description rdf:about="#Orgao"/>
+            <rdf:Description rdf:about="#Programa"/>
+            <rdf:Description rdf:about="#ResultadoPrimario"/>
+            <rdf:Description rdf:about="#Subfuncao"/>
+            <rdf:Description rdf:about="#UnidadeOrcamentaria"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+
