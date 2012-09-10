@@ -31,7 +31,8 @@
         <dt>Documentos de Referência:</dt>
         <dd><a href="https://www.siop.planejamento.gov.br/rdf/manual_de_referencia_2012.pdf">Manual de Referência</a></dd>
         <dd><a href="https://www.siop.planejamento.gov.br/rdf/carta_de_servicos_orcamento_federal_em_rdf.pdf">Carta de Serviços</a></dd>
-        <dt>Arquivo de dados:</dt>
+        <dd><a href="https://www.portalsof.planejamento.gov.br/bib/MTO/MTO_2012.pdf">Manual Técnico de Orçamento - MTO 2012</a></dd>
+	<dt>Arquivo de dados:</dt>
         <dd>Serialização do orçamento 2012 em RDF compactado para uso local. (<a href="https://www.siop.planejamento.gov.br/rdf/LOA_RDF.zip">TTL/XML+ZIP</a>)</dd>
     </dl>
 
@@ -106,6 +107,7 @@
     </figure>
     
     <p>A Tabela 2.1, a seguir, apresenta a relação da nomenclatura das classes principais da ontologia básica de orçamento estabelecidas no âmbito do projeto e sua correlação com os tipos de classificação apresentadas no MTO (Brasil, 2012). Existem também subclasses que são especializações de outras. Por exemplo, a classe Ação possui as subclasses Atividade, Projeto e Operação Especial, que representam particularizações do conceito de Ação. Na prática, um Item de Despesa tem obrigatoriamente uma relação com Ação, mais especificamente com uma dessas três subclasses.</p>
+	<figure>
 	<table border="1">
 		<tr>
     		<th>Classes</th>
@@ -191,8 +193,9 @@
     		<td>ResultadoPrimario</td>
 		    <td>Identificador de Resultado Primário</td>
   		</tr>
+	        <figcaption>Figura 2.2 - Ontologia da despesa do Orçamento Federal</figcaption>
 	</table>
-
+	</figure>
 	<p>Em OWL existem dois tipos de propriedades: propriedades de objeto (object properties) e propriedades tipo de dados (data type properties). Nas primeiras, o objeto da tripla é sempre um resource. Na segunda, o objeto é um item de dados de algum tipo já definido na sintaxe XML.</p>
 	<p>Com relação às propriedades de objeto (object property), a maior parte delas tem como domínio a classe ItemDeDespesa e como range, as subclasses de classificadores apresentadas na Figura 2.2. Além disso, existem propriedades de objeto que relacionam indivíduos das classes CategoriaEconomica com os da classe GrupoNatDespesa e entre os indivíduos da classe UnidadeOrcamentaria e os da classe Orgao. A descrição de cada uma dessas relações está descrita na Tabela 2.2, a seguir.</p>
 
