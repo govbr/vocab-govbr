@@ -92,13 +92,18 @@
     <h3><a id="modelo" name="modelo">2.2. O modelo ontológico das Classificações da Despesa</a><a class="headerlink" href="#modelo" title="Link para este título">¶</a></h3>
     <p>O orçamento da União é organizado como uma lista de itens de despesa. A cada item desta lista está associado um valor financeiro denominado Dotação Inicial que é o valor alocado na Lei Orçamentária Anual – LOA para aquele determinado Item de Despesa. Cada item de Despesa está associado a um código de 37 dígitos, que o vinculam aos critérios de classificação da despesa, constantes do MTO (Brasil, 2012). A Figura 2.1 ilustra a estruturação de um item de despesa para a LOA 2012, com a apresentação de seus códigos e descrições.</p>
 
-    <img class="diagrama" src="item-de-despesa.png" alt="Item de Despesa" style="width: auto;" />
-
+    <figure>
+        <img class="diagrama" src="item-de-despesa.png" alt="Item de Despesa" style="width: auto;" />
+	<figcaption>Figura 2.1 - Item de Despesa</figcaption>
+    </figure>
 	<p>A definição da ontologia teve como princípio refletir esta organização na publicação dos dados da despesa orçamentária. A Figura 2.2 apresenta a estrutura das classes, que são representadas por retângulos na cor cinza e as relações entre elementos de classes, representados por retângulos pretos. O <i>range</i> das relações é representado por uma letra r, enquanto o domínio (domain) é representado pela letra d. Linhas tracejadas representam relações de subclasse.</p>
 	<p>A classe central da ontologia é a classe ItemDeDespesa que, como dito anteriormente, representa um linha do orçamento. Cada ItemDeDespesa tem um valor associado, por meio da relação ValorDotaçãoInicial. A soma total dos valores de cada Item de Despesa é o valor total do orçamento 2012, ou seja: R$ 2.150.458.867,507,00.</p>
 	<p>As classificações possuem relação de especialização com a classe Classificador e cada classificador possui um rótulo descritivo (label) e um código. As classes referentes a estas classificações foram definidas de modo a abranger todos os 37 dígitos do código de um item de despesa.</p>
 
-    <img class="diagrama" src="ontologia-da-despesa.png" alt="Ontologia da despesa do Orçamento Federal" style="width: auto;" />
+    <figure>
+        <img class="diagrama" src="ontologia-da-despesa.png" alt="Ontologia da despesa do Orçamento Federal" style="width: auto;" />
+	<figcaption>Figura 2.2 - Ontologia da despesa do Orçamento Federal</figcaption>
+    </figure>
     
     <p>A Tabela 2.1, a seguir, apresenta a relação da nomenclatura das classes principais da ontologia básica de orçamento estabelecidas no âmbito do projeto e sua correlação com os tipos de classificação apresentadas no MTO (Brasil, 2012). Existem também subclasses que são especializações de outras. Por exemplo, a classe Ação possui as subclasses Atividade, Projeto e Operação Especial, que representam particularizações do conceito de Ação. Na prática, um Item de Despesa tem obrigatoriamente uma relação com Ação, mais especificamente com uma dessas três subclasses.</p>
 	<table border="1">
@@ -287,33 +292,51 @@
     <p>RDF (Resource Description Framework) é um modelo recomendado pela W3C para descrever recursos encontrados na web, sendo um dos pilares da Web Semântica. RDF define uma forma simples de expressar afirmações sobre esses recursos. A unidade de informação utilizada por este modelo é a tripla composta de sujeito, predicado e objeto, formando assim uma afirmação (statement).</p>
 	<p>Para que um recurso seja identificado dentro do contexto apresentado pela Web Semântica é atribuído a ele um URI (Uniform Resource Identifier), ou seja, tanto o sujeito como o predicado e o objeto estão associados a um identificador de recursos.</p>
 
-    <img  style="width: auto;" class="diagrama" src="exemplo-tripla-rdf.png" alt="Exemplo de uma tripla RDF" />
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="exemplo-tripla-rdf.png" alt="Exemplo de uma tripla RDF" />
+	<figcaption>Figura 3.1 - Exemplo de uma tripla RDF</figcaption>
+    </figure>
 
 	<p>Um conjunto de triplas forma um grafo de modelo de dados, no qual uma tripla é representada por dois “nós” e a ligação entre eles. Portanto um arquivo RDF é constituído por uma série de triplas interligadas, que resultam em afirmações a respeito dos relacionamentos entre recursos. Cada nó pode ser uma URI que identifica um recurso, um dado do tipo literal ou até mesmo um nó em branco.</p>
 
-    <img  style="width: auto;" class="diagrama" src="exemplo-grafo-rdf.png" alt="Exemplo de um grafo RDF" />
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="exemplo-grafo-rdf.png" alt="Exemplo de um grafo RDF" />
+	<figcaption>Figura 3.2 - Exemplo de um grafo RDF</figcaption>
+    </figure>
 
 	<p>As descrições RDF apresentadas nas Figuras 3.1 e 3.2 foram mostradas graficamente. Porém, para construir e disponibilizar um arquivo RDF, é necessário que este esteja na forma textual. O RDF pode ser expresso textualmente por meio de outras sintaxes. A linguagem mais utilizada para este fim e recomendada pela W3C é o RDF/XML, que possibilita a serialização de um grafo RDF em um documento no formato XML.</p>
 	<p>Existem outras sintaxes que facilitam a leitura e escrita de arquivos RDF serializados, dentre elas o N-Triples, que é um formato mais completo, e o <i>Turtle</i> que é mais simples, além de englobar as características da forma de serialização do formato N-Triples. O <i>Turtle</i> apresenta a possibilidade de incluir <i>namespaces</i> em sua sintaxe, ou seja, abreviações atribuindo nomes para URIs. Também são usados outros recursos para simplificar sua escrita, criando assim uma maneira compacta de representar triplas.</p>
 	<p>Pelos motivos citados, o arquivo RDF da LOA 2012 foi disponibilizado em formato <i>Turtle</i>, que é um formato mais simples de descrição textual onde as triplas RDF são apresentadas diretamente em forma de linhas na ordem de sujeito, predicado e objeto, onde um ponto final (.) encerra a tripla.</p>
 	<p>Para exemplificar o uso e formato do arquivo RDF, utilizaremos um exemplo de Item de Despesa da LOA de 2012 transformado em sentenças RDF. Tomaremos inicialmente o Item de Despesa descrito na Figura 3.3, com os seus respectivos atributos qualitativos e quantitativos.</p>
 	
-    <img  style="width: auto;" class="diagrama" src="item-despesa-loa-2012.png" alt="Item de despesa da LOA 2012" />
-
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="item-despesa-loa-2012.png" alt="Item de despesa da LOA 2012" />
+	<figcaption>Figura 3.3 - Item de despesa da LOA 2012</figcaption>
+    </figure>
+   
 	<p>Nesse caso, as sentenças RDF foram criadas tomando como base a definição de conceitos e relações da ontologia OWL descrita na seção 2 e deram origem a uma descrição RDF serializada em formato Turtle que está apresentada na Figura 3.4.</p>
 
-    <img  style="width: auto;" class="diagrama" src="item-despesa-turtle.png" alt="Item de despesa da LOA 2012 descrita em RDF e serializada na notação Turtle (parte 1)" />
-
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="item-despesa-turtle.png" alt="Item de despesa da LOA 2012 descrita em RDF e serializada na notação Turtle (parte 1)" />
+	<figcaption>Figura 3.4 - Item de despesa da LOA 2012 descrita em RDF e serializada na notação Turtle (parte 1)</figcaption>
+    </figure>
+  
 	<p>Na Figura 3.4, da linha 1 até a linha 4 estão definidos os prefixos para os seguintes namespaces que compõem a descrição RDF: <i>(i)</i> http://localhost/rdf_loa2012/ontologia/ – para as definições da ontologia descrita no Capítulo 2 deste manual. Perceba que o caminho da ontologia é fictício e deve ser adaptado para o contexto de cada usuário da ontologia (veja mais adiante no Capítulo 4, sobre como utilizar o arquivo RDF); <i>(ii)</i> http://localhost/rdf_loa2012/instancias/ – para a definição das URI`s das instâncias; <i>(iii)</i> http://www.w3.org/1999/02/22-rdf-syntax-ns# – faz referência ao vocabulário padrão RDF; e <i>(iv)</i> http://www.w3.org/2001/XMLSchema# – namespace padrão para a definição dos tipos de dados utilizados na especificação.</p>
 	<p>Da linha 6 até a linha 20 são descritas as informações do Item de Despesa em questão descritas de acordo com a sintaxe Turtle. Na linha 6 é descrita a que classe pertence o sujeito da tripla e isto é feito pela utilização da propriedade <i>rdf:type</i>. Nas 15 linhas seguintes são descritas as relações com todos os classificadores. Isto ocorre por meio das propriedades definidas na ontologia da LOA 2012. Nesse caso, os objetos de todas essas triplas são instâncias das classes de cada classificador. A linha 20, por exemplo, refere-se à propriedade que descreve o valor de dotação inicial do Item de Despesa, também sendo informado o seu tipo de dado que é o <i>double</i> (siop:valorDotacaoInicial).</p>
 
-    <img  style="width: auto;" class="diagrama" src="item-despesa-turtle2.png" alt="Item de despesa da LOA 2012 descrita em RDF e serializada na notação Turtle (parte 2)" />
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="item-despesa-turtle2.png" alt="Item de despesa da LOA 2012 descrita em RDF e serializada na notação Turtle (parte 2)" />
+	<figcaption>Figura 3.5 - Item de despesa da LOA 2012 descrita em RDF e serializada na notação Turtle (parte 2)</figcaption>
+    </figure>    
 
 	<p>A parte seguinte do arquivo de exemplo está descrita na Figura 3.5, que contém as linhas de 22 a 61. Nessa parte do arquivo estão as definições das classes a que pertencem os objetos que se relacionaram com o Item de Despesa em questão e as descrições (rdf:label) e códigos (siop:codigo) de cada um.</p>
 	<p>Portanto, o arquivo RDF resultante conterá linhas com: (i) uma sentença para registrar que um determinado Item de Despesa tem Dotação Inicial igual a R$ 1.900.000,00; e (ii) várias outras sentenças para afirmar características desse Item de Despesa tais como o programa, ação, função e demais classificadores vinculados. Por exemplo, no arquivo RDF, a linha 10 do arquivo descrito na Figura 3.4 e linhas 31 e 32 da Figura 3.5 compõem sentenças que deixam claro que a subfunção associada ao Item de Despesa descrito na Figura 3.3 é “Tecnologia da Informação”.</p>
 	<p>Na Figura 3.6 estão apresentadas, de forma gráfica, as sentenças RDF relativas ao exemplo da Figura 3.3 e seus respectivos tipos e significados diante da especificação OWL descrita na seção 2 (nessa figura algumas propriedades foram omitidas para melhor visualização).</p>	
 
-    <img  style="width: auto;" class="diagrama" src="mapeamento-sentenca-especificao.png" alt="Mapeamento de informações entre os arquivos de sentenças RDF e de especificação OWL" />
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="mapeamento-sentenca-especificao.png" alt="Mapeamento de informações entre os arquivos de sentenças RDF e de especificação OWL" />
+	<figcaption>Figura 3.6 - Mapeamento de informações entre os arquivos de sentenças RDF e de especifi cação OWL</figcaption>
+    </figure>     
 
 
 
@@ -326,10 +349,20 @@
 		<li><i>descompactar esses arquivos em uma pasta do usuário;</i></li>
 		<li><i>no caso específico em que os dados da LOA 2012 forem disponibilizados em algum website, execute os passos 5 e 6. Se os dados forem usados em modo local não há a necessidade de nenhuma alteração;</i></li>
 		<li><i>editar o arquivo LOA2012.owl com uso de algum editor de texto para alterar o namespace referente à própria ontologia descrita nesse arquivo. Mais especificamente, as linhas que devem ser alteradas estão destacadas com um círculo vermelho na Figura 4.1. O domínio que está contido na URI deve ser modificado de acordo com o caminho da aplicação web que irá fazer uso dos dados. Exemplo: http://meuwebsite.com.br/rdf_loa2012/ontologia/.; e</i>
-		    <p><img  style="width: auto;" class="diagrama" src="descricao-linhas-loa2012.png" alt="Descrição das primeiras linhas do arquivo LOA2012.owl" /></p>		
+		    <p>
+		    <figure>
+		        <img  style="width: auto;" class="diagrama" src="descricao-linhas-loa2012.png" alt="Descrição das primeiras linhas do arquivo LOA2012.owl" />
+			<figcaption>Figura 4.1 - Descrição das primeiras linhas do arquivo LOA2012.owl</figcaption>
+		    </figure>   
+		</p>		
 		</li>
 		<li><i>editar o arquivo RDF_LOA2012.ttl com uso de algum editor de texto e alterar o namespace para que seja igual à URI que foi definida no arquivo LOA2012.owl. Mais especificamente, as linhas que devem ser alteradas estão destacadas com um círculo vermelho na Figura 4.2. Exemplo: http://meuwebsite.com.br/rdf_loa2012/ontologia/ e <u>http://meuwebsite.com.br/rdf_loa2012/instancias/</u>.</i>
-		    <p><img  style="width: auto;" class="diagrama" src="descricao-arquivo.ttl.png" alt=" Descrição das primeiras linhas do arquivo RDF_LOA2012.ttl" /></p>		
+		    <p>
+		    <figure>
+		        <img  style="width: auto;" class="diagrama" src="descricao-arquivo.ttl.png" alt=" Descrição das primeiras linhas do arquivo RDF_LOA2012.ttl" />
+			<figcaption>Figura 4.2 - Descrição das primeiras linhas do arquivo RDF_LOA2012.ttl</figcaption>
+		    </figure>   
+		</p>		
 		</li>
 	</ol>
 	
@@ -339,16 +372,31 @@
     <p>A possibilidade mais comum é o uso de triplestores para persistir os dados do RDF de maneira semelhante ao armazenamento de bases de dados em SGBD’s relacionais. A partir do triplestore e de um endpoint, uma consulta SPARQL pode ser efetuada na base e o resultado recuperado em uma planilha, em um formato XML, em formato JSON, no próprio formato RDF, entre outros.</p>
 	<p>Existem diversas ferramentas para manipulação de grafos RDF, tais como raciocinadores para inferência, visualizadores para apresentação gráfica, navegadores para web semântica, entre outros. Aos desenvolvedores estão disponíveis API’s para o desenvolvimento de aplicações que fazem uso de dados RDF.</p>
 
-    <img  style="width: auto;" class="diagrama" src="ferramentas-manipulacao.png" alt="Ferramentas para manipulação de grafos" />
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="ferramentas-manipulacao.png" alt="Ferramentas para manipulação de grafos" />
+	<figcaption>Figura 4.3</figcaption>
+    </figure>  
 
     <h3><a id="exemplos" name="exemplos">4.2. Exemplos de uso do arquivo RDF</a><a class="headerlink" href="#exemplos" title="Link para este título">¶</a></h3>
     <p>Um exemplo concreto de dado que pode ser extraído é o seguinte: Existe uma Ação na LOA 2012 que tem a descrição “Ensino Profissional Marítimo”. Caso se queria saber quanto foi alocado de dotação inicial para essa Ação deve-se somar os valores de todos os Itens de Despesa que possuem relação temAção com a ação cujo <i>label</i> possui a <i>string</i> “Ensino Profissional Marítimo”. Então como descobrir quais são esses itens e soma-los? Uma consulta SPARQL pode ser usada para recuperar essas informações, formando a seguinte query:</p>
-    <img  style="width: auto;" class="diagrama" src="consulta-sparql.png" alt="Consulta SPARQL" />
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="consulta-sparql.png" alt="Consulta SPARQL" />
+	<figcaption>Figura 4.4</figcaption>
+    </figure>  
+
 	<p>O resultado é o seguinte:</p>
-    <img  style="width: auto;" class="diagrama" src="resultado-consulta-sparql.png" alt="Resultado da consulta SPARQL" />
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="resultado-consulta-sparql.png" alt="Resultado da consulta SPARQL" />
+	<figcaption>Figura 4.5</figcaption>
+    </figure>  
+    
 	<p>Na linha 5 da consulta são selecionados todas as instâncias que possuem a propriedade <i>siop:temAcao</i> (Todos os Itens de Despesa), na linha 6 é feita uma filtragem onde somente são selecionadas as instâncias em que a propriedade <i>rdf:label</i> seja “Ensino Profissional Marítimo”.</p>
 	<p>A seguir é mostrado uma consulta para saber o valor total das dotações iniciais de todos os Item de Despesa.</p>
-    <img  style="width: auto;" class="diagrama" src="consulta-sparql2.png" alt="Consulta SPARQL" />
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="consulta-sparql2.png" alt="Consulta SPARQL" />
+	<figcaption>Figura 4.6</figcaption>
+    </figure>  
+    
 	<p>Resultando na soma:</p>
 	<table border="1" align="center">
 		<tr>
@@ -362,7 +410,11 @@
 	<p>Na linha 5 e 6 são feitos exatamente os mesmos passos da consulta anterior. Na linha 7, após estarem selecionados somente os Itens de Despesa da Ação “Ensino Profissional Marítimo”, são pegos os valores <i>siop:valorDotacaoInicial</i> de cada um, e na linha 4 é utilizada uma função agregadora do SPARQL, a SUM(), que soma todos os valores que estão contidos na variável de consulta <i>?valor e os chama de ?valorTotal</i>.</p>
 	<p>O exemplo de consulta SPARQL foi feito utilizando componentes do <i>Jena Framework</i>, o Fuseki como endpoint SPARQL e o TDB como <i>triplestore</i>.</p>
 	<p>O mesmo raciocínio pode ser utilizado para extrair mais informações selecionadas, como por exemplo, o valor total da despesa de pessoal (GND = ‘1’) para o Ministério da Educação (Órgão = ‘26000’). O resultado é:</p>
-    <img  style="width: auto;" class="diagrama" src="consulta-sparql3.png" alt="Consulta SPARQL" />
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="consulta-sparql3.png" alt="Consulta SPARQL" />
+	<figcaption>Figura 4.7</figcaption>
+    </figure>  
+    
 	<table border="1" align="center">
 		<tr>
 			<th>?valorTotal</th>
@@ -391,20 +443,35 @@
     <h3><a id="glo-RDF" name="glo-RDF">RDF</a><a class="headerlink" href="#glo-RDF" title="Link para este título">¶</a></h3>
 	<p>O RDF (<i>Resource Description Framework</i>) é um modelo recomendado pela W3C para descrever recursos encontrados na web, sendo um dos pilares da Web Semântica. Arquivos em RDF são adequados para representar dados, na qual é utilizada uma forma simples de expressar afirmações sobre estes recursos.</p>
 	<p>A unidade de informação utilizada por este modelo é chamada tripla, na qual é composta pelos seguintes recursos: sujeito, predicado (propriedade) e objeto, formando assim uma afirmação (<i>statement</i>). Para que um recurso seja identificado dentro do contexto apresentado pela Web Semântica é atribuído a ele um URI (<i>Uniform Resource Identifier</i>), ou seja, tanto sujeito, predicado e objeto estão associados a um identificador de recursos.</p>
-    <img  style="width: auto;" class="diagrama" src="exemplo-tripla-rdf.png" alt="Exemplo de tripla RDF" />
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="exemplo-tripla-rdf.png" alt="Exemplo de tripla RDF" />
+	<figcaption>Figura 6.1 - Exemplo de uma tripla</figcaption>
+    </figure>  
 
 	<p>Um conjunto de triplas forma um Grafo de modelo de dados, no qual uma tripla é representada por dois “nós” e a ligação entre eles. Portanto um arquivo RDF é constituído por uma série de triplas interligadas, que resultam em afirmações a respeito dos relacionamentos entre recursos. Cada nó pode ser um URI que identifica um recurso, um dado do tipo literal, ou até mesmo um nó em branco.</p>
-    <img  style="width: auto;" class="diagrama" src="exemplo-grafo-rdf.png" alt="Exemplo de um grafo RDF" />
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="exemplo-grafo-rdf.png" alt="Exemplo de um grafo RDF" />
+	<figcaption>Figura 6.2 - Exemplo de um grafo RDF</figcaption>
+    </figure>  
 	
     <h3><a id="glo-serializacao" name="glo-serializacao">Serialização</a><a class="headerlink" href="#glo-serializacao" title="Link para este título">¶</a></h3>
 	<p>Até o momento as triplas foram mostradas visualmente através de gráficos, porém para construir e disponibilizar um arquivo RDF é necessário que este esteja na forma textual. O RDF não é uma linguagem própria, portanto faz-se o uso de outras sintaxes para se expressar textualmente. A linguagem mais utilizada para este fim e recomendada pela W3C é o RDF/XML, na qual é realizada uma serialização de um grafo RDF em um documento no formato XML.</p>
-    <img  style="width: auto;" class="diagrama" src="exemplo-rdf-xml.png" alt="Exemplo de arquivo no formato RDF/XML" />
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="exemplo-rdf-xml.png" alt="Exemplo de arquivo no formato RDF/XML" />
+	<figcaption>Figura 6.3 - Exemplo de arquivo no formato RDF/XML</figcaption>
+    </figure>  
 
 	<p>Existem outras sintaxes que facilitam a leitura e escrita de arquivos RDF serializados. O N-Triples é a linguagem mais simples de representação textual destes arquivos, onde apresenta as triplas diretamente em formas de linhas. Os recursos são escritos diretamente com seu URI (entre < >) e também na ordem de sujeito, predicado e objeto, onde um ponto final (.) encerra a tripla.</p>
-    <img  style="width: auto;" class="diagrama" src="exemplo-ntriples.png" alt="Exemplo de arquivo no formato N-Triples" />
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="exemplo-ntriples.png" alt="Exemplo de arquivo no formato N-Triples" />
+	<figcaption>Figura 6.4 - Exemplo de arquivo no formato N-Triples</figcaption>
+    </figure>
 
 	<p>Outro formato de fácil compreensão e bastante utilizado é o <i>Turtle</i>. Além de englobar as características da forma de serialização N-Triples, o <i>Turtle</i> apresenta a possibilidade de incluir <i>namespaces</i> em sua sintaxe, ou seja, é possível utilizar abreviações atribuindo nomes para URIs. Também são usados outros recursos para simplificar sua escrita, criando assim uma maneira compacta de representar triplas.</p>
-    <img  style="width: auto;" class="diagrama" src="exemplo-turtle.png" alt="Exemplo de arquivo no formato turtle" />
+     <figure>
+        <img  style="width: auto;" class="diagrama" src="exemplo-turtle.png" alt="Exemplo de arquivo no formato Turtle" />
+	<figcaption>Figura 6.5 - Exemplo de arquivo no formato <i>Turtle</i></figcaption>
+    </figure>
 
     <h3><a id="glo-ontologia" name="glo-ontologia">Ontologia</a><a class="headerlink" href="#glo-ontologia" title="Link para este título">¶</a></h3>
 	<p>Ontologias fornecem um vocabulário preciso que contém o conhecimento a cerca de tudo o que pode ser representado. Este vocabulário permite especificar quais entidades serão representadas, como elas estarão agrupadas, e quais relacionamentos as mantém interligadas. Este vocabulário pode ser visto como uma relação direta entre quem fornece os dados e quem os utilizam. Quanto maior a precisão de uma ontologia, maior será a compreensão de como os dados podem ser utilizados.</p>
@@ -419,7 +486,10 @@ as classes e suas propriedades, possibilitando um maior entendimento sobre o con
     <h3><a id="glo-SPARQL" name="glo-SPARQL">SPARQL</a><a class="headerlink" href="#glo-SPARQL" title="Link para este título">¶</a></h3>
 	<p>Assim como a linguagem SQL permite a realização de consultas padronizadas em bancos de dados relacionais, SPARQL (<i>Simple Protocol and RDF Query Language</i>) é utilizado para realizar consultas em grafos RDF. É considerada uma tecnologia chave no contexto da Web Semântica e desde 2008 se tornou uma recomendação da W3C.</p>
 	<p>Para formular uma consulta SPARQL é necessário informar dentro da cláusula <i>WHERE</i> quais triplas devem ser analisadas, e selecionar na cláusula <i>SELECT</i> os recursos a serem exibidos, podendo ser incluídos filtros para a pesquisa. Para representar os recursos que podem variar nas triplas a serem pesquisadas é utilizado o termo “?” juntamente com o nome da variável em questão. Sua sintaxe apresenta semelhança com a utilizada pela linguagem SQL. A consulta ilustrada abaixo retorna o nome e email de todos os indivíduos pertencentes ao grafo pesquisado.</p>
-    <img  style="width: auto;" class="diagrama" src="exemplo-consulta-sparql.png" alt="Exemplo de consulta SPARQL" />
+     <figure>
+        <img  style="width: auto;" class="diagrama" src="exemplo-consulta-sparql.png" alt="Exemplo de consulta SPARQL" />
+	<figcaption>Figura 6.6 - Exemplo de consulta SPARQL</figcaption>
+    </figure>
 
     <h3><a id="glo-endpoint" name="glo-endpoint">Endpoint</a><a class="headerlink" href="#glo-endpoint" title="Link para este título">¶</a></h3>
 	<p>Um Endpoint é acessado diretamente por uma URI e permite que qualquer usuário efetue uma consulta SPARQL em uma determinada base de conhecimento na Internet. As triplas que compõe a base de dados ficam armazenadas em um <i>Triple-Store</i>, que apresenta funcionalidade semelhante à de um SGBD (<i>Sistema de Gerenciamento de Banco de Dados</i>), sendo responsável pela persistência dos dados. O <i>Endpoint</i> recebe a consulta SPARQL desejada pelo usuário e em seguida acessa o <i>Triple-Store</i> para realizar a pesquisa e consequentemente retornar os resultados obtidos.</p>
