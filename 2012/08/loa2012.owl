@@ -202,9 +202,10 @@
     <owl:DatatypeProperty rdf:about="#valorDotacaoInicial">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:comment rdf:datatype="&xsd;string"
-            >Refere-se ao valor aprovado inicialmente para o referido item de despesa dentro do or&#231;amento anual.</rdfs:comment>
+            >Refere-se ao valor aprovado inicialmente para o referido item de despesa dentro do orçamento anual.</rdfs:comment>
         <rdfs:domain rdf:resource="#ItemDeDespesa"/>
-        <rdfs:range rdf:resource="&xsd;double"/>
+        <rdfs:range rdf:resource="&xsd;decimal"/>
+        <rdfs:label>valor da dotação inicial</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -259,7 +260,7 @@
         </owl:equivalentClass>
         <owl:disjointWith rdf:resource="#ItemDeDespesa"/>
         <rdfs:comment rdf:datatype="&xsd;string"
-            >O orcamento anual pode ser visto sob diferentes tipos de classificacoes. A classe Classificadores possui as subclasses relativas aos tipos de classificacao que o or&#231;amento de 2012 pode ter. Nesse caso, a classe Classificadores &#233; definida pela restricao de DataType property. Ou seja, os elementos dessa classe precisam ter um label e um codigo (DataType properties) para pertencerem a essa classe.</rdfs:comment>
+            >O orcamento anual pode ser visto sob diferentes tipos de classificacoes. A classe Classificadores possui as subclasses relativas aos tipos de classificacao que o orçamento de 2012 pode ter. Nesse caso, a classe Classificadores é definida pela restricao de DataType property. Ou seja, os elementos dessa classe precisam ter um label e um codigo (DataType properties) para pertencerem a essa classe.</rdfs:comment>
     </owl:Class>
     
 
@@ -382,14 +383,14 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:comment rdf:datatype="&xsd;string"
-            >Classe definida por restricoes cujos individuos representam os itens de despesa definidos para cada orcamento anual, com enfase especial para a LOA 2012. Cada elemento da classe ItemDeDespesa &#233; caracterizado por ter object properties especificas para cada uma das subclasses da classe Classificadores, alem de possuir um data type property denominado valor de dotacao inicial que eh do tipo double.</rdfs:comment>
+            >Classe definida por restricoes cujos individuos representam os itens de despesa definidos para cada orcamento anual, com enfase especial para a LOA 2012. Cada elemento da classe ItemDeDespesa é caracterizado por ter object properties especificas para cada uma das subclasses da classe Classificadores, alem de possuir um data type property denominado valor de dotacao inicial que eh do tipo double.</rdfs:comment>
     </owl:Class>
     
 
     <owl:Class rdf:about="#Localizador">
         <rdfs:subClassOf rdf:resource="#Classificador"/>
         <rdfs:comment rdf:datatype="&xsd;string"
-            >Elementos dessa classe s&#227;o objetos que identificam o local definido para realizacao de uma determinada acao.</rdfs:comment>
+            >Elementos dessa classe são objetos que identificam o local definido para realizacao de uma determinada acao.</rdfs:comment>
     </owl:Class>
     
 
