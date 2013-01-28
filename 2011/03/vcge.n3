@@ -7232,7 +7232,8 @@
     skos:inScheme <#esquema>;
     skos:narrower <#comercio-servicos>,
         <#turismo>;
-    skos:prefLabel "Comércio, Serviços e Turismo"@pt .
+    skos:prefLabel "Comércio, Serviços e Turismo"@pt;
+    skos:topConceptOf <#esquema> .
 
 <#compras-governamentais> a skos:Concept;
     dc:created "2008-09-23T10:34:57"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
@@ -7442,7 +7443,8 @@
     skos:inScheme <#esquema>;
     skos:narrower <#justica>,
         <#legislacao-jurisprudencia>;
-    skos:prefLabel "Justiça e Legislação"@pt .
+    skos:prefLabel "Justiça e Legislação"@pt;
+    skos:topConceptOf <#esquema> .
 
 <#licenciamentos-especiais> a skos:Concept;
     dc:created "2009-10-04T12:56:16"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
@@ -7852,7 +7854,8 @@
     skos:narrower <#ciencia-tecnologia>,
         <#comunicacao>,
         <#informacao-gestao-preservacao-acesso>;
-    skos:prefLabel "Ciência, Informação e Comunicação"@pt .
+    skos:prefLabel "Ciência, Informação e Comunicação"@pt;
+    skos:topConceptOf <#esquema> .
 
 <#ciencia-tecnologia-saude> a skos:Concept;
     dc:created "2008-09-22T21:21:22"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
@@ -7905,7 +7908,8 @@
     skos:narrower <#cultura>,
         <#esporte>,
         <#lazer>;
-    skos:prefLabel "Cultura, Lazer e Esporte"@pt .
+    skos:prefLabel "Cultura, Lazer e Esporte"@pt;
+    skos:topConceptOf <#esquema> .
 
 <#culturas-etnicas> a skos:Concept;
     dc:created "2008-09-22T22:11:42"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
@@ -8039,7 +8043,8 @@
     skos:narrower <#politica-gestao-industrial>,
         <#producao-industrial>,
         <#recursos-energeticos>;
-    skos:prefLabel "Indústria"@pt .
+    skos:prefLabel "Indústria"@pt;
+    skos:topConceptOf <#esquema> .
 
 <#infraestrutura-transporte-aquaviario> a skos:Concept;
     dc:created "2008-09-23T15:25:37"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
@@ -8533,7 +8538,8 @@
         <#seguranca-nacional>,
         <#seguranca-publica>,
         <#servico-inteligencia>;
-    skos:prefLabel "Defesa e Segurança"@pt .
+    skos:prefLabel "Defesa e Segurança"@pt;
+    skos:topConceptOf <#esquema> .
 
 <#disponibilidade-agua> a skos:Concept;
     dc:created "2009-03-11T17:20:13"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
@@ -8552,7 +8558,8 @@
         <#economia>,
         <#encargos-financeiros>,
         <#financas>;
-    skos:prefLabel "Economia e Finanças"@pt .
+    skos:prefLabel "Economia e Finanças"@pt;
+    skos:topConceptOf <#esquema> .
 
 <#ecoturismo> a skos:Concept;
     dc:created "2009-03-16T18:06:19"^^<http://www.w3.org/2001/XMLSchema#dateTime>,
@@ -8970,7 +8977,8 @@
         <#governo-eletronico>,
         <#organizacao-estado>,
         <#politica>;
-    skos:prefLabel "Governo e Política"@pt .
+    skos:prefLabel "Governo e Política"@pt;
+    skos:topConceptOf <#esquema> .
 
 <#habitacao-saneamento-urbanismo> a skos:Concept;
     dc:created "2008-09-22T10:54:24"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
@@ -8980,7 +8988,8 @@
         <#saneamento-urbano>,
         <#servicos-urbanos>,
         <#urbanismo>;
-    skos:prefLabel "Habitação, Saneamento e Urbanismo"@pt .
+    skos:prefLabel "Habitação, Saneamento e Urbanismo"@pt;
+    skos:topConceptOf <#esquema> .
 
 <#instrumentos-gestao-recursos-hidricos> a skos:Concept;
     dc:created "2009-03-11T17:25:02"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
@@ -9371,7 +9380,8 @@
         <#promocao-comercial-internacional>,
         <#relacoes-diplomaticas>,
         <#servicos-consulares>;
-    skos:prefLabel "Relações internacionais"@pt .
+    skos:prefLabel "Relações internacionais"@pt;
+    skos:topConceptOf <#esquema> .
 
 <#televisao> a skos:Concept;
     dc:created "2008-09-22T10:24:19"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
@@ -9604,7 +9614,8 @@
         <#previdencia-social>,
         <#protecao-defesa-cidadao>,
         <#sociedade-civil-organizacao-participacao>;
-    skos:prefLabel "Pessoa, família e sociedade"@pt .
+    skos:prefLabel "Pessoa, família e sociedade"@pt;
+    skos:topConceptOf <#esquema> .
 
 <#trabalho> a skos:Concept;
     dc:created "2008-09-22T21:29:01"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
@@ -9616,7 +9627,8 @@
         <#profissoes-ocupacoes>,
         <#qualificacao-aprendizagem-profissional>,
         <#trabalho-estrangeiro>;
-    skos:prefLabel "Trabalho"@pt .
+    skos:prefLabel "Trabalho"@pt;
+    skos:topConceptOf <#esquema> .
 
 <#transito> a skos:Concept;
     dc:created "2009-10-05T11:00:45"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
@@ -10057,7 +10069,8 @@
         <#transporte-internacional>,
         <#transporte-multimodal>,
         <#transporte-rodoviario>;
-    skos:prefLabel "Transportes e trânsito"@pt .
+    skos:prefLabel "Transportes e trânsito"@pt;
+    skos:topConceptOf <#esquema> .
 
 <#areas-protegidas> a skos:Concept;
     dc:created "2008-09-22T17:34:39"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
@@ -10154,7 +10167,8 @@
         <#gestao-meio-ambiente>,
         <#infracoes-ambientais>,
         <#qualidade-ambiental>;
-    skos:prefLabel "Meio ambiente"@pt .
+    skos:prefLabel "Meio ambiente"@pt;
+    skos:topConceptOf <#esquema> .
 
 <#seguranca-publica> a skos:Concept;
     dc:created "2008-09-22T10:36:27"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
@@ -10401,7 +10415,8 @@
         <#parametros-diretrizes-curriculares-nacionais>,
         <#profissionais-educacao>,
         <#sistema-educacional-avaliacao>;
-    skos:prefLabel "Educação"@pt .
+    skos:prefLabel "Educação"@pt;
+    skos:topConceptOf <#esquema> .
 
 <#producao-industrial> a skos:Concept;
     dc:created "2008-09-22T10:58:31"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
@@ -10447,7 +10462,8 @@
         <#produto-vegetal>,
         <#solos>,
         <#transgenia-sequenciamento>;
-    skos:prefLabel "Agricultura, extrativismo e pesca"@pt .
+    skos:prefLabel "Agricultura, extrativismo e pesca"@pt;
+    skos:topConceptOf <#esquema> .
 
 <#saude> a skos:Concept;
     dc:created "2008-09-22T17:42:50"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
@@ -10493,7 +10509,8 @@
         <#vacinacao>,
         <#vigilancia-sanitaria>,
         <#violencia>;
-    skos:prefLabel "Saúde"@pt .
+    skos:prefLabel "Saúde"@pt;
+    skos:topConceptOf <#esquema> .
 
 <#esquema> a skos:ConceptScheme;
     dcterms:creator "Eloi Yamaoka"@pt;
