@@ -1,0 +1,765 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY loa "http://vocab.e.gov.br/2013/09/loa#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/owl/owlapi/turtle#"
+     xml:base="http://www.semanticweb.org/owl/owlapi/turtle"
+     xmlns:loa="http://vocab.e.gov.br/2013/09/loa#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://vocab.e.gov.br/2013/09/loa#">
+        <rdfs:comment>Ontologia do Orçamento Federal</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdf;label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#temAcao -->
+
+    <owl:ObjectProperty rdf:about="&loa;temAcao">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&loa;Acao"/>
+        <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#temCategoriaEconomica -->
+
+    <owl:ObjectProperty rdf:about="&loa;temCategoriaEconomica">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&loa;CategoriaEconomica"/>
+        <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#temClassificador -->
+
+    <owl:ObjectProperty rdf:about="&loa;temClassificador">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&loa;Classificador"/>
+        <rdfs:domain rdf:resource="&loa;ItemDeDespesa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#temElementoDespesa -->
+
+    <owl:ObjectProperty rdf:about="&loa;temElementoDespesa">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&loa;ElementoDespesa"/>
+        <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#temEsfera -->
+
+    <owl:ObjectProperty rdf:about="&loa;temEsfera">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&loa;Esfera"/>
+        <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#temExercicio -->
+
+    <owl:ObjectProperty rdf:about="&loa;temExercicio">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&loa;Exercicio"/>
+        <rdfs:domain rdf:resource="&loa;ItemDeDespesa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#temFonteRecursos -->
+
+    <owl:ObjectProperty rdf:about="&loa;temFonteRecursos">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&loa;FonteRecursos"/>
+        <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#temFuncao -->
+
+    <owl:ObjectProperty rdf:about="&loa;temFuncao">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&loa;Funcao"/>
+        <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#temGND -->
+
+    <owl:ObjectProperty rdf:about="&loa;temGND">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&loa;GrupoNatDespesa"/>
+        <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#temIdentificadorUso -->
+
+    <owl:ObjectProperty rdf:about="&loa;temIdentificadorUso">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&loa;IdentificadorUso"/>
+        <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#temLocalizador -->
+
+    <owl:ObjectProperty rdf:about="&loa;temLocalizador">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&loa;Localizador"/>
+        <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#temModalidadeAplicacao -->
+
+    <owl:ObjectProperty rdf:about="&loa;temModalidadeAplicacao">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&loa;ModalidadeAplicacao"/>
+        <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#temOrgao -->
+
+    <owl:ObjectProperty rdf:about="&loa;temOrgao">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&loa;Orgao"/>
+        <rdfs:domain rdf:resource="&loa;UnidadeOrcamentaria"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#temPlanoOrcamentario -->
+
+    <owl:ObjectProperty rdf:about="&loa;temPlanoOrcamentario">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&loa;PlanoOrcamentario"/>
+        <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#temPrograma -->
+
+    <owl:ObjectProperty rdf:about="&loa;temPrograma">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&loa;Programa"/>
+        <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#temResultadoPrimario -->
+
+    <owl:ObjectProperty rdf:about="&loa;temResultadoPrimario">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&loa;ResultadoPrimario"/>
+        <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#temSubfuncao -->
+
+    <owl:ObjectProperty rdf:about="&loa;temSubfuncao">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&loa;Subfuncao"/>
+        <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#temUnidadeOrcamentaria -->
+
+    <owl:ObjectProperty rdf:about="&loa;temUnidadeOrcamentaria">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&loa;UnidadeOrcamentaria"/>
+        <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#codigo -->
+
+    <owl:DatatypeProperty rdf:about="&loa;codigo">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&loa;Classificador"/>
+        <rdfs:domain rdf:resource="&loa;Orgao"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#dataUltimaAtualizacao -->
+
+    <owl:DatatypeProperty rdf:about="&loa;dataUltimaAtualizacao">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&loa;Exercicio"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#identificador -->
+
+    <owl:DatatypeProperty rdf:about="&loa;identificador">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&loa;Exercicio"/>
+        <rdfs:domain rdf:resource="&loa;Localizador"/>
+        <rdfs:domain rdf:resource="&loa;PlanoOrcamentario"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#valorDotacaoInicial -->
+
+    <owl:DatatypeProperty rdf:about="&loa;valorDotacaoInicial">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&loa;ItemDeDespesa"/>
+        <rdfs:range rdf:resource="&xsd;decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#valorEmpenhado -->
+
+    <owl:DatatypeProperty rdf:about="&loa;valorEmpenhado">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&loa;ItemDeDespesa"/>
+        <rdfs:range rdf:resource="&xsd;decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#valorLeiMaisCredito -->
+
+    <owl:DatatypeProperty rdf:about="&loa;valorLeiMaisCredito">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&loa;ItemDeDespesa"/>
+        <rdfs:range rdf:resource="&xsd;decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#valorLiquidado -->
+
+    <owl:DatatypeProperty rdf:about="&loa;valorLiquidado">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&loa;ItemDeDespesa"/>
+        <rdfs:range rdf:resource="&xsd;decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#valorPago -->
+
+    <owl:DatatypeProperty rdf:about="&loa;valorPago">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&loa;ItemDeDespesa"/>
+        <rdfs:range rdf:resource="&xsd;decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#valorProjetoLei -->
+
+    <owl:DatatypeProperty rdf:about="&loa;valorProjetoLei">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&loa;ItemDeDespesa"/>
+        <rdfs:range rdf:resource="&xsd;decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#label -->
+
+    <owl:DatatypeProperty rdf:about="&rdf;label">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#Acao -->
+
+    <owl:Class rdf:about="&loa;Acao">
+        <rdfs:subClassOf rdf:resource="&loa;Classificador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#Atividade -->
+
+    <owl:Class rdf:about="&loa;Atividade">
+        <rdfs:subClassOf rdf:resource="&loa;Acao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#CategoriaEconomica -->
+
+    <owl:Class rdf:about="&loa;CategoriaEconomica">
+        <rdfs:subClassOf rdf:resource="&loa;Classificador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#Classificador -->
+
+    <owl:Class rdf:about="&loa;Classificador">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;codigo"/>
+                        <owl:someValuesFrom rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&rdf;label"/>
+                        <owl:someValuesFrom rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#ElementoDespesa -->
+
+    <owl:Class rdf:about="&loa;ElementoDespesa">
+        <rdfs:subClassOf rdf:resource="&loa;Classificador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#Esfera -->
+
+    <owl:Class rdf:about="&loa;Esfera">
+        <rdfs:subClassOf rdf:resource="&loa;Classificador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#Exercicio -->
+
+    <owl:Class rdf:about="&loa;Exercicio">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;dataUltimaAtualizacao"/>
+                        <owl:someValuesFrom rdf:resource="&xsd;dateTime"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;identificador"/>
+                        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#FonteRecursos -->
+
+    <owl:Class rdf:about="&loa;FonteRecursos">
+        <rdfs:subClassOf rdf:resource="&loa;Classificador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#Funcao -->
+
+    <owl:Class rdf:about="&loa;Funcao">
+        <rdfs:subClassOf rdf:resource="&loa;Classificador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#GrupoNatDespesa -->
+
+    <owl:Class rdf:about="&loa;GrupoNatDespesa">
+        <rdfs:subClassOf rdf:resource="&loa;Classificador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#IdentificadorUso -->
+
+    <owl:Class rdf:about="&loa;IdentificadorUso">
+        <rdfs:subClassOf rdf:resource="&loa;Classificador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#ItemDeDespesa -->
+
+    <owl:Class rdf:about="&loa;ItemDeDespesa">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;temAcao"/>
+                        <owl:someValuesFrom rdf:resource="&loa;Acao"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;temCategoriaEconomica"/>
+                        <owl:someValuesFrom rdf:resource="&loa;CategoriaEconomica"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;temElementoDespesa"/>
+                        <owl:someValuesFrom rdf:resource="&loa;ElementoDespesa"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;temEsfera"/>
+                        <owl:someValuesFrom rdf:resource="&loa;Esfera"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;temExercicio"/>
+                        <owl:someValuesFrom rdf:resource="&loa;Exercicio"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;temFonteRecursos"/>
+                        <owl:someValuesFrom rdf:resource="&loa;FonteRecursos"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;temFuncao"/>
+                        <owl:someValuesFrom rdf:resource="&loa;Funcao"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;temGND"/>
+                        <owl:someValuesFrom rdf:resource="&loa;GrupoNatDespesa"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;temIdentificadorUso"/>
+                        <owl:someValuesFrom rdf:resource="&loa;IdentificadorUso"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;temLocalizador"/>
+                        <owl:someValuesFrom rdf:resource="&loa;Localizador"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;temModalidadeAplicacao"/>
+                        <owl:someValuesFrom rdf:resource="&loa;ModalidadeAplicacao"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;temPrograma"/>
+                        <owl:someValuesFrom rdf:resource="&loa;Programa"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;temResultadoPrimario"/>
+                        <owl:someValuesFrom rdf:resource="&loa;ResultadoPrimario"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;temSubfuncao"/>
+                        <owl:someValuesFrom rdf:resource="&loa;Subfuncao"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;temUnidadeOrcamentaria"/>
+                        <owl:someValuesFrom rdf:resource="&loa;UnidadeOrcamentaria"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;valorDotacaoInicial"/>
+                        <owl:someValuesFrom rdf:resource="&xsd;decimal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;valorEmpenhado"/>
+                        <owl:someValuesFrom rdf:resource="&xsd;decimal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;valorLeiMaisCredito"/>
+                        <owl:someValuesFrom rdf:resource="&xsd;decimal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;valorLiquidado"/>
+                        <owl:someValuesFrom rdf:resource="&xsd;decimal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;valorPago"/>
+                        <owl:someValuesFrom rdf:resource="&xsd;decimal"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;valorProjetoLei"/>
+                        <owl:someValuesFrom rdf:resource="&xsd;decimal"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#Localizador -->
+
+    <owl:Class rdf:about="&loa;Localizador">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&loa;identificador"/>
+                <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&loa;Classificador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#ModalidadeAplicacao -->
+
+    <owl:Class rdf:about="&loa;ModalidadeAplicacao">
+        <rdfs:subClassOf rdf:resource="&loa;Classificador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#OperacaoEspecial -->
+
+    <owl:Class rdf:about="&loa;OperacaoEspecial">
+        <rdfs:subClassOf rdf:resource="&loa;Acao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#Orgao -->
+
+    <owl:Class rdf:about="&loa;Orgao">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;codigo"/>
+                        <owl:someValuesFrom rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&rdf;label"/>
+                        <owl:someValuesFrom rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#PlanoOrcamentario -->
+
+    <owl:Class rdf:about="&loa;PlanoOrcamentario">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&loa;identificador"/>
+                <owl:allValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&loa;Classificador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#Programa -->
+
+    <owl:Class rdf:about="&loa;Programa">
+        <rdfs:subClassOf rdf:resource="&loa;Classificador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#Projeto -->
+
+    <owl:Class rdf:about="&loa;Projeto">
+        <rdfs:subClassOf rdf:resource="&loa;Acao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#ResultadoPrimario -->
+
+    <owl:Class rdf:about="&loa;ResultadoPrimario">
+        <rdfs:subClassOf rdf:resource="&loa;Classificador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#Subfuncao -->
+
+    <owl:Class rdf:about="&loa;Subfuncao">
+        <rdfs:subClassOf rdf:resource="&loa;Classificador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#UnidadeOrcamentaria -->
+
+    <owl:Class rdf:about="&loa;UnidadeOrcamentaria">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&loa;temOrgao"/>
+                <owl:someValuesFrom rdf:resource="&loa;Orgao"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&loa;Classificador"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&loa;Classificador"/>
+            <rdf:Description rdf:about="&loa;Exercicio"/>
+            <rdf:Description rdf:about="&loa;ItemDeDespesa"/>
+            <rdf:Description rdf:about="&loa;Orgao"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&loa;Acao"/>
+            <rdf:Description rdf:about="&loa;CategoriaEconomica"/>
+            <rdf:Description rdf:about="&loa;ElementoDespesa"/>
+            <rdf:Description rdf:about="&loa;Esfera"/>
+            <rdf:Description rdf:about="&loa;FonteRecursos"/>
+            <rdf:Description rdf:about="&loa;Funcao"/>
+            <rdf:Description rdf:about="&loa;GrupoNatDespesa"/>
+            <rdf:Description rdf:about="&loa;IdentificadorUso"/>
+            <rdf:Description rdf:about="&loa;Localizador"/>
+            <rdf:Description rdf:about="&loa;ModalidadeAplicacao"/>
+            <rdf:Description rdf:about="&loa;PlanoOrcamentario"/>
+            <rdf:Description rdf:about="&loa;Programa"/>
+            <rdf:Description rdf:about="&loa;ResultadoPrimario"/>
+            <rdf:Description rdf:about="&loa;Subfuncao"/>
+            <rdf:Description rdf:about="&loa;UnidadeOrcamentaria"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&loa;Atividade"/>
+            <rdf:Description rdf:about="&loa;OperacaoEspecial"/>
+            <rdf:Description rdf:about="&loa;Projeto"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

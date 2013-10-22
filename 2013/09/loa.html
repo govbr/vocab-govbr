@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="utf-8" />
+    <title>Modelo ontológico da Classificação das Despesas do Orçamento Federal Brasileiro.</title>
+    <link type="text/css" rel="stylesheet" href="../../css/doc-style.css">
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26146827-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+
+<header>
+    <a href="/" title="Repositório de Vocabulários e Ontologias de Governo Eletrônico"><img src="../../img/bg/govbr_2011_e-PING.png" alt="e-VoG" /></a>
+    <h1>Modelo ontológico da Classificação das Despesas do Orçamento Federal Brasileiro</h1>
+    <dl>
+        <dt>Esta Versão:</dt>
+        	<dd>Setembro 2013 (<a href="loa.owl">OWL/XML</a>)</dd>
+        <dt>Documentos de Referência:</dt>
+        	<dd><a href="https://www.siop.planejamento.gov.br/rdf/manual_de_referencia_orcamento_federal_em_rdf.pdf">Manual de Referência</a></dd>
+        	<dd><a href="https://www.siop.planejamento.gov.br/rdf/carta_de_servicos_orcamento_federal_em_rdf.pdf">Carta de Serviços</a></dd>
+        	<dd><a href="http://www.orcamentofederal.gov.br/informacoes-orcamentarias/manual-tecnico/MTO_2013.pdf/at_download/file">Manual Técnico de Orçamento - MTO 2013</a></dd>
+            <!--<dd><a href="http://www.orcamentofederal.gov.br/biblioteca/estudos_e_pesquisas/Artigo_Ontobras_Orcamento_Aberto.pdf"> Artigo publicado no Ontobras - MOST 2012</a></dd>-->
+		<dt>Arquivos de dados:</dt>
+        	<dd>Serialização do orçamento 2013 em RDF compactado para uso local. (<a href="https://www1.siop.planejamento.gov.br/downloads/rdf/loa2013.zip">N-TRIPLES+ZIP</a>)</dd>
+            <dd>Serialização do orçamento 2012 em RDF compactado para uso local. (<a href="https://www1.siop.planejamento.gov.br/downloads/rdf/loa2012.zip">N-TRIPLES+ZIP</a>)</dd>
+            <dd>Serialização do orçamento 2011 em RDF compactado para uso local. (<a href="https://www1.siop.planejamento.gov.br/downloads/rdf/loa2011.zip">N-TRIPLES+ZIP</a>)</dd>
+            <dd>Serialização do orçamento 2010 em RDF compactado para uso local. (<a href="https://www1.siop.planejamento.gov.br/downloads/rdf/loa2010.zip">N-TRIPLES+ZIP</a>)</dd>
+            <dd>Serialização do orçamento 2009 em RDF compactado para uso local. (<a href="https://www1.siop.planejamento.gov.br/downloads/rdf/loa2009.zip">N-TRIPLES+ZIP</a>)</dd>
+            <dd>Serialização do orçamento 2008 em RDF compactado para uso local. (<a href="https://www1.siop.planejamento.gov.br/downloads/rdf/loa2008.zip">N-TRIPLES+ZIP</a>)</dd>
+            <dd>Serialização do orçamento 2007 em RDF compactado para uso local. (<a href="https://www1.siop.planejamento.gov.br/downloads/rdf/loa2007.zip">N-TRIPLES+ZIP</a>)</dd>
+            <dd>Serialização do orçamento 2006 em RDF compactado para uso local. (<a href="https://www1.siop.planejamento.gov.br/downloads/rdf/loa2006.zip">N-TRIPLES+ZIP</a>)</dd>
+            <dd>Serialização do orçamento 2005 em RDF compactado para uso local. (<a href="https://www1.siop.planejamento.gov.br/downloads/rdf/loa2005.zip">N-TRIPLES+ZIP</a>)</dd>
+            <dd>Serialização do orçamento 2004 em RDF compactado para uso local. (<a href="https://www1.siop.planejamento.gov.br/downloads/rdf/loa2004.zip">N-TRIPLES+ZIP</a>)</dd>
+            <dd>Serialização do orçamento 2003 em RDF compactado para uso local. (<a href="https://www1.siop.planejamento.gov.br/downloads/rdf/loa2003.zip">N-TRIPLES+ZIP</a>)</dd>
+            <dd>Serialização do orçamento 2002 em RDF compactado para uso local. (<a href="https://www1.siop.planejamento.gov.br/downloads/rdf/loa2002.zip">N-TRIPLES+ZIP</a>)</dd>
+            <dd>Serialização do orçamento 2001 em RDF compactado para uso local. (<a href="https://www1.siop.planejamento.gov.br/downloads/rdf/loa2001.zip">N-TRIPLES+ZIP</a>)</dd>
+            <dd>Serialização do orçamento 2000 em RDF compactado para uso local. (<a href="https://www1.siop.planejamento.gov.br/downloads/rdf/loa2000.zip">N-TRIPLES+ZIP</a>)</dd>
+        <dt>Autoria:</dt>
+        	<dd><a href="https://www.portalsof.planejamento.gov.br/">Secretaria de Orçamento Federal - SOF</a></dd>
+    </dl>
+
+    <h2><a id="sumario" name="sumario">Sumário</a><a class="headerlink" href="#sumario" title="Link para este título">¶</a></h2>
+    <ul>
+        <li><a href="#apresentacao">Apresentação</a></li>
+        <li><a href="#intro">1. Introdução</a></li>
+        <li><a href="#ontologia">2. A ontologia da classificação da despesa</a>
+            <ul>
+                <li><a href="#ontologias">2.1. Ontologias</a></li>
+                <li><a href="#modelo">2.2. O modelo ontológico das Classificações da Despesa</a></li>
+            </ul>
+        </li>
+        <li><a href="#LOARDF">3. LOA 2012 em RDF</a></li>
+        <li><a href="#uso">4. Possibilidades de uso do arquivo RDF</a></li>
+            <ul>
+                <li><a href="#possibilidades">4.1. Possibilidades de uso</a></li>
+                <li><a href="#exemplos">4.2. Exemplos de uso do arquivo RDF</a></li>
+            </ul>
+        <li><a href="#referencias">5. Referências</a></li>
+        <li><a href="#glossario">6. Glossário</a>
+            <ul>
+                <li><a href="#glo-RDF">RDF</a></li>
+                <li><a href="#glo-serializacao">Serialização</a></li>
+                <li><a href="#glo-ontologia">Ontologia</a></li>
+                <li><a href="#glo-OWL">OWL</a></li>
+                <li><a href="#glo-SPARQL">SPARQL</a></li>
+                <li><a href="#glo-endpoint">Endpoint</a></li>
+            </ul>
+        </li>
+    </ul>
+</header>
+
+<article>
+    <h2><a id="apresentacao" name="apresentacao">Apresentação</a><a class="headerlink" href="#apresentacao" title="Link para este título">¶</a></h2>
+
+    <p>Um movimento no campo democrático, em escala mundial, vem afetando positivamente a administração pública nos últimos tempos. Trata-se dos esforços em atender à maior demanda por transparência e pelo acesso às informações de interesse geral por parte do cidadão, produzidas pelo governo. Este movimento ensejou, aqui no Brasil, o Plano de Ação Nacional sobre Governo Aberto (Decreto de 15 de setembro de 2011) e a assinatura da Parceira para Governo Aberto (PGA), firmada inicialmente entre oito países e copresidida pelo Brasil e pelos Estados Unidos.</p>
+    <p>Desde então, os esforços nacionais incluem a publicação da chamada Lei de Acesso à Informação (Lei 12.527, de 18 de novembro de 2011) que, além de instituir unidades de atendimento ao cidadão dentro dos órgãos do Governo brasileiro, estabelece a necessidade de disponibilização digital dos seus dados.</p>
+    <p>Em confluência com este movimento político, a comunidade de Tecnologia da Informação vem realizando amplo debate e disponibilizando ferramentas adequadas para o livre acesso e a distribuição de dados. Como resultado, têm-se os padrões e formatos de dados abertos, os quais servirão como veículos para a divulgação e o intercâmbio de dados.</p>
+	<p>Sintonizada com esta nova direção mundial, na qual se insere o nosso País, a Secretaria de Orçamento Federal iniciou os esforços para disponibilizar seus dados de maneira a dar maior transparência a seus processos propiciando ainda mais a participação do cidadão brasileiro, em especial, no processo orçamentário, que é fundamental para a gestão dos recursos financeiros nacionais em prol do desenvolvimento da nação.</p> 
+	<p>Como parte destes esforços, e acreditando ser de grande valia para os objetivos mencionados, a Secretaria apresenta neste espaço o primeiro produto resultado do Projeto “Orçamento Federal em Formato Aberto”, o qual é a publicação dos dados da despesa do Orçamento Geral da União no período de 2000 a 2013, no padrão de dados abertos definido pelo consórcio nacional formado para definir os padrões mundiais de internet – W3C, o  RDF – <i>Resource Description Framework</i>.</p> 
+	<p><b>Célia Corrêa</b> - Secretária de Orçamento Federal</p>
+	
+    <h2><a id="intro" name="intro">1. Introdução</a><a class="headerlink" href="#intro" title="Link para este título">¶</a></h2>
+
+    <p>Este manual tem como objetivo servir de instrumento de apoio para a utilização dos arquivos RDF publicados com os dados da despesa do Orçamento Geral da União no período de 2000 a 2013. Propõe-se a explicar o que é, para que serve, quais os pré-requisitos e como utilizar o Orçamento Federal em Formato Aberto.</p>
+    <p>Neste sentido, a estratégia adotada no projeto “Orçamento Federal em Formato Aberto” foi criar uma ontologia da classificação da despesa do orçamento federal, contemplando as categorias e conceitos sedimentados no Manual Técnico do Orçamento 2013 - MTO 2013 (Brasil, 2013).</p>
+	<p>O trabalho é dirigido à comunidade de desenvolvedores, que poderá utilizá-lo para criar produtos voltados para a comunidade dos técnicos em finanças públicas, bem como para os cidadãos comuns, destinatários finais desses esforços. Nesse contexto, a ontologia provê a explicitação formal dos conceitos orçamentários da despesa pública e viabiliza o tratamento automatizado dos dados. Para obter todo o potencial deste manual é recomendado o conhecimento prévio das tecnologias RDF - <i>Resource Description Framework</i> e OWL – <i>Ontology Web Language</i>.</p>
+	<p>O formato aberto não é um fim em si, mas o meio pelo qual será possível difundir as informações do orçamento para o público em geral. Demanda-se, portanto, para a utilização potencial dessa ferramenta, por tratar-se de uma forma diferente de abordagem, uma atitude multidisciplinar. Esta visão apresenta-se por um lado como um desafio, mas por outro lado proporciona também a abertura – para todos – de um amplo leque de possibilidades para o desenvolvimento de aplicações com dados do orçamento público, antes impossível de se imaginar.</p>
+
+    <h2><a id="ontologia" name="ontologia">2. A ontologia da classificação da despesa</a><a class="headerlink" href="#ontologia" title="Link para este título">¶</a></h2>
+
+    <h3><a id="ontologias" name="ontologias">2.1. Ontologias</a><a class="headerlink" href="#ontologias" title="Link para este título">¶</a></h3>
+    <p>O termo Ontologia é tradicionalmente utilizado na Filosofia para designar o estudo do ser, do que existe, das condições para a existência, entre outras. O termo foi adotado pela ciência da computação e a definição mais aceita nesse contexto é a de Grubber (1993): “Ontologia é uma especificação explícita e formal de uma conceitualização compartilhada de um domínio do conhecimento”. O termo formal nesta definição conota a capacidade de ser processada computacionalmente.</p>
+	<p>As ontologias, no sentido computacional, tornaram-se relevantes a partir dos anos 90 com os desenvolvimentos na área de inteligência artificial. Uma ontologia possibilita a especificação de noções genéricas como tempo e espaço ou ligadas a um domínio de conhecimento específico como engenharia ou ciências biológicas. O termo “compartilhado” se refere ao aspecto de que uma ontologia representa um conhecimento consensual acordado por um grupo como resultado de uma construção social.</p>
+	<p>Em ciência da computação as ontologias se referem a um tipo especial de objeto ou artefato que tem por objetivo representar um modelo de um determinado domínio do conhecimento. Ontologias são meios de modelar formalmente a estrutura de um sistema, isto é, as suas entidades relevantes e as relações entre elas e que são úteis para um propósito determinado. Ontologias podem ser codificadas em arquivos por meio da linguagem OWL – <i>Ontology Web Language</i> (Guarino, 2003).</p>
+
+    <h3><a id="modelo" name="modelo">2.2. O modelo ontológico das Classificações da Despesa</a><a class="headerlink" href="#modelo" title="Link para este título">¶</a></h3>
+    <p>O orçamento da União pode ser representado como uma lista de itens de despesa. A cada item desta lista estão associados valores financeiros que correspondem aos diversos estágios da execução orçamentária, sendo eles o valor do PLOA – Projeto de Lei Orçamentaria Anual, valor da LOA – Lei Orçamentária Anual (também chamado de Dotação Inicial), valor da LOA mais Créditos (também chamado de Dotação Atual), valor Empenhado, valor Liquidado e valor Pago. Cada item de Despesa está associado a um código de 44 dígitos
+    , que o vinculam aos critérios de classificação da despesa, constantes do MTO (Brasil, 2013). A Figura 2.1 ilustra a estruturação de um item de despesa de forma resumida (somente com o valor de dotação inicial) para a LOA 2012, com a apresentação de seus códigos e descrições.</p>
+
+    <figure>
+        <img class="diagrama" src="item-de-despesa.png" alt="Item de Despesa" style="width: auto;" />
+	<figcaption>Figura 2.1 - Item de Despesa</figcaption>
+    </figure>
+	<p>A definição da ontologia do orçamento federal teve como princípio refletir esta organização na publicação dos dados da despesa orçamentária. A Figura 2.2 apresenta a estrutura das classes, que são representadas por retângulos na cor cinza e as relações entre elementos de classes, representados por retângulos pretos. O <i>range</i> (alcance) das relações é representado por por uma seta sem preenchimento, enquanto o domínio (<i>domain</i>) é representado por uma seta com preenchimento. Linhas tracejadas representam relações de herança e de definição de tipo.</p>
+	<p>A classe central da ontologia é a classe ItemDeDespesa que, como dito anteriormente, representa um linha do orçamento. Cada Item de Despesa tem seis valores associados por meio das relações valorProjetoLei, valorDotacaoInicial, valorLeiMaisCreditos, valorEmpenhado, valorLiquidado e valorPago. A soma total dos valores da relação valorDotacaoInicial de cada Item de Despesa é o valor total do orçamento do exercício em questão, no ano de 2012, por exemplo, é de R$ 2.150.458.867,507,00 – Lei 12.596/2012.</p>
+	<p>As classificações orçamentárias possuem relação de especialização com a classe Classificador e cada classificador possui um rótulo descritivo (<i>label</i>) e um código. As classes referentes a estas classificações foram definidas de modo a abranger todos os 44 dígitos do código de um item de despesa.</p>
+	<p>Para representação do exercício em que o Item de Despesa está inserido, toda instância dessa classe possui uma relação temExercico com um objeto da classe Exercicio. Os recursos da classe Exercicio possuem a propriedade dataUltimaAtualizacao (em formato <i>dateTime</i>) que define a ultima data em que o exercício financeiro foi atualizado. O recurso também possui um identificador que consiste no ano que o exercício representa. 
+
+    <figure>
+        <img class="diagrama" src="ontologia-da-despesa.png" alt="Ontologia da despesa do Orçamento Federal" style="width: auto; margin-left: -12px" />
+	<figcaption>Figura 2.2 - Ontologia da despesa do Orçamento Federal</figcaption>
+    </figure>
+    
+    <p>A Tabela 2.1, a seguir, apresenta a relação da nomenclatura das classes da ontologia básica de orçamento estabelecidas no âmbito do projeto e sua correlação com os tipos de classificação apresentadas no MTO (Brasil, 2013). Existem também subclasses que são especializações de outras. Por exemplo, a classe Acao possui as subclasses Atividade, Projeto e OperacaoEspecial, que representam particularizações do conceito de Ação. Na prática, um Item de Despesa tem obrigatoriamente uma relação com Ação, mais especificamente com uma dessas três subclasses.</p>
+	<figure>
+	<table border="1">
+		<tr>
+    		<th>Classes</th>
+    		<th>MTO 2013</th>
+		</tr>
+  		<tr>
+    		<td>CategoriaEconomica</td>
+		    <td>Categoria Econômica</td>
+  		</tr>
+  		<tr>
+    		<td>Classificador</td>
+		    <td>Sem correspondência. Classe de suporte ao conceito de classificação, da qual, todas as outras classes que se referem ao conceito de classificação da despesa se especializam. Tem como propriedades a descrição (<i>label</i>) e o código (codigo).</td>
+  		</tr>
+  		<tr>
+    		<td>ElementoDespesa</td>
+		    <td>Elemento de Despesa</td>
+  		</tr>
+  		<tr>
+    		<td>Esfera</td>
+		    <td>Esfera</td>
+  		</tr>
+  		<tr>
+    		<td>Exercício</td>
+		    <td>Exercício Financeiro (Anualidade ou Periodicidade)</td>
+  		</tr>
+  		<tr>
+    		<td>FonteRecursos</td>
+		    <td>Fonte de Recursos</td>
+  		</tr>
+  		<tr>
+    		<td>GrupoNatDespesa</td>
+		    <td>Grupo de Natureza da Despesa (GND)</td>
+  		</tr>
+  		<tr>
+    		<td>ItemDeDespesa</td>
+		    <td>Sem correspondência. Cada elemento da classe ItemDeDespesa é caracterizado por ter propriedades de objeto (<i>object properties</i>) específicas para cada uma das subclasses da classe Classificadores e uma propriedade que estabelece uma realação com um Exercício financeiro, além de possuir seis <i>datatype properties</i> numéricas que representam os valores financeiros.</td>
+  		</tr>
+  		<tr>
+    		<td>Localizador</td>
+		    <td>Subtítulo (Localizador do gasto)</td>
+  		</tr>
+  		<tr>
+    		<td>ModalidadeAplicacao</td>
+		    <td>Modalidade de Aplicação</td>
+  		</tr>
+  		<tr>
+    		<td>Programa</td>
+		    <td>Programa</td>
+  		</tr>
+  		<tr>
+    		<td>Acao</td>
+		    <td>Ação</td>
+  		</tr>
+  		<tr>
+    		<td>Projeto</td>
+		    <td>Projeto</td>
+  		</tr>
+  		<tr>
+    		<td>Atividade</td>
+		    <td>Atividade</td>
+  		</tr>
+  		<tr>
+    		<td>OperacaoEspecial</td>
+		    <td>Operação Especial</td>
+  		</tr>
+  		<tr>
+    		<td>PlanoOrcamentario</td>
+		    <td>Plano Orçamentário</td>
+  		</tr>
+  		<tr>
+    		<td>Funcao</td>
+		    <td>Função</td>
+  		</tr>
+  		<tr>
+    		<td>Subfuncao</td>
+		    <td>Subfunção</td>
+  		</tr>
+  		<tr>
+    		<td>UnidadeOrcamentaria</td>
+		    <td>Unidade Orçamentária (UO)</td>
+  		</tr>
+  		<tr>
+    		<td>Orgao</td>
+		    <td>Órgão</td>
+  		</tr>
+  		<tr>
+    		<td>IdentificadorUso</td>
+		    <td>Identicador de Uso (IDUSO)</td>
+  		</tr>
+  		<tr>
+    		<td>ResultadoPrimario</td>
+		    <td>Identificador de Resultado Primário</td>
+  		</tr>
+        <figcaption>Tabela 2.1 - Classes da Ontologia da despesa do Orçamento Federal</figcaption>
+	</table>
+	</figure>
+	<p>Em OWL existem dois tipos de propriedades: propriedades de objeto (<i>object properties</i>) e propriedades tipo de dados (d<i>atatype properties</i>). Nas primeiras, o objeto da tripla é sempre um resource. Na segunda, o objeto é um item de dados de algum tipo já definido na sintaxe XML Schema.</p>
+	<p>Com relação às propriedades de objeto (<i>object property</i>), a maior parte delas tem como domínio a classe ItemDeDespesa e como range, as subclasses de classificadores apresentadas na Figura 2.2. Além disso, existem propriedades de objeto que relacionam indivíduos da classe UnidadeOrcamentaria e os da classe Orgao. Cada uma dessas relações está descrita na Tabela 2.2, a seguir.</p>
+
+	<table border="1">
+		<tr>
+    		<th>Object Property</th>
+    		<th>Descrição</th>
+		</tr>
+        <tr>
+            <td>temExercicio</td>
+            <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe Exercicio</td>
+        </tr>
+  		<tr>
+    		<td>temClassificador</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe Classificador. É a super-propriedade de todas as outras que relacionam um ItemDeDespesa a um Classificador</td>
+  		</tr>
+  		<tr>
+    		<td>temAcao</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe Acao</td>
+  		</tr>
+  		<tr>
+    		<td>temCategoriaEconomica</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe CategoriaEconomica</td>
+  		</tr>
+  		<tr>
+    		<td>temElementoDespesa</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe ElementoDespesa</td>
+  		</tr>
+  		<tr>
+    		<td>temEsfera</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe Esfera</td>
+  		</tr>
+  		<tr>
+    		<td>temFonteRecursos</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe FonteRecursos</td>
+  		</tr>
+  		<tr>
+    		<td>temFuncao</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe Funcao</td>
+  		</tr>
+  		<tr>
+    		<td>temGnd</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe GrupoNatDespesa</td>
+  		</tr>
+  		<tr>
+    		<td>temIndicadorUso</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe IndicadorUso</td>
+  		</tr>
+  		<tr>
+    		<td>temLocalizador</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe Localizador</td>
+  		</tr>
+  		<tr>
+    		<td>temModalidadeAplicacao</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe ModalidadeAplicacao</td>
+  		</tr>
+  		<tr>
+    		<td>temOrgao</td>
+		    <td>Object Property que relaciona elementos da classe (<i>domain</i>) UnidadeOrcamentaria com os elementos da classe (<i>range</i>) Orgao</td>
+  		</tr>
+  		<tr>
+    		<td>temPrograma</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe Programa</td>
+  		</tr>
+  		<tr>
+    		<td>temPlanoOrcamentario</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe PlanoOrcamentario. Diferentemente das outras propriedades esta não é obrigatória em um ItemDeDespesa, pois existe somente nos dados a partir de 2010</td>
+  		</tr>
+  		<tr>
+    		<td>temResultadoPrimario</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe ResultadoPrimario</td>
+  		</tr>
+  		<tr>
+    		<td>temSubfuncao</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe Subfuncao</td>
+  		</tr>
+  		<tr>
+    		<td>temUnidadeOrcamentaria</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe UnidadeOrcamentaria</td>
+  		</tr>
+  		<figcaption>Tabela 2.2 - Relacionamentos da Ontologia da despesa do Orçamento Federal</figcaption>
+  	</table>	
+
+	<p>Nessa ontologia, as propriedades de tipo de dado (<i>datatype property</i>) são também importantes para restringir e definir classes. Por exemplo, ItemDeDespesa possui seis propriedades com um valor em formato <i>decimal</i> que expressam a quantia relacionada ao Item de Despesa em reais. A Tabela 2.3, a seguir, contém a descrição dos tipos de dados utilizados nessa ontologia.</p>
+
+	<table border="1">
+		<tr>
+    		<th>Datatype Property</th>
+    		<th>Descrição</th>
+		</tr>
+  		<tr>
+    		<td>codigo</td>
+		    <td>Código do classificador. Esse <i>datatype</i> é herdado para as subclasses da classe Classificador e é utilizado como uma restrição para definir essas subclasses. Ele exerce a função de identificação única para as instâncias da maioria dos classificadores, menos nas instâncias das classes Localizador e Plano Orçamentário</td>
+  		</tr>
+  		<tr>
+    		<td>label</td>
+		    <td>Refere-se ao nome, título ou descrição do classificador. Esse <i>datatype</i> é herdado para as subclasses da classe Classificador e é utilizado como uma restrição para definir subclasses</td>
+  		</tr>
+  		<tr>
+    		<td>valorProjetoLei</td>
+		    <td>Refere-se ao valor do PLOA para o referido item de despesa dentro do orçamento anual</td>
+  		</tr>
+  		<tr>
+    		<td>valorDotacaoInicial</td>
+		    <td>Refere-se ao valor da LOA para o referido item de despesa dentro do orçamento anual</td>
+  		</tr>
+  		<tr>
+    		<td>valorLeiMaisCreditos</td>
+		    <td>Refere-se ao valor da LOA mais créditos para o referido item de despesa dentro do orçamento anual</td>
+  		</tr>
+  		<tr>
+    		<td>valorEmpenhado</td>
+		    <td>Refere-se ao valor empenhado para o referido item de despesa dentro do orçamento anual</td>
+  		</tr>
+  		<tr>
+    		<td>valorLiquidado</td>
+		    <td>Refere-se ao valor liquidado para o referido item de despesa dentro do orçamento anual</td>
+  		</tr>
+  		<tr>
+    		<td>valorPago</td>
+		    <td>Refere-se ao valor pago para o referido item de despesa dentro do orçamento anual</td>
+  		</tr>
+  		<tr>
+    		<td>dataAtualizacao</td>
+		    <td>Refere-se a última data em que o exercício financeiro em questão foi atualizado</td>
+  		</tr>
+  		<tr>
+    		<td>identificador</td>
+		    <td>Tem dois valores, (1) pode representar o ano (ex: 2013) de uma instância de um Exercício ou (2) representar identificadores de Localizadores e Planos Orçamentários, sem nenhum significado direto com o orçamento, servindo somente para identificação única das instâncias dessas classes.</td>
+  		</tr>
+  		<figcaption>Tabela 2.3 - Atributos da Ontologia da despesa do Orçamento Federal</figcaption>
+  	</table>	
+
+    <h2><a id="LOARDF" name="LOARDF">3. Orçamento Federal de 2000 a 2013 em RDF</a><a class="headerlink" href="#LOARDF" title="Link para este título">¶</a></h2>
+    <p>RDF (Resource Description Framework) é um modelo recomendado pela W3C para descrever recursos encontrados na web, sendo um dos pilares da Web Semântica. RDF define uma forma simples de expressar afirmações sobre esses recursos. A unidade de informação utilizada por este modelo é a tripla composta de sujeito, predicado e objeto, formando assim uma afirmação (statement).</p>
+	<p>Para que um recurso seja identificado dentro do contexto apresentado pela Web Semântica é atribuído a ele uma URI (Uniform Resource Identifier), ou seja, tanto o sujeito como o predicado e o objeto estão associados a um identificador de recursos.</p>
+
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="exemplo-tripla-rdf.png" alt="Exemplo de uma tripla RDF" />
+	<figcaption>Figura 3.1 - Exemplo de uma tripla RDF</figcaption>
+    </figure>
+
+	<p>Um conjunto de triplas forma um grafo de modelo de dados, no qual uma tripla é representada por dois “nós” e a ligação entre eles. Portanto um arquivo RDF é constituído por uma série de triplas interligadas, que resultam em afirmações a respeito dos relacionamentos entre recursos. Cada nó pode ser uma URI que identifica um recurso, um dado do tipo literal ou até mesmo um nó em branco.</p>
+
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="exemplo-grafo-rdf.png" alt="Exemplo de um grafo RDF" />
+	<figcaption>Figura 3.2 - Exemplo de um grafo RDF</figcaption>
+    </figure>
+
+	<p>As descrições RDF apresentadas nas Figuras 3.1 e 3.2 foram mostradas graficamente. Porém, para construir e disponibilizar um arquivo RDF, é necessário que este esteja na forma textual. O RDF pode ser expresso textualmente por meio de outras sintaxes. A linguagem mais utilizada para este fim e recomendada pela W3C é o RDF/XML, que possibilita a serialização de um grafo RDF em um documento no formato XML.</p>
+	<p>Existem outras sintaxes de arquivos RDF serializados que aderem a diferentes objetivos. Uma delas é o formato Turtle (TTL) que possui características a facilitar a leitura e escrita por humanos de recursos RDF, como a capacidade de abreviações e uso de prefixos para URI's, criando uma maneira compacta de representar triplas. Outro formato é o N-Triples que é uma versão mais simplificada do Turtle, removendo praticamente todos os tipos de abreviações e uso de prefixos para URI's, dificultando a leitura e escrita humana, mas facilitando o seu processamento por máquinas principalmente quando o volume de dados é grande. </p>
+	<p>Pelos motivos citados anteriormente junto a necessidade de serem constantemente publicados novos dados da execução orçamentária do exercício corrente (no caso o de 2013), o formato escolhido para disponibilização os arquivos em RDF da LOA a partir de 2000 é o N-Triples. O processo de conversão dos dados orçamentários em um arquivo RDF (processo chamado de "triplificação") são bem mais rápidos quando é utilizado o formato N-Triples como resultado. As triplas RDF neste formato são apresentadas na sua forma mais natural, diretamente em forma de linhas em um arquivo seguindo a ordem: Sujeito, Predicado, Objeto e um ponto final "." que encerra a tripla.</p>
+	<p>Para exemplificar o uso e formato do arquivo RDF, utilizaremos um exemplo de Item de Despesa da LOA de 2013 transformado em sentenças RDF. Este item utilizado foi retirado da execução orçamentária com atualização na data de 05/06/2013. Tomaremos inicialmente o Item de Despesa descrito na Tabela 3.1, com os seus respectivos atributos qualitativos e quantitativos.</p>
+	
+	<figure>
+	<table border="1">
+		<tr>
+    		<th>Entidade</th>
+    		<th>Valor/Descrição</th>
+		</tr>
+		<tr>
+    		<td>Esfera</td>
+		    <td>Orçamento Fiscal (10)</td>
+  		</tr>
+  		<tr>
+  			<td>Órgão</td>
+    		<td>Ministério do Planejamento, Orçamento e Gestão (47000)</td>
+  		</tr>
+  		<tr>
+		    <td>Unidade Orçamentária</td>
+    		<td>Ministério do Planejamento, Orçamento e Gestão (47101)</td>
+  		</tr>
+  		<tr>
+		    <td>Função</td>
+    		<td>Administração (04)</td>
+  		</tr>
+  		<tr>
+    		<td>Subfuncao</td>
+		    <td>Tecnologia da Informação (126)</td>
+  		</tr>
+  		<tr>
+    		<td>Programa</td>
+		    <td>Democracia e Aperfeiçoamento da Gestão Pública (2038)</td>
+  		</tr>
+  		<tr>
+    		<td>Ação</td>
+    		<td>Gestão e Aprimoramento dos Recursos de Tecnologia da Informação e de Logística do Serviço Público Federal (20U2)</td>
+  		</tr>
+  		<tr>
+    		<td>Localizador</td>
+		    <td>Nacional (0001)</td>
+  		</tr>
+  		<tr>
+		    <td>Plano Orçamentário</td>
+    		<td>Integração dos Sistemas Informatizados do Governo Federal (0003)</td>
+  		</tr>
+  		<tr>
+    		<td>Identificador de Uso</td>
+		    <td>Recursos não destinados à contrapartida (0)</td>
+  		</tr>
+  		<tr>
+		    <td>Fonte de Recursos</td>
+		    <td>Recursos Ordinários (100)</td>
+  		</tr>
+  		<tr>
+		    <td>Categoria Econômica</td>
+    		<td>Despesas Correntes (3)</td>
+  		</tr>
+  		<tr>
+		    <td>Grupo de Natureza da Despesa</td>
+		    <td>Outras Despesas Correntes (3)</td>
+  		</tr>
+  		<tr>
+		    <td>Modalidade de Aplicação</td>
+		    <td>Aplicações Diretas (90)</td>
+  		</tr>
+  		<tr>
+		    <td>Elemento de Despesa</td>
+		    <td>A Definir (00)</td>
+  		</tr>
+  		<tr>
+			<td>Resultado Primário</td>
+    		<td>Primária discricionária, não PAC, considerada no cálculo do RP (2)</td>
+  		</tr>
+  		<tr>
+			<td>Valor PLOA</td>
+    		<td class="quantia">R$ 0,00</td>
+  		</tr>
+  		<tr>
+			<td>Valor LOA</td>
+    		<td>R$ 1.686.356,00</td>
+  		</tr>
+  		<tr>
+			<td>Valor LOA mais Créditos</td>
+    		<td class="quantia">R$ 2.337.313,00</td>
+  		</tr>
+  		<tr>
+			<td>Valor Empenhado</td>
+    		<td class="quantia">R$ 0,00</td>
+  		</tr>
+  		<tr>
+			<td>Valor Liquidado</td>
+    		<td class="quantia">R$ 0,00</td>
+  		</tr>
+  		<tr>
+			<td>Valor Pago</td>
+    		<td class="quantia">R$ 0,00</td>
+  		</tr>
+  		
+        <figcaption>Tabela 3.1 - Item de despesa da LOA 2013</figcaption>
+	</table>
+	</figure>
+   
+	<p>Nesse caso, as sentenças RDF foram criadas tomando como base a definição de conceitos e relações da ontologia OWL descrita na seção 2 e deram origem a uma descrição RDF serializada em formato N-Triples que está apresentada na Tabela 3.2.</p>
+    
+    <figure>
+	<table border="1" class="rdf_em_tabela">
+		<tr>
+    		<th>&nbsp;</th>
+    		<th>Sujeito</th>
+    		<th>Predicado</th>
+    		<th>Objeto</th>
+		</tr>
+		<tr>
+  			<td class="numerolinha">1</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#ItemDeDespesa&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">2</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temEsfera&gt;</td>
+		    <td>&lt;http://orcamento.dados.gov.br/2013/id/Esfera/10&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">3</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temUnidadeOrcamentaria&gt;</td>
+		    <td>&lt;http://orcamento.dados.gov.br/2013/id/UnidadeOrcamentaria/47101&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">4</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temFuncao&gt;</td>
+		    <td>&lt;http://orcamento.dados.gov.br/2013/id/Funcao/04&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">5</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temSubfuncao&gt;</td>
+		    <td>&lt;http://orcamento.dados.gov.br/2013/id/Subfuncao/126&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">6</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temPrograma&gt;</td>
+		    <td>&lt;http://orcamento.dados.gov.br/2013/id/Programa/2038&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">7</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temAcao&gt;</td>
+		    <td>&lt;http://orcamento.dados.gov.br/2013/id/Acao/20U2&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">8</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temLocalizador&gt;</td>
+		    <td>&lt;http://orcamento.dados.gov.br/2013/id/Localizador/20U20001&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">9</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temPlanoOrcamentario&gt;</td>
+		    <td>&lt;http://orcamento.dados.gov.br/2013/id/PlanoOrcamentario/47101203820U200010003&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">10</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temIndicadorUso&gt;</td>
+		    <td>&lt;http://orcamento.dados.gov.br/2013/id/IndicadorUso/0&gt; .</td>
+  		</tr>
+  		<tr>
+			<td class="numerolinha">11</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temFonteRecursos&gt;</td>
+		    <td>&lt;http://orcamento.dados.gov.br/2013/id/FonteRecursos/100&gt; .</td>
+  		</tr>
+  		<tr>
+			<td class="numerolinha">13</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temCategoriaEconomica&gt;</td>
+		    <td>&lt;http://orcamento.dados.gov.br/2013/id/CategoriaEconomica/3&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">14</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temGND&gt;</td>
+		    <td>&lt;http://orcamento.dados.gov.br/2013/id/GrupoNatDespesa/3&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">15</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temModalidadeAplicacao&gt;</td>
+		    <td>&lt;http://orcamento.dados.gov.br/2013/id/ModalidadeAplicacao/90&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">16</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temElementoDespesa&gt;</td>
+		    <td>&lt;http://orcamento.dados.gov.br/2013/id/ElementoDespesa/00&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">17</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temResultadoPrimario&gt;</td>
+		    <td>&lt;http://orcamento.dados.gov.br/2013/id/ResultadoPrimario/2&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">18</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#valorProjetoLei&gt;</td>
+		    <td>"0.00"^^&lt;http://www.w3.org/2001/XMLSchema#decimal&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">19</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#valorDotacaoInicial&gt;</td>
+		    <td>"1686356.00"^^&lt;http://www.w3.org/2001/XMLSchema#decimal&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">20</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#valorLeiMaisCredito&gt;</td>
+		    <td>"2337313.00"^^&lt;http://www.w3.org/2001/XMLSchema#decimal&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">21</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#valorEmpenhado&gt;</td>
+		    <td>"0.00"^^&lt;http://www.w3.org/2001/XMLSchema#decimal&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">22</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#valorLiquidado&gt;</td>
+		    <td>"0.00"^^&lt;http://www.w3.org/2001/XMLSchema#decimal&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">23</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#valorPago&gt;</td>
+		    <td>"0.00"^^&lt;http://www.w3.org/2001/XMLSchema#decimal&gt; .</td>
+  		</tr>
+        <figcaption>Tabela 3.2 - Item de despesa da LOA 2013 em formato N-Triples (parte 1)</figcaption>
+	</table>
+	</figure>
+  	
+  	<p>A tabela  3.2 demonstra as triplas RDF que representam o Item de Despesa descrito textualmente na Tabela 3.1. Cada linha da tabela representa uma única tripla, onde o sujeito de todas as triplas descritas são mesmo recurso &lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt; (o Item de Despesa em questão). A linha 1 define que o recurso é do tipo ItemDeDespesa, da linha 2 até a linha 17 são definidos quais os classificadores que este item de despesa tem relação, da linha 18 a 23 são definidos os valores financeiros que o item possui.</p>
+	<p>No formato de serialização N-Triples não existem prefixos para os <i>namespaces</i>, então eles ficam descritos completamente nos recursos, classes e propriedades. Nesta parte explicada do RDF de 2013 estão contidos 4 diferentes namespaces, (1) http://orcamento.dados.gov.br/2013/CLASSE/CODIGO - Representam os recursos (instâncias) dos dados orçamentários, (2) http://vocab.e.gov.br/2013/09/loa#PROPRIEDADE_OU_CLASSE - Representam as propriedades e classes da ontologia da Classificação das Despesas do Orçamento Federal Brasileiro definidos no arquivo OWL disponibilizado, (3) http://www.w3.org/1999/02/22-rdf-syntax-ns#PROPRIEDADE -  Representa o vocabulário padrão do RDF, neste caso foi utilizada a sua propriedade <i>type</i> para indicar a que classe um recurso pertence, (4) http://www.w3.org/2001/XMLSchema#PROPRIEDADE - Representa o vocabulário padrão de definição de tipos de dados.</p>
+    
+    <figure>
+	<table border="1" class="rdf_em_tabela">
+		<tr>
+    		<th>&nbsp;</th>
+    		<th>Sujeito</th>
+    		<th>Predicado</th>
+    		<th>Objeto</th>
+		</tr>
+		<tr>
+  			<td class="numerolinha">1</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/Programa/2038&gt;</td>
+		    <td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#Programa&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">2</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/Programa/2038&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#codigo&gt;</td>
+		    <td>"2038" .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">3</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/Programa/2038&gt;</td>
+		    <td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#label&gt;</td>
+		    <td>"Democracia e Aperfeiçoamento da Gestão Pública" .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">4</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/GrupoNatDespesa/3&gt;</td>
+		    <td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#GrupoNatDespesa&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">5</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/GrupoNatDespesa/3&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#codigo&gt;</td>
+		    <td>"3" .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">6</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/GrupoNatDespesa/3&gt;</td>
+		    <td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#label&gt;</td>
+		    <td>"Outras Despesas Correntes" .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">7</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/Funcao/04&gt;</td>
+		    <td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#Funcao&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">8</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/Funcao/04&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#codigo&gt;</td>
+		    <td>"04" .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">9</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/Funcao/04&gt;</td>
+		    <td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#label&gt;</td>
+		    <td>"Administração" .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">10</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/Acao/20U2&gt;</td>
+		    <td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#Acao&gt; .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">11</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/Acao/20U2&gt;</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#codigo&gt;</td>
+		    <td>"20U2" .</td>
+  		</tr>
+  		<tr>
+  			<td class="numerolinha">12</td>
+    		<td>&lt;http://orcamento.dados.gov.br/2013/id/Acao/20U2&gt;</td>
+		    <td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#label&gt;</td>
+		    <td>"Gestão e Aprimoramento dos Recursos de Tecnologia da Informação e de Logística do Serviço Público Federal" .</td>
+  		</tr>
+        <figcaption>Tabela 3.3 - Item de despesa da LOA 2013 em formato N-Triples (parte 2)</figcaption>
+	</table>
+	</figure>
+
+	<p>A parte seguinte do arquivo de exemplo está descrita na tabela 3.3. Nessa parte do arquivo estão listadas as propriedades e atributos de alguns dos recursos que se relacionaram com o item de despesa explicado anteriormente, mais especificamente foram definidos os seus tipos, códigos e descrições. Os recursos que não foram listados seguem o mesmo padrão.</p>
+	<p>Portanto, os arquivos RDF da LOA serão compostos normalmente por: (1) Triplas para relacionar um item de despesa a um programa, ação, função e demais classificadores vinculados, (2) Triplas para relacionar um item de despesa aos seus valores de dotação inicial, valor de lei mais créditos, entre outros já citados, (3) Triplas para definirem os próprios classificadores, com seus códigos e descrições.</p>
+	<p>Na Figura 3.3 estão apresentadas, de forma gráfica, as sentenças RDF relativas ao exemplo das tabelas 3.2/3.3 e seus respectivos tipos e significados diante da especificação OWL descrita na seção 2 (nessa figura somente algumas propriedades foram mostradas para melhor visualização).</p>		
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="mapeamento-rdf-owl.png" alt="Mapeamento de informações entre os arquivos de sentenças RDF e de especificação OWL" />
+	<figcaption>Figura 3.3 - Mapeamento de informações entre os arquivos de sentenças RDF e de especificação OWL</figcaption>
+    </figure>     
+
+    <h2><a id="uso" name="uso">4. Possibilidades de uso do arquivo RDF</a><a class="headerlink" href="#uso" title="Link para este título">¶</a></h2>
+    <p>As informações sobre a especificação OWL e o próprio orçamento relativo ao período de 2000 a 2013 estão disponibilizados como arquivos no portalSOF, no endereço <a href="http://www.siop.planejamento.gov.br/">http://www.siop.planejamento.gov.br/</a>. Os arquivos com as informações descritas nos Capítulos 2 e 3 são os seguintes (1) o arquivo loa.owl – que contém a especificação de conceitos relativos ao orçamento, e (2) os arquivos loa2000.zip, loa2001.zip, ..., loa2013.zip – que contém as triplas ou sentenças RDF relativas ao orçamento de cada exercício financeiro. O arquivo RDF relacionado ao exercício corrente é atualizado periodicamente com a execução orçamentária.</p>
+    <p>As instruções iniciais de uso são as seguintes:</p>
+
+	<ol>
+		<li><i>descarregar (fazer download) o arquivo OWL (em formato OWL/XML);</i></li>
+		<li><i>descarregar (fazer download) os arquivos RDF (em formato N-Triples);</i></li>
+		<li><i>descompactar esses arquivos em uma pasta do usuário.</i></li>
+  </ol>
+	<p>Pronto! Os arquivos RDF e OWL estão aptos para o uso .</p>
+
+    <h3><a id="possibilidades" name="possibilidades">4.1. Possibilidades de uso</a><a class="headerlink" href="#possibilidades" title="Link para este título">¶</a></h3>
+    <p>A possibilidade mais comum é o uso de triplestores para persistir os dados do RDF de maneira semelhante ao armazenamento de bases de dados em SGBD’s relacionais. A partir do triplestore e de um endpoint, uma consulta SPARQL pode ser efetuada na base e o resultado recuperado em uma planilha, em um formato XML, em formato JSON, no próprio formato RDF, entre outros.</p>
+	<p>Existem diversas ferramentas para manipulação de grafos RDF, tais como raciocinadores para inferência, visualizadores para apresentação gráfica, navegadores para web semântica, entre outros. Aos desenvolvedores estão disponíveis API’s para o desenvolvimento de aplicações que fazem uso de dados RDF. A seguir uma figura ilustrando as possibilidades de uso:</p>
+
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="ferramentas-manipulacao.png" alt="Ferramentas para manipulação de grafos" />
+	<figcaption>Figura 4.1 - Possibilidades de uso do RDF</figcaption>
+    </figure>  
+
+  <h3><a id="exemplos" name="exemplos">4.2. Exemplos de uso do arquivo RDF</a><a class="headerlink" href="#exemplos" title="Link para este título">¶</a></h3>
+  <p>Um exemplo concreto de dado que pode ser extraído é o seguinte: Existe uma Ação na LOA 2013 que tem a descrição “Apoio a Sistemas de Transporte Não-Motorizados”. Caso se queria saber quanto foi alocado de dotação inicial para essa Ação deve-se somar os valores de todos os Itens de Despesa que possuem relação temAcao com a ação cujo <i>label</i> possui a <i>string</i> “Apoio a Sistemas de Transporte Não-Motorizados”. Então como descobrir quais são esses itens e somar o valor de dotação inicial? Uma consulta SPARQL pode ser usada para recuperar essas informações, formando a seguinte query:</p>
+ 
+  <pre class="query">
+  PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+  PREFIX loa: &lt;http://vocab.e.gov.br/2013/09/loa#&gt;
+
+  SELECT ?itemURI ?acaoURI ?dotacaoInicial WHERE 
+  {  
+    ?itemURI loa:temExercicio ?exercicioURI .
+    ?exercicioURI loa:identificador 2013 .
+    ?itemURI loa:temAcao ?acaoURI .
+    ?acaoURI rdf:label "Apoio a Sistemas de Transporte Não-Motorizados".
+    ?itemURI loa:valorDotacaoInicial ?dotacaoInicial .
+  }</pre>
+
+<p>O resultado é o seguinte:</p>
+  
+  <div class="resultado-query">
+    <table>
+      <tr>
+        <th>itemURI</th>
+        <th>acaoURI</th>
+        <th>dotacaoInicial</th>
+
+      </tr>
+      <tr>
+        <td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/136186&gt; </td>
+        <td>&lt;http://orcamento.dados.gov.br/2013/id/Acao/10ST&gt; </td>
+        <td class="quantia">0.00 </td>
+      </tr>
+      <tr>
+        <td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/146586&gt; </td>
+        <td>&lt;http://orcamento.dados.gov.br/2013/id/Acao/10ST&gt; </td>
+        <td class="quantia">250000.00 </td>
+      </tr>
+      <tr>
+        <td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/122434&gt; </td>
+        <td>&lt;http://orcamento.dados.gov.br/2013/id/Acao/10ST&gt; </td>
+        <td class="quantia">4000000.00 </td>
+      </tr>
+      <tr>
+        <td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/143562&gt; </td>
+        <td>&lt;http://orcamento.dados.gov.br/2013/id/Acao/10ST&gt; </td>
+        <td class="quantia">1500000.00 </td>
+      </tr>
+      <tr>
+        <td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/143169&gt; </td>
+        <td>&lt;http://orcamento.dados.gov.br/2013/id/Acao/10ST&gt; </td>
+        <td class="quantia">1750000.00 </td>
+      </tr>
+    </table>
+  </div>
+    
+	<p>Na linha 5 da consulta são selecionados todas as instâncias que possuem a propriedade <i>loa:temExercicio</i> (Todos os Itens de Despesa) com algum objeto, logo na linha 6 os objetos selecionados, que são instâncias de exercício, são filtrados de modo que só sejam selecionados os itens do exercício financeiro de 2013. Na linha 7 da consulta são selecionados todas as instâncias que possuem a propriedade <i>loa:temAcao</i> (Todos os Itens de Despesa), na linha 8 é feita uma filtragem onde somente são selecionadas as instâncias em que a propriedade <i>rdf:label</i> seja “Ensino Profissional Marítimo”.</p>
+	<p>Na consulta anterior foram mostrados o <i>loa:valorDotacaoInicial</i> relacionados a cada item de despesa, a seguir é mostrado uma consulta para saber o valor total somado dos mesmos itens.</p>
+  <pre class="query">
+  PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+  PREFIX loa: &lt;http://vocab.e.gov.br/2013/09/loa#&gt;
+
+  SELECT (SUM(?dotacaoInicial) AS ?somaDotacaoInicial) WHERE 
+  {  
+    ?itemURI loa:temExercicio ?exercicioURI .
+    ?exercicioURI loa:identificador 2013 .
+    ?itemURI loa:temAcao ?acaoURI .
+    ?acaoURI rdf:label "Apoio a Sistemas de Transporte Não-Motorizados".
+    ?itemURI loa:valorDotacaoInicial ?dotacaoInicial .
+  }</pre>
+	<p>Resultando na soma:</p>
+	
+  <div class="resultado-query">
+    <table>
+      <tr>
+        <th>somaDotacaoInicial</th>
+      </tr>
+      <tr>
+        <td class="quantia">7500000.00 </td>
+      </tr>
+    </table>
+  </div>
+
+	<p>Na linha 5 a 8 são feitos exatamente os mesmos passos da consulta anterior. Na linha 9, após estarem selecionados somente os Itens de Despesa da Ação “Ensino Profissional Marítimo”, são pegos os valores <i>loa:valorDotacaoInicial</i> de cada um, e na linha 4 é utilizada uma função agregadora do SPARQL, a SUM(), que soma todos os valores que estão contidos na variável de consulta <i>?dotacaoInicial</i> e os chama de <i>?somaDotacaoInicial</i>.</p>
+	<p>O mesmo raciocínio pode ser utilizado para extrair mais informações selecionadas, como por exemplo, o valor total da despesa de pessoal (GND = ‘1’) para o Ministério da Educação (Órgão = ‘26000’).</p>
+   <p>Query:</p>
+   <pre class="query">
+  PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+  PREFIX loa: &lt;http://vocab.e.gov.br/2013/09/loa#&gt;
+
+  SELECT (SUM(?dotacaoInicial) AS ?somaDotacaoInicial) WHERE 
+  {  
+    ?itemURI loa:temExercicio ?exercicioURI .
+    ?exercicioURI loa:identificador 2013 .
+    ?itemURI loa:temGND ?gndURI .
+    ?gndURI loa:codigo "1" .
+    ?itemURI loa:temUnidadeOrcamentaria ?uoURI .
+    ?uoURI loa:temOrgao ?orgaoURI .
+    ?orgaoURI loa:codigo "26000" .
+    ?itemURI loa:valorDotacaoInicial ?dotacaoInicial .
+  }</pre>
+    
+  <p>Resultado:</p>
+	<div class="resultado-query">
+    <table>
+      <tr>
+        <th>somaDotacaoInicial</th>
+      </tr>
+      <tr>
+       <td class="quantia">30147863213.00 </td>
+      </tr>
+    </table>
+  </div>
+  <p>Como ultimo exemplo serão selecionadas a somatória do valor PLOA de todos os itens de despesa de 2012, os agrupando e ordenando pelo <i>label</i> da Função (Saúde, Educação, Agricultura, etc).
+  <p>Query:</p>
+   <pre class="query">
+  PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+  PREFIX loa: &lt;http://vocab.e.gov.br/2013/09/loa#&gt;
+
+  SELECT ?funcaoLabel(SUM(?ploa) AS ?somaPloa) WHERE 
+  {
+    ?itemURI loa:temExercicio ?exercicioURI .
+    ?exercicioURI loa:identificador 2012 .
+    ?itemURI loa:temFuncao ?funcaoURI .
+    ?funcaoURI rdf:label ?funcaoLabel .
+    ?itemURI loa:valorProjetoLei ?ploa .
+  } GROUP BY ?funcaoLabel ORDER BY ?funcaoLabel</pre>
+    
+  <p>Resultado:</p>
+  <div class="resultado-query">
+    <table>
+      <tr>
+        <th>funcaoLabel</th>
+        <th>somaPloa</th>
+      </tr>
+      <tr>
+        <td>"Administração"</td>
+        <td class="quantia">23739719343.00</td>
+      </tr>
+      <tr>
+        <td>"Agricultura"</td>
+        <td class="quantia">17255966726.00</td>
+      </tr>
+      <tr>
+        <td>"Assistência Social"</td>
+        <td class="quantia">54065344660.00</td>
+      </tr>
+      <tr>
+        <td>"Ciência e Tecnologia"</td>
+        <td class="quantia">8466322306.00</td>
+      </tr>
+      <tr>
+        <td>"Comunicações"</td>
+        <td class="quantia">1345239060.00</td>
+      </tr>
+      <tr>
+        <td>"Comércio e Serviços"</td>
+        <td class="quantia">2178691180.00</td>
+      </tr>
+      <tr>
+        <td>"Cultura"</td>
+        <td class="quantia">1644229337.00</td>
+      </tr>
+      <tr>
+        <td>"Defesa Nacional"</td>
+        <td class="quantia">33067483477.00</td>
+      </tr>
+      <tr>
+        <td>"Desporto e Lazer"</td>
+        <td class="quantia">1576440933.00</td>
+      </tr>
+      <tr>
+        <td>"Direitos da Cidadania"</td>
+        <td class="quantia">1190048023.00</td>
+      </tr>
+      <tr>
+        <td>"Educação"</td>
+        <td class="quantia">66549564914.00</td>
+      </tr>
+      <tr>
+        <td>"Encargos Especiais"</td>
+        <td class="quantia">1270688354946.00</td>
+      </tr>
+      <tr>
+        <td>"Energia"</td>
+        <td class="quantia">1061921676.00</td>
+      </tr>
+      <tr>
+        <td>"Essencial à Justiça"</td>
+        <td class="quantia">3936883589.00</td>
+      </tr>
+      <tr>
+        <td>"Gestão Ambiental"</td>
+        <td class="quantia">5737321316.00</td>
+      </tr>
+      <tr>
+        <td>"Habitação"</td>
+        <td class="quantia">886093669.00</td>
+      </tr>
+      <tr>
+        <td>"Indústria"</td>
+        <td class="quantia">2054982027.00</td>
+      </tr>
+      <tr>
+        <td>"Judiciária"</td>
+        <td class="quantia">24112419071.00</td>
+      </tr>
+      <tr>
+        <td>"Legislativa"</td>
+        <td class="quantia">6502904639.00</td>
+      </tr>
+      <tr>
+        <td>"Organização Agrária"</td>
+        <td class="quantia">4637441059.00</td>
+      </tr>
+      <tr>
+        <td>"Previdência Social"</td>
+        <td class="quantia">391666375809.00</td>
+      </tr>
+      <tr>
+        <td>"Relações Exteriores"</td>
+        <td class="quantia">1797509176.00</td>
+      </tr>
+      <tr>
+        <td>"Reserva de Contingência"</td>
+        <td class="quantia">34047739949.00</td>
+      </tr>
+      <tr>
+        <td>"Saneamento"</td>
+        <td class="quantia">2753239343.00</td>
+      </tr>
+      <tr>
+        <td>"Saúde"</td>
+        <td class="quantia">79531384068.00</td>
+      </tr>
+      <tr>
+        <td>"Segurança Pública"</td>
+        <td class="quantia">8386084930.00</td>
+      </tr>
+      <tr>
+        <td>"Trabalho"</td>
+        <td class="quantia">42314617144.00</td>
+      </tr>
+      <tr>
+        <td>"Transporte"</td>
+        <td class="quantia">23680551145.00</td>
+      </tr>
+      <tr>
+        <td>"Urbanismo"</td>
+        <td class="quantia">3398809926.00</td>
+      </tr>
+    </table>
+  </div>
+  <p>Os exemplos de consultas SPARQL foram feitos utilizando componentes do Jena Framework, o Fuseki como endpoint SPARQL e o TDB como <i>triplestore</i>. Todos os arquivos RDF (2000 a 2013) foram inseridos no grafo <i>default</i> do <i>triplestore</i> e a data de atualização do RDF 2013 era de 26/06/2013.</p>
+</article>
+<footer>
+    
+    <h2><a id="referencias" name="referencias">Referências:</a><a class="headerlink" href="#referencias" title="Link para este título">¶</a></h2>
+    <ul>
+        <li>Allemang, Dean; Hendler, Jim and Kaufmann, Morgan. Semantic Web for the Working Ontologist (2nd ed.), (2008), ISBN: 0123859654</li>
+        <li>Brasil (2011) Lei no 12.595, de 19 de janeiro de 2012. <b>http://www.planalto.gov.br/CCIVIL_03/_Ato2011-2014/2012/Lei/L12595.htm</b></li>
+        <li>Brasil (2013) “Manual Técnico Orçamentário”, Versão 2013, Brasília: Ministério do Planejamento, Orçamento e Gestão – Secretaria de Orçamento Federal.</li>
+        <li>GUARINO, Nicola at al. What is Ontology? In: Handbook on Ontologies. Springer, 2003.</li>
+        <li><b>Hepp, Martin at al; Ontology Management: Semantic Web, Semantic Web Services, and Business Aplications (Semantic Web and Beyond), Springer, 2007, Kindle edition.</b></li>
+        <li>Segaran, Toby; Evans, Colin; Taylor, Jamie (2009) (in english). Programming the Semantic Web. O’Reilly Media, Inc., 1005 Gravenstein Highway North, Sebastopol, CA 95472. p. 84. ISBN 978-0-596-15381-6.</li>
+        <li>Thomas R. Gruber (1993). <b>A Translation Approach to Portable Ontology Specifications</b>. Knowledge Acquisition, 5(2), 1993, pp. 199-220.</li>
+    </ul>
+
+    <h2><a id="glossario" name="glossario">6. Glossário</a><a class="headerlink" href="#glossario" title="Link para este título">¶</a></h2>
+    <h3><a id="glo-RDF" name="glo-RDF">RDF</a><a class="headerlink" href="#glo-RDF" title="Link para este título">¶</a></h3>
+	<p>O RDF (<i>Resource Description Framework</i>) é um modelo recomendado pela W3C para descrever recursos encontrados na web, sendo um dos pilares da Web Semântica. Arquivos em RDF são adequados para representar dados, na qual é utilizada uma forma simples de expressar afirmações sobre estes recursos.</p>
+	<p>A unidade de informação utilizada por este modelo é chamada tripla, na qual é composta pelos seguintes recursos: sujeito, predicado (propriedade) e objeto, formando assim uma afirmação (<i>statement</i>). Para que um recurso seja identificado dentro do contexto apresentado pela Web Semântica é atribuído a ele um URI (<i>Uniform Resource Identifier</i>), ou seja, tanto sujeito, predicado e objeto estão associados a um identificador de recursos.</p>
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="exemplo-tripla-rdf.png" alt="Exemplo de tripla RDF" />
+	<figcaption>Figura 6.1 - Exemplo de uma tripla</figcaption>
+    </figure>  
+
+	<p>Um conjunto de triplas forma um Grafo de modelo de dados, no qual uma tripla é representada por dois “nós” e a ligação entre eles. Portanto um arquivo RDF é constituído por uma série de triplas interligadas, que resultam em afirmações a respeito dos relacionamentos entre recursos. Cada nó pode ser um URI que identifica um recurso, um dado do tipo literal, ou até mesmo um nó em branco.</p>
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="exemplo-grafo-rdf.png" alt="Exemplo de um grafo RDF" />
+	<figcaption>Figura 6.2 - Exemplo de um grafo RDF</figcaption>
+    </figure>  
+	
+    <h3><a id="glo-serializacao" name="glo-serializacao">Serialização</a><a class="headerlink" href="#glo-serializacao" title="Link para este título">¶</a></h3>
+	<p>Até o momento as triplas foram mostradas visualmente através de gráficos, porém para construir e disponibilizar um arquivo RDF é necessário que este esteja na forma textual. O RDF não é uma linguagem própria, portanto faz-se o uso de outras sintaxes para se expressar textualmente. A linguagem mais utilizada para este fim e recomendada pela W3C é o RDF/XML, na qual é realizada uma serialização de um grafo RDF em um documento no formato XML.</p>
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="exemplo-rdf-xml.png" alt="Exemplo de arquivo no formato RDF/XML" />
+	<figcaption>Figura 6.3 - Exemplo de arquivo no formato RDF/XML</figcaption>
+    </figure>  
+
+	<p>Existem outras sintaxes que facilitam a leitura e escrita de arquivos RDF serializados. O N-Triples é a linguagem mais simples de representação textual destes arquivos, onde apresenta as triplas diretamente em formas de linhas. Os recursos são escritos diretamente com seu URI (entre &lt; &gt;) e também na ordem de sujeito, predicado e objeto, onde um ponto final (.) encerra a tripla.</p>
+    <figure>
+        <img  style="width: auto;" class="diagrama" src="exemplo-ntriples.png" alt="Exemplo de arquivo no formato N-Triples" />
+	<figcaption>Figura 6.4 - Exemplo de arquivo no formato N-Triples</figcaption>
+    </figure>
+
+	<p>Outro formato de fácil compreensão e bastante utilizado é o Turtle. Além de englobar as características da forma de serialização N-Triples, o Turtle apresenta a possibilidade de incluir <i>namespaces</i> em sua sintaxe, ou seja, é possível utilizar abreviações atribuindo nomes para URIs. Também são usados outros recursos para simplificar sua escrita, criando assim uma maneira compacta de representar triplas.</p>
+     <figure>
+        <img  style="width: auto;" class="diagrama" src="exemplo-turtle.png" alt="Exemplo de arquivo no formato Turtle" />
+	<figcaption>Figura 6.5 - Exemplo de arquivo no formato Turtle</figcaption>
+    </figure>
+
+    <h3><a id="glo-ontologia" name="glo-ontologia">Ontologia</a><a class="headerlink" href="#glo-ontologia" title="Link para este título">¶</a></h3>
+	<p>Ontologias fornecem um vocabulário preciso que contém o conhecimento a cerca de tudo o que pode ser representado. Este vocabulário permite especificar quais entidades serão representadas, como elas estarão agrupadas, e quais relacionamentos as mantém interligadas. Este vocabulário pode ser visto como uma relação direta entre quem fornece os dados e quem os utilizam. Quanto maior a precisão de uma ontologia, maior será a compreensão de como os dados podem ser utilizados.</p>
+	<p>Assim como em uma modelagem orientada a objetos, ontologias também utilizam o termo classe para descrever um grupo de entidades. Entretanto os relacionamentos entre classes são representados de forma independente, a definição de uma propriedade pode indicar quais tipos de recursos tem esta propriedade. Os recursos que utilizam uma propriedade são chamados <i>domain</i> da propriedade, por outro lado os recursos ou valores associados a este são chamados de <i>range</i>.</p>
+	<p>A grande vantagem da utilização de ontologias é que existem <i>softwares</i> que são capazes de interpreta-lá, tornando possível a realização de inferências a partir da ontologia definida, ou seja, a adição de novas regras à ontologia já existente a partir de uma análise de determinado software.</p>
+	
+    <h3><a id="glo-OWL" name="glo-OWL">OWL</a><a class="headerlink" href="#glo-OWL" title="Link para este título">¶</a></h3>
+	<p>Dado que RDF é um modelo de dados, também é possível utilizar este formato para expressar ontologias através de triplas. A linguagem para a construção de ontologias em formato RDF foi desenvolvida pela W3C e é chamada de OWL (<i>Web Ontology Language</i>). Nela são representadas
+as classes e suas propriedades, possibilitando um maior entendimento sobre o conhecimento a ser representado e a realização de inferências a cerca dos relacionamentos existentes.</p>
+	<p>Portanto um arquivo OWL é escrito em um arquivo RDF para representar as classes e propriedades existentes, enquanto triplas formadas pelas instâncias, ou seja, a implementação da ontologia, geralmente é escrita em outro arquivo RDF. Já existe uma grande quantidade de ontologias consolidadas, como por exemplo, o vocabulário FOAF1 (<i>Friend of a Friend</i>) utilizado para descrever pessoas e os relacionamentos que a cercam.</p>
+
+    <h3><a id="glo-SPARQL" name="glo-SPARQL">SPARQL</a><a class="headerlink" href="#glo-SPARQL" title="Link para este título">¶</a></h3>
+	<p>Assim como a linguagem SQL permite a realização de consultas padronizadas em bancos de dados relacionais, SPARQL (<i>Simple Protocol and RDF Query Language</i>) é utilizado para realizar consultas em grafos RDF. é considerada uma tecnologia chave no contexto da Web Semântica e desde 2008 se tornou uma recomendação da W3C.</p>
+	<p>Para formular uma consulta SPARQL é necessário informar dentro da cláusula <i>WHERE</i> quais triplas devem ser analisadas, e selecionar na cláusula <i>SELECT</i> os recursos a serem exibidos, podendo ser incluídos filtros para a pesquisa. Para representar os recursos que podem variar nas triplas a serem pesquisadas é utilizado o termo “?” juntamente com o nome da variável em questão. Sua sintaxe apresenta semelhança com a utilizada pela linguagem SQL. A consulta ilustrada abaixo retorna o nome e email de todos os indivíduos pertencentes ao grafo pesquisado.</p>
+     <figure>
+        <img  style="width: auto;" class="diagrama" src="exemplo-consulta-sparql.png" alt="Exemplo de consulta SPARQL" />
+	<figcaption>Figura 6.6 - Exemplo de consulta SPARQL</figcaption>
+    </figure>
+
+    <h3><a id="glo-endpoint" name="glo-endpoint">Endpoint</a><a class="headerlink" href="#glo-endpoint" title="Link para este título">¶</a></h3>
+	<p>Um Endpoint é acessado diretamente por uma URI e permite que qualquer usuário efetue uma consulta SPARQL em uma determinada base de conhecimento na Internet. As triplas que compõe a base de dados ficam armazenadas em um <i>Triplestore</i>, que apresenta funcionalidade semelhante à de um SGBD (<i>Sistema de Gerenciamento de Banco de Dados</i>), sendo responsável pela persistência dos dados. O <i>Endpoint</i> recebe a consulta SPARQL desejada pelo usuário e em seguida acessa o <i>Triplestore</i> para realizar a pesquisa e consequentemente retornar os resultados obtidos.</p>
+    
+    Conteúdo licenciado sob uma Licença
+    <a href="http://creativecommons.org/licenses/by/3.0/" rel="license">
+        <img  style="width: auto;" src="http://i.creativecommons.org/l/by/3.0/80x15.png" style="border-width: 0pt;" alt="Licença Creative Commons">
+        Creative Commons - Atribuição 3.0 Não Adaptada
+    </a>.
+</footer>
+</body>
+</html>

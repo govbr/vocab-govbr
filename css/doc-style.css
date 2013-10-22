@@ -278,6 +278,12 @@ img.diagrama {
     margin: 2em 6em;
 }
 
+/* numero da linha em uma tabela */
+
+td.numerolinha {
+    vertical-align: middle;
+}
+
 /* listas */
 ul {
     margin: 0;
@@ -368,4 +374,42 @@ sup a {
     border-radius: 0.5em;
     -moz-border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
+}
+
+table.rdf_em_tabela {
+	font-size: 12px;
+}
+
+pre.query {
+    font-family: monospace;
+    border: thin solid rgb(136, 136, 170);
+    margin: 1em 4em 1em 0em;
+    background-color: rgb(247, 248, 255);
+    page-break-inside: avoid;
+    margin-left: 2em;
+    padding: 1em 2em;
+}
+
+div.resultado-query {
+    font-family: monospace;
+    margin: 1em 4em 1em 0em;
+    margin-left: 2em;
+    padding: 1em 2em;
+    border: thin solid rgb(136, 136, 136);
+    background-color: rgb(240, 240, 240);
+}
+
+div.resultado-query table {
+    border-collapse: collapse;
+}
+
+div.resultado-query table, div.resultado-query td, div.resultado-query th {
+    border: 1px solid black;
+    text-align: left;
+    font-size: 90%;
+    padding: 3px;
+}
+
+div.resultado-query td.quantia {
+  text-align: right;
 }
