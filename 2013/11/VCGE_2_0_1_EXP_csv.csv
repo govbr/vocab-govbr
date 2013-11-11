@@ -1,0 +1,207 @@
+"00";"2.0.1";"Novembro 2013";;"14/11/2013";;
+"01";"18";"Administração";"0";"Inclui todos os aspectos exclusivos da administração. ";;"0"
+"01";"165";"Planejamento ";"0";;;"0"
+"01";"114";"Compras governamentais";"0";"aquisição de produtos e serviços pela administração pública ";;"0"
+"01";"130";"Fiscalização do Estado";"0";;;"0"
+"01";"137";"Normalização e Qualidade";"0";"Inclui todas as normalizações que o estado faz sobre a sociedade.";;"0"
+"01";"138";"Operações de dívida pública";"0";;;"0"
+"01";"139";"Orçamento";"0";;;"0"
+"01";"163";"Patrimônio";"0";;;"0"
+"01";"175";"Recursos humanos";"0";;;"0"
+"01";"180";"Serviços Públicos ";"0";;;"0"
+"01";"140";"Outros em Administração";"0";;;"1"
+"01";"1";"Agropecuária";"0";;;"0"
+"01";"100";"Abastecimento";"0";;;"0"
+"01";"117";"Defesa agropecuária";"0";;;"0"
+"01";"171";"Produção agropecuária";"0";;;"0"
+"01";"141";"Outros em Agropecuária";"0";;;"1"
+"01";"3";"Comércio e Serviços";"0";;;"0"
+"01";"113";"Comercio externo";"0";;"Importação e exportação";"0"
+"01";"119";"Defesa do Consumidor";"0";;;"0"
+"01";"187";"Turismo ";"0";;;"0"
+"01";"142";"Outros em Comércio e serviços";"0";;;"1"
+"01";"19";"Comunicações";"0";;;"0"
+"01";"115";"Comunicações Postais";"0";;;"0"
+"01";"183";"Telecomunicações";"0";;;"0"
+"01";"143";"Outros em Comunicações";"0";;;"1"
+"01";"20";"Cultura";"0";;;"0"
+"01";"122";"Difusão Cultural ";"0";;;"0"
+"01";"164";"Patrimônio Cultural ";"0";;;"0"
+"01";"144";"Outros em Cultura";"0";;;"1"
+"01";"21";"Defesa Nacional";"0";;;"0"
+"01";"118";"Defesa Civil";"0";;"Bombeiros, enchentes, secas, desabamentos,  resgastes";"0"
+"01";"120";"Defesa militar";"0";;"Aeronáutica, Exercito, Marinha";"0"
+"01";"145";"Outros em Defesa Nacional";"0";;;"1"
+"01";"6";"Economia e Finanças";"0";;;"0"
+"01";"167";"Politica econômica";"0";;;"0"
+"01";"182";"Sistema Financeiro ";"0";;;"0"
+"01";"146";"Outros em Economia e Finanças";"0";;;"1"
+"01";"7";"Educação ";"0";"Suporte de educação como EAD deverão ser incluídos em um dos itens abaixo. ";;"0"
+"01";"123";"Educação básica";"0";;;"0"
+"01";"124";"Educação profissionalizante ";"0";;;"0"
+"01";"125";"Educação superior ";"0";;;"0"
+"01";"147";"Outros em Educação";"0";;;"1"
+"01";"22";"Energia";"0";;;"0"
+"01";"112";"Combustíveis";"0";;;"0"
+"01";"127";"Energia elétrica";"0";"Qualquer geração de energia elétrica ";;"0"
+"01";"148";"Outros em Energia";"0";;;"1"
+"01";"23";"Esporte e Lazer";"0";;;"0"
+"01";"128";"Esporte comunitário";"0";;;"0"
+"01";"129";"Esporte profissional";"0";;"Esportes remunerados, atletas de competição";"0"
+"01";"134";"Lazer";"0";;;"0"
+"01";"149";"Outros em Esporte e Lazer";"0";;;"1"
+"01";"24";"Habitação";"0";;;"0"
+"01";"132";"Habitação Rural";"0";;;"0"
+"01";"133";"Habitação Urbana";"0";;;"0"
+"01";"150";"Outros em Habitação";"0";;;"1"
+"01";"10";"Indústria";"0";;;"0"
+"01";"172";"Produção Industrial";"0";;;"0"
+"01";"136";"Mineração";"0";;;"0"
+"01";"173";"Propriedade Industria";"0";;;"0"
+"01";"151";"Outros em Industria";"0";;;"1"
+"01";"13";"Meio ambiente ";"0";;;"0"
+"01";"101";"Água";"0";;;"0"
+"01";"107";"Biodiversidade";"0";;;"0"
+"01";"109";"Clima";"0";;;"0"
+"01";"168";"Preservação e Conservação Ambiental";"0";;;"0"
+"01";"152";"Outros em Meio Ambiente";"0";;;"1"
+"01";"25";"Pesquisa e Desenvolvimento";"0";;;"0"
+"01";"121";"Difusão";"0";;;"0"
+"01";"153";"Outros em Pesquisa e Desenvolvimento";"0";;;"1"
+"01";"26";"Previdência Social";"0";;;"0"
+"01";"169";"Previdência Básica";"0";;;"0"
+"01";"170";"Previdência Complementar";"0";;;"0"
+"01";"154";"Outros em Previdência";"0";;;"1"
+"01";"27";"Proteção Social";"0";;;"0"
+"01";"103";"Assistência ao Idoso";"0";;;"0"
+"01";"104";"Assistência ao Portador de Deficiência";"0";;;"0"
+"01";"102";"Assistência à Criança e ao Adolescente";"0";;;"0"
+"01";"110";"Combate a desigualdade";"0";;;"0"
+"01";"108";"Cidadania";"0";"A alocação de cidadania em Proteção Social foi considerada “não ideal”, mas foi a melhor localização encontrada. ";;"0"
+"01";"155";"Outros em Proteção Social";"0";;;"1"
+"01";"14";"Relações Internacionais";"0";;;"0"
+"01";"177";"Relações Diplomáticas";"0";;;"0"
+"01";"116";"Cooperação Internacional";"0";;;"0"
+"01";"156";"Outros em Relações Internacionais";"0";;;"1"
+"01";"28";"Saneamento";"0";;;"0"
+"01";"178";"Saneamento Básico Rural";"0";;;"0"
+"01";"179";"Saneamento Básico Urbano";"0";;;"0"
+"01";"157";"Outros em Saneamento";"0";;;"1"
+"01";"15";"Saúde";"0";;;"0"
+"01";"105";"Assistência Hospitalar e Ambulatorial";"0";;;"0"
+"01";"106";"Atendimento básico ";"0";;;"0"
+"01";"111";"Combate a epidemias";"0";;;"0"
+"01";"135";"Medicamentos e aparelhos";"0";;;"0"
+"01";"188";"Vigilância Sanitária";"0";;;"0"
+"01";"158";"Outros em Saúde";"0";;;"1"
+"01";"29";"Segurança e Ordem Pública";"0";;;"0"
+"01";"166";"Policiamento";"0";;;"0"
+"01";"159";"Outros em Segurança e Ordem Pública";"0";;;"1"
+"01";"16";"Trabalho ";"0";;;"0"
+"01";"126";"Empregabilidade";"0";;;"0"
+"01";"131";"Fomento ao Trabalho";"0";;;"0"
+"01";"174";"Proteção e Benefícios ao Trabalhador";"0";;;"0"
+"01";"176";"Relações de Trabalho";"0";;;"0"
+"01";"160";"Outros em Trabalho";"0";;;"1"
+"01";"30";"Transportes";"0";;;"0"
+"01";"184";"Transporte Aéreo";"0";;;"0"
+"01";"189";"Transporte Ferroviário";"0";;;"0"
+"01";"185";"Transporte Hidroviário";"0";;;"0"
+"01";"186";"Transporte Rodoviário";"0";;;"0"
+"01";"161";"Outros em Transporte";"0";;;"1"
+"01";"31";"Urbanismo ";"0";;;"0"
+"01";"190";"Infra-Estrutura Urbana";"0";;"Ruas, redes elétrica, de águas, esgoto, equipamentos de limpeza";"0"
+"01";"181";"Serviços Urbanos";"0";;;"0"
+"01";"162";"Outros em Urbanismo";"0";;;"1"
+"02";"2";"165";"TG";"18";;
+"02";"3";"114";"TG";"18";;
+"02";"4";"130";"TG";"18";;
+"02";"5";"137";"TG";"18";;
+"02";"6";"138";"TG";"18";;
+"02";"7";"139";"TG";"18";;
+"02";"8";"163";"TG";"18";;
+"02";"9";"175";"TG";"18";;
+"02";"10";"180";"TG";"18";;
+"02";"11";"140";"TG";"18";;
+"02";"13";"100";"TG";"1";;
+"02";"14";"117";"TG";"1";;
+"02";"15";"171";"TG";"1";;
+"02";"16";"141";"TG";"1";;
+"02";"18";"113";"TG";"3";;
+"02";"19";"119";"TG";"3";;
+"02";"20";"187";"TG";"3";;
+"02";"21";"142";"TG";"3";;
+"02";"23";"115";"TG";"19";;
+"02";"24";"183";"TG";"19";;
+"02";"25";"143";"TG";"19";;
+"02";"27";"122";"TG";"20";;
+"02";"28";"164";"TG";"20";;
+"02";"29";"144";"TG";"20";;
+"02";"31";"118";"TG";"21";;
+"02";"32";"120";"TG";"21";;
+"02";"33";"145";"TG";"21";;
+"02";"35";"167";"TG";"25";;
+"02";"36";"182";"TG";"25";;
+"02";"37";"146";"TG";"25";;
+"02";"39";"123";"TG";"7";;
+"02";"40";"124";"TG";"7";;
+"02";"41";"125";"TG";"7";;
+"02";"42";"147";"TG";"7";;
+"02";"44";"112";"TG";"22";;
+"02";"45";"127";"TG";"22";;
+"02";"46";"148";"TG";"22";;
+"02";"48";"128";"TG";"23";;
+"02";"49";"129";"TG";"23";;
+"02";"50";"134";"TG";"23";;
+"02";"51";"149";"TG";"23";;
+"02";"53";"132";"TG";"24";;
+"02";"54";"133";"TG";"24";;
+"02";"55";"150";"TG";"24";;
+"02";"57";"172";"TG";"10";;
+"02";"58";"136";"TG";"10";;
+"02";"59";"173";"TG";"10";;
+"02";"60";"151";"TG";"10";;
+"02";"62";"101";"TG";"10";;
+"02";"63";"107";"TG";"10";;
+"02";"64";"109";"TG";"10";;
+"02";"65";"168";"TG";"10";;
+"02";"66";"152";"TG";"10";;
+"02";"68";"121";"TG";"25";;
+"02";"69";"153";"TG";"25";;
+"02";"71";"169";"TG";"26";;
+"02";"72";"170";"TG";"26";;
+"02";"73";"154";"TG";"26";;
+"02";"75";"103";"TG";"27";;
+"02";"76";"104";"TG";"27";;
+"02";"77";"102";"TG";"27";;
+"02";"78";"110";"TG";"27";;
+"02";"79";"108";"TG";"27";;
+"02";"80";"155";"TG";"27";;
+"02";"82";"177";"TG";"14";;
+"02";"83";"116";"TG";"14";;
+"02";"84";"156";"TG";"14";;
+"02";"86";"178";"TG";"28";;
+"02";"87";"179";"TG";"28";;
+"02";"88";"157";"TG";"28";;
+"02";"90";"105";"TG";"15";;
+"02";"91";"106";"TG";"15";;
+"02";"92";"111";"TG";"15";;
+"02";"93";"135";"TG";"15";;
+"02";"94";"188";"TG";"15";;
+"02";"95";"158";"TG";"15";;
+"02";"97";"118";"TG";"21";;
+"02";"98";"166";"TG";"29";;
+"02";"99";"159";"TG";"29";;
+"02";"101";"126";"TG";"29";;
+"02";"102";"131";"TG";"29";;
+"02";"103";"174";"TG";"29";;
+"02";"104";"176";"TG";"29";;
+"02";"105";"160";"TG";"29";;
+"02";"107";"184";"TG";"30";;
+"02";"108";"189";"TG";"30";;
+"02";"109";"185";"TG";"30";;
+"02";"110";"186";"TG";"30";;
+"02";"111";"161";"TG";"30";;
+"02";"113";"190";"TG";"30";;
+"02";"114";"181";"TG";"30";;
+"02";"115";"162";"TG";"30";;
