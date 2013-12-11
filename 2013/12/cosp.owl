@@ -1,0 +1,704 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://participa.br/ontologies/cosp.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://participa.br/ontologies/cosp.owl">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="Corais" IRI="http://lumii.lv/ontologies/Corais.owl#"/>
+    <Prefix name="owl2xml" IRI="http://www.w3.org/2006/12/owl2-xml#"/>
+    <Prefix name="XMLSchema" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owlFields" IRI="http://owlgred.lumii.lv/__plugins/fields/2011/1.0/owlgred#"/>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActionScope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cause"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Executor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Initiator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParticipationCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pessoa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Problem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Result"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialActor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Solution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supporter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Theme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToScope"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#composesSolution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#executesAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generatesCause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParticipationCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTheme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#producesResults"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#proposesSolution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#solvesProblem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#startsCause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supportsCause"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#belongsToScope"/>
+            <Class IRI="#ActionScope"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#producesResults"/>
+            <Class IRI="#Result"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cause"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasAction"/>
+            <Class IRI="#Action"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cause"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTheme"/>
+            <Class IRI="#Theme"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cause"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#proposesSolution"/>
+            <Class IRI="#Solution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Executor"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Executor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#executesAction"/>
+            <Class IRI="#Action"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Initiator"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Initiator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#startsCause"/>
+            <Class IRI="#Cause"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organization"/>
+        <Class IRI="#SocialActor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pessoa"/>
+        <Class IRI="#SocialActor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Problem"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generatesCause"/>
+            <Class IRI="#Cause"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialActor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRole"/>
+            <Class IRI="#Role"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Solution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#solvesProblem"/>
+            <Class IRI="#Problem"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supporter"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supporter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#supportsCause"/>
+            <Class IRI="#Cause"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsToScope"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#composesSolution"/>
+        <Class IRI="#Result"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#executesAction"/>
+        <Class IRI="#Executor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generatesCause"/>
+        <Class IRI="#Problem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAction"/>
+        <Class IRI="#Cause"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParticipationCharacteristic"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRole"/>
+        <Class IRI="#SocialActor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTheme"/>
+        <Class IRI="#Cause"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#producesResults"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#proposesSolution"/>
+        <Class IRI="#Cause"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#solvesProblem"/>
+        <Class IRI="#Solution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#startsCause"/>
+        <Class IRI="#Initiator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#supportsCause"/>
+        <Class IRI="#Supporter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsToScope"/>
+        <Class IRI="#ActionScope"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#composesSolution"/>
+        <Class IRI="#Solution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#executesAction"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#generatesCause"/>
+        <Class IRI="#Cause"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAction"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParticipationCharacteristic"/>
+        <Class IRI="#ParticipationCharacteristic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRole"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTheme"/>
+        <Class IRI="#Theme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#producesResults"/>
+        <Class IRI="#Result"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#proposesSolution"/>
+        <Class IRI="#Solution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#solvesProblem"/>
+        <Class IRI="#Problem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#startsCause"/>
+        <Class IRI="#Cause"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#supportsCause"/>
+        <Class IRI="#Cause"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Action</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">O que será feito em termos de participação social</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Action</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">O que será feito em termos de participação social</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Action</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">What will be done in terms of social participation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Action</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Action</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Ação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ActionScope</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">A abrangência de execução da ação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ActionScope</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Qual abrangência de execução da ação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ActionScope</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The scope of action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ActionScope</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Action Scope</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ActionScope</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Escopo de Ação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cause</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">O que motiva a execução dessa ação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cause</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">O que motiva a execução dessa ação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cause</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">What motivates execution of action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cause</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Causa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cause</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cause</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Executor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Entity that might have a role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Executor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">O ator tem o papel daquele que executará a ação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Executor</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">executa a ação diretamente, sendo responsável por seus resultados</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Executor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Executor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Executor</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Executor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Initiator</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Dá origem, concebe (individual ou coletivamente sendo co-iniciador) a causa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Initiator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">O ator tem o papel daquele que inicia a ação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Initiator</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Originates cause, individually or collaboratively.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Initiator</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Iniciador</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Initiator</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Initiator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Organization</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Grupo de pessoas organizadas formal ou informalmente (ie. coletivos, movimentos etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Organization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">O ator é uma pessoa jurídica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Organization</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Social actor is a  group of individuals, organized formally or informally (e.g. movements, collectives)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Organization</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Organization</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Organização</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ParticipationCharacteristic</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The role of actor in the context of action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ParticipationCharacteristic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">de que mod</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ParticipationCharacteristic</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">de que modo, dentro de diferentes possíveis, este ator realiza sua ação?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ParticipationCharacteristic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dentro de diferentes possíveis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ParticipationCharacteristic</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">este ator realiza sua ação?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ParticipationCharacteristic</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Característica da Participação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ParticipationCharacteristic</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Participation Characteristic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pessoa</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Ator social é uma pessoa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pessoa</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">O ator é uma pessoa física</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pessoa</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Social actor is a person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pessoa</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pessoa</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Pessoa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Problem</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">O que motiva a execução dessa ação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Problem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Qual problema específico a ação visa resolver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Problem</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">What will be done in terms of social participation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Problem</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Problem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Problem</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Problema</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Result</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">How is participation, of a specific actor, happening</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Result</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Que resultados foram obtidos com a realização da ação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Result</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Que resultados foram obtidos com a realização da ação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Result</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Result</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Result</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Resultado</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Role</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">O papel operado pelo ator no contexto da ação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Role</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Qual o papel operado pelo ator no contexto da ação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Role</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The role of actor in the context of action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Role</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Papel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Role</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SocialActor</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Entidade que pode possuir papel na ação.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SocialActor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Entity that might have a role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SocialActor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Quem executa uma ação.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SocialActor</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Ator Social</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SocialActor</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Social Actor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Solution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Que soluções foram alcançadas com a realização da ação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Solution</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Que soluções foram alcançadas com a realização da ação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Solution</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Solution achieved with the action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Solution</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Solution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Solution</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Solução</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Supporter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">O ator tem o papel de apoiador da ação</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Supporter</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Supports a cause with resources of any kind (e.g. cognitive, financial, equipments...)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Supporter</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">apoia uma causa com recursos de qualquer tipo (ie. financeiros, econômicos materiais, cognitivos, relacionais etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Supporter</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Apoiador</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Supporter</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Supporter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Theme</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sobre qual tema, de um possível conjunto específico, a ação versará</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Theme</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Sobre qual tema, de um possível conjunto específico, a ação versará</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Theme</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Which theme is in focus by action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Theme</IRI>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Tema</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Theme</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Theme</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
