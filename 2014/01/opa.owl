@@ -1,0 +1,996 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://purl.org/socialparticipation/opa#"
+     xml:base="http://purl.org/socialparticipation/opa"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.org/socialparticipation/opa"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#adoptsMechanism -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#adoptsMechanism">
+        <rdfs:label xml:lang="pt">adota mecanismo</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#Community"/>
+        <rdfs:range rdf:resource="http://purl.org/socialparticipation/opa#ParticipationMechanism"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#containsParticipant -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#containsParticipant">
+        <rdfs:label xml:lang="pt">contém participante</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#Community"/>
+        <rdfs:range rdf:resource="http://purl.org/socialparticipation/opa#Participant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#containsSubcommunity -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#containsSubcommunity">
+        <rdfs:label xml:lang="pt">contém subcomunidade</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#Community"/>
+        <rdfs:range rdf:resource="http://purl.org/socialparticipation/opa#Subcommunity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#enablesParticipationMechanism -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#enablesParticipationMechanism">
+        <rdfs:label xml:lang="pt">possibilita mecanismo participativo</rdfs:label>
+        <rdfs:range rdf:resource="http://purl.org/socialparticipation/opa#ParticipationMechanism"/>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#Portal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#hasEvent -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#hasEvent">
+        <rdfs:label xml:lang="pt">possui evento</rdfs:label>
+        <rdfs:range rdf:resource="http://purl.org/socialparticipation/opa#ParticipationEvent"/>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#ParticipationTrac"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#hasIntegratedIncidence -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#hasIntegratedIncidence">
+        <rdfs:label xml:lang="pt">possui incidência integrada</rdfs:label>
+        <owl:inverseOf rdf:resource="http://purl.org/socialparticipation/opa#integratesMechanism"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/socialparticipation/opa#inverseProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#hasParticipationCharacteristic -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#hasParticipationCharacteristic">
+        <rdfs:label xml:lang="pt">possui característica participativa</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#Community"/>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#Participant"/>
+        <rdfs:range rdf:resource="http://purl.org/socialparticipation/opa#ParticipationCharacteristic"/>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#ParticipationMechanism"/>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#Portal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#hasReferenceInformation -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#hasReferenceInformation">
+        <rdfs:label xml:lang="pt">possui informação de referência</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#Community"/>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#Participant"/>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#ParticipationMechanism"/>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#Portal"/>
+        <rdfs:range rdf:resource="http://purl.org/socialparticipation/opa#ReferenceInformation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#integratesMechanism -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#integratesMechanism">
+        <rdfs:label xml:lang="pt">integra mecanismo</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#ParticipationIncidence"/>
+        <rdfs:range rdf:resource="http://purl.org/socialparticipation/opa#ParticipationMechanism"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#inverseProperties -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#inverseProperties">
+        <rdfs:label xml:lang="pt">propriedades inversas</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#isAdoptedByCommunity -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#isAdoptedByCommunity">
+        <rdfs:label xml:lang="pt">é adotado pela comunidade</rdfs:label>
+        <owl:inverseOf rdf:resource="http://purl.org/socialparticipation/opa#adoptsMechanism"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/socialparticipation/opa#inverseProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#isContainedBySupercommunity -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#isContainedBySupercommunity">
+        <rdfs:label xml:lang="pt">é contida por supercomunidade</rdfs:label>
+        <owl:inverseOf rdf:resource="http://purl.org/socialparticipation/opa#containsSubcommunity"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/socialparticipation/opa#inverseProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#isEnabledByPortal -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#isEnabledByPortal">
+        <rdfs:label xml:lang="pt">é possibilitado pelo portal</rdfs:label>
+        <owl:inverseOf rdf:resource="http://purl.org/socialparticipation/opa#enablesParticipationMechanism"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/socialparticipation/opa#inverseProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#isFriendOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#isFriendOf">
+        <rdfs:label xml:lang="pt">é amigo de</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#Participant"/>
+        <rdfs:range rdf:resource="http://purl.org/socialparticipation/opa#Participant"/>
+        <owl:inverseOf rdf:resource="http://purl.org/socialparticipation/opa#isFriendOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#isMemberOfCommunity -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#isMemberOfCommunity">
+        <rdfs:label xml:lang="pt">é membro da comunidade</rdfs:label>
+        <owl:inverseOf rdf:resource="http://purl.org/socialparticipation/opa#containsParticipant"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/socialparticipation/opa#inverseProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#isPartOfTrac -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#isPartOfTrac">
+        <rdfs:label xml:lang="pt">é parte da trilha</rdfs:label>
+        <owl:inverseOf rdf:resource="http://purl.org/socialparticipation/opa#hasEvent"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/socialparticipation/opa#inverseProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#isParticipationCharacteristicOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#isParticipationCharacteristicOf">
+        <rdfs:label xml:lang="pt">é característica participativa de</rdfs:label>
+        <owl:inverseOf rdf:resource="http://purl.org/socialparticipation/opa#hasParticipationCharacteristic"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/socialparticipation/opa#inverseProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#isPerformedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#isPerformedBy">
+        <rdfs:label xml:lang="pt">é executada por participante</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/socialparticipation/opa#inverseProperties"/>
+        <owl:inverseOf rdf:resource="http://purl.org/socialparticipation/opa#performsParticipation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#isProducedByMechanism -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#isProducedByMechanism">
+        <rdfs:label xml:lang="pt">é produzido por mecanismo</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/socialparticipation/opa#inverseProperties"/>
+        <owl:inverseOf rdf:resource="http://purl.org/socialparticipation/opa#producesResult"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#isReceivedByPortal -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#isReceivedByPortal">
+        <rdfs:label xml:lang="pt">é recebido pelo portal</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/socialparticipation/opa#inverseProperties"/>
+        <owl:inverseOf rdf:resource="http://purl.org/socialparticipation/opa#receivesCommunity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#isReferenceInformationOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#isReferenceInformationOf">
+        <rdfs:label xml:lang="pt">é informação de referência de</rdfs:label>
+        <owl:inverseOf rdf:resource="http://purl.org/socialparticipation/opa#hasReferenceInformation"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/socialparticipation/opa#inverseProperties"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#isRegisteredInPortal -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#isRegisteredInPortal">
+        <rdfs:label xml:lang="pt">é registrado no portal</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/socialparticipation/opa#inverseProperties"/>
+        <owl:inverseOf rdf:resource="http://purl.org/socialparticipation/opa#receivesParticipant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#isUsedByMechanism -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#isUsedByMechanism">
+        <rdfs:label xml:lang="pt">é usado por mecanismo</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/socialparticipation/opa#inverseProperties"/>
+        <owl:inverseOf rdf:resource="http://purl.org/socialparticipation/opa#usesCommunicationMedium"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#isUsedByParticipant -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#isUsedByParticipant">
+        <rdfs:label xml:lang="pt">é usado por participante</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/socialparticipation/opa#inverseProperties"/>
+        <owl:inverseOf rdf:resource="http://purl.org/socialparticipation/opa#participatesThroughMechanism"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#participatesThroughMechanism -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#participatesThroughMechanism">
+        <rdfs:label xml:lang="pt">participa através de mecanismo</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#Participant"/>
+        <rdfs:range rdf:resource="http://purl.org/socialparticipation/opa#ParticipationMechanism"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#performsParticipation -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#performsParticipation">
+        <rdfs:label xml:lang="pt">realiza participação</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#Participant"/>
+        <rdfs:range rdf:resource="http://purl.org/socialparticipation/opa#ParticipationIncidence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#producesResult -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#producesResult">
+        <rdfs:label xml:lang="pt">produz resultado</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#ParticipationMechanism"/>
+        <rdfs:range rdf:resource="http://purl.org/socialparticipation/opa#Result"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#receivesCommunity -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#receivesCommunity">
+        <rdfs:label xml:lang="pt">recebe comunidade</rdfs:label>
+        <rdfs:range rdf:resource="http://purl.org/socialparticipation/opa#Community"/>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#Portal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#receivesParticipant -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#receivesParticipant">
+        <rdfs:label xml:lang="pt">recebe participante</rdfs:label>
+        <rdfs:range rdf:resource="http://purl.org/socialparticipation/opa#Participant"/>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#Portal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#usesCommunicationMedium -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/socialparticipation/opa#usesCommunicationMedium">
+        <rdfs:label xml:lang="pt">usa meio de comunicação</rdfs:label>
+        <rdfs:range rdf:resource="http://purl.org/socialparticipation/opa#CommunicationMedium"/>
+        <rdfs:domain rdf:resource="http://purl.org/socialparticipation/opa#ParticipationMechanism"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Attribution -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Attribution">
+        <rdfs:label xml:lang="pt">Atribuição</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipantInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#AutodeclaredCharacteristic -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#AutodeclaredCharacteristic">
+        <rdfs:label xml:lang="pt">Característica Autodeclarada</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipationCharacteristic"/>
+        <rdfs:comment xml:lang="pt">Característica Participativa declarada pelo próprio Participante.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Blog -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Blog">
+        <rdfs:label xml:lang="pt">Blog</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipationMechanism"/>
+        <rdfs:comment xml:lang="pt">Mecanismo para postagens de acordo com as necessidades do usuário, comunidade ou mecanismo que possui o Blog.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#BlogPost -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#BlogPost">
+        <rdfs:label xml:lang="pt">Postagem de Blog</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#Post"/>
+        <rdfs:comment xml:lang="pt">Postagem realizada em Blog.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#BlogPostComment -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#BlogPostComment">
+        <rdfs:label xml:lang="pt">Comentário em Postagem de Blog</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#Comment"/>
+        <rdfs:comment xml:lang="pt">Comentário referente a uma Postagem de Blog.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#CPF -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#CPF">
+        <rdfs:label xml:lang="pt">CPF</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipantInformation"/>
+        <rdfs:comment xml:lang="pt">Número do Cadastro de Pessoa Física</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Classification -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Classification">
+        <rdfs:label xml:lang="pt">Classificação</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipationCharacteristic"/>
+        <rdfs:comment xml:lang="pt">Classificação da Atividade Participativa.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Comment -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Comment">
+        <rdfs:label xml:lang="pt">Comentário</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipationIncidence"/>
+        <rdfs:comment xml:lang="pt">Material em texto ou multimídia, referente a algum material compartilhado como Postagem.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#CommentComment -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#CommentComment">
+        <rdfs:label xml:lang="pt">Comentário em Comentário</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#Comment"/>
+        <rdfs:comment xml:lang="pt">Comentário feito a respeito de outro Comentário.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#CommunicationMedium -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#CommunicationMedium">
+        <rdfs:label xml:lang="pt">Meio de Comunicação</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipationMechanismInformation"/>
+        <rdfs:comment xml:lang="pt">Meio utilizado para realizar a comunicação necessária para a participação.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Community -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Community">
+        <rdfs:label xml:lang="pt">Comunidade</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/socialparticipation/opa#containsParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/socialparticipation/opa#Participant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#CommunityInformation -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#CommunityInformation">
+        <rdfs:label xml:lang="pt">Informação de Comunidade</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ReferenceInformation"/>
+        <rdfs:comment xml:lang="pt">Informação de Referência tipicamente vinculada a uma Comunidade</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#CountableCharacteristic -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#CountableCharacteristic">
+        <rdfs:label xml:lang="pt">Característica Contável</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipationCharacteristic"/>
+        <rdfs:comment xml:lang="pt">Característica contável da Atividade Participativa</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#CreationDate -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#CreationDate">
+        <rdfs:label xml:lang="pt">Data de Criação</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#CommunityInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#CreatorOfCommunity -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#CreatorOfCommunity">
+        <rdfs:label xml:lang="pt">Criador da Comunidade</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#CommunityInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Date -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Date">
+        <rdfs:label xml:lang="pt">Data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ReferenceInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#DialogStrategy -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#DialogStrategy">
+        <rdfs:label xml:lang="pt">Estratégia de Diálogo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#CommunityInformation"/>
+        <rdfs:comment xml:lang="pt">Encadeamento lógico de Eventos Participativos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Email -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Email">
+        <rdfs:label xml:lang="pt">E-mail</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipantInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#FinalDate -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#FinalDate">
+        <rdfs:label xml:lang="pt">Data Final</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#Date"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#FormalLink -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#FormalLink">
+        <rdfs:label xml:lang="pt">Vínculo Formal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipantInformation"/>
+        <rdfs:comment xml:lang="pt">Vínculo Formal com alguma entidade ou pessoa.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Forum -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Forum">
+        <rdfs:label xml:lang="pt">Fórum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipationEvent"/>
+        <rdfs:comment xml:lang="pt">Mecanismo voltado para Postagens e Comentários de Participantes de alguma Comunidade, com potenciais delimitações de tema, propósito, dinâmica, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#ForumPost -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#ForumPost">
+        <rdfs:label xml:lang="pt">Postagem de Fórum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#Post"/>
+        <rdfs:comment xml:lang="pt">Postagem realizada em Fórum.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#ForumPostComment -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#ForumPostComment">
+        <rdfs:label xml:lang="pt">Comentário em Postagem de Fórum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#Comment"/>
+        <rdfs:comment xml:lang="pt">comentário referente a uma Postagem de Fórum.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#GalleryPost -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#GalleryPost">
+        <rdfs:label xml:lang="pt">Postagem de Galeria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#Post"/>
+        <rdfs:comment xml:lang="pt">Postagem realizada em Galeria de Imagens.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#ID -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#ID">
+        <rdfs:label xml:lang="pt">ID</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipantInformation"/>
+        <rdfs:comment xml:lang="pt">Identificador de usuário no sistema do ParticipaBR e outros serviços.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#ID.id -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#ID.id">
+        <rdfs:label xml:lang="pt">ID.id</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ID"/>
+        <rdfs:comment xml:lang="pt">Identificador de usuário do serviço informado.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#ID.service -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#ID.service">
+        <rdfs:label xml:lang="pt">ID.service</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ID"/>
+        <rdfs:comment xml:lang="pt">URL do serviço ao qual se refere a identificação registrada: &quot;http://participa.br&quot;, &quot;http://www.facebook.com&quot;, &quot;http://www.google.com&quot;, &quot;http://Identi.ca&quot;, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#ImageGallery -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#ImageGallery">
+        <rdfs:label xml:lang="pt">Galeria de Imagens</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipationMechanism"/>
+        <rdfs:comment xml:lang="pt">Mecanismo para registro e exibição de imagens.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#ImageGalleryComment -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#ImageGalleryComment">
+        <rdfs:label xml:lang="pt">Comentário em Galeria de Imagens</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#Comment"/>
+        <rdfs:comment xml:lang="pt">Comentário referente a uma Postagem de Galeria de Imagens.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#InitialDate -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#InitialDate">
+        <rdfs:label xml:lang="pt">Data Inicial</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#Date"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Mixed -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Mixed">
+        <rdfs:label xml:lang="pt">Misto</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#CommunicationMedium"/>
+        <rdfs:comment xml:lang="pt">Meio de comunicação tanto virtual quanto presencial.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#MultipleChoiceVote -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#MultipleChoiceVote">
+        <rdfs:label xml:lang="pt">Voto de Múltipla Escolha</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#Vote"/>
+        <rdfs:comment xml:lang="pt">Escolha dentre múltiplas escolhas, para ser contabilizada.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Name -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Name">
+        <rdfs:label xml:lang="pt">Nome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ReferenceInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#NegativeVote -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#NegativeVote">
+        <rdfs:label xml:lang="pt">Voto Negativo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#Vote"/>
+        <rdfs:comment xml:lang="pt">Manifestação negativa com o fim de ser contabilizada.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Participant -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Participant">
+        <rdfs:label xml:lang="pt">Participante</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/socialparticipation/opa#isRegisteredInPortal"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/socialparticipation/opa#Portal"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/socialparticipation/opa#hasReferenceInformation"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/socialparticipation/opa#Remuneration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="pt">Pessoa cadastrada no ParticipaBR, contribuidor em potencial.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#ParticipantInformation -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#ParticipantInformation">
+        <rdfs:label xml:lang="pt">Informação de Participante</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ReferenceInformation"/>
+        <rdfs:comment xml:lang="pt">Informação de Referência tipicamente vinculada a um Participante.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#ParticipantName -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#ParticipantName">
+        <rdfs:label xml:lang="pt">Nome de Participante</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipantInformation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#ParticipationActivity -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#ParticipationActivity">
+        <rdfs:label xml:lang="pt">Atividade Participativa</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipationCharacteristic"/>
+        <rdfs:comment xml:lang="pt">Conjunto de todas as Incidências Participativas do Participante, Comunidade, Mecanismo Participativo ou ParticipaBR</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#ParticipationCharacteristic -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#ParticipationCharacteristic">
+        <rdfs:label xml:lang="pt">Característica Participativa</rdfs:label>
+        <rdfs:comment xml:lang="pt">Observação sobre Incidências Participativas.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#ParticipationEvent -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#ParticipationEvent">
+        <rdfs:label xml:lang="pt">Evento Participativo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipationMechanism"/>
+        <rdfs:comment xml:lang="pt">Mecanismo Participativo que compõe Trilha Participativa.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#ParticipationIncidence -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#ParticipationIncidence">
+        <rdfs:label xml:lang="pt">Incidência Participativa</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/socialparticipation/opa#integratesMechanism"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/socialparticipation/opa#ParticipationMechanism"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="pt">Atividade vinculada a um Mecanismo Participativo.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#ParticipationMechanism -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#ParticipationMechanism">
+        <rdfs:label xml:lang="pt">Mecanismo Participativo</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/socialparticipation/opa#producesResult"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/socialparticipation/opa#Result"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/socialparticipation/opa#usesCommunicationMedium"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/socialparticipation/opa#CommunicationMedium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="pt">Forma ou ferramenta de participação.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#ParticipationMechanismInformation -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#ParticipationMechanismInformation">
+        <rdfs:label xml:lang="pt">Informação de Mecanismo Participativo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ReferenceInformation"/>
+        <rdfs:comment xml:lang="pt">Informação de Referência tipicamente vinculada a um Mecanismo Participativo.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#ParticipationTrac -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#ParticipationTrac">
+        <rdfs:label xml:lang="pt">Trilha Participativa</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipationMechanism"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/socialparticipation/opa#hasEvent"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/socialparticipation/opa#ParticipationEvent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="pt">Sucessão de Eventos Participativos, potencialmente configurados segundo a Estratégia de Diálogo de alguma Comunidade.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Portal -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Portal">
+        <rdfs:label xml:lang="pt">Portal</rdfs:label>
+        <rdfs:comment xml:lang="pt">Portal de participação social.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#PortalInformation -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#PortalInformation">
+        <rdfs:label xml:lang="pt">Informação do Portal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ReferenceInformation"/>
+        <rdfs:comment xml:lang="pt">Informações de Referência tipicamente associados ao Portal</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#PositiveVote -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#PositiveVote">
+        <rdfs:label xml:lang="pt">Voto Positivo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#Vote"/>
+        <rdfs:comment xml:lang="pt">Manifestação positiva com o fim de ser contabilizada.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Post -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Post">
+        <rdfs:label xml:lang="pt">Postagem</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipationIncidence"/>
+        <rdfs:comment xml:lang="pt">Compartilhamento de mídia para usufruto de Comunidade ou Mecanismo Participativo, frequentemente em formato apto a receber comentários.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Proposer -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Proposer">
+        <rdfs:label xml:lang="pt">Propositor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ReferenceInformation"/>
+        <rdfs:comment xml:lang="pt">Pessoa que propôs ação.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#PublicConsultation -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#PublicConsultation">
+        <rdfs:label xml:lang="pt">Consulta Pública</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipationEvent"/>
+        <rdfs:comment xml:lang="pt">Mecanismo dedicado à pesquisa de opinião.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#PublicConsultationComment -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#PublicConsultationComment">
+        <rdfs:label xml:lang="pt">Comentário em Consulta Pública</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#Comment"/>
+        <rdfs:comment xml:lang="pt">Comentário referente a uma Postagem de Consulta Pública.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#ReferenceInformation -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#ReferenceInformation">
+        <rdfs:label xml:lang="pt">Informação de Referência</rdfs:label>
+        <rdfs:comment xml:lang="pt">Informações básicas, como definições e identificadores.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Remuneration -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Remuneration">
+        <rdfs:label xml:lang="en">Remuneration</rdfs:label>
+        <rdfs:label xml:lang="pt">Remuneração</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipantInformation"/>
+        <rdfs:comment xml:lang="en">Remuneração recebida pelo participante
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#ResponsabilityOf -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#ResponsabilityOf">
+        <rdfs:label xml:lang="pt">Responsável</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ReferenceInformation"/>
+        <rdfs:comment xml:lang="pt">Pessoa ou entidade responsável pelo recurso.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Result -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Result">
+        <rdfs:label xml:lang="pt">Resultado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#SharedPhysicalSpace -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#SharedPhysicalSpace">
+        <rdfs:label xml:lang="pt">Espaço Físico Compartilhado</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#CommunicationMedium"/>
+        <rdfs:comment xml:lang="pt">Meio de comunicação presencial via proximidade no espaço físico.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Subcommunity -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Subcommunity">
+        <rdfs:label xml:lang="pt">Subcomunidade</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/socialparticipation/opa#Community"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/socialparticipation/opa#isContainedBySupercommunity"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.org/socialparticipation/opa#Community"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="pt">subconjunto particular de um conjunto de pessoas com interesses em comum.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Tags -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Tags">
+        <rdfs:label xml:lang="pt">Tags</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ReferenceInformation"/>
+        <rdfs:comment xml:lang="pt">Etiquetas para indicação de conteúdo.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Virtual -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Virtual">
+        <rdfs:label xml:lang="pt">Virtual</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#CommunicationMedium"/>
+        <rdfs:comment xml:lang="pt">Meio de comunicação virtual, via recursos digitais.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Visitation -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Visitation">
+        <rdfs:label xml:lang="pt">Visitação</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipationIncidence"/>
+        <rdfs:comment xml:lang="pt">Visita feita a algum recurso do ParticipaBR.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/socialparticipation/opa#Vote -->
+
+    <owl:Class rdf:about="http://purl.org/socialparticipation/opa#Vote">
+        <rdfs:label xml:lang="pt">Voto</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.org/socialparticipation/opa#ParticipationIncidence"/>
+        <rdfs:comment xml:lang="pt">Manifestação positiva ou negativa, ou por múltipla escolha, com o fim de ser contabilizada.</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
