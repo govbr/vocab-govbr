@@ -242,7 +242,7 @@ h2 {
     margin: 10px 0 0 0;
 }
 
-.authors h3 {
+.authors h5 {
     display: inline;
     font-size: 12px;
     font-weight: bold;
@@ -258,12 +258,12 @@ h2 {
     margin: 7px 0 10px 0;
 }
 
-.abstract h3 {
+.abstract h5 {
     display: inline;
     font-size: 12px;
     font-weight: bold;
 }
-.abstract h3:after {
+.abstract h5:after {
     content: " ";
 }
 
@@ -277,7 +277,7 @@ h2 {
     margin: 0;
 }
 
-.namespace-uri h3 {
+.namespace-uri h5 {
     display: inline;
     font-size: 12px;
     font-weight: bold;
