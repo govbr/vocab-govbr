@@ -728,3 +728,44 @@ footer {
     -moz-border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
 }
+
+/* `Barra Acessibilidade
+----------------------------------------------------------------------------------------------------*/
+
+#acessibilidade {  
+  background: url(../img/bg/bg-acessibilidade.png) repeat-x;
+  padding: 0px;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+}
+
+#acessibilidade .atalhos {
+  float: left;  
+}
+
+#acessibilidade .atalhos li{
+  display: inline;
+  padding: 0 0 0 0px;
+}
+
+#acessibilidade .links {
+  float: right;
+  background: url(../img/bg/bg-links.png) no-repeat 165px 0 ;
+}
+
+#acessibilidade .links li{
+  display: inline;
+  padding: 6px 10px;
+}
+
+.ipular {background: url(../img/bg/i_pular.png) no-repeat 0px 3px; width: 10px; height: 10px; padding-left: 18px}
+.ipular:hover {background: url(../img/bg/i_pular.png) no-repeat 0px -10px; width: 10px; height: 10px; padding-left: 18px}
+
+.iacessibilidade {background: url(../img/bg/contraste.png) no-repeat 2px 1px; width: 15px; height: 10px; padding-left: 20px}
+.iautocontraste {background: url(../img/bg/altocontraste.png) no-repeat 2px 1px; width: 15px; height: 10px; padding-left: 20px}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
