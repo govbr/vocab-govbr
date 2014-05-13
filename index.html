@@ -59,7 +59,12 @@
 </script>  
 </head>
 <body>
-<div id="barra-brasil"><a href="http://brasil.gov.br" style="background:#7F7F7F; height: 20px; padding:4px 0 4px 10px; display: block; font-family:sans,sans-serif; text-decoration:none; color:white; ">Portal do Governo Brasileiro</a></div>
+<div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;"> 
+	<ul id="menu-barra-temp" style="list-style:none;">
+		<li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED"><a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a></li> 
+		<li><a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a></li>
+	</ul>
+</div>
 <div class="container_24 containerPrincipal">
  <header>
         <div id="topo" class="grid_21 prefix_1">
@@ -71,7 +76,7 @@
 
 <div class="grid_21 prefix_1" >
 
-<h3 class="divisao">Definição</h3>
+<h2 class="divisao">Definição</h2>
 <p>O e-VoG (Vocabulários e Ontologias do Governo Eletrônico) é um conjunto de padrões,
 ferramentas e metodologias para possibilitar: o intercâmbio de informações com acordo semântico,
 de forma a viabilizar o pronto cruzamento de dados de diversas fontes; o uso de metodologias de
@@ -95,18 +100,18 @@ coerente; o alinhamento conceitual das diversas áreas do conhecimento do govern
 <h3 class="divisao">Estáveis</h3>
 
 <div class="vocabulary-node node">
-  <h2><a href="http://vocab.e.gov.br/edgv/2.1">EDGV</a></h2>
+  <h4><a href="http://vocab.e.gov.br/edgv/2.1">EDGV</a></h4>
   <div class="content clear-block">
       <div class="authors">
-        <h3>Autores:</h3>
+        <h5>Autores:</h5>
         <span class="value"><a href="http://www.concar.gov.br/">Comissão Nacional de Cartografia (CONCAR) do Governo Brasileiro</a></span>
       </div>
       <div class="abstract">
-	<h3>Descrição:</h3>
+	<h5>Descrição:</h5>
 	<span class="value">Estruturação de Dados Geoespaciais Vetoriais.</span>
       </div>
       <div class="namespace-uri">
-        <h3>Namespace URI:</h3>
+        <h5>Namespace URI:</h5>
         <span class="value"><a href="http://vocab.e.gov.br/edgv/2.1">http://vocab.e.gov.br/edgv/2.1</a></span>
       </div>
   </div>
@@ -114,40 +119,44 @@ coerente; o alinhamento conceitual das diversas áreas do conhecimento do govern
 
 
 <div class="vocabulary-node node">
-  <h2><a href="http://vocab.e.gov.br/id/governo">VCGE 2.0.2</a></h2>
+  <h4><a href="http://vocab.e.gov.br/id/governo">VCGE 2.0.2</a></h4>
   <div class="content clear-block">
       <div class="authors">
-        <h3>Autores:</h3>
+        <h5>Autores:</h5>
         <span class="value"><a href="http://www.eping.e.gov.br">ePING</a></span>
       </div>
       <div class="abstract">
-	<h3>Descrição:</h3>
+	<h5>Descrição:</h5>
 	<span class="value">Vocabulário Controlado de Governo Eletrônico.</span>
       </div>
-        <h3>Formatos: </h3>
+      <div class="abstract">
+        <h5>Formatos: </h5>
         <span class="value"><a href="http://www.governoeletronico.gov.br/biblioteca/arquivos/vcge-2-0-2-no-formato-json/download"><abbr title="Javascript Object Notation">JSON</abbr></a>, <a href="http://www.governoeletronico.gov.br/biblioteca/arquivos/vcge-2-0-2-no-formato-skos-n3/download"><abbr title="Simple Knowledge Organization System">SKOS</abbr> (<abbr title="Resource Description Framework">RDF</abbr>/<abbr title="Notation 3">N3</abbr>)</a>, <a href="http://www.governoeletronico.gov.br/biblioteca/arquivos/vcge-2-0-2-no-formato-csv/download"><abbr title="Comma-separated values">CSV</abbr></a>, <a href="http://www.governoeletronico.gov.br/biblioteca/arquivos/vcge-2-0-2-no-formato-sql/download"><abbr title="Structured Query Language">SQL</abbr></a>, <a href="http://www.governoeletronico.gov.br/biblioteca/arquivos/vcge-2-0-2/download">VCGE 2.0.2 <abbr title="Portable Document Format">PDF</abbr></a>, <a href="http://www.governoeletronico.gov.br/biblioteca/arquivos/descricao-dos-arquivos-de-exportacao-do-vcge-versao-1-1/download">Descrição dos Arquivos de Exportação do VCGE <abbr title="Portable Document Format">PDF</abbr></a>, <a href="http://www.governoeletronico.gov.br/biblioteca/arquivos/vcge-2-0-2-det/download">VCGE 2.0.2 Detalhado <abbr title="Portable Document Format">PDF</abbr></a></span>
+      </div>
       <div class="namespace-uri">
-        <h3>Namespace URI:</h3>
+        <h5>Namespace URI:</h5>
         <span class="value">http://vocab.e.gov.br/id/governo</span>
       </div>
   </div>
 </div>
 
 <div class="vocabulary-node node">
-  <h2><a href="http://vocab.e.gov.br/2013/09/loa">Orçamento Federal Brasileiro</a></h2>
+  <h4><a href="http://vocab.e.gov.br/2013/09/loa">Orçamento Federal Brasileiro</a></h4>
   <div class="content clear-block">
       <div class="authors">
-        <h3>Autor:</h3>
+        <h5>Autor:</h5>
         <span class="value"><a href="https://www.portalsof.planejamento.gov.br/">SOF/MP</a></span>
       </div>
       <div class="abstract">
-	<h3>Descrição:</h3>
+	<h5>Descrição:</h5>
 	<span class="value">Modelo ontológico da classificação da despesa do orçamento federal brasileiro.</span>
       </div>
-        <h3>Formatos:</h3>
+      <div class="abstract">
+        <h5>Formatos:</h5>
         <span class="value"><a href="2013/09/loa.owl"><abbr title="Web Ontology Language">OWL/XML</abbr></a>,  <a href="2013/09/jowl/index.html"><abbr title="Visualização e Javascript de Web Ontology Language">jOWL</abbr></a></span>
+	</div>
       <div class="namespace-uri">
-        <h3>Namespace URI:</h3>
+        <h5>Namespace URI:</h5>
         <span class="value"><a href="http://vocab.e.gov.br/2013/09/loa">http://vocab.e.gov.br/2013/09/loa</a></span>
       </div>
   </div>
@@ -156,71 +165,73 @@ coerente; o alinhamento conceitual das diversas áreas do conhecimento do govern
 <h3 class="divisao">Em desenvolvimento</h3>
 
 <div class="vocabulary-node node">
-  <h2><a href="http://vocab.e.gov.br/2013/12/ops">OPS</a></h2>
+  <h4><a href="http://vocab.e.gov.br/2013/12/ops">OPS</a></h4>
   <div class="content clear-block">
       <div class="authors">
-        <h3>Autores:</h3>
+        <h5>Autores:</h5>
         <span class="value"><a href="http://corais.org/vocabulariodaparticipacao/members">Comunidade no Corais</a></span>
       </div>
       <div class="abstract">
-	<h3>Descrição:</h3>
+	<h5>Descrição:</h5>
 	<span class="value">Ontologia de Participação Social.</span>
       </div>
-      <h3>Formatos:</h3>
+      <div class="abstract">
+      <h5>Formatos:</h5>
         <span class="value"><a href="2013/12/cosp.owl"><abbr title="Web Ontology Language">OWL/XML</abbr></a></span>
+      </div>
       <div class="namespace-uri">
-        <h3>Namespace URI:</h3>
+        <h5>Namespace URI:</h5>
         <span class="value"><a href="http://vocab.e.gov.br/2013/12/ops">http://vocab.e.gov.br/2013/12/ops</a></span>
       </div>
   </div>
 </div>
 <div class="vocabulary-node node">
-  <h2><a href="http://vocab.e.gov.br/siafi">SIAFI</a></h2>
+  <h4><a href="http://vocab.e.gov.br/siafi">SIAFI</a></h4>
   <div class="content clear-block">
       <div class="authors">
-        <h3>Autores:</h3>
+        <h5>Autores:</h5>
         <span class="value"><a href="http://www.eping.e.gov.br">ePING</a></span>
       </div>
       <div class="abstract">
-	<h3>Descrição:</h3>
+	<h5>Descrição:</h5>
 	<span class="value">Sistema Integrado de Administracao Financeira.</span>
       </div>
       <div class="namespace-uri">
-        <h3>Namespace URI:</h3>
+        <h5>Namespace URI:</h5>
         <span class="value"><a href="http://vocab.e.gov.br/siafi">http://vocab.e.gov.br/siafi</a></span>
       </div>
   </div>
 </div>
 <div class="vocabulary-node node">
-  <h2><a href="http://vocab.e.gov.br/sicaf">SICAF</a></h2>
+  <h4><a href="http://vocab.e.gov.br/sicaf">SICAF</a></h4>
   <div class="content clear-block">
       <div class="authors">
-        <h3>Autores:</h3>
+        <h5>Autores:</h5>
         <span class="value"><a href="http://www.eping.e.gov.br">ePING</a></span>
       </div>
       <div class="abstract">
-	<h3>Descrição:</h3>
+	<h5>Descrição:</h5>
 	<span class="value">Sistema de Cadastrameto Unificado de Fornecedores.</span>
       </div>
       <div class="namespace-uri">
-        <h3>Namespace URI:</h3>
+        <h5>Namespace URI:</h5>
         <span class="value"><a href="http://vocab.e.gov.br/sicaf">http://vocab.e.gov.br/sicaf</a></span>
       </div>
   </div>
 </div>
 <div class="vocabulary-node node">
-  <h2><a href="http://vocab.e.gov.br/2011/09/org">Estruturas Organizacionais &mdash; SIORG</a></h2>
+  <h4><a href="http://vocab.e.gov.br/2011/09/org">Estruturas Organizacionais &mdash; SIORG</a></h4>
   <div class="content clear-block">
       <div class="authors">
-        <h3>Autores:</h3>
+        <h5>Autores:</h5>
         <span class="value"><a href="http://www.eping.e.gov.br">ePING</a></span>
       </div>
       <div class="abstract">
-	<h3>Descrição:</h3>
+	<h5>Descrição:</h5>
 	<span class="value">Sistema de Orgãos.</span>
       </div>
       <div class="namespace-uri">
-        <h3>Namespace URI:</h3>
+        <h5>Namespace URI:</h5>
         <span class="value"><a href="http://vocab.e.gov.br/siorg">http://vocab.e.gov.br/siorg</a></span>
       </div>
   </div>
@@ -228,24 +239,26 @@ coerente; o alinhamento conceitual das diversas áreas do conhecimento do govern
 
 <h3 class="divisao">Versões antigas</h3>
 <div class="vocabulary-node node">
-  <h2><a href="http://vocab.e.gov.br/2011/03/vcge">VCGE - Versão de março de 2011</a></h2>
+  <h4><a href="http://vocab.e.gov.br/2011/03/vcge">VCGE - Versão de março de 2011</a></h4>
   <div class="content clear-block">
       <div class="authors">
-        <h3>Autores:</h3>
+        <h5>Autores:</h5>
         <span class="value"><a href="http://www.eping.e.gov.br">ePING</a></span>
       </div>
       <div class="abstract">
-	<h3>Descrição:</h3>
+	<h5>Descrição:</h5>
 	<span class="value">Vocabulário Controlado de Governo Eletrônico.</span>
       </div>
-        <h3>Formatos:</h3>
+      <div class="abstract">
+        <h5>Formatos:</h5>
         <span class="value"><a href="2011/03/vcge.json"><abbr title="Javascript Object Notation">JSON</abbr></a>, <a href="2011/03/vcge.n3"><abbr title="Simple Knowledge Organization System">SKOS</abbr> (<abbr title="Resource Description Framework">RDF</abbr>/<abbr title="Notation 3">N3</abbr>)</a>, SKOS (<a href="2011/03/vcge.rdf">RDF/<abbr title="Extensible Markup Language">XML</abbr>)</a>, <a href="http://www.governoeletronico.gov.br/biblioteca/arquivos/vocabulario-controlado-do-governo-eletronico-vcge/download"><abbr title="Portable Document Format">PDF</abbr></a></span>
+      </div>
       <div class="namespace-uri">
-        <h3>Namespace URI:</h3>
+        <h5>Namespace URI:</h5>
         <span class="value"><a href="http://vocab.e.gov.br/2011/03/vcge">http://vocab.e.gov.br/2011/03/vcge</a></span>
       </div>
   </div>
 </div>
 </div>
-<script src="http://barra.brasil.gov.br/barra.js?cor=cinza" type="text/javascript"></script>
+<script src="http://barra.brasil.gov.br/barra.js" type="text/javascript"></script>
 </body></html></body></html>
