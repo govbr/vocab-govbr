@@ -740,7 +740,8 @@ footer {
 }
 
 #acessibilidade .atalhos {
-  float: left;  
+  float: left;
+  margin-top: 8px;  
 }
 
 #acessibilidade .atalhos li{
