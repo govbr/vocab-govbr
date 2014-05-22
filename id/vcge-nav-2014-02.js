@@ -98,14 +98,14 @@ $(function () {
     $("#treeVCGE").jstree({
 	    "json_data" : {
 		    "ajax" : {
-			    "url" : "vcge-treeview.json",
+			    "url" : "../vcge-treeview.json",
 			    "data" : function (n) { 
 				    return { id : n.attr ? n.attr("id") : 0 }; 
 			    }
 		    }
 	    },
 	    "themes" : {
-		    "url" : "themes/apple/style.css",
+		    "url" : "../themes/apple/style.css",
 		    "theme" : "apple",
 		    "dots" : true,
 		    "icons" : true
