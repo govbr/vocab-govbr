@@ -112,7 +112,7 @@
 	<figcaption>Figura 2.1 - Item de Despesa</figcaption>
     </figure>
 	<p>A definição da ontologia do orçamento federal teve como princípio refletir esta organização na publicação dos dados da despesa orçamentária. A Figura 2.2 apresenta a estrutura das classes, que são representadas por retângulos na cor cinza e as relações entre elementos de classes, representados por retângulos pretos. O <i>range</i> (alcance) das relações é representado por por uma seta sem preenchimento, enquanto o domínio (<i>domain</i>) é representado por uma seta com preenchimento. Linhas tracejadas representam relações de herança e de definição de tipo.</p>
-	<p>A classe central da ontologia é a classe ItemDeDespesa que, como dito anteriormente, representa um linha do orçamento. Cada Item de Despesa tem seis valores associados por meio das relações valorProjetoLei, valorDotacaoInicial, valorLeiMaisCreditos, valorEmpenhado, valorLiquidado e valorPago. A soma total dos valores da relação valorDotacaoInicial de cada Item de Despesa é o valor total do orçamento do exercício em questão, no ano de 2012, por exemplo, é de R$ 2.150.458.867,507,00 – Lei 12.596/2012.</p>
+	<p>A classe central da ontologia é a classe ItemDespesa que, como dito anteriormente, representa um linha do orçamento. Cada Item de Despesa tem seis valores associados por meio das relações valorProjetoLei, valorDotacaoInicial, valorLeiMaisCreditos, valorEmpenhado, valorLiquidado e valorPago. A soma total dos valores da relação valorDotacaoInicial de cada Item de Despesa é o valor total do orçamento do exercício em questão, no ano de 2012, por exemplo, é de R$ 2.150.458.867,507,00 – Lei 12.596/2012.</p>
 	<p>As classificações orçamentárias possuem relação de especialização com a classe Classificador e cada classificador possui um rótulo descritivo (<i>label</i>) e um código. As classes referentes a estas classificações foram definidas de modo a abranger todos os 44 dígitos do código de um item de despesa.</p>
 	<p>Para representação do exercício em que o Item de Despesa está inserido, toda instância dessa classe possui uma relação temExercico com um objeto da classe Exercicio. Os recursos da classe Exercicio possuem a propriedade dataUltimaAtualizacao (em formato <i>dateTime</i>) que define a ultima data em que o exercício financeiro foi atualizado. O recurso também possui um identificador que consiste no ano que o exercício representa. 
 
@@ -130,11 +130,11 @@
 		</tr>
   		<tr>
     		<td>CategoriaEconomica</td>
-		    <td>Categoria Econômica</td>
+		    <td>Categoria Econômica</td>
   		</tr>
   		<tr>
     		<td>Classificador</td>
-		    <td>Sem correspondência. Classe de suporte ao conceito de classificação, da qual, todas as outras classes que se referem ao conceito de classificação da despesa se especializam. Tem como propriedades a descrição (<i>label</i>) e o código (codigo).</td>
+		    <td>Sem correspondência. Classe de suporte ao conceito de classificação, da qual, todas as outras classes que se referem ao conceito de classificação da despesa se especializam. Tem como propriedades a descrição (<i>label</i>) e o código.</td>
   		</tr>
   		<tr>
     		<td>ElementoDespesa</td>
@@ -157,11 +157,11 @@
 		    <td>Grupo de Natureza da Despesa (GND)</td>
   		</tr>
   		<tr>
-    		<td>ItemDeDespesa</td>
-		    <td>Sem correspondência. Cada elemento da classe ItemDeDespesa é caracterizado por ter propriedades de objeto (<i>object properties</i>) específicas para cada uma das subclasses da classe Classificadores e uma propriedade que estabelece uma realação com um Exercício financeiro, além de possuir seis <i>datatype properties</i> numéricas que representam os valores financeiros.</td>
+    		<td>ItemDespesa</td>
+		    <td>Sem correspondência. Cada elemento da classe ItemDespesa (Item de Despesa) é caracterizado por ter propriedades de objeto (<i>object properties</i>) específicas para cada uma das subclasses da classe Classificadores e uma propriedade que estabelece uma realação com um Exercício financeiro, além de possuir seis <i>datatype properties</i> numéricas que representam os valores financeiros. Só possui significado por conta das suas propriedades, não tendo valor orçamentário sozinho, por isso é representado por <i>blank nodes</i></td>
   		</tr>
   		<tr>
-    		<td>Localizador</td>
+    		<td>Subtitulo</td>
 		    <td>Subtítulo (Localizador do gasto)</td>
   		</tr>
   		<tr>
@@ -209,8 +209,8 @@
 		    <td>Órgão</td>
   		</tr>
   		<tr>
-    		<td>Indicador</td>
-		    <td>Indicador de Uso (IDUSO)</td>
+    		<td>IdentificadorUso</td>
+		    <td>Identificador de Uso(IDUSO)</td>
   		</tr>
   		<tr>
     		<td>ResultadoPrimario</td>
@@ -220,7 +220,7 @@
 	</table>
 	</figure>
 	<p>Em OWL existem dois tipos de propriedades: propriedades de objeto (<i>object properties</i>) e propriedades tipo de dados (d<i>atatype properties</i>). Nas primeiras, o objeto da tripla é sempre um resource. Na segunda, o objeto é um item de dados de algum tipo já definido na sintaxe XML Schema.</p>
-	<p>Com relação às propriedades de objeto (<i>object property</i>), a maior parte delas tem como domínio a classe ItemDeDespesa e como range, as subclasses de classificadores apresentadas na Figura 2.2. Além disso, existem propriedades de objeto que relacionam indivíduos da classe UnidadeOrcamentaria e os da classe Orgao. Cada uma dessas relações está descrita na Tabela 2.2, a seguir.</p>
+	<p>Com relação às propriedades de objeto (<i>object property</i>), a maior parte delas tem como domínio a classe ItemDespesa e como range, as subclasses de classificadores apresentadas na Figura 2.2. Além disso, existem propriedades de objeto que relacionam indivíduos da classe UnidadeOrcamentaria e os da classe Orgao. Cada uma dessas relações está descrita na Tabela 2.2, a seguir.</p>
 
 	<table border="1">
 		<tr>
@@ -229,51 +229,51 @@
 		</tr>
         <tr>
             <td>temExercicio</td>
-            <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe Exercicio</td>
+            <td>Propriedade funcional que tem como domínio a classe ItemDespesa e <i>range</i> a classe Exercicio</td>
         </tr>
   		<tr>
     		<td>temClassificador</td>
-		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe Classificador. É a super-propriedade de todas as outras que relacionam um ItemDeDespesa a um Classificador</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDespesa e <i>range</i> a classe Classificador. É a super-propriedade de todas as outras que relacionam um ItemDespesa a um Classificador</td>
   		</tr>
   		<tr>
     		<td>temAcao</td>
-		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe Acao</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDespesa e <i>range</i> a classe Acao</td>
   		</tr>
   		<tr>
     		<td>temCategoriaEconomica</td>
-		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe CategoriaEconomica</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDespesa e <i>range</i> a classe CategoriaEconomica</td>
   		</tr>
   		<tr>
     		<td>temElementoDespesa</td>
-		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe ElementoDespesa</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDespesa e <i>range</i> a classe ElementoDespesa</td>
   		</tr>
   		<tr>
     		<td>temEsfera</td>
-		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe Esfera</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDespesa e <i>range</i> a classe Esfera</td>
   		</tr>
   		<tr>
     		<td>temFonteRecursos</td>
-		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe FonteRecursos</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDespesa e <i>range</i> a classe FonteRecursos</td>
   		</tr>
   		<tr>
     		<td>temFuncao</td>
-		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe Funcao</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDespesa e <i>range</i> a classe Funcao</td>
   		</tr>
   		<tr>
     		<td>temGnd</td>
-		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe GrupoNatDespesa</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDespesa e <i>range</i> a classe GrupoNatDespesa</td>
   		</tr>
   		<tr>
-    		<td>temIndicadorUso</td>
-		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe IndicadorUso</td>
+    		<td>temIdentificadorUso</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDespesa e <i>range</i> a classe IdentificadorUso</td>
   		</tr>
   		<tr>
-    		<td>temLocalizador</td>
-		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe Localizador</td>
+    		<td>temSubtitulo</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDespesa e <i>range</i> a classe Subtitulo</td>
   		</tr>
   		<tr>
     		<td>temModalidadeAplicacao</td>
-		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe ModalidadeAplicacao</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDespesa e <i>range</i> a classe ModalidadeAplicacao</td>
   		</tr>
   		<tr>
     		<td>temOrgao</td>
@@ -281,28 +281,28 @@
   		</tr>
   		<tr>
     		<td>temPrograma</td>
-		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe Programa</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDespesa e <i>range</i> a classe Programa</td>
   		</tr>
   		<tr>
     		<td>temPlanoOrcamentario</td>
-		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe PlanoOrcamentario. Diferentemente das outras propriedades esta não é obrigatória em um ItemDeDespesa, pois existe somente nos dados a partir de 2010</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDespesa e <i>range</i> a classe PlanoOrcamentario. Diferentemente das outras propriedades esta não é obrigatória em um ItemDespesa, pois existe somente nos dados a partir de 2010</td>
   		</tr>
   		<tr>
     		<td>temResultadoPrimario</td>
-		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe ResultadoPrimario</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDespesa e <i>range</i> a classe ResultadoPrimario</td>
   		</tr>
   		<tr>
     		<td>temSubfuncao</td>
-		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe Subfuncao</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDespesa e <i>range</i> a classe Subfuncao</td>
   		</tr>
   		<tr>
     		<td>temUnidadeOrcamentaria</td>
-		    <td>Propriedade funcional que tem como domínio a classe ItemDeDespesa e <i>range</i> a classe UnidadeOrcamentaria</td>
+		    <td>Propriedade funcional que tem como domínio a classe ItemDespesa e <i>range</i> a classe UnidadeOrcamentaria</td>
   		</tr>
   		<figcaption>Tabela 2.2 - Relacionamentos da Ontologia da despesa do Orçamento Federal</figcaption>
   	</table>	
 
-	<p>Nessa ontologia, as propriedades de tipo de dado (<i>datatype property</i>) são também importantes para restringir e definir classes. Por exemplo, ItemDeDespesa possui seis propriedades com um valor em formato <i>decimal</i> que expressam a quantia relacionada ao Item de Despesa em reais. A Tabela 2.3, a seguir, contém a descrição dos tipos de dados utilizados nessa ontologia.</p>
+	<p>Nessa ontologia, as propriedades de tipo de dado (<i>datatype property</i>) são também importantes para restringir e definir classes. Por exemplo, ItemDespesa possui seis propriedades com um valor em formato <i>decimal</i> que expressam a quantia relacionada ao Item de Despesa em reais. A Tabela 2.3, a seguir, contém a descrição dos tipos de dados utilizados nessa ontologia.</p>
 
 	<table border="1">
 		<tr>
@@ -311,7 +311,7 @@
 		</tr>
   		<tr>
     		<td>codigo</td>
-		    <td>Código do classificador. Esse <i>datatype</i> é herdado para as subclasses da classe Classificador e é utilizado como uma restrição para definir essas subclasses. Ele exerce a função de identificação única para as instâncias da maioria dos classificadores, menos nas instâncias das classes Localizador e Plano Orçamentário</td>
+		    <td>Código do classificador. Esse <i>datatype</i> é herdado para as subclasses da classe Classificador e é utilizado como uma restrição para definir essas subclasses. Ele exerce a função de identificação única para as instâncias da maioria dos classificadores, menos nas instâncias das classes Subtitulo e Plano Orçamentário</td>
   		</tr>
   		<tr>
     		<td>label</td>
@@ -347,7 +347,7 @@
   		</tr>
   		<tr>
     		<td>identificador</td>
-		    <td>Tem dois valores, (1) pode representar o ano (ex: 2013) de uma instância de um Exercício ou (2) representar identificadores de Localizadores e Planos Orçamentários, sem nenhum significado direto com o orçamento, servindo somente para identificação única das instâncias dessas classes.</td>
+		    <td>Tem dois valores, (1) pode representar o ano (ex: 2013) de uma instância de um Exercício ou (2) representar identificadores de Subtítulos e Planos Orçamentários, sem nenhum significado direto com o orçamento, servindo somente para identificação única das instâncias dessas classes.</td>
   		</tr>
   		<figcaption>Tabela 2.3 - Atributos da Ontologia da despesa do Orçamento Federal</figcaption>
   	</table>	
@@ -408,7 +408,7 @@
     		<td>Gestão e Aprimoramento dos Recursos de Tecnologia da Informação e de Logística do Serviço Público Federal (20U2)</td>
   		</tr>
   		<tr>
-    		<td>Localizador</td>
+    		<td>Subtítulo</td>
 		    <td>Nacional (0001)</td>
   		</tr>
   		<tr>
@@ -472,7 +472,7 @@
 	</table>
 	</figure>
    
-	<p>Nesse caso, as sentenças RDF foram criadas tomando como base a definição de conceitos e relações da ontologia OWL descrita na seção 2 e deram origem a uma descrição RDF serializada em formato N-Triples que está apresentada na Tabela 3.2.</p>
+	<p>Nesse caso, as sentenças RDF foram criadas tomando como base a definição de conceitos e relações da ontologia OWL descrita na seção 2 e deram origem a uma descrição RDF serializada em formato N-Triples que está apresentada na Tabela 3.2. Nota-se que a coluna Sujeito representa a URI das instâncias de ItemDespesa, que nesta ontologia são representados pro <i>blank nodes</i> e não possuem significado no orçamento, podendo a mesma URI ser alterada diariamente por conta da execução orçamentária, ou seja, o verdadeiro significado está ligado aos seus Predicados e Objetos.</p>
     
     <figure>
 	<table border="1" class="rdf_em_tabela">
@@ -484,133 +484,133 @@
 		</tr>
 		<tr>
   			<td class="numerolinha">1</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&gt;</td>
-		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#ItemDeDespesa&gt; .</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#ItemDespesa&gt; .</td>
   		</tr>
   		<tr>
   			<td class="numerolinha">2</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temEsfera&gt;</td>
 		    <td>&lt;http://orcamento.dados.gov.br/2013/id/Esfera/10&gt; .</td>
   		</tr>
   		<tr>
   			<td class="numerolinha">3</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temUnidadeOrcamentaria&gt;</td>
 		    <td>&lt;http://orcamento.dados.gov.br/2013/id/UnidadeOrcamentaria/47101&gt; .</td>
   		</tr>
   		<tr>
   			<td class="numerolinha">4</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temFuncao&gt;</td>
 		    <td>&lt;http://orcamento.dados.gov.br/2013/id/Funcao/04&gt; .</td>
   		</tr>
   		<tr>
   			<td class="numerolinha">5</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temSubfuncao&gt;</td>
 		    <td>&lt;http://orcamento.dados.gov.br/2013/id/Subfuncao/126&gt; .</td>
   		</tr>
   		<tr>
   			<td class="numerolinha">6</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temPrograma&gt;</td>
 		    <td>&lt;http://orcamento.dados.gov.br/2013/id/Programa/2038&gt; .</td>
   		</tr>
   		<tr>
   			<td class="numerolinha">7</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temAcao&gt;</td>
 		    <td>&lt;http://orcamento.dados.gov.br/2013/id/Acao/20U2&gt; .</td>
   		</tr>
   		<tr>
   			<td class="numerolinha">8</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
-		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temLocalizador&gt;</td>
-		    <td>&lt;http://orcamento.dados.gov.br/2013/id/Localizador/20U20001&gt; .</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temSubtitulo&gt;</td>
+		    <td>&lt;http://orcamento.dados.gov.br/2013/id/Subtitulo/20U20001&gt; .</td>
   		</tr>
   		<tr>
   			<td class="numerolinha">9</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temPlanoOrcamentario&gt;</td>
 		    <td>&lt;http://orcamento.dados.gov.br/2013/id/PlanoOrcamentario/47101203820U200010003&gt; .</td>
   		</tr>
   		<tr>
   			<td class="numerolinha">10</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
-		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temIndicadorUso&gt;</td>
-		    <td>&lt;http://orcamento.dados.gov.br/2013/id/IndicadorUso/0&gt; .</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
+		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temIdentificadorUso&gt;</td>
+		    <td>&lt;http://orcamento.dados.gov.br/2013/id/IdentificadorUso/0&gt; .</td>
   		</tr>
   		<tr>
 			<td class="numerolinha">11</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temFonteRecursos&gt;</td>
 		    <td>&lt;http://orcamento.dados.gov.br/2013/id/FonteRecursos/100&gt; .</td>
   		</tr>
   		<tr>
 			<td class="numerolinha">13</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temCategoriaEconomica&gt;</td>
 		    <td>&lt;http://orcamento.dados.gov.br/2013/id/CategoriaEconomica/3&gt; .</td>
   		</tr>
   		<tr>
   			<td class="numerolinha">14</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temGND&gt;</td>
 		    <td>&lt;http://orcamento.dados.gov.br/2013/id/GrupoNatDespesa/3&gt; .</td>
   		</tr>
   		<tr>
   			<td class="numerolinha">15</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temModalidadeAplicacao&gt;</td>
 		    <td>&lt;http://orcamento.dados.gov.br/2013/id/ModalidadeAplicacao/90&gt; .</td>
   		</tr>
   		<tr>
   			<td class="numerolinha">16</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temElementoDespesa&gt;</td>
 		    <td>&lt;http://orcamento.dados.gov.br/2013/id/ElementoDespesa/00&gt; .</td>
   		</tr>
   		<tr>
   			<td class="numerolinha">17</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#temResultadoPrimario&gt;</td>
 		    <td>&lt;http://orcamento.dados.gov.br/2013/id/ResultadoPrimario/2&gt; .</td>
   		</tr>
   		<tr>
   			<td class="numerolinha">18</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#valorProjetoLei&gt;</td>
 		    <td>"0.00"^^&lt;http://www.w3.org/2001/XMLSchema#decimal&gt; .</td>
   		</tr>
   		<tr>
   			<td class="numerolinha">19</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#valorDotacaoInicial&gt;</td>
 		    <td>"1686356.00"^^&lt;http://www.w3.org/2001/XMLSchema#decimal&gt; .</td>
   		</tr>
   		<tr>
   			<td class="numerolinha">20</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#valorLeiMaisCredito&gt;</td>
 		    <td>"2337313.00"^^&lt;http://www.w3.org/2001/XMLSchema#decimal&gt; .</td>
   		</tr>
   		<tr>
   			<td class="numerolinha">21</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#valorEmpenhado&gt;</td>
 		    <td>"0.00"^^&lt;http://www.w3.org/2001/XMLSchema#decimal&gt; .</td>
   		</tr>
   		<tr>
   			<td class="numerolinha">22</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#valorLiquidado&gt;</td>
 		    <td>"0.00"^^&lt;http://www.w3.org/2001/XMLSchema#decimal&gt; .</td>
   		</tr>
   		<tr>
   			<td class="numerolinha">23</td>
-    		<td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt;</td>
+    		<td>_:AmapX3aXItemDespesaX40XX40X7988</td>
 		    <td>&lt;http://vocab.e.gov.br/2013/09/loa#valorPago&gt;</td>
 		    <td>"0.00"^^&lt;http://www.w3.org/2001/XMLSchema#decimal&gt; .</td>
   		</tr>
@@ -618,7 +618,7 @@
 	</table>
 	</figure>
   	
-  	<p>A tabela  3.2 demonstra as triplas RDF que representam o Item de Despesa descrito textualmente na Tabela 3.1. Cada linha da tabela representa uma única tripla, onde o sujeito de todas as triplas descritas são mesmo recurso &lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/101640&gt; (o Item de Despesa em questão). A linha 1 define que o recurso é do tipo ItemDeDespesa, da linha 2 até a linha 17 são definidos quais os classificadores que este item de despesa tem relação, da linha 18 a 23 são definidos os valores financeiros que o item possui.</p>
+  	<p>A tabela  3.2 demonstra as triplas RDF que representam o Item de Despesa descrito textualmente na Tabela 3.1. Cada linha da tabela representa uma única tripla, onde o sujeito de todas as triplas descritas são mesmo recurso &lt;http://orcamento.dados.gov.br/2013/id/ItemDespesa/101640&gt; (o Item de Despesa em questão). A linha 1 define que o recurso é do tipo ItemDespesa, da linha 2 até a linha 17 são definidos quais os classificadores que este item de despesa tem relação, da linha 18 a 23 são definidos os valores financeiros que o item possui.</p>
 	<p>No formato de serialização N-Triples não existem prefixos para os <i>namespaces</i>, então eles ficam descritos completamente nos recursos, classes e propriedades. Nesta parte explicada do RDF de 2013 estão contidos 4 diferentes namespaces, (1) http://orcamento.dados.gov.br/2013/CLASSE/CODIGO - Representam os recursos (instâncias) dos dados orçamentários, (2) http://vocab.e.gov.br/2013/09/loa#PROPRIEDADE_OU_CLASSE - Representam as propriedades e classes da ontologia da Classificação das Despesas do Orçamento Federal Brasileiro definidos no arquivo OWL disponibilizado, (3) http://www.w3.org/1999/02/22-rdf-syntax-ns#PROPRIEDADE -  Representa o vocabulário padrão do RDF, neste caso foi utilizada a sua propriedade <i>type</i> para indicar a que classe um recurso pertence, (4) http://www.w3.org/2001/XMLSchema#PROPRIEDADE - Representa o vocabulário padrão de definição de tipos de dados.</p>
     
     <figure>
@@ -740,13 +740,13 @@
   PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
   PREFIX loa: &lt;http://vocab.e.gov.br/2013/09/loa#&gt;
 
-  SELECT ?itemURI ?acaoURI ?dotacaoInicial WHERE 
+  SELECT ?itemBlankNode ?acaoURI ?dotacaoInicial WHERE 
   {  
-    ?itemURI loa:temExercicio ?exercicioURI .
+    ?itemBlankNode loa:temExercicio ?exercicioURI .
     ?exercicioURI loa:identificador 2013 .
-    ?itemURI loa:temAcao ?acaoURI .
+    ?itemBlankNode loa:temAcao ?acaoURI .
     ?acaoURI rdf:label "Apoio a Sistemas de Transporte Não-Motorizados".
-    ?itemURI loa:valorDotacaoInicial ?dotacaoInicial .
+    ?itemBlankNode loa:valorDotacaoInicial ?dotacaoInicial .
   }</pre>
 
 <p>O resultado é o seguinte:</p>
@@ -754,52 +754,52 @@
   <div class="resultado-query">
     <table>
       <tr>
-        <th>itemURI</th>
+        <th>itemBlankNode</th>
         <th>acaoURI</th>
         <th>dotacaoInicial</th>
 
       </tr>
       <tr>
-        <td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/136186&gt; </td>
+        <td>_:AmapX3aXItemDespesaX40XX40X205 </td>
         <td>&lt;http://orcamento.dados.gov.br/2013/id/Acao/10ST&gt; </td>
         <td class="quantia">0.00 </td>
       </tr>
       <tr>
-        <td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/146586&gt; </td>
+        <td>_:AmapX3aXItemDespesaX40XX40X117 </td>
         <td>&lt;http://orcamento.dados.gov.br/2013/id/Acao/10ST&gt; </td>
         <td class="quantia">250000.00 </td>
       </tr>
       <tr>
-        <td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/122434&gt; </td>
+        <td>_:AmapX3aXItemDespesaX40XX40X560 </td>
         <td>&lt;http://orcamento.dados.gov.br/2013/id/Acao/10ST&gt; </td>
         <td class="quantia">4000000.00 </td>
       </tr>
       <tr>
-        <td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/143562&gt; </td>
+        <td>_:AmapX3aXItemDespesaX40XX40X380 </td>
         <td>&lt;http://orcamento.dados.gov.br/2013/id/Acao/10ST&gt; </td>
         <td class="quantia">1500000.00 </td>
       </tr>
       <tr>
-        <td>&lt;http://orcamento.dados.gov.br/2013/id/ItemDeDespesa/143169&gt; </td>
+        <td>_:AmapX3aXItemDespesaX40XX40X404 </td>
         <td>&lt;http://orcamento.dados.gov.br/2013/id/Acao/10ST&gt; </td>
         <td class="quantia">1750000.00 </td>
       </tr>
     </table>
   </div>
     
-	<p>Na linha 5 da consulta são selecionados todas as instâncias que possuem a propriedade <i>loa:temExercicio</i> (Todos os Itens de Despesa) com algum objeto, logo na linha 6 os objetos selecionados, que são instâncias de exercício, são filtrados de modo que só sejam selecionados os itens do exercício financeiro de 2013. Na linha 7 da consulta são selecionados todas as instâncias que possuem a propriedade <i>loa:temAcao</i> (Todos os Itens de Despesa), na linha 8 é feita uma filtragem onde somente são selecionadas as instâncias em que a propriedade <i>rdf:label</i> seja “Ensino Profissional Marítimo”.</p>
-	<p>Na consulta anterior foram mostrados o <i>loa:valorDotacaoInicial</i> relacionados a cada item de despesa, a seguir é mostrado uma consulta para saber o valor total somado dos mesmos itens.</p>
+	<p>Na linha 5 da consulta são selecionados todas as instâncias que possuem a propriedade <i>loa:temExercicio</i> (Todos os Itens de Despesa) com algum objeto, logo na linha 6 os objetos selecionados, que são instâncias de exercício, são filtrados de modo que só sejam selecionados os itens do exercício financeiro de 2013. Na linha 7 da consulta são selecionados todas as instâncias que possuem a propriedade <i>loa:temAcao</i> (Todos os Itens de Despesa), na linha 8 é feita uma filtragem onde somente são selecionadas as instâncias em que a propriedade <i>rdf:label</i> seja "Apoio a Sistemas de Transporte Não-Motorizados".</p>
+	<p>Na consulta anterior foram mostrados o <i>loa:valorDotacaoInicial</i> relacionados a cada Item de Despesa, a seguir é mostrado uma consulta para saber o valor total somado dos mesmos itens.</p>
   <pre class="query">
   PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
   PREFIX loa: &lt;http://vocab.e.gov.br/2013/09/loa#&gt;
 
   SELECT (SUM(?dotacaoInicial) AS ?somaDotacaoInicial) WHERE 
   {  
-    ?itemURI loa:temExercicio ?exercicioURI .
+    ?itemBlankNode loa:temExercicio ?exercicioURI .
     ?exercicioURI loa:identificador 2013 .
-    ?itemURI loa:temAcao ?acaoURI .
+    ?itemBlankNode loa:temAcao ?acaoURI .
     ?acaoURI rdf:label "Apoio a Sistemas de Transporte Não-Motorizados".
-    ?itemURI loa:valorDotacaoInicial ?dotacaoInicial .
+    ?itemBlankNode loa:valorDotacaoInicial ?dotacaoInicial .
   }</pre>
 	<p>Resultando na soma:</p>
 	
@@ -814,7 +814,7 @@
     </table>
   </div>
 
-	<p>Na linha 5 a 8 são feitos exatamente os mesmos passos da consulta anterior. Na linha 9, após estarem selecionados somente os Itens de Despesa da Ação “Ensino Profissional Marítimo”, são pegos os valores <i>loa:valorDotacaoInicial</i> de cada um, e na linha 4 é utilizada uma função agregadora do SPARQL, a SUM(), que soma todos os valores que estão contidos na variável de consulta <i>?dotacaoInicial</i> e os chama de <i>?somaDotacaoInicial</i>.</p>
+	<p>Na linha 5 a 8 são feitos exatamente os mesmos passos da consulta anterior. Na linha 9, após estarem selecionados somente os Itens de Despesa da Ação "Apoio a Sistemas de Transporte Não-Motorizados", são pegos os valores <i>loa:valorDotacaoInicial</i> de cada um, e na linha 4 é utilizada uma função agregadora do SPARQL, a SUM(), que soma todos os valores que estão contidos na variável de consulta <i>?dotacaoInicial</i> e os chama de <i>?somaDotacaoInicial</i>.</p>
 	<p>O mesmo raciocínio pode ser utilizado para extrair mais informações selecionadas, como por exemplo, o valor total da despesa de pessoal (GND = ‘1’) para o Ministério da Educação (Órgão = ‘26000’).</p>
    <p>Query:</p>
    <pre class="query">
@@ -823,14 +823,14 @@
 
   SELECT (SUM(?dotacaoInicial) AS ?somaDotacaoInicial) WHERE 
   {  
-    ?itemURI loa:temExercicio ?exercicioURI .
+    ?itemBlankNode loa:temExercicio ?exercicioURI .
     ?exercicioURI loa:identificador 2013 .
-    ?itemURI loa:temGND ?gndURI .
+    ?itemBlankNode loa:temGND ?gndURI .
     ?gndURI loa:codigo "1" .
-    ?itemURI loa:temUnidadeOrcamentaria ?uoURI .
+    ?itemBlankNode loa:temUnidadeOrcamentaria ?uoURI .
     ?uoURI loa:temOrgao ?orgaoURI .
     ?orgaoURI loa:codigo "26000" .
-    ?itemURI loa:valorDotacaoInicial ?dotacaoInicial .
+    ?itemBlankNode loa:valorDotacaoInicial ?dotacaoInicial .
   }</pre>
     
   <p>Resultado:</p>
@@ -852,11 +852,11 @@
 
   SELECT ?funcaoLabel(SUM(?ploa) AS ?somaPloa) WHERE 
   {
-    ?itemURI loa:temExercicio ?exercicioURI .
+    ?itemBlankNode loa:temExercicio ?exercicioURI .
     ?exercicioURI loa:identificador 2012 .
-    ?itemURI loa:temFuncao ?funcaoURI .
+    ?itemBlankNode loa:temFuncao ?funcaoURI .
     ?funcaoURI rdf:label ?funcaoLabel .
-    ?itemURI loa:valorProjetoLei ?ploa .
+    ?itemBlankNode loa:valorProjetoLei ?ploa .
   } GROUP BY ?funcaoLabel ORDER BY ?funcaoLabel</pre>
     
   <p>Resultado:</p>
@@ -984,7 +984,7 @@
       </tr>
     </table>
   </div>
-  <p>Os exemplos de consultas SPARQL foram feitos utilizando componentes do Jena Framework, o Fuseki como endpoint SPARQL e o TDB como <i>triplestore</i>. Todos os arquivos RDF (2000 a 2013) foram inseridos no grafo <i>default</i> do <i>triplestore</i> e a data de atualização do RDF 2013 era de 26/06/2013.</p>
+  <p>Os exemplos de consultas SPARQL foram feitos utilizando componentes do Jena Framework, o Fuseki como endpoint SPARQL e o TDB como <i>triplestore</i>. Todos os arquivos RDF foram inseridos no grafo <i>default</i> do <i>triplestore</i> e a data de atualização do RDF 2013 era de 26/06/2013.</p>
 </article>
 <footer>
     
