@@ -10,8 +10,8 @@
 ]>
 
 
-<rdf:RDF xmlns="http://www.semanticweb.org/owl/owlapi/turtle#"
-     xml:base="http://www.semanticweb.org/owl/owlapi/turtle"
+<rdf:RDF xmlns="http://vocab.e.gov.br/2013/09/loa#"
+     xml:base="http://vocab.e.gov.br/2013/09/loa"
      xmlns:loa="http://vocab.e.gov.br/2013/09/loa#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -58,6 +58,7 @@
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:range rdf:resource="&loa;Acao"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
     </owl:ObjectProperty>
     
@@ -70,6 +71,7 @@
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:range rdf:resource="&loa;CategoriaEconomica"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
     </owl:ObjectProperty>
     
@@ -81,7 +83,7 @@
         <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:range rdf:resource="&loa;Classificador"/>
-        <rdfs:domain rdf:resource="&loa;ItemDeDespesa"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
     </owl:ObjectProperty>
     
 
@@ -93,6 +95,7 @@
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:range rdf:resource="&loa;ElementoDespesa"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
     </owl:ObjectProperty>
     
@@ -105,6 +108,7 @@
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:range rdf:resource="&loa;Esfera"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
     </owl:ObjectProperty>
     
@@ -117,7 +121,7 @@
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:range rdf:resource="&loa;Exercicio"/>
-        <rdfs:domain rdf:resource="&loa;ItemDeDespesa"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
     </owl:ObjectProperty>
     
 
@@ -129,6 +133,7 @@
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:range rdf:resource="&loa;FonteRecursos"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
     </owl:ObjectProperty>
     
@@ -141,6 +146,7 @@
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:range rdf:resource="&loa;Funcao"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
     </owl:ObjectProperty>
     
@@ -153,6 +159,7 @@
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:range rdf:resource="&loa;GrupoNatDespesa"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
     </owl:ObjectProperty>
     
@@ -165,18 +172,7 @@
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
         <rdfs:range rdf:resource="&loa;IdentificadorUso"/>
-        <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.e.gov.br/2013/09/loa#temLocalizador -->
-
-    <owl:ObjectProperty rdf:about="&loa;temLocalizador">
-        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
-        <rdfs:range rdf:resource="&loa;Localizador"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
     </owl:ObjectProperty>
     
@@ -188,6 +184,7 @@
         <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:range rdf:resource="&loa;ModalidadeAplicacao"/>
         <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
     </owl:ObjectProperty>
@@ -211,6 +208,7 @@
         <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:range rdf:resource="&loa;PlanoOrcamentario"/>
         <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
     </owl:ObjectProperty>
@@ -223,6 +221,7 @@
         <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:range rdf:resource="&loa;Programa"/>
         <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
     </owl:ObjectProperty>
@@ -235,6 +234,7 @@
         <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:range rdf:resource="&loa;ResultadoPrimario"/>
         <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
     </owl:ObjectProperty>
@@ -247,7 +247,21 @@
         <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:range rdf:resource="&loa;Subfuncao"/>
+        <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.e.gov.br/2013/09/loa#temSubtitulo -->
+
+    <owl:ObjectProperty rdf:about="&loa;temSubtitulo">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
+        <rdfs:range rdf:resource="&loa;Subtitulo"/>
         <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
     </owl:ObjectProperty>
     
@@ -259,6 +273,7 @@
         <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:range rdf:resource="&loa;UnidadeOrcamentaria"/>
         <rdfs:subPropertyOf rdf:resource="&loa;temClassificador"/>
     </owl:ObjectProperty>
@@ -280,9 +295,15 @@
 
     <owl:DatatypeProperty rdf:about="&loa;codigo">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:domain rdf:resource="&loa;Classificador"/>
-        <rdfs:domain rdf:resource="&loa;Orgao"/>
         <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&loa;Classificador"/>
+                    <rdf:Description rdf:about="&loa;Orgao"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
     </owl:DatatypeProperty>
     
 
@@ -301,11 +322,23 @@
 
     <owl:DatatypeProperty rdf:about="&loa;identificador">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:domain rdf:resource="&loa;Exercicio"/>
-        <rdfs:domain rdf:resource="&loa;Localizador"/>
-        <rdfs:domain rdf:resource="&loa;PlanoOrcamentario"/>
-        <rdfs:range rdf:resource="&xsd;integer"/>
-        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&xsd;integer"/>
+                    <rdf:Description rdf:about="&xsd;string"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&loa;Exercicio"/>
+                    <rdf:Description rdf:about="&loa;PlanoOrcamentario"/>
+                    <rdf:Description rdf:about="&loa;Subtitulo"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
     </owl:DatatypeProperty>
     
 
@@ -314,7 +347,7 @@
 
     <owl:DatatypeProperty rdf:about="&loa;valorDotacaoInicial">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:domain rdf:resource="&loa;ItemDeDespesa"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:range rdf:resource="&xsd;decimal"/>
     </owl:DatatypeProperty>
     
@@ -324,7 +357,7 @@
 
     <owl:DatatypeProperty rdf:about="&loa;valorEmpenhado">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:domain rdf:resource="&loa;ItemDeDespesa"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:range rdf:resource="&xsd;decimal"/>
     </owl:DatatypeProperty>
     
@@ -334,7 +367,7 @@
 
     <owl:DatatypeProperty rdf:about="&loa;valorLeiMaisCredito">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:domain rdf:resource="&loa;ItemDeDespesa"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:range rdf:resource="&xsd;decimal"/>
     </owl:DatatypeProperty>
     
@@ -344,7 +377,7 @@
 
     <owl:DatatypeProperty rdf:about="&loa;valorLiquidado">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:domain rdf:resource="&loa;ItemDeDespesa"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:range rdf:resource="&xsd;decimal"/>
     </owl:DatatypeProperty>
     
@@ -354,7 +387,7 @@
 
     <owl:DatatypeProperty rdf:about="&loa;valorPago">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:domain rdf:resource="&loa;ItemDeDespesa"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:range rdf:resource="&xsd;decimal"/>
     </owl:DatatypeProperty>
     
@@ -364,7 +397,7 @@
 
     <owl:DatatypeProperty rdf:about="&loa;valorProjetoLei">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
-        <rdfs:domain rdf:resource="&loa;ItemDeDespesa"/>
+        <rdfs:domain rdf:resource="&loa;ItemDespesa"/>
         <rdfs:range rdf:resource="&xsd;decimal"/>
     </owl:DatatypeProperty>
     
@@ -417,7 +450,7 @@
     <!-- http://vocab.e.gov.br/2013/09/loa#Classificador -->
 
     <owl:Class rdf:about="&loa;Classificador">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -430,7 +463,7 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -454,7 +487,7 @@
     <!-- http://vocab.e.gov.br/2013/09/loa#Exercicio -->
 
     <owl:Class rdf:about="&loa;Exercicio">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -463,11 +496,11 @@
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&loa;identificador"/>
-                        <owl:allValuesFrom rdf:resource="&xsd;integer"/>
+                        <owl:someValuesFrom rdf:resource="&xsd;integer"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -504,10 +537,10 @@
     
 
 
-    <!-- http://vocab.e.gov.br/2013/09/loa#ItemDeDespesa -->
+    <!-- http://vocab.e.gov.br/2013/09/loa#ItemDespesa -->
 
-    <owl:Class rdf:about="&loa;ItemDeDespesa">
-        <owl:equivalentClass>
+    <owl:Class rdf:about="&loa;ItemDespesa">
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -547,10 +580,6 @@
                         <owl:someValuesFrom rdf:resource="&loa;IdentificadorUso"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&loa;temLocalizador"/>
-                        <owl:someValuesFrom rdf:resource="&loa;Localizador"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
                         <owl:onProperty rdf:resource="&loa;temModalidadeAplicacao"/>
                         <owl:someValuesFrom rdf:resource="&loa;ModalidadeAplicacao"/>
                     </owl:Restriction>
@@ -565,6 +594,10 @@
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&loa;temSubfuncao"/>
                         <owl:someValuesFrom rdf:resource="&loa;Subfuncao"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;temSubtitulo"/>
+                        <owl:someValuesFrom rdf:resource="&loa;Subtitulo"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&loa;temUnidadeOrcamentaria"/>
@@ -596,21 +629,7 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.e.gov.br/2013/09/loa#Localizador -->
-
-    <owl:Class rdf:about="&loa;Localizador">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&loa;identificador"/>
-                <owl:allValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&loa;Classificador"/>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -634,7 +653,7 @@
     <!-- http://vocab.e.gov.br/2013/09/loa#Orgao -->
 
     <owl:Class rdf:about="&loa;Orgao">
-        <owl:equivalentClass>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -647,7 +666,7 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -655,13 +674,17 @@
     <!-- http://vocab.e.gov.br/2013/09/loa#PlanoOrcamentario -->
 
     <owl:Class rdf:about="&loa;PlanoOrcamentario">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&loa;identificador"/>
-                <owl:allValuesFrom rdf:resource="&xsd;string"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&loa;Classificador"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&loa;Classificador"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;identificador"/>
+                        <owl:someValuesFrom rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -698,16 +721,38 @@
     
 
 
+    <!-- http://vocab.e.gov.br/2013/09/loa#Subtitulo -->
+
+    <owl:Class rdf:about="&loa;Subtitulo">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&loa;Classificador"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;identificador"/>
+                        <owl:someValuesFrom rdf:resource="&xsd;string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://vocab.e.gov.br/2013/09/loa#UnidadeOrcamentaria -->
 
     <owl:Class rdf:about="&loa;UnidadeOrcamentaria">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&loa;temOrgao"/>
-                <owl:someValuesFrom rdf:resource="&loa;Orgao"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&loa;Classificador"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&loa;Classificador"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&loa;temOrgao"/>
+                        <owl:someValuesFrom rdf:resource="&loa;Orgao"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -721,12 +766,48 @@
      -->
 
     <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&loa;temClassificador"/>
+            <rdf:Description rdf:about="&loa;temExercicio"/>
+            <rdf:Description rdf:about="&loa;temOrgao"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&loa;Atividade"/>
+            <rdf:Description rdf:about="&loa;OperacaoEspecial"/>
+            <rdf:Description rdf:about="&loa;Projeto"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="&loa;Classificador"/>
             <rdf:Description rdf:about="&loa;Exercicio"/>
-            <rdf:Description rdf:about="&loa;ItemDeDespesa"/>
+            <rdf:Description rdf:about="&loa;ItemDespesa"/>
             <rdf:Description rdf:about="&loa;Orgao"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="&loa;temAcao"/>
+            <rdf:Description rdf:about="&loa;temCategoriaEconomica"/>
+            <rdf:Description rdf:about="&loa;temElementoDespesa"/>
+            <rdf:Description rdf:about="&loa;temEsfera"/>
+            <rdf:Description rdf:about="&loa;temFonteRecursos"/>
+            <rdf:Description rdf:about="&loa;temFuncao"/>
+            <rdf:Description rdf:about="&loa;temGND"/>
+            <rdf:Description rdf:about="&loa;temIdentificadorUso"/>
+            <rdf:Description rdf:about="&loa;temModalidadeAplicacao"/>
+            <rdf:Description rdf:about="&loa;temPlanoOrcamentario"/>
+            <rdf:Description rdf:about="&loa;temPrograma"/>
+            <rdf:Description rdf:about="&loa;temResultadoPrimario"/>
+            <rdf:Description rdf:about="&loa;temSubfuncao"/>
+            <rdf:Description rdf:about="&loa;temSubtitulo"/>
+            <rdf:Description rdf:about="&loa;temUnidadeOrcamentaria"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -740,21 +821,13 @@
             <rdf:Description rdf:about="&loa;Funcao"/>
             <rdf:Description rdf:about="&loa;GrupoNatDespesa"/>
             <rdf:Description rdf:about="&loa;IdentificadorUso"/>
-            <rdf:Description rdf:about="&loa;Localizador"/>
             <rdf:Description rdf:about="&loa;ModalidadeAplicacao"/>
             <rdf:Description rdf:about="&loa;PlanoOrcamentario"/>
             <rdf:Description rdf:about="&loa;Programa"/>
             <rdf:Description rdf:about="&loa;ResultadoPrimario"/>
             <rdf:Description rdf:about="&loa;Subfuncao"/>
+            <rdf:Description rdf:about="&loa;Subtitulo"/>
             <rdf:Description rdf:about="&loa;UnidadeOrcamentaria"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="&loa;Atividade"/>
-            <rdf:Description rdf:about="&loa;OperacaoEspecial"/>
-            <rdf:Description rdf:about="&loa;Projeto"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
