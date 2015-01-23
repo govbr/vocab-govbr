@@ -1,0 +1,373 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcty: <http://purl.org/dc/dcmitype/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gndo: <http://d-nb.info/standards/elementset/gnd#> .
+@prefix opa: <http://purl.org/socialparticipation/opa/> .
+@prefix ops: <http://purl.org/socialparticipation/ops/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+opa:OPaDados.owl a owl:Ontology ;
+    dct:description "Ontologia do Participa.br, levantada com base nos dados e para conectar com outras instâncias" ;
+    dct:title "Ontologia do Participa.br (OPa), parte dedicada aos dados do portal" ;
+    owl:versionInfo "0.01a" .
+
+opa:abstract a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain opa:Article ;
+    rdfs:range xsd:string .
+
+opa:based_near a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain [ owl:unionOf opa:Group,
+                opa:Member,
+                opa:Participant ] ;
+    rdfs:range opa:Point .
+
+opa:city a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain [ owl:unionOf opa:Group,
+                opa:Member,
+                opa:Organization,
+                opa:Participant ] ;
+    rdfs:range xsd:string .
+
+opa:country a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain [ owl:unionOf opa:Group,
+                opa:Member,
+                opa:Organization,
+                opa:Participant ] ;
+    rdfs:range xsd:string .
+
+opa:hasReply a owl:ObjectProperty ;
+    rdfs:domain [ owl:unionOf opa:Article,
+                opa:Comment ] ;
+    rdfs:range opa:Comment .
+
+opa:hasStep a owl:ObjectProperty ;
+    rdfs:domain opa:Article ;
+    rdfs:range opa:Article .
+
+opa:ip a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain opa:Comment ;
+    rdfs:range xsd:string .
+
+opa:knows a owl:ObjectProperty ;
+    rdfs:domain [ owl:unionOf opa:Member,
+                opa:Participant ] ;
+    rdfs:range [ owl:unionOf opa:Member,
+                opa:Participant ] .
+
+opa:organization a owl:DatatypeProperty ;
+    rdfs:domain [ owl:unionOf opa:Member,
+                opa:Participant ] ;
+    rdfs:range xsd:string .
+
+opa:professionalActivity a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain [ owl:unionOf opa:Member,
+                opa:Participant ] ;
+    rdfs:range xsd:string .
+
+opa:state a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain [ owl:unionOf opa:Group,
+                opa:Member,
+                opa:Organization,
+                opa:Participant ] ;
+    rdfs:range xsd:string .
+
+opa:title a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain [ owl:unionOf opa:Article,
+                opa:Comment ] ;
+    rdfs:range xsd:string .
+
+opa:voter a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain opa:Vote ;
+    rdfs:range [ owl:unionOf opa:Member,
+                opa:Participant ] .
+
+opa:Friendship rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty opa:member ;
+            owl:someValuesFrom opa:Member ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom opa:Member ;
+            owl:onProperty opa:member ] .
+
+opa:body a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain [ owl:unionOf opa:Article,
+                opa:Comment ] ;
+    rdfs:range xsd:string .
+
+opa:article a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain opa:Tagging ;
+    rdfs:range opa:Article .
+
+opa:atype a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain opa:Article ;
+    rdfs:range xsd:string .
+
+opa:creator a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain opa:Comment ;
+    rdfs:range [ owl:unionOf opa:Member,
+                opa:Participant ] .
+
+opa:lat a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain opa:Point ;
+    rdfs:range xsd:float .
+
+opa:long a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain opa:Point ;
+    rdfs:range xsd:float .
+
+opa:mbox a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain [ owl:unionOf opa:Member,
+                opa:Participant ] ;
+    rdfs:range xsd:anyURI .
+
+opa:member a owl:ObjectProperty ;
+    rdfs:domain opa:Friendship ;
+    rdfs:range [ owl:unionOf opa:Member,
+                opa:Participant ] .
+
+opa:polarity a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain opa:Vote ;
+    rdfs:range xsd:boolean .
+
+opa:published a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain opa:Article ;
+    rdfs:range xsd:dateTime .
+
+opa:publisher a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain opa:Article ;
+    rdfs:range [ owl:unionOf opa:Group,
+                opa:Member,
+                opa:Organization,
+                opa:Participant ] .
+
+opa:tag a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain opa:Tagging ;
+    rdfs:range opa:Tag .
+
+opa:Point rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:float ;
+            owl:onProperty opa:lat ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:long ;
+            owl:someValuesFrom xsd:float ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:float ;
+            owl:onProperty opa:long ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:lat ;
+            owl:someValuesFrom xsd:float ] .
+
+opa:Tagging rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty opa:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom opa:Article ;
+            owl:onProperty opa:article ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:article ;
+            owl:someValuesFrom opa:Article ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:tag ;
+            owl:someValuesFrom opa:Tag ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom opa:Tag ;
+            owl:onProperty opa:tag ] .
+
+opa:Vote rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty opa:polarity ;
+            owl:someValuesFrom xsd:boolean ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:boolean ;
+            owl:onProperty opa:polarity ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:created ;
+            owl:someValuesFrom xsd:dateTime ] .
+
+opa:Tag rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty opa:name ;
+            owl:someValuesFrom xsd:string ] .
+
+opa:modified a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain [ owl:unionOf opa:Article,
+                opa:Group,
+                opa:Member,
+                opa:Organization,
+                opa:Participant ] ;
+    rdfs:range xsd:dateTime .
+
+opa:name a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain [ owl:unionOf opa:Group,
+                opa:Member,
+                opa:Organization,
+                opa:Participant,
+                opa:Tag ] ;
+    rdfs:range xsd:string .
+
+opa:publicProfile a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain [ owl:unionOf opa:Group,
+                opa:Member,
+                opa:Organization,
+                opa:Participant ] ;
+    rdfs:range xsd:boolean .
+
+opa:visibleProfile a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain [ owl:unionOf opa:Group,
+                opa:Member,
+                opa:Organization,
+                opa:Participant ] ;
+    rdfs:range xsd:boolean .
+
+opa:Comment rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom opa:Member ;
+            owl:onProperty opa:creator ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:body ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:creator ;
+            owl:someValuesFrom opa:Member ] .
+
+opa:created a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:domain [ owl:unionOf opa:Article,
+                opa:Comment,
+                opa:Group,
+                opa:Member,
+                opa:Organization,
+                opa:Participant,
+                opa:Tagging,
+                opa:Vote ] ;
+    rdfs:range xsd:dateTime .
+
+opa:Organization rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty opa:modified ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:name ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:publicProfile ;
+            owl:someValuesFrom xsd:boolean ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:visibleProfile ;
+            owl:someValuesFrom xsd:boolean ] .
+
+opa:Group rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty opa:name ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:publicProfile ;
+            owl:someValuesFrom xsd:boolean ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:modified ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:visibleProfile ;
+            owl:someValuesFrom xsd:boolean ] .
+
+opa:Article rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty opa:atype ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom opa:Member ;
+            owl:onProperty opa:publisher ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:modified ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:published ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:publisher ;
+            owl:someValuesFrom opa:Member ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty opa:atype ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:dateTime ;
+            owl:onProperty opa:published ] .
+
+opa:Participant rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty opa:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:visibleProfile ;
+            owl:someValuesFrom xsd:boolean ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:name ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:publicProfile ;
+            owl:someValuesFrom xsd:boolean ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:modified ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:mbox ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:mbox ] .
+
+opa:Member rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:boolean ;
+            owl:onProperty opa:publicProfile ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:boolean ;
+            owl:onProperty opa:visibleProfile ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:publicProfile ;
+            owl:someValuesFrom xsd:boolean ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:modified ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:name ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty opa:visibleProfile ;
+            owl:someValuesFrom xsd:boolean ] .
+
