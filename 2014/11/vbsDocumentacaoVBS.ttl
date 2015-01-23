@@ -1,0 +1,735 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vbs: <http://purl.org/socialparticipation/vbs/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vbs:Accountability a skos:Concept ;
+    skos:prefLabel "Prestação de contas"@pt .
+
+vbs:ActionPlan a skos:Concept ;
+    skos:prefLabel "Plano de Ação"@pt .
+
+vbs:Agenda a skos:Concept ;
+    skos:prefLabel "Pauta"@pt .
+
+vbs:Annex a skos:Concept ;
+    skos:prefLabel "Anexo"@pt .
+
+vbs:AnnualReport a skos:Concept ;
+    skos:prefLabel "Relatório anual"@pt .
+
+vbs:Architecture a skos:Concept ;
+    skos:prefLabel "Arquitetura"@pt .
+
+vbs:AttendanceList a skos:Concept ;
+    skos:prefLabel "Lista de presença"@pt .
+
+vbs:Audiovisual a skos:Concept ;
+    skos:prefLabel "Audiovisual"@pt .
+
+vbs:Balance a skos:Concept ;
+    skos:altLabel "Balanço geral"@pt ;
+    skos:prefLabel "Balanço"@pt .
+
+vbs:Book a skos:Concept ;
+    skos:prefLabel "Livro"@pt .
+
+vbs:BookChapter a skos:Concept ;
+    skos:prefLabel "Capítulo de livro"@pt .
+
+vbs:Booklet a skos:Concept ;
+    skos:prefLabel "Cartilha"@pt .
+
+vbs:Brochure a skos:Concept ;
+    skos:prefLabel "Folheto"@pt .
+
+vbs:Bulletin a skos:Concept ;
+    skos:prefLabel "Boletim"@pt .
+
+vbs:Bylaws a skos:Concept ;
+    skos:prefLabel "Regimento"@pt .
+
+vbs:CGPS a skos:Concept ;
+    skos:altLabel "Comitê Governamental de Participação Social"@pt ;
+    skos:prefLabel "CGPS"@pt .
+
+vbs:CNPS a skos:Concept ;
+    skos:prefLabel "Compromisso Nacional de Participação Social"@pt .
+
+vbs:Changes a skos:Concept ;
+    skos:prefLabel "Alterações"@pt .
+
+vbs:ChildrenAndAdolescents a skos:Concept ;
+    skos:broader vbs:GuaranteeOfRights ;
+    skos:prefLabel "criança e adolescente"@pt .
+
+vbs:Cities a skos:Concept ;
+    skos:broader vbs:Infrastructure ;
+    skos:prefLabel "cidades"@pt .
+
+vbs:Citizenship a skos:Concept ;
+    skos:prefLabel "Cidadania"@pt .
+
+vbs:CivilSociety a skos:Concept ;
+    skos:prefLabel "Sociedade civil"@pt .
+
+vbs:CollaborationNetwork a skos:Concept ;
+    skos:prefLabel "Rede de Colaboração"@pt .
+
+vbs:Collection a skos:Concept ;
+    skos:altLabel "Antologia"@pt ;
+    skos:prefLabel "Coletânea"@pt,
+        "Coleção"@pt .
+
+vbs:Colloquium a skos:Concept ;
+    skos:prefLabel "Colóquio"@pt .
+
+vbs:Composition a skos:Concept ;
+    skos:prefLabel "Composição"@pt .
+
+vbs:Conclusion a skos:Concept ;
+    skos:prefLabel "Conclusão"@pt .
+
+vbs:ConferenceProceedings a skos:Concept ;
+    skos:prefLabel "Anais de conferência"@pt .
+
+vbs:ConsultationObject a skos:Concept ;
+    skos:altLabel "Proposta colocada em consulta"@pt,
+        "Proposta de consulta"@pt ;
+    skos:prefLabel "Objeto de consulta"@pt .
+
+vbs:Contributions a skos:Concept ;
+    skos:prefLabel "Contribuições"@pt .
+
+vbs:Convening a skos:Concept ;
+    skos:altLabel "Documento convocatório"@pt ;
+    skos:prefLabel "Convocatória"@pt .
+
+vbs:Convention a skos:Concept ;
+    skos:altLabel "Parceria"@pt ;
+    skos:prefLabel "Convênio"@pt .
+
+vbs:CorruptionFighting a skos:Concept ;
+    skos:prefLabel "Combate à corrupção"@pt .
+
+vbs:Course a skos:Concept ;
+    skos:prefLabel "Curso"@pt .
+
+vbs:CoveragePlan a skos:Concept ;
+    skos:prefLabel "Plano de cobertura"@pt .
+
+vbs:Culture a skos:Concept ;
+    skos:broader vbs:SocialPolicies ;
+    skos:prefLabel "cultura"@pt .
+
+vbs:DOU a skos:Concept ;
+    skos:altLabel "Diário Oficial da União"@pt ;
+    skos:prefLabel "DOU"@pt .
+
+vbs:Data a skos:Concept ;
+    skos:prefLabel "Dados"@pt .
+
+vbs:Deal a skos:Concept ;
+    skos:altLabel "Parceria"@pt ;
+    skos:prefLabel "Acordo"@pt .
+
+vbs:Decree a skos:Concept ;
+    skos:prefLabel "Decreto"@pt .
+
+vbs:DemocraticManagement a skos:Concept ;
+    skos:prefLabel "Gestão democrática"@pt .
+
+vbs:DialogMethodology a skos:Concept ;
+    skos:prefLabel "Metodologia de diálogo"@pt .
+
+vbs:Dictionary a skos:Concept ;
+    skos:prefLabel "Dicionário"@pt .
+
+vbs:DigitalFormat a skos:Concept ;
+    skos:prefLabel "Formato digital"@pt .
+
+vbs:DirectDemocracy a skos:Concept ;
+    skos:broader vbs:Democracy ;
+    skos:prefLabel "Democracia Direta"@pt .
+
+vbs:DisseminationArticle a skos:Concept ;
+    skos:prefLabel "Artigo de divulgação"@pt .
+
+vbs:Dissertation a skos:Concept ;
+    skos:broader vbs:AcademicWork ;
+    skos:prefLabel "Dissertação"@pt .
+
+vbs:Education a skos:Concept ;
+    skos:broader vbs:GuaranteeOfRights ;
+    skos:prefLabel "educação"@pt .
+
+vbs:EducationalAndTrainingProcesses a skos:Concept ;
+    skos:prefLabel "Processos Educativos e Formativos"@pt .
+
+vbs:ElectronicGovernment a skos:Concept ;
+    skos:prefLabel "Governo Eletrônico"@pt .
+
+vbs:EndUser a skos:Concept ;
+    skos:prefLabel "Usuário final"@pt .
+
+vbs:Environment a skos:Concept ;
+    skos:broader vbs:NaturalResources ;
+    skos:prefLabel "meio ambiente"@pt .
+
+vbs:Evaluation a skos:Concept ;
+    skos:prefLabel "Avaliação"@pt .
+
+vbs:EventPresentedWork a skos:Concept ;
+    skos:prefLabel "Trabalho apresentados em evento"@pt .
+
+vbs:Expedient a skos:Concept ;
+    skos:prefLabel "Expediente"@pt .
+
+vbs:ExplanatoryMemorandum a skos:Concept ;
+    skos:broader vbs:Act ;
+    skos:prefLabel "Exposição de motivos"@pt .
+
+vbs:FGPS a skos:Concept ;
+    skos:altLabel "Fórum Governamental de Participação Social"@pt ;
+    skos:prefLabel "FGPS"@pt .
+
+vbs:FederalBudget a skos:Concept ;
+    skos:prefLabel "Orçamento federal"@pt .
+
+vbs:FinalReport a skos:Concept ;
+    skos:prefLabel "Relatório final"@pt .
+
+vbs:Folder a skos:Concept ;
+    skos:prefLabel "Folder"@pt .
+
+vbs:FoodAndNutritionSecurity a skos:Concept ;
+    skos:broader vbs:SocialPolicies ;
+    skos:prefLabel "segurança alimentar e nutricional"@pt .
+
+vbs:FormativeProcess a skos:Concept ;
+    skos:prefLabel "Processo formativo"@pt .
+
+vbs:Goals a skos:Concept ;
+    skos:prefLabel "Metas"@pt .
+
+vbs:GovernmentProgram a skos:Concept ;
+    skos:prefLabel "Programa governamental"@pt .
+
+vbs:GovernmentProgramWithSocialParticipation a skos:Concept ;
+    skos:prefLabel "Programa governamental com participação social"@pt .
+
+vbs:Guidance a skos:Concept ;
+    skos:prefLabel "Diretriz"@pt .
+
+vbs:Guide a skos:Concept ;
+    skos:prefLabel "Guia"@pt .
+
+vbs:Guidelines a skos:Concept ;
+    skos:prefLabel "Orientações"@pt .
+
+vbs:Handout a skos:Concept ;
+    skos:prefLabel "Apostila"@pt .
+
+vbs:Health a skos:Concept ;
+    skos:broader vbs:SocialPolicies ;
+    skos:prefLabel "saúde"@pt .
+
+vbs:IBICT a skos:Concept ;
+    skos:altLabel "Instituto Brasileiro de Informação em Ciência e Tecnologia"@pt ;
+    skos:prefLabel "IBICT"@pt .
+
+vbs:Inequality a skos:Concept ;
+    skos:prefLabel "Desigualdade"@pt .
+
+vbs:Inform a skos:Concept ;
+    skos:prefLabel "Informe"@pt .
+
+vbs:InnovativePractice a skos:Concept ;
+    skos:prefLabel "Prática inovadora"@pt .
+
+vbs:InternalRegiment a skos:Concept ;
+    skos:prefLabel "Regimento interno"@pt .
+
+vbs:Interview a skos:Concept ;
+    skos:prefLabel "Entrevista"@pt .
+
+vbs:Invitation a skos:Concept ;
+    skos:prefLabel "Convite"@pt .
+
+vbs:Journal a skos:Concept ;
+    skos:altLabel "Periódico"@pt ;
+    skos:prefLabel "Revista"@pt .
+
+vbs:JournalArticle a skos:Concept ;
+    skos:altLabel "Artigo de periódico"@pt ;
+    skos:broader vbs:AcademicWork ;
+    skos:prefLabel "Artigo em periódico"@pt .
+
+vbs:JudicialDecision a skos:Concept ;
+    skos:prefLabel "Decisão judicial"@pt .
+
+vbs:LAI a skos:Concept ;
+    skos:altLabel "Lei de Acesso à Informação"@pt ;
+    skos:prefLabel "LAI"@pt .
+
+vbs:LGBT a skos:Concept ;
+    skos:altLabel "Lésbicas, Gays, Bissexuais e Transgêneros"@pt ;
+    skos:broader vbs:GuaranteeOfRights ;
+    skos:prefLabel "LGBT"@pt .
+
+vbs:Law a skos:Concept ;
+    skos:prefLabel "Lei"@pt .
+
+vbs:Lecture a skos:Concept ;
+    skos:prefLabel "Palestra"@pt .
+
+vbs:Legislation a skos:Concept ;
+    skos:prefLabel "Legislação"@pt .
+
+vbs:Letter a skos:Concept ;
+    skos:prefLabel "Carta"@pt .
+
+vbs:LocalParticipation a skos:Concept ;
+    skos:prefLabel "Participação local"@pt .
+
+vbs:LocalProductiveArrangements a skos:Concept ;
+    skos:broader vbs:EconomicDevelopment ;
+    skos:prefLabel "Arranjos produtivos locais"@pt .
+
+vbs:Manual a skos:Concept ;
+    skos:prefLabel "Manual"@pt .
+
+vbs:MeetingMinute a skos:Concept ;
+    skos:prefLabel "Ata de reunião"@pt .
+
+vbs:MembershipTerm a skos:Concept ;
+    skos:prefLabel "Termo de adesão"@pt .
+
+vbs:Minute a skos:Concept ;
+    skos:prefLabel "Ata"@pt .
+
+vbs:Monitoring a skos:Concept ;
+    skos:prefLabel "Monitoramento"@pt .
+
+vbs:Monography a skos:Concept ;
+    skos:broader vbs:AcademicWork ;
+    skos:prefLabel "Monografia"@pt .
+
+vbs:Motion a skos:Concept ;
+    skos:broader vbs:Act ;
+    skos:prefLabel "Moção"@pt .
+
+vbs:NamesList a skos:Concept ;
+    skos:altLabel "Relação de nomes"@pt ;
+    skos:prefLabel "Lista de nomes"@pt .
+
+vbs:Newslleter a skos:Concept ;
+    skos:altLabel "Boletim"@pt ;
+    skos:prefLabel "Boletim informativo"@pt .
+
+vbs:NormativeAct a skos:Concept ;
+    skos:prefLabel "Ato normativo"@pt .
+
+vbs:Notebook a skos:Concept ;
+    skos:prefLabel "Caderno"@pt .
+
+vbs:ONG a skos:Concept ;
+    skos:altLabel "Organização não governamental"@pt ;
+    skos:prefLabel "ONG"@pt .
+
+vbs:OfficialAct a skos:Concept ;
+    skos:prefLabel "Ato oficial"@pt .
+
+vbs:Opinion a skos:Concept ;
+    skos:prefLabel "Parecer"@pt .
+
+vbs:OrderOfTheDay a skos:Concept ;
+    skos:prefLabel "Ordem do dia"@pt .
+
+vbs:Ordinance a skos:Concept ;
+    skos:prefLabel "Portaria"@pt .
+
+vbs:OrientationToParticipants a skos:Concept ;
+    skos:prefLabel "Orientação aos participantes"@pt .
+
+vbs:Other a skos:Concept ;
+    skos:prefLabel "Outros"@pt .
+
+vbs:OtherDocumentsIssuedByCounsil a skos:Concept ;
+    skos:prefLabel "Outros documentos editados pelo conselho"@pt .
+
+vbs:OtherFormsOfExpression a skos:Concept ;
+    skos:prefLabel "Outras formas de manifestação"@pt .
+
+vbs:PNPS a skos:Concept ;
+    skos:altLabel "Política Nacional de Participação Social"@pt ;
+    skos:prefLabel "PNPS"@pt .
+
+vbs:PNPSImplementationEvaluationReport a skos:Concept ;
+    skos:prefLabel "Relatório de avaliação da implementação da PNPS"@pt .
+
+vbs:Pamphlet a skos:Concept ;
+    skos:prefLabel "Cartilha"@pt .
+
+vbs:Participabr a skos:Concept ;
+    skos:altLabel "Portal participa.br"@pt,
+        "participabr"@pt ;
+    skos:prefLabel "Participa.br"@pt .
+
+vbs:ParticipationInstancesAndMechanisms a skos:Concept ;
+    skos:prefLabel "Instâncias e Mecanismos de Participação Social"@pt .
+
+vbs:ParticipationMethodology a skos:Concept ;
+    skos:prefLabel "Metodologia de participação"@pt .
+
+vbs:ParticipativeDemocracy a skos:Concept ;
+    skos:broader vbs:Democracy ;
+    skos:prefLabel "Democracia Participativa"@pt .
+
+vbs:ParticipativeManagement a skos:Concept ;
+    skos:prefLabel "Gestão participativa"@pt .
+
+vbs:ParticipatoryBudgeting a skos:Concept ;
+    skos:prefLabel "Orçamento participativo"@pt .
+
+vbs:ParticipatoryInstitution a skos:Concept ;
+    skos:prefLabel "Instituição participativa"@pt .
+
+vbs:Partnership a skos:Concept ;
+    skos:prefLabel "Parceria"@pt .
+
+vbs:Plenary a skos:Concept ;
+    skos:prefLabel "Plenária"@pt .
+
+vbs:PoliticalInclusion a skos:Concept ;
+    skos:prefLabel "Inclusão política"@pt .
+
+vbs:PoliticalParticipation a skos:Concept ;
+    skos:prefLabel "Participação política"@pt .
+
+vbs:Politics a skos:Concept ;
+    skos:prefLabel "Política"@pt .
+
+vbs:PopularEducation a skos:Concept ;
+    skos:prefLabel "Educação Popular"@pt .
+
+vbs:PopularForum a skos:Concept ;
+    skos:prefLabel "Fórum popular"@pt .
+
+vbs:PopularParticipation a skos:Concept ;
+    skos:prefLabel "Participação popular"@pt .
+
+vbs:PopularSolidarityEconomy a skos:Concept ;
+    skos:broader vbs:SolidarityEconomy ;
+    skos:prefLabel "Economia popular solidária"@pt .
+
+vbs:Presentation a skos:Concept ;
+    skos:prefLabel "Apresentação"@pt .
+
+vbs:Proceedings a skos:Concept ;
+    skos:prefLabel "Anais"@pt .
+
+vbs:Project a skos:Concept ;
+    skos:prefLabel "Projeto"@pt .
+
+vbs:Proposal a skos:Concept ;
+    skos:prefLabel "Proposta"@pt .
+
+vbs:ProvisionalMeasure a skos:Concept ;
+    skos:prefLabel "Medida provisória"@pt .
+
+vbs:PublicAdministration a skos:Concept ;
+    skos:prefLabel "Administração pública"@pt .
+
+vbs:PublicPolicy a skos:Concept ;
+    skos:prefLabel "Política pública"@pt .
+
+vbs:Publication a skos:Concept ;
+    skos:prefLabel "Publicação"@pt .
+
+vbs:Recomendations a skos:Concept ;
+    skos:prefLabel "Recomendações"@pt .
+
+vbs:Recommendation a skos:Concept ;
+    skos:broader vbs:Act ;
+    skos:prefLabel "Recomendação"@pt .
+
+vbs:RecommendationsAndPropositionsReport a skos:Concept ;
+    skos:prefLabel "Relatório de recomendações e proposições"@pt .
+
+vbs:ReferenceDocuments a skos:Concept ;
+    skos:altLabel "Documento-base"@pt,
+        "Documentos de referência"@pt ;
+    skos:prefLabel "Texto-base"@pt .
+
+vbs:RegionalDevelopment a skos:Concept ;
+    skos:broader vbs:EconomicDevelopment ;
+    skos:prefLabel "desenvolvimento regional"@pt .
+
+vbs:RegularMeeting a skos:Concept ;
+    skos:prefLabel "Reunião ordinária"@pt .
+
+vbs:Regulation a skos:Concept ;
+    skos:prefLabel "Regulamento"@pt .
+
+vbs:RegulatoryImpactDocument a skos:Concept ;
+    skos:prefLabel "Documento de impacto regulatório"@pt .
+
+vbs:Release a skos:Concept ;
+    skos:prefLabel "Release"@pt .
+
+vbs:Report a skos:Concept ;
+    skos:altLabel "Relato"@pt ;
+    skos:prefLabel "Relatório"@pt .
+
+vbs:Representation a skos:Concept ;
+    skos:altLabel "Representação política"@pt ;
+    skos:prefLabel "Representação"@pt .
+
+vbs:RepresentationAndParticipation a skos:Concept ;
+    skos:prefLabel "Representação e participação"@pt .
+
+vbs:ResearchReport a skos:Concept ;
+    skos:prefLabel "Relatório de pesquisa"@pt .
+
+vbs:Resolution a skos:Concept ;
+    skos:altLabel "Deliberação"@pt ;
+    skos:broader vbs:Act ;
+    skos:prefLabel "Resolução"@pt .
+
+vbs:Response a skos:Concept ;
+    skos:prefLabel "Resposta"@pt .
+
+vbs:ResponsesNotebook a skos:Concept ;
+    skos:prefLabel "Caderno de respostas"@pt .
+
+vbs:Resume a skos:Concept ;
+    skos:prefLabel "Resumo"@pt .
+
+vbs:RightsAssignmentToSGPR a skos:Concept ;
+    skos:prefLabel "Cessão de Direitos à SGPR"@pt .
+
+vbs:SGPR a skos:Concept ;
+    skos:altLabel "Secretaria-Geral da Presidência da República"@pt ;
+    skos:prefLabel "SGPR"@pt .
+
+vbs:SNAS a skos:Concept ;
+    skos:altLabel "Secretaria Nacional de Articulação Social"@pt ;
+    skos:prefLabel "SNAS"@pt .
+
+vbs:SNPS a skos:Concept ;
+    skos:altLabel "Sistema Nacional de Participação Social"@pt ;
+    skos:prefLabel "SNPS"@pt .
+
+vbs:Screenplay a skos:Concept ;
+    skos:prefLabel "Roteiro"@pt .
+
+vbs:Shipping a skos:Concept ;
+    skos:prefLabel "Despacho"@pt .
+
+vbs:Slides a skos:Concept ;
+    skos:prefLabel "Slides"@pt .
+
+vbs:SocialCare a skos:Concept ;
+    skos:broader vbs:SocialPolicies ;
+    skos:prefLabel "assistência social"@pt .
+
+vbs:SocialControl a skos:Concept ;
+    skos:prefLabel "Controle social"@pt .
+
+vbs:SocialLibrary a skos:Concept ;
+    skos:altLabel "Biblioteca Digital de Participação Social"@pt,
+        "Biblioteca de participação"@pt,
+        "Biblioteca de participação social"@pt,
+        "Biblioteca digital"@pt,
+        "Biblioteca semântica de participação social"@pt ;
+    skos:prefLabel "Bibioteca social"@pt .
+
+vbs:SocialLibraryManagementCommittee a skos:Concept .
+
+vbs:SocialMovement a skos:Concept ;
+    skos:prefLabel "Movimento social"@pt .
+
+vbs:SocialMovementsAgenda a skos:Concept ;
+    skos:prefLabel "Pauta dos Movimentos Sociais"@pt .
+
+vbs:SocialParticipation a skos:Concept ;
+    skos:prefLabel "Participação social"@pt .
+
+vbs:SocialParticipationJournal a skos:Concept ;
+    skos:prefLabel "Revista de Participação Social"@pt,
+        "Revista de participação social"@pt .
+
+vbs:SocialParticipationManagement a skos:Concept ;
+    skos:prefLabel "Gestão da Participação Social"@pt .
+
+vbs:SocialParticipationNormativeFramework a skos:Concept ;
+    skos:prefLabel "Marco normativo de participação social"@pt .
+
+vbs:SocialParticipationPortal a skos:Concept ;
+    skos:prefLabel "Portal de participação social"@pt .
+
+vbs:SocialParticipationStudyAndResearch a skos:Concept ;
+    skos:prefLabel "Estudo e Pesquisa em Participação Social"@pt .
+
+vbs:SocialResponsibility a skos:Concept ;
+    skos:prefLabel "Responsabilidade social"@pt .
+
+vbs:Speech a skos:Concept ;
+    skos:prefLabel "Discurso"@pt .
+
+vbs:StateSocietyInterface a skos:Concept ;
+    skos:prefLabel "Interface socioestatal"@pt .
+
+vbs:Study a skos:Concept ;
+    skos:prefLabel "Estudo"@pt .
+
+vbs:Subcommunity a skos:Concept ;
+    skos:broader vbs:Community ;
+    skos:prefLabel "Subcomunidade"@pt .
+
+vbs:SubjectDiscussed a skos:Concept ;
+    skos:prefLabel "Assunto abordado"@pt .
+
+vbs:Summary a skos:Concept ;
+    skos:prefLabel "Síntese"@pt .
+
+vbs:SustainableAndSolidaryRuralDevelopment a skos:Concept ;
+    skos:broader vbs:EconomicDevelopment ;
+    skos:prefLabel "desenvolvimento rural sustentável e solidário"@pt .
+
+vbs:Systematization a skos:Concept ;
+    skos:prefLabel "Sistematização"@pt .
+
+vbs:Table a skos:Concept ;
+    skos:prefLabel "Tabela"@pt .
+
+vbs:TechnicalAssitanceAndRuralExtension a skos:Concept ;
+    skos:broader vbs:EconomicDevelopment ;
+    skos:prefLabel "assistência técnica e extensão rural"@pt .
+
+vbs:TechnicalMaterial a skos:Concept ;
+    skos:prefLabel "Material técnico"@pt .
+
+vbs:TechnicalReport a skos:Concept ;
+    skos:prefLabel "Relatório técnico"@pt .
+
+vbs:Text a skos:Concept ;
+    skos:prefLabel "Texto"@pt .
+
+vbs:Thesis a skos:Concept ;
+    skos:broader vbs:AcademicWork ;
+    skos:prefLabel "Tese"@pt .
+
+vbs:Thinking a skos:Concept ;
+    skos:prefLabel "Reflexões"@pt .
+
+vbs:Training a skos:Concept ;
+    skos:prefLabel "Treinamento"@pt .
+
+vbs:Treaty a skos:Concept ;
+    skos:prefLabel "Tratado"@pt .
+
+vbs:Video a skos:Concept ;
+    skos:prefLabel "Vídeo"@pt .
+
+vbs:WaterResources a skos:Concept ;
+    skos:broader vbs:NaturalResources ;
+    skos:prefLabel "recursos hídricos"@pt .
+
+vbs:Web30 a skos:Concept ;
+    skos:prefLabel "Web 3.0"@pt .
+
+vbs:WorkPlan a skos:Concept ;
+    skos:prefLabel "Plano de trabalho"@pt .
+
+vbs:Youth a skos:Concept ;
+    skos:broader vbs:GuaranteeOfRights ;
+    skos:prefLabel "juventude"@pt .
+
+vbs:annual a skos:Concept ;
+    skos:prefLabel "anual"@pt .
+
+vbs:approved a skos:Concept ;
+    skos:prefLabel "aprovado"@pt .
+
+vbs:biennial a skos:Concept ;
+    skos:prefLabel "bienal"@pt .
+
+vbs:calendar a skos:Concept ;
+    skos:altLabel "Agenda"@pt ;
+    skos:prefLabel "Calendário"@pt .
+
+vbs:coverage a skos:Concept ;
+    skos:prefLabel "de cobertura"@pt .
+
+vbs:discussion a skos:Concept ;
+    skos:prefLabel "de debate"@pt .
+
+vbs:experience a skos:Concept ;
+    skos:prefLabel "de experiência"@pt .
+
+vbs:management a skos:Concept ;
+    skos:prefLabel "de gestão"@pt .
+
+vbs:managerial a skos:Concept ;
+    skos:prefLabel "gerencial"@pt .
+
+vbs:national a skos:Concept ;
+    skos:prefLabel "nacional"@pt .
+
+vbs:preliminary a skos:Concept ;
+    skos:prefLabel "preliminar"@pt .
+
+vbs:referral a skos:Concept ;
+    skos:prefLabel "de referência"@pt .
+
+vbs:regulations a skos:Concept ;
+    skos:prefLabel "regimentos"@pt .
+
+vbs:resolutions a skos:Concept ;
+    skos:prefLabel "de resoluções"@pt .
+
+vbs:results a skos:Concept ;
+    skos:prefLabel "de resultados"@pt .
+
+vbs:Community a skos:Concept ;
+    skos:prefLabel "Comunidade"@pt .
+
+vbs:Infrastructure a skos:Concept ;
+    skos:broader vbs:PolicyArea ;
+    skos:prefLabel "Infraestrutura"@pt .
+
+vbs:SolidarityEconomy a skos:Concept ;
+    skos:prefLabel "Economia solidária"@pt .
+
+vbs:Democracy a skos:Concept ;
+    skos:prefLabel "Democracia"@pt .
+
+vbs:NaturalResources a skos:Concept ;
+    skos:broader vbs:PolicyArea ;
+    skos:prefLabel "Recursos naturais"@pt .
+
+vbs:AcademicWork a skos:Concept ;
+    skos:prefLabel "Trabalho acadêmico"@pt .
+
+vbs:Act a skos:Concept ;
+    skos:prefLabel "Ato"@pt .
+
+vbs:EconomicDevelopment a skos:Concept ;
+    skos:broader vbs:PolicyArea ;
+    skos:prefLabel "Desenvolvimento econômico"@pt .
+
+vbs:GuaranteeOfRights a skos:Concept ;
+    skos:broader vbs:PolicyArea ;
+    skos:prefLabel "Garantia de direitos"@pt .
+
+vbs:SocialPolicies a skos:Concept ;
+    skos:broader vbs:PolicyArea ;
+    skos:prefLabel "Políticas sociais"@pt .
+
+vbs:PolicyArea a skos:Concept ;
+    skos:prefLabel "Área de política"@pt .
+

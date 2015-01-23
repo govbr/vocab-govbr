@@ -1,0 +1,195 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vbs: <http://purl.org/socialparticipation/vbs/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vbs:AdReferendum a skos:Concept ;
+    skos:prefLabel "Decisão ad referendum"@pt .
+
+vbs:AdvisoryInstance a skos:Concept ;
+    skos:broader vbs:ParticipationInstance ;
+    skos:prefLabel "Instância consultiva"@pt .
+
+vbs:AdvisoryMechanism a skos:Concept ;
+    skos:broader vbs:ParticipationMechanism ;
+    skos:prefLabel "Mecanismo consultivo"@pt .
+
+vbs:Bylaws a skos:Concept ;
+    skos:altLabel "Estatuto"@pt ;
+    skos:broader vbs:Act ;
+    skos:prefLabel "Regimento interno"@pt .
+
+vbs:Conference a skos:Concept ;
+    skos:altLabel "Conferência de políticas públicas"@pt,
+        "Conferência nacional"@pt ;
+    skos:broader vbs:ParticipationInstance ;
+    skos:definition "Instância colegiada de temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas"@pt,
+        "Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo"@pt ;
+    skos:prefLabel "Conferência"@pt .
+
+vbs:Council a skos:Concept ;
+    skos:altLabel "Conselho de políticas públicas"@pt,
+        "Conselho gestor"@pt,
+        "Conselho nacional de políticas públicas"@pt ;
+    skos:broader vbs:ParticipationInstance ;
+    skos:definition "Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)"@pt,
+        "decisão a ser referenciada pelo grupo legitimado posteriormente"@pt ;
+    skos:prefLabel "Conselho"@pt ;
+    skos:scopeNote "Espaço participativo com a finalidade de incidir nas políticas públicas de determinado tema, nos quais é prevista certa permanência no tempo, composto por representantes do poder público e da sociedade civil, esta podendo ser dividida em diferentes segmentos."@pt,
+        "espaço contínuo de participação social"@pt .
+
+vbs:Decree a skos:Concept ;
+    skos:broader vbs:Act ;
+    skos:prefLabel "Decreto"@pt .
+
+vbs:DeliberativeInstance a skos:Concept ;
+    skos:broader vbs:ParticipationInstance ;
+    skos:prefLabel "Instância deliberativa"@pt .
+
+vbs:DeliberativeMechanism a skos:Concept ;
+    skos:broader vbs:ParticipationMechanism ;
+    skos:prefLabel "Mecanismo deliberativo"@pt .
+
+vbs:EconomicDevelopment a skos:Concept ;
+    skos:broader vbs:PolicyArea ;
+    skos:prefLabel "Desenvolvimento econômico"@pt ;
+    skos:scopeNote "arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário"@pt .
+
+vbs:ExecutiveSecretariat a skos:Concept ;
+    skos:prefLabel "Secretaria executiva"@pt .
+
+vbs:GuaranteeOfRights a skos:Concept ;
+    skos:broader vbs:PolicyArea ;
+    skos:prefLabel "Garantia de direitos"@pt ;
+    skos:scopeNote "criança e adolescente, educação, juventude, LGBT, mulheres e pessoa idosa"@pt .
+
+vbs:Infrastructure a skos:Concept ;
+    skos:broader vbs:PolicyArea ;
+    skos:prefLabel "Infraestrutura"@pt ;
+    skos:scopeNote "cidades"@pt .
+
+vbs:InternalCommission a skos:Concept ;
+    skos:prefLabel "Comissão interna"@pt ;
+    skos:scopeNote "Comissão interna de conselho"@pt .
+
+vbs:Law a skos:Concept ;
+    skos:broader vbs:Act ;
+    skos:prefLabel "Lei"@pt .
+
+vbs:NationalPlan a skos:Concept ;
+    skos:broader vbs:PublicPolicy ;
+    skos:prefLabel "Política ou plano nacional"@pt .
+
+vbs:NationalSystem a skos:Concept ;
+    skos:broader vbs:PublicPolicy ;
+    skos:prefLabel "Sistema nacional"@pt .
+
+vbs:NaturalResources a skos:Concept ;
+    skos:broader vbs:PolicyArea ;
+    skos:prefLabel "Recursos naturais"@pt ;
+    skos:scopeNote "Recursos naturais"@pt .
+
+vbs:Ordinance a skos:Concept ;
+    skos:broader vbs:Act ;
+    skos:prefLabel "Portaria"@pt .
+
+vbs:Participant a skos:Concept ;
+    skos:prefLabel "Participante"@pt .
+
+vbs:ParticipantSelectionMethod a skos:Concept ;
+    skos:prefLabel "Método de seleção de participantes"@pt .
+
+vbs:QualityVote a skos:Concept ;
+    skos:altLabel "voto de desempate"@pt,
+        "voto de minerva"@pt ;
+    skos:definition "voto de desempate de votação"@pt ;
+    skos:prefLabel "Voto de qualidade"@pt .
+
+vbs:Resolution a skos:Concept ;
+    skos:altLabel "Decisão"@pt,
+        "Deliberação"@pt,
+        "Diretriz"@pt,
+        "Proposta"@pt,
+        "Tese"@pt ;
+    skos:broader vbs:Act ;
+    skos:prefLabel "Resolução"@pt .
+
+vbs:Secretariat a skos:Concept ;
+    skos:broader vbs:Ministry ;
+    skos:prefLabel "Secretaria"@pt .
+
+vbs:SocialPolicies a skos:Concept ;
+    skos:broader vbs:PolicyArea ;
+    skos:prefLabel "Políticas sociais"@pt ;
+    skos:scopeNote "assistência social, cultura, saúde, segurança alimentar e nutricional"@pt .
+
+vbs:Statute a skos:Concept ;
+    skos:broader vbs:PublicPolicy ;
+    skos:definition "Conjunto de normas do ordenamento jurídico brasileiro usualmente instituído por lei."@pt ;
+    skos:prefLabel "Estatuto"@pt ;
+    skos:scopeNote "Estatuto que instaura política pública"@pt,
+        "Não é estatuto sinônimo de regimento interno"@pt .
+
+vbs:WorkGroup a skos:Concept ;
+    skos:prefLabel "Grupo de trabalho"@pt .
+
+vbs:agenda a skos:Concept ;
+    skos:prefLabel "pauta"@pt .
+
+vbs:goal a skos:Concept ;
+    skos:prefLabel "objetivo"@pt .
+
+vbs:member a skos:Concept ;
+    skos:prefLabel "membro"@pt ;
+    skos:related "http://purl.org/socialparticipation/vbs/Participant"@pt .
+
+vbs:parity a skos:Concept ;
+    skos:prefLabel "paridade"@pt ;
+    skos:scopeNote "paridade é um conceito local, podendo por exemplo, ser considerada proporção igual de membros do governo e da sociedade ou proporção igual entre dois segmentos ou setores que são considerados prioritários pelo Conselho"@pt .
+
+vbs:presidency a skos:Concept ;
+    skos:prefLabel "presidência"@pt ;
+    skos:scopeNote "presidência de conselho."@pt .
+
+vbs:reformulation a skos:Concept ;
+    skos:prefLabel "Reformulação"@pt .
+
+vbs:renewal a skos:Concept ;
+    skos:prefLabel "Recondução de mandato"@pt ;
+    skos:scopeNote "Este conceito foi trazido do campo dos conselhos, pode ser aplicável em outros contextos."@pt,
+        "Quando há 'limite de mandato', há limite para recondução."@pt .
+
+vbs:topic a skos:Concept ;
+    skos:broader vbs:theme ;
+    skos:prefLabel "assunto"@pt .
+
+vbs:Ministry a skos:Concept ;
+    skos:prefLabel "Ministério"@pt .
+
+vbs:theme a skos:Concept ;
+    skos:prefLabel "tema"@pt .
+
+vbs:ParticipationMechanism a skos:Concept ;
+    skos:prefLabel "Mecanismo de participação social"@pt .
+
+vbs:PublicPolicy a skos:Concept ;
+    skos:prefLabel "Política pública"@pt .
+
+vbs:ParticipationInstance a skos:Concept ;
+    skos:altLabel "Espaço de participação social"@pt,
+        "Espaço participativo"@pt,
+        "Instituição participativa"@pt,
+        "Instância participativa"@pt ;
+    skos:prefLabel "Instância de participação social"@pt ;
+    skos:related vbs:ParticipationMechanism .
+
+vbs:Act a skos:Concept ;
+    skos:prefLabel "Ato normativo"@pt .
+
+vbs:PolicyArea a skos:Concept ;
+    skos:altLabel "Área política"@pt,
+        "Área temática"@pt ;
+    skos:prefLabel "Área de política"@pt .
+

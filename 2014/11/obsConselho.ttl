@@ -1,0 +1,356 @@
+@prefix obs: <http://purl.org/socialparticipation/obs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+obs:AdministrativePublicAgency a owl:Class ;
+    rdfs:label "Órgão da administração pública"@pt .
+
+obs:AdministrativeSupportAgency a owl:Class ;
+    rdfs:label "Órgão de apoio administrativo"@pt ;
+    rdfs:subClassOf obs:PublicAgency .
+
+obs:Bylaws a owl:Class ;
+    rdfs:label "Regimento interno"@pt ;
+    rdfs:subClassOf obs:NormativeAct .
+
+obs:Commission a owl:Class ;
+    rdfs:label "Comissão"@pt .
+
+obs:Conference a owl:Class ;
+    rdfs:label "Conferência"@pt .
+
+obs:Council a owl:Class ;
+    rdfs:label "Conselho"@pt ;
+    rdfs:comment "Conselho de políticas públicas"@pt ;
+    rdfs:subClassOf obs:ParticipationInstance .
+
+obs:Decree a owl:Class ;
+    rdfs:label "Decreto"@pt ;
+    rdfs:subClassOf obs:NormativeAct .
+
+obs:DialogueTable a owl:Class ;
+    rdfs:label "Mesa de diálogo"@pt .
+
+obs:EconomicDevelopment a owl:Class ;
+    rdfs:label "Desenvolvimento econômico"@pt ;
+    rdfs:comment "arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário"@pt ;
+    rdfs:subClassOf obs:PolicyArea .
+
+obs:ExecutiveOffice a owl:Class ;
+    rdfs:label "Secretaria executiva"@pt ;
+    rdfs:subClassOf obs:PublicAgency .
+
+obs:GuaranteeOfRights a owl:Class ;
+    rdfs:label "Garantia de direitos"@pt ;
+    rdfs:comment "criança e adolescente, educação, juventude, LGBT, mulheres e pessoa idosa"@pt ;
+    rdfs:subClassOf obs:PolicyArea .
+
+obs:Infrastructure a owl:Class ;
+    rdfs:label "Infraestrutura"@pt ;
+    rdfs:comment "cidades"@pt ;
+    rdfs:subClassOf obs:PolicyArea .
+
+obs:InterCouncilForum a owl:Class ;
+    rdfs:label "Fórum interconselhos"@pt .
+
+obs:InternalCommission a owl:Class ;
+    rdfs:label "Comissão interna"@pt ;
+    rdfs:subClassOf obs:PublicAgency .
+
+obs:Law a owl:Class ;
+    rdfs:label "Lei"@pt ;
+    rdfs:subClassOf obs:NormativeAct .
+
+obs:Ministry a owl:Class ;
+    rdfs:label "Ministério"@pt .
+
+obs:Minutes a owl:Class ;
+    rdfs:label "Ata"@pt .
+
+obs:NationalPlan a owl:Class ;
+    rdfs:label "Plano nacional"@pt ;
+    rdfs:comment "revisar com equipe para verificar se pode ser feita a retirada do termo 'política' (já feita, era Política ou plano nacional)"@pt ;
+    rdfs:subClassOf obs:PublicPolicy .
+
+obs:NationalSystem a owl:Class ;
+    rdfs:label "Sistema nacional"@pt ;
+    rdfs:subClassOf obs:PublicPolicy .
+
+obs:NaturalResources a owl:Class ;
+    rdfs:label "Recursos naturais"@pt ;
+    rdfs:comment "meio ambiente"@pt ;
+    rdfs:subClassOf obs:PolicyArea .
+
+obs:Ombusdmen a owl:Class ;
+    rdfs:label "Ouvidoria"@pt .
+
+obs:Ordinance a owl:Class ;
+    rdfs:label "Portaria"@pt ;
+    rdfs:subClassOf obs:NormativeAct .
+
+obs:Presidency a owl:Class ;
+    rdfs:label "Presidência"@pt ;
+    rdfs:subClassOf obs:PublicAgency .
+
+obs:PublicAudience a owl:Class ;
+    rdfs:label "Audiência pública"@pt .
+
+obs:PublicConsultation a owl:Class ;
+    rdfs:label "Consulta pública"@pt .
+
+obs:Resolution a owl:Class ;
+    rdfs:label "Resolução"@pt ;
+    rdfs:subClassOf obs:NormativeAct .
+
+obs:Secretariat a owl:Class ;
+    rdfs:label "Secretaria"@pt .
+
+obs:SocialParticipationVirtualEnvironment a owl:Class ;
+    rdfs:label "Ambiente virtual de participação social"@pt .
+
+obs:SocialPolicies a owl:Class ;
+    rdfs:label "Políticas sociais"@pt ;
+    rdfs:comment "assistência social, cultura, saúde, segurança alimentar e nutricional"@pt ;
+    rdfs:subClassOf obs:PolicyArea .
+
+obs:Statute a owl:Class ;
+    rdfs:label "Estatuto"@pt ;
+    rdfs:subClassOf obs:NormativeAct .
+
+obs:WorkGroup a owl:Class ;
+    rdfs:label "Grupo de trabalho"@pt ;
+    rdfs:subClassOf obs:PublicAgency .
+
+obs:accountableName a owl:DatatypeProperty ;
+    rdfs:label "nome do responsável"@pt ;
+    rdfs:range xsd:string .
+
+obs:acronym a owl:DatatypeProperty ;
+    rdfs:label "sigla"@pt ;
+    rdfs:range xsd:string .
+
+obs:adReferendumDecisions a owl:DatatypeProperty ;
+    rdfs:label "decisões ad referendum"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:agendaPreparation a owl:ObjectProperty ;
+    rdfs:label "encarregado pela pauta"@pt ;
+    rdfs:range obs:PublicAgency .
+
+obs:area a owl:ObjectProperty ;
+    rdfs:label "área"@pt ;
+    rdfs:range obs:PolicyArea .
+
+obs:civilSocietySelectionMethod a owl:DatatypeProperty ;
+    rdfs:label "método de escolha de membros da sociedade civil"@pt ;
+    rdfs:range xsd:string .
+
+obs:commission a owl:DatatypeProperty ;
+    rdfs:label "trabalha com comissões"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:competence a owl:ObjectProperty ;
+    rdfs:label "competência"@pt .
+
+obs:composition a owl:ObjectProperty ;
+    rdfs:label "composição"@pt ;
+    rdfs:range obs:Body .
+
+obs:conference a owl:DatatypeProperty ;
+    rdfs:label "realizou conferencias"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:conferencesCount a owl:DatatypeProperty ;
+    rdfs:label "quantas conferencias"@pt ;
+    rdfs:range xsd:integer .
+
+obs:created a owl:DatatypeProperty .
+
+obs:creationAct a owl:ObjectProperty ;
+    rdfs:label "ato de criação"@pt ;
+    rdfs:domain obs:ParticipationMechanism ;
+    rdfs:range [ owl:unionOf obs:AdvisoryInstance,
+                obs:DeliberativeInstance,
+                obs:GuidingInstance,
+                obs:NormativeInstance ],
+        [ owl:unionOf obs:Assist,
+                obs:Evaluate,
+                obs:Manage,
+                obs:Propose ],
+        obs:NormativeAct .
+
+obs:datePublished a owl:DatatypeProperty ;
+    rdfs:label "data de publicação"@pt ;
+    rdfs:range xsd:dateTime .
+
+obs:establishes a owl:ObjectProperty ;
+    rdfs:label "institui"@pt .
+
+obs:executiveSecretariat a owl:DatatypeProperty ;
+    rdfs:label "possui secretaria executiva"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:goal a owl:DatatypeProperty ;
+    rdfs:label "objetivo"@pt ;
+    rdfs:range xsd:string .
+
+obs:governanceBodySelectionMethod a owl:DatatypeProperty ;
+    rdfs:label "método de seleção de membros do órgão de governança"@pt ;
+    rdfs:range xsd:string .
+
+obs:governmentFraction a owl:DatatypeProperty ;
+    rdfs:label "fração do governo"@pt ;
+    rdfs:range xsd:double .
+
+obs:has a owl:ObjectProperty ;
+    rdfs:label "possui"@pt .
+
+obs:integrates a owl:ObjectProperty ;
+    rdfs:label "integra"@pt .
+
+obs:internalGovernanceBody a owl:ObjectProperty ;
+    rdfs:label "órgão interno de governança"@pt ;
+    rdfs:range obs:GovernanceAgency .
+
+obs:limitedMandate a owl:DatatypeProperty ;
+    rdfs:label "limite de mandato"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:linkedAgency a owl:ObjectProperty ;
+    rdfs:label "órgão vinculado"@pt .
+
+obs:linkedPolicy a owl:ObjectProperty ;
+    rdfs:label "política vinculada"@pt ;
+    rdfs:range obs:PublicPolicy .
+
+obs:location a owl:DatatypeProperty ;
+    rdfs:label "localização"@pt ;
+    rdfs:comment "localização da secretaria dentro do ministério ou órgão cabível"@pt ;
+    rdfs:range xsd:string .
+
+obs:meetingsInterval a owl:DatatypeProperty ;
+    rdfs:label "meses entre reuniões"@pt ;
+    rdfs:range xsd:integer .
+
+obs:member a owl:ObjectProperty ;
+    rdfs:label "membro"@pt ;
+    rdfs:range obs:Participant .
+
+obs:membersCount a owl:DatatypeProperty ;
+    rdfs:label "quantidade de membros"@pt ;
+    rdfs:range xsd:integer .
+
+obs:name a owl:DatatypeProperty ;
+    rdfs:label "Ano de criação"@pt,
+        "nome"@pt ;
+    rdfs:range xsd:gYear,
+        xsd:string .
+
+obs:numericReference a owl:DatatypeProperty ;
+    rdfs:label "referêcia numérica"@pt ;
+    rdfs:range xsd:string .
+
+obs:parity a owl:DatatypeProperty ;
+    rdfs:label "paridade"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:presidency a owl:ObjectProperty ;
+    rdfs:label "presidência"@pt ;
+    rdfs:comment "O método de escolha do presidente é observado pelo <objeto> da tripla obs:Body obs:presidencySelectionMethod <objeto>"@pt ;
+    rdfs:range obs:Participant .
+
+obs:presidencySelectionMethod a owl:DatatypeProperty ;
+    rdfs:label "método de escolha da presidência"@pt ;
+    rdfs:comment "O presidente em si é observado pelo objeto da tripla obs:Body obs:presidency <objeto>."@pt,
+        "Pode ser o ministro, algum cargo ministerial ou um participante escolhido via votação ou processo similar."@pt ;
+    rdfs:range xsd:string .
+
+obs:presidentialQualityVote a owl:DatatypeProperty ;
+    rdfs:label "voto de qualidade do presidente"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:provides a owl:ObjectProperty ;
+    rdfs:label "disponibiliza"@pt .
+
+obs:reformulation a owl:ObjectProperty ;
+    rdfs:label "reformulação"@pt ;
+    rdfs:range obs:NormativeAct .
+
+obs:telephone a owl:DatatypeProperty ;
+    rdfs:label "telefone"@pt ;
+    rdfs:range xsd:string .
+
+obs:theme a owl:DatatypeProperty ;
+    rdfs:label "criado"@pt,
+        "tema"@pt ;
+    rdfs:range xsd:dateTime,
+        xsd:string .
+
+obs:topic a owl:DatatypeProperty ;
+    rdfs:label "assunto"@pt ;
+    rdfs:range xsd:string .
+
+obs:type a owl:ObjectProperty ;
+    rdfs:label "tipo"@pt .
+
+obs:yearCreated a owl:DatatypeProperty .
+
+obs:AdvisoryInstance a owl:Class ;
+    rdfs:label "Instância consultiva"@pt .
+
+obs:Assist a owl:Class ;
+    rdfs:label "Auxiliar"@pt .
+
+obs:Body a owl:Class ;
+    rdfs:label "Corpo"@pt .
+
+obs:DeliberativeInstance a owl:Class ;
+    rdfs:label "Instância deliberativa"@pt .
+
+obs:Evaluate a owl:Class ;
+    rdfs:label "Avaliar"@pt .
+
+obs:GovernanceAgency a owl:Class ;
+    rdfs:label "Órgão de governança"@pt .
+
+obs:GuidingInstance a owl:Class ;
+    rdfs:label "Instância orientadora"@pt .
+
+obs:Manage a owl:Class ;
+    rdfs:label "Gerir"@pt .
+
+obs:NormativeInstance a owl:Class ;
+    rdfs:label "Instância normativa"@pt .
+
+obs:ParticipationInstance a owl:Class ;
+    rdfs:label "Instância de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:ParticipationMechanism a owl:Class ;
+    rdfs:label "Mecanismo de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:Propose a owl:Class ;
+    rdfs:label "Propor"@pt .
+
+obs:Participant a owl:Class ;
+    rdfs:label "Participante"@pt .
+
+obs:ParticipationInstanceOrMechanism a owl:Class ;
+    rdfs:label "Instância ou mecanismo de participação social"@pt .
+
+obs:PublicPolicy a owl:Class ;
+    rdfs:label "Política pública"@pt .
+
+obs:PolicyArea a owl:Class ;
+    rdfs:label "Área de política"@pt .
+
+obs:PublicAgency a owl:Class ;
+    rdfs:label "Órgão público"@pt .
+
+obs:NormativeAct a owl:Class ;
+    rdfs:label "Ato normativo"@pt .
+

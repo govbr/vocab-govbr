@@ -1,0 +1,683 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vbs: <http://purl.org/socialparticipation/vbs/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vbs:ActPublicity a skos:Concept ;
+    skos:prefLabel "Publicidade do ato"@pt .
+
+vbs:ActiveCitizenship a skos:Concept ;
+    skos:prefLabel "Cidadania ativa"@pt .
+
+vbs:AffectedPart a skos:Concept ;
+    skos:prefLabel "Parte afetada"@pt .
+
+vbs:AffectedPerson a skos:Concept ;
+    skos:broader "http://purl.org/socialparticipation/vbs/AffectedPart"@pt ;
+    skos:prefLabel "Pessoa afetada"@pt .
+
+vbs:Agenda a skos:Concept ;
+    skos:prefLabel "Pauta"@pt .
+
+vbs:AgendaForwarding a skos:Concept ;
+    skos:prefLabel "Encaminhamento de pauta"@pt .
+
+vbs:Article a skos:Concept ;
+    skos:prefLabel "Artigo"@pt ;
+    skos:scopeNote "Artigo de texto legal (ex. decreto). O conceito oode ser usado em outros contextos."@pt .
+
+vbs:Articulate a skos:Concept ;
+    skos:prefLabel "Articular"@pt .
+
+vbs:Attribution a skos:Concept ;
+    skos:prefLabel "Atribuição"@pt .
+
+vbs:AudienceObject a skos:Concept ;
+    skos:prefLabel "Objeto de audiência"@pt ;
+    skos:scopeNote "objeto de audiência pública."@pt .
+
+vbs:Autonomy a skos:Concept ;
+    skos:prefLabel "Autonomia"@pt .
+
+vbs:AutonomyExpression a skos:Concept ;
+    skos:prefLabel "Expressão de autonomia"@pt .
+
+vbs:Basis a skos:Concept ;
+    skos:prefLabel "Fundamento"@pt ;
+    skos:scopeNote "fundamento para proposta colocada em consulta pública. Conceito pode ser útil em outros contextos."@pt .
+
+vbs:BoardFund a skos:Concept ;
+    skos:prefLabel "Fundo do conselho"@pt .
+
+vbs:Bylaws a skos:Concept ;
+    skos:altLabel "Estatuto"@pt ;
+    skos:prefLabel "Regimento interno"@pt .
+
+vbs:CGPS a skos:Concept ;
+    skos:altLabel "Comitê Governamental de Participação Social"@pt,
+        "Comitê Governamental de Participação Social (SNPS)"@pt,
+        "Comitê Governamental de Participação Social - SNPS"@pt ;
+    skos:prefLabel "CGPS"@pt .
+
+vbs:CGU a skos:Concept ;
+    skos:altLabel "Controladoria-Geral da União"@pt ;
+    skos:prefLabel "Controladoria-Geral da União"@pt .
+
+vbs:Caput a skos:Concept ;
+    skos:prefLabel "Caput"@pt .
+
+vbs:CitizenRight a skos:Concept ;
+    skos:prefLabel "Direito do cidadão"@pt .
+
+vbs:Citizenship a skos:Concept ;
+    skos:prefLabel "Cidadania"@pt .
+
+vbs:CivilHouse a skos:Concept ;
+    skos:altLabel "Casa Civil da Presidência da República"@pt ;
+    skos:prefLabel "Casa Civil"@pt .
+
+vbs:CivilSociety a skos:Concept ;
+    skos:definition "o cidadão, os coletivos, os movimentos sociais institucionalizados ou não institucionalizados, suas redes e suas organizações (PNPS)"@pt ;
+    skos:prefLabel "Sociedade civil"@pt .
+
+vbs:CivilSocietyElectedRepresentative a skos:Concept ;
+    skos:prefLabel "Representante eleito pela sociedade civil"@pt .
+
+vbs:CivilSocietyNominatedRepresentative a skos:Concept ;
+    skos:prefLabel "Representante indicado pela sociedade civil"@pt .
+
+vbs:CivilSocietyOrganization a skos:Concept ;
+    skos:prefLabel "Organização da sociedade civil"@pt .
+
+vbs:CollegialInstance a skos:Concept ;
+    skos:prefLabel "Instância colegiada"@pt .
+
+vbs:Commision a skos:Concept ;
+    skos:altLabel "Comissão de políticas públicas"@pt ;
+    skos:definition "instância colegiada temática, instituída por ato normativo, criada para o diálogo entre a sociedade civil e o governo em torno de objetivo específico, com prazo de funcionamento vinculado ao cumprimento de suas finalidades"@pt ;
+    skos:prefLabel "Comissão"@pt .
+
+vbs:CommunicationStrategy a skos:Concept ;
+    skos:prefLabel "Estratégia de comunicação"@pt .
+
+vbs:Competence a skos:Concept ;
+    skos:prefLabel "Competência"@pt .
+
+vbs:Conclusion a skos:Concept ;
+    skos:prefLabel "Conclusão"@pt ;
+    skos:scopeNote "conclusão de fórum interconselhos. O conceito pode ser usado em outros contextos"@pt .
+
+vbs:ConferenceMoment a skos:Concept ;
+    skos:prefLabel "Momento"@pt ;
+    skos:related "http://purl.org/socialparticipation/vbs/Methodology"@pt ;
+    skos:scopeNote "momento de conferência. O conceito pode ser útil em outros contextos"@pt .
+
+vbs:ConferenceSchedule a skos:Concept ;
+    skos:altLabel "Calendário de processos conferenciais"@pt ;
+    skos:prefLabel "Calendário de conferência"@pt ;
+    skos:related vbs:Conference .
+
+vbs:ConflictSolution a skos:Concept ;
+    skos:prefLabel "Solução do conflito"@pt .
+
+vbs:Constitution a skos:Concept ;
+    skos:prefLabel "Constituição"@pt .
+
+vbs:ConsultationObject a skos:Concept ;
+    skos:prefLabel "Objeto de consulta"@pt ;
+    skos:scopeNote "objeto de consulta pública."@pt .
+
+vbs:ConsultiveNature a skos:Concept ;
+    skos:prefLabel "Natureza consultiva"@pt .
+
+vbs:Contribution a skos:Concept ;
+    skos:prefLabel "Contribuição"@pt .
+
+vbs:ConveningDocument a skos:Concept ;
+    skos:prefLabel "Documento convocatório"@pt .
+
+vbs:Coordination a skos:Concept ;
+    skos:prefLabel "Coordenação"@pt .
+
+vbs:Council a skos:Concept ;
+    skos:altLabel "Conselho de políticas públicas"@pt,
+        "Conselho gestor"@pt,
+        "Conselho nacional de políticas públicas"@pt ;
+    skos:definition "Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)"@pt,
+        "instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas (PNPS)"@pt ;
+    skos:prefLabel "Conselho"@pt ;
+    skos:scopeNote "Espaço participativo com a finalidade de incidir nas políticas públicas de determinado tema, nos quais é prevista certa permanência no tempo, composto por representantes do poder público e da sociedade civil, esta podendo ser dividida em diferentes segmentos."@pt,
+        "espaço contínuo de participação social"@pt .
+
+vbs:Counselor a skos:Concept ;
+    skos:prefLabel "Conselheiro"@pt .
+
+vbs:DOU a skos:Concept ;
+    skos:altLabel "Diário Oficial da União"@pt ;
+    skos:prefLabel "DOU"@pt .
+
+vbs:Debate a skos:Concept ;
+    skos:prefLabel "Debate"@pt .
+
+vbs:Decree a skos:Concept ;
+    skos:prefLabel "Decreto"@pt .
+
+vbs:Definition a skos:Concept ;
+    skos:prefLabel "Definição"@pt .
+
+vbs:Delegate a skos:Concept ;
+    skos:prefLabel "Delegado"@pt ;
+    skos:scopeNote "metodologia de conferência. O conceito pode ser útil em outros contextos"@pt .
+
+vbs:DeliberativeNature a skos:Concept ;
+    skos:prefLabel "Natureza deliberativa"@pt .
+
+vbs:DemocraticDialogueInstance a skos:Concept ;
+    skos:prefLabel "Instância democrática de diálogo"@pt .
+
+vbs:Dialogue a skos:Concept ;
+    skos:prefLabel "Diálogo"@pt .
+
+vbs:DialogueTable a skos:Concept ;
+    skos:definition "mecanismo de debate e de negociação com a participação dos setores da sociedade civil e do governo diretamente envolvidos no intuito de prevenir, mediar e solucionar conflitos sociais (PNPS)"@pt ;
+    skos:prefLabel "Mesa de diálogo"@pt .
+
+vbs:DirectDemocracy a skos:Concept ;
+    skos:prefLabel "Democracia direta"@pt .
+
+vbs:DirectFederalAdministration a skos:Concept ;
+    skos:prefLabel "Administração pública federal direta"@pt .
+
+vbs:DirectParticipation a skos:Concept ;
+    skos:prefLabel "Participação direta"@pt .
+
+vbs:Diversity a skos:Concept ;
+    skos:prefLabel "Diversidade"@pt .
+
+vbs:DiversityAssurance a skos:Concept ;
+    skos:prefLabel "Garantia de diversidade"@pt ;
+    skos:scopeNote "Garantia de diversidade de ambiente online de participação social. Conceito pode ser usado em outros contextos."@pt .
+
+vbs:EarmarkedAppropriations a skos:Concept ;
+    skos:prefLabel "Dotações consignadas"@pt .
+
+vbs:Employee a skos:Concept ;
+    skos:prefLabel "Empregado"@pt .
+
+vbs:Employer a skos:Concept ;
+    skos:prefLabel "Empregador"@pt .
+
+vbs:EnterIntoForce a skos:Concept ;
+    skos:prefLabel "Entrar em vigor"@pt .
+
+vbs:Entity a skos:Concept ;
+    skos:prefLabel "Entidade"@pt .
+
+vbs:Establish a skos:Concept ;
+    skos:prefLabel "Instituir"@pt .
+
+vbs:Evaluation a skos:Concept ;
+    skos:prefLabel "Avaliação"@pt .
+
+vbs:Execution a skos:Concept ;
+    skos:prefLabel "Execução"@pt .
+
+vbs:ExecutiveSecretary a skos:Concept ;
+    skos:prefLabel "Secretário executivo"@pt .
+
+vbs:ExtraordinaryConference a skos:Concept ;
+    skos:broader vbs:ConferenceStep ;
+    skos:prefLabel "Conferência extraordinária"@pt ;
+    skos:scopeNote "Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo"@pt .
+
+vbs:FederalGovernmentPolicy a skos:Concept ;
+    skos:prefLabel "Política do governo federal"@pt .
+
+vbs:FederalGovernmentProgram a skos:Concept ;
+    skos:prefLabel "Programa do governo federal"@pt .
+
+vbs:FederalPublicAdministration a skos:Concept ;
+    skos:prefLabel "Administração pública federal"@pt .
+
+vbs:FederatedEntity a skos:Concept ;
+    skos:prefLabel "Ente federado"@pt .
+
+vbs:Formulation a skos:Concept ;
+    skos:prefLabel "Formulação"@pt .
+
+vbs:FreeAccess a skos:Concept ;
+    skos:prefLabel "Acesso livre"@pt .
+
+vbs:FreeConference a skos:Concept ;
+    skos:broader vbs:ConferenceStep ;
+    skos:prefLabel "Conferência livre"@pt ;
+    skos:scopeNote "Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo"@pt .
+
+vbs:FreeFunctioning a skos:Concept ;
+    skos:prefLabel "Livre funcionamento"@pt .
+
+vbs:FreeLicense a skos:Concept ;
+    skos:prefLabel "Licença livre"@pt .
+
+vbs:FreeSoftware a skos:Concept ;
+    skos:prefLabel "Software livre"@pt .
+
+vbs:FreeTechnology a skos:Concept ;
+    skos:prefLabel "Tecnologia livre"@pt .
+
+vbs:Government a skos:Concept ;
+    skos:prefLabel "Governo"@pt .
+
+vbs:GovernmentDebate a skos:Concept ;
+    skos:prefLabel "Debate de governo"@pt .
+
+vbs:GovernmentDecision a skos:Concept ;
+    skos:prefLabel "Decisão de governo"@pt .
+
+vbs:GovernmentMethod a skos:Concept ;
+    skos:prefLabel "Método de governo"@pt .
+
+vbs:GovernmentPartnershipCelebration a skos:Concept ;
+    skos:prefLabel "Celebração de parceria com a administração pública"@pt .
+
+vbs:Guest a skos:Concept ;
+    skos:prefLabel "Convidado"@pt .
+
+vbs:Guideline a skos:Concept ;
+    skos:prefLabel "Diretriz"@pt .
+
+vbs:HistoricallyExcludedGroup a skos:Concept ;
+    skos:prefLabel "Grupo historicamente excluído"@pt .
+
+vbs:Implementation a skos:Concept ;
+    skos:prefLabel "Implementação"@pt .
+
+vbs:Independence a skos:Concept ;
+    skos:prefLabel "Independência"@pt .
+
+vbs:IndirectFederalAdministration a skos:Concept ;
+    skos:prefLabel "Administração pública federal indireta"@pt .
+
+vbs:InstitutionalSupport a skos:Concept ;
+    skos:prefLabel "Apoio institucional"@pt .
+
+vbs:Integration a skos:Concept ;
+    skos:prefLabel "Integração"@pt .
+
+vbs:InterCouncilForum a skos:Concept ;
+    skos:definition "mecanismo para o diálogo entre representantes dos conselhos e comissões de políticas públicas, no intuito de acompanhar as políticas públicas e os programas governamentais, formulando recomendações para aprimorar sua intersetorialidade e transversalidade (PNPS)"@pt ;
+    skos:prefLabel "Fórum interconselhos"@pt .
+
+vbs:IntercityConferente a skos:Concept ;
+    skos:broader vbs:ConferenceStep ;
+    skos:prefLabel "Conferência intermunicipal"@pt ;
+    skos:scopeNote "Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo"@pt .
+
+vbs:InterestedPart a skos:Concept ;
+    skos:prefLabel "Parte interessada"@pt ;
+    skos:related "http://purl.org/socialparticipation/vbs/AffectedPart"@pt .
+
+vbs:InterestedPerson a skos:Concept ;
+    skos:broader "http://purl.org/socialparticipation/vbs/InterestedPart"@pt ;
+    skos:prefLabel "Pessoa interessada"@pt ;
+    skos:related "http://purl.org/socialparticipation/vbs/AffectedPart"@pt .
+
+vbs:InterministerialCollegialInstance a skos:Concept ;
+    skos:prefLabel "Instância colegiada interministerial"@pt .
+
+vbs:Internet a skos:Concept ;
+    skos:prefLabel "Internet"@pt .
+
+vbs:Item a skos:Concept ;
+    skos:prefLabel "Inciso"@pt ;
+    skos:scopeNote "Inciso de texto legal (ex. decreto). O conceito oode ser usado em outros contextos."@pt .
+
+vbs:JuridicalSubject a skos:Concept ;
+    skos:prefLabel "Assunto jurídico"@pt .
+
+vbs:MachineReadableData a skos:Concept ;
+    skos:prefLabel "Dado legível por máquina"@pt .
+
+vbs:Meeting a skos:Concept ;
+    skos:prefLabel "Reunião"@pt .
+
+vbs:Member a skos:Concept ;
+    skos:prefLabel "Membro"@pt .
+
+vbs:Methodology a skos:Concept ;
+    skos:altLabel "Procedimento de metodologia de conferência"@pt ;
+    skos:prefLabel "Metodologia"@pt ;
+    skos:related vbs:Conference .
+
+vbs:Ministry a skos:Concept ;
+    skos:prefLabel "Ministério"@pt .
+
+vbs:MinistryAct a skos:Concept ;
+    skos:prefLabel "Ato do ministro"@pt .
+
+vbs:MobilizationStrategy a skos:Concept ;
+    skos:prefLabel "Estratégia de mobilização"@pt .
+
+vbs:Moment a skos:Concept ;
+    skos:altLabel "Momento"@pt ;
+    skos:prefLabel "Momento de realização"@pt ;
+    skos:scopeNote "momento de realização de audiência pública. O conceito pode ser útil em outros contextos"@pt .
+
+vbs:Monitoring a skos:Concept ;
+    skos:altLabel "Acompanhamento"@pt ;
+    skos:prefLabel "Monitoramento"@pt .
+
+vbs:MunicipalConference a skos:Concept ;
+    skos:broader vbs:ConferenceStep ;
+    skos:prefLabel "Conferência municipal"@pt ;
+    skos:scopeNote "Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo"@pt .
+
+vbs:NationalConference a skos:Concept ;
+    skos:broader vbs:ConferenceStep ;
+    skos:prefLabel "Conferência nacional"@pt ;
+    skos:scopeNote "Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo"@pt .
+
+vbs:NationalConferenceReferenceDocuments a skos:Concept ;
+    skos:prefLabel "Documentos de referência da conferência nacional"@pt ;
+    skos:related vbs:Conference .
+
+vbs:Nature a skos:Concept ;
+    skos:prefLabel "Natureza"@pt .
+
+vbs:NormativeAct a skos:Concept ;
+    skos:prefLabel "Ato normativo"@pt .
+
+vbs:NormativeCharacterResolution a skos:Concept ;
+    skos:altLabel "Resolução de caráter normativo"@pt ;
+    skos:prefLabel "Resolução normativa"@pt .
+
+vbs:OGU a skos:Concept ;
+    skos:altLabel "Ouvidoria-Geral da União"@pt ;
+    skos:prefLabel "OGU"@pt .
+
+vbs:OmbudsmanAgency a skos:Concept ;
+    skos:altLabel "Ouvidoria federal"@pt,
+        "Ouvidoria pública"@pt,
+        "Ouvidoria pública federal"@pt ;
+    skos:definition "instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública (PNPS)"@pt ;
+    skos:prefLabel "Ouvidoria"@pt .
+
+vbs:OpenData a skos:Concept ;
+    skos:prefLabel "Dado aberto"@pt .
+
+vbs:OperationPeriod a skos:Concept ;
+    skos:prefLabel "Período de operação"@pt .
+
+vbs:PNPS a skos:Concept ;
+    skos:altLabel "Política Nacional de Participação Social"@pt,
+        "Política Nacional de Participação Social (PNPS)"@pt,
+        "Política Nacional de Participação Social - PNPS"@pt ;
+    skos:prefLabel "PNPS"@pt .
+
+vbs:PSPB a skos:Concept ;
+    skos:altLabel "PSPB"@pt,
+        "Portal do Software Público Brasileiro (PSPB)"@pt ;
+    skos:prefLabel "Portal do Software Público Brasileiro"@pt .
+
+vbs:Paragraph a skos:Concept ;
+    skos:prefLabel "Parágrafo"@pt ;
+    skos:scopeNote "Parágrafo de texto legal (ex. decreto). O conceito oode ser usado em outros contextos."@pt .
+
+vbs:Parity a skos:Concept ;
+    skos:prefLabel "Paridade"@pt ;
+    skos:scopeNote "paridade é um conceito local, podendo por exemplo, ser considerada proporção igual de membros do governo e da sociedade ou proporção igual entre dois segmentos ou setores que são considerados prioritários pelo Conselho"@pt .
+
+vbs:ParticipantPerson a skos:Concept ;
+    skos:broader "http://purl.org/socialparticipation/vbs/InterestedPart"@pt ;
+    skos:prefLabel "Pessoa participante"@pt ;
+    skos:related "http://purl.org/socialparticipation/vbs/AffectedPart"@pt .
+
+vbs:ParticipativeDemocracy a skos:Concept ;
+    skos:prefLabel "Democracia participativa"@pt .
+
+vbs:Periodicity a skos:Concept ;
+    skos:prefLabel "Periodicidade"@pt .
+
+vbs:PersonWithDisabilities a skos:Concept ;
+    skos:prefLabel "Pessoa com deficiência"@pt .
+
+vbs:PlanningAndBudgetingCycle a skos:Concept ;
+    skos:prefLabel "Ciclo de planejamento e orçamento"@pt .
+
+vbs:Presidency a skos:Concept ;
+    skos:altLabel "Presidência"@pt ;
+    skos:prefLabel "Presidência da República"@pt .
+
+vbs:Product a skos:Concept ;
+    skos:prefLabel "Produto"@pt ;
+    skos:scopeNote "Produto de ambiente online de participação social. Conceito pode ser usado em outros contextos."@pt .
+
+vbs:Promotion a skos:Concept ;
+    skos:altLabel "Fomento"@pt ;
+    skos:prefLabel "Promoção"@pt .
+
+vbs:Proposal a skos:Concept ;
+    skos:prefLabel "Proposta"@pt ;
+    skos:scopeNote "proposta colocada em consulta pública. Conceito pode ser útil em outros contextos."@pt .
+
+vbs:Providence a skos:Concept ;
+    skos:prefLabel "Providência"@pt .
+
+vbs:PublicAction a skos:Concept ;
+    skos:prefLabel "Ação pública"@pt .
+
+vbs:PublicAgent a skos:Concept ;
+    skos:prefLabel "Agente público"@pt .
+
+vbs:PublicAudience a skos:Concept ;
+    skos:definition "mecanismo participativo de caráter presencial, consultivo, aberto a qualquer interessado, com a possibilidade de manifestação oral dos participantes, cujo objetivo é subsidiar decisões governamentais (PNPS)"@pt ;
+    skos:prefLabel "Audiência pública"@pt .
+
+vbs:PublicConsultation a skos:Concept ;
+    skos:definition "mecanismo participativo, a se realizar em prazo definido, de caráter consultivo, aberto a qualquer interessado, que visa a receber contribuições por escrito da sociedade civil sobre determinado assunto, na forma definida no seu ato de convocação (PNPS)"@pt ;
+    skos:prefLabel "Consulta pública"@pt .
+
+vbs:PublicPolicy a skos:Concept ;
+    skos:prefLabel "Política pública"@pt .
+
+vbs:Recomendation a skos:Concept ;
+    skos:prefLabel "Recomendação"@pt ;
+    skos:scopeNote "recomendação de fórum interconselhos. O conceito pode ser usado em outros contextos"@pt .
+
+vbs:RegionalConference a skos:Concept ;
+    skos:broader vbs:ConferenceStep ;
+    skos:prefLabel "Conferência regional"@pt ;
+    skos:scopeNote "Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo"@pt .
+
+vbs:Registration a skos:Concept ;
+    skos:prefLabel "Cadastro"@pt .
+
+vbs:RegulatoryAgency a skos:Concept ;
+    skos:prefLabel "Agência reguladora"@pt .
+
+vbs:RegulatoryImpactAnalysis a skos:Concept ;
+    skos:prefLabel "Análise de impacto regulatório"@pt .
+
+vbs:RelevantPublicServiceProvision a skos:Concept ;
+    skos:prefLabel "Provisão de serviço público relevante"@pt .
+
+vbs:RemoteParticipation a skos:Concept ;
+    skos:altLabel "Participação virtual"@pt ;
+    skos:prefLabel "Participação remota"@pt .
+
+vbs:Representative a skos:Concept ;
+    skos:prefLabel "Representante"@pt .
+
+vbs:RepresentativeDemocracy a skos:Concept ;
+    skos:prefLabel "Democracia representativa"@pt .
+
+vbs:RepublicPresident a skos:Concept ;
+    skos:prefLabel "Presidenta da República"@pt .
+
+vbs:ResolutionTrackingModel a skos:Concept ;
+    skos:prefLabel "Modelo de acompanhamento de resolução"@pt .
+
+vbs:ResponseCompromise a skos:Concept ;
+    skos:prefLabel "Compromisso de resposta"@pt .
+
+vbs:SGPR a skos:Concept ;
+    skos:altLabel "Secretaria-Geral da Presidência da República"@pt,
+        "Secretaria-Geral da Presidência da República (SGPR)"@pt ;
+    skos:prefLabel "SGPR"@pt .
+
+vbs:SGPRHeadStateMinister a skos:Concept ;
+    skos:prefLabel "Ministro de estado-chefe da Secretaria Geral da Presidência da República"@pt .
+
+vbs:SNPS a skos:Concept ;
+    skos:altLabel "Sistema Nacional de Participação Social"@pt,
+        "Sistema Nacional de Participação Social (SNPS)"@pt,
+        "Sistema Nacional de Participação Social - SNPS"@pt ;
+    skos:prefLabel "SNPS"@pt .
+
+vbs:SectorialPolicy a skos:Concept ;
+    skos:prefLabel "Política setorial"@pt .
+
+vbs:SectorialProgram a skos:Concept ;
+    skos:prefLabel "Programa setorial"@pt .
+
+vbs:Selection a skos:Concept ;
+    skos:prefLabel "Seleção"@pt .
+
+vbs:SocialControl a skos:Concept ;
+    skos:prefLabel "Controle social"@pt .
+
+vbs:SocialDemandsMonitoringTable a skos:Concept ;
+    skos:prefLabel "Mesa de Monitoramento das Demandas Sociais"@pt .
+
+vbs:SocialMovement a skos:Concept ;
+    skos:prefLabel "Movimento social"@pt .
+
+vbs:SocialNetwork a skos:Concept ;
+    skos:prefLabel "Rede social"@pt .
+
+vbs:SocialNetworkEnvironment a skos:Concept ;
+    skos:prefLabel "Ambiente de rede social"@pt .
+
+vbs:SocialNetworkTool a skos:Concept ;
+    skos:prefLabel "Ferramenta de rede social"@pt .
+
+vbs:SocialParticipation a skos:Concept ;
+    skos:prefLabel "Participação social"@pt .
+
+vbs:SocialParticipationTechnologicalTool a skos:Concept ;
+    skos:prefLabel "Ferramenta tecnológica de participação social"@pt .
+
+vbs:SourceCode a skos:Concept ;
+    skos:prefLabel "Código fonte"@pt .
+
+vbs:SpecialSocialMeaning a skos:Concept ;
+    skos:prefLabel "Especial significado social"@pt ;
+    skos:related vbs:SpecialPoliticalMeaning .
+
+vbs:StateConference a skos:Concept ;
+    skos:broader vbs:ConferenceStep ;
+    skos:prefLabel "Conferência estadual"@pt ;
+    skos:scopeNote "Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo"@pt .
+
+vbs:Strengthen a skos:Concept ;
+    skos:prefLabel "Fortalecer"@pt .
+
+vbs:Study a skos:Concept ;
+    skos:prefLabel "Estudo"@pt .
+
+vbs:Subgroup a skos:Concept ;
+    skos:prefLabel "Subgrupo"@pt .
+
+vbs:Subparagraph a skos:Concept ;
+    skos:prefLabel "Alínea"@pt ;
+    skos:scopeNote "Alínea de texto legal (ex. decreto). O conceito oode ser usado em outros contextos."@pt .
+
+vbs:Systematization a skos:Concept ;
+    skos:prefLabel "Sistematização"@pt .
+
+vbs:TIC a skos:Concept ;
+    skos:altLabel "Tecnologias de informação e comunicação"@pt,
+        "Tecnologias de informação e comunicação (TIC)"@pt ;
+    skos:prefLabel "TIC"@pt .
+
+vbs:TechnicalAndAdministrativeSupport a skos:Concept ;
+    skos:prefLabel "Suporte técnico-administrativo"@pt .
+
+vbs:TechnicalMaterial a skos:Concept ;
+    skos:prefLabel "Material técnico"@pt .
+
+vbs:TermsOfUse a skos:Concept ;
+    skos:prefLabel "Termos de uso"@pt .
+
+vbs:Theme a skos:Concept ;
+    skos:prefLabel "Tema"@pt .
+
+vbs:Timely a skos:Concept ;
+    skos:prefLabel "Tempo hábil"@pt .
+
+vbs:Transparency a skos:Concept ;
+    skos:prefLabel "Transparência"@pt .
+
+vbs:TransparentChoiceCriteria a skos:Concept ;
+    skos:prefLabel "Critério transparente de escolha"@pt .
+
+vbs:Turnover a skos:Concept ;
+    skos:prefLabel "Rotatividade"@pt .
+
+vbs:VirtualConference a skos:Concept ;
+    skos:broader vbs:ConferenceStep ;
+    skos:prefLabel "Conferência virtual"@pt ;
+    skos:scopeNote "Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo"@pt .
+
+vbs:VirtualParticipationEnvironment a skos:Concept ;
+    skos:altLabel "Ambiente virtual de participação social"@pt ;
+    skos:definition "mecanismo de interação social que utiliza tecnologias de informação e de comunicação, em especial a internet, para promover o diálogo entre administração pública federal e sociedade civil (PNPS)"@pt,
+        "mecanismo participativo, a se realizar em prazo definido, de caráter consultivo, aberto a qualquer interessado, que visa a receber contribuições por escrito da sociedade civil sobre determinado assunto, na forma definida no seu ato de convocação (PNPS)"@pt ;
+    skos:prefLabel "Ambiente virtual"@pt .
+
+vbs:VoluntaryObligation a skos:Concept ;
+    skos:altLabel "Obrigação voluntariamente assumida"@pt ;
+    skos:prefLabel "Obrigação voluntaria"@pt .
+
+vbs:VulnerableGroup a skos:Concept ;
+    skos:prefLabel "Grupo vulnerável"@pt .
+
+vbs:WorkConditionAndRelation a skos:Concept ;
+    skos:prefLabel "Condições e relações do trabalho"@pt .
+
+vbs:renewal a skos:Concept ;
+    skos:prefLabel "Recondução"@pt ;
+    skos:scopeNote "Este conceito foi trazido do campo dos conselhos, pode ser aplicável em outros contextos."@pt,
+        "Quando há 'limite de mandato', há limite para recondução."@pt .
+
+vbs:ParticipationInstance a skos:Concept ;
+    skos:broader vbs:ParticipationInstanceOrMechanism ;
+    skos:prefLabel "Instância de participação social"@pt ;
+    skos:related vbs:ParticipationMechanism .
+
+vbs:ParticipationMechanism a skos:Concept ;
+    skos:broader vbs:ParticipationInstanceOrMechanism ;
+    skos:prefLabel "Mecanismo de participação social"@pt .
+
+vbs:SpecialPoliticalMeaning a skos:Concept ;
+    skos:prefLabel "Especial significado político"@pt .
+
+vbs:ParticipationInstanceOrMechanism a skos:Concept ;
+    skos:prefLabel "Instância ou mecanismo de participação social"@pt .
+
+vbs:Conference a skos:Concept ;
+    skos:altLabel "Conferência de políticas públicas"@pt,
+        "Conferência nacional"@pt ;
+    skos:broader vbs:ParticipationInstance ;
+    skos:definition "Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas"@pt,
+        "Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo"@pt,
+        "instância periódica de debate, de formulação e de avaliação sobre temas específicos e de interesse público, com a participação de representantes do governo e da sociedade civil, podendo contemplar etapas estaduais, distrital, municipais ou regionais, para propor diretrizes e ações acerca do tema tratado (PNPS)"@pt ;
+    skos:prefLabel "Conferência"@pt .
+
+vbs:ConferenceStep a skos:Concept ;
+    skos:broader vbs:Conference ;
+    skos:prefLabel "Etapa de conferência"@pt ;
+    skos:scopeNote "Uma etapa é um evento participativo e também é chamada de conferência, enquanto 'a' conferência é o processo todo"@pt .
+

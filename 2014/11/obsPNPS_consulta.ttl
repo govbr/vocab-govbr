@@ -1,0 +1,85 @@
+@prefix obs: <http://purl.org/socialparticipation/obs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+obs:CivilSociety a owl:Class ;
+    rdfs:label "Sociedade civil"@pt .
+
+obs:Consultative a owl:Class ;
+    rdfs:label "Consultiva"@pt .
+
+obs:ConveningDocument a owl:Class ;
+    rdfs:label "Documento convocatório"@pt .
+
+obs:ConvocationAct a owl:Class ;
+    rdfs:label "Ato de convocação"@pt ;
+    rdfs:subClassOf obs:NormativeAct .
+
+obs:Decree8243 a owl:Class ;
+    rdfs:label "Decreto 8.243"@pt .
+
+obs:EventMoment a owl:Class ;
+    rdfs:label "Documento objeto da consulta"@pt,
+        "Momento de realização"@pt .
+
+obs:InterestedPerson a owl:Class ;
+    rdfs:label "Pessoa interessada"@pt ;
+    rdfs:subClassOf obs:Participant .
+
+obs:Internet a owl:Class ;
+    rdfs:label "Internet"@pt ;
+    rdfs:subClassOf obs:ICT .
+
+obs:Methodology a owl:Class ;
+    rdfs:label "Metodologia"@pt .
+
+obs:Object a owl:Class ;
+    rdfs:label "Objeto"@pt .
+
+obs:PublicConsultation a owl:Class ;
+    rdfs:label "Consulta pública"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
+
+obs:RegulatoryImpactAnalysis a owl:Class ;
+    rdfs:label "Análise de impacto regulatório"@pt .
+
+obs:Result a owl:Class ;
+    rdfs:label "Resultado"@pt .
+
+obs:Study a owl:Class ;
+    rdfs:label "Estudo"@pt .
+
+obs:TechnicalMaterial a owl:Class ;
+    rdfs:label "Material técnico"@pt .
+
+obs:Topic a owl:Class ;
+    rdfs:label "Assunto"@pt ;
+    rdfs:comment "assunto é mais específico que tema"@pt .
+
+obs:WrittenContribution a owl:Class ;
+    rdfs:label "Contribuição escrita"@pt ;
+    rdfs:subClassOf obs:Contribution .
+
+obs:Contribution a owl:Class ;
+    rdfs:label "Contribuição"@pt .
+
+obs:ICT a owl:Class ;
+    rdfs:label "TIC"@pt ;
+    rdfs:comment "Tecnologias de Informação e Comunicação"@pt .
+
+obs:NormativeAct a owl:Class ;
+    rdfs:label "Ato normativo"@pt .
+
+obs:Participant a owl:Class ;
+    rdfs:label "Participante"@pt .
+
+obs:ParticipationInstanceOrMechanism a owl:Class ;
+    rdfs:label "Instância ou mecanismo de participação social"@pt .
+
+obs:ParticipationMechanism a owl:Class ;
+    rdfs:label "Mecanismo de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+

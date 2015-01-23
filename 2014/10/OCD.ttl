@@ -1,0 +1,772 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcty: <http://purl.org/dc/dcmitype/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gndo: <http://d-nb.info/standards/elementset/gnd#> .
+@prefix ocd: <http://purl.org/socialparticipation/ocd/> .
+@prefix opa: <http://purl.org/socialparticipation/opa/> .
+@prefix ops: <http://purl.org/socialparticipation/ops#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ocd:accountable a owl:ObjectProperty,
+        owl:functionalProperty ;
+    rdfs:domain [ owl:unionOf ocd:Image,
+                ocd:Place ] ;
+    rdfs:range [ owl:unionOf ocd:Competition,
+                ocd:Observatory,
+                ocd:Post,
+                ocd:Problem,
+                ocd:Proposal,
+                ocd:User ] .
+
+ocd:autoDescription a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:User ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:birthday a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:User ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#dateTime> .
+
+ocd:caption a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Image ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:cep a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Place ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:deleted a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:User ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#dateTime> .
+
+ocd:fax a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:User ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:gender a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:User ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:height a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Image ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#integer> .
+
+ocd:inspirationCount a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:User ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#integer> ;
+    rdfs:subPropertyOf ocd:counting .
+
+ocd:neighborhood a owl:ObjectProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Place ;
+    rdfs:range ocd:Neighborhood .
+
+ocd:ocd.owl a owl:Ontology ;
+    dct:description "Ontologia do Cidade Democratica, levantada com base nos dados e para conectar com outras instâncias" ;
+    dct:title "Ontologia do Cidade Democrática" ;
+    owl:versionInfo "0.01au" .
+
+ocd:phone a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:User ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:site a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:User ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:tagger a owl:ObjectProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Tagging ;
+    rdfs:range ocd:User .
+
+ocd:width a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Image ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#integer> .
+
+ocd:city a owl:ObjectProperty,
+        owl:functionalProperty ;
+    rdfs:domain [ owl:unionOf ocd:Neighborhood,
+                ocd:Place ] ;
+    rdfs:range ocd:City .
+
+ocd:state a owl:ObjectProperty,
+        owl:functionalProperty ;
+    rdfs:domain [ owl:unionOf ocd:City,
+                ocd:Place ] ;
+    rdfs:range ocd:State .
+
+ocd:tagged a owl:ObjectProperty ;
+    rdfs:domain [ owl:unionOf ocd:Tag,
+                ocd:Tagging ] ;
+    rdfs:range [ owl:unionOf ocd:MacroTag,
+                ocd:Observatory,
+                ocd:Post,
+                ocd:Problem,
+                ocd:Proposal ] .
+
+ocd:updated a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain [ owl:unionOf ocd:City,
+                ocd:Comment,
+                ocd:Image,
+                ocd:Inspiration,
+                ocd:Link,
+                ocd:Neighborhood,
+                ocd:Observatory,
+                ocd:Place,
+                ocd:Post,
+                ocd:Prize,
+                ocd:Problem,
+                ocd:Proposal,
+                ocd:State,
+                ocd:Support,
+                ocd:User ] ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#dateTime> .
+
+ocd:abbreviation a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:State ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:authorDescription a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Competition ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:awards a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Competition ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:competition a owl:ObjectProperty,
+        owl:functionalProperty ;
+    rdfs:domain [ owl:unionOf ocd:Inspiration,
+                ocd:Post,
+                ocd:Prize,
+                ocd:Problem,
+                ocd:Proposal ] ;
+    rdfs:range ocd:Competition .
+
+ocd:condition a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:User ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:contact a owl:DatatypeProperty ;
+    rdfs:domain ocd:Triplestore ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:emailTrigger a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Observatory ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#boolean> .
+
+ocd:filename a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Image ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:image a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Inspiration ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:ip a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Login ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:longDescription a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Competition ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:mbox a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:User ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#anyURI> .
+
+ocd:offerer a owl:ObjectProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Prize ;
+    rdfs:range ocd:User .
+
+ocd:partners a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Competition ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:regulation a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Competition ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:relatedOntology a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Triplestore ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:shortDescription a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Competition ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:size a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Image ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#integer> .
+
+ocd:software a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Triplestore ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:start a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Competition ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#dateTime> .
+
+ocd:supporter a owl:ObjectProperty ;
+    rdfs:domain ocd:Support ;
+    rdfs:range ocd:User .
+
+ocd:tag a owl:ObjectProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Tagging ;
+    rdfs:range ocd:Tag .
+
+ocd:text a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain ocd:Tag ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:url a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain [ owl:unionOf ocd:Link,
+                ocd:Triplestore ] ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:user a owl:ObjectProperty,
+        owl:functionalProperty ;
+    rdfs:domain [ owl:unionOf ocd:Login,
+                ocd:Observatory ] ;
+    rdfs:range ocd:User .
+
+ocd:Login rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty ocd:ip ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:user ;
+            owl:someValuesFrom ocd:User ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:ip ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:created ;
+            owl:someValuesFrom xsd:dateTime ] .
+
+ocd:body a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain [ owl:unionOf ocd:Comment,
+                ocd:Post,
+                ocd:Problem,
+                ocd:Proposal ] ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:description a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain [ owl:unionOf ocd:Inspiration,
+                ocd:Link,
+                ocd:Prize ] ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:topic a owl:ObjectProperty,
+        owl:functionalProperty ;
+    rdfs:domain [ owl:unionOf ocd:Comment,
+                ocd:Link,
+                ocd:Prize,
+                ocd:Support ] ;
+    rdfs:range [ owl:unionOf ocd:Post,
+                ocd:Problem,
+                ocd:Proposal ] .
+
+ocd:type a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain [ owl:unionOf ocd:Comment,
+                ocd:Image,
+                ocd:User ] ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:MacroTag rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ocd:title ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:created ;
+            owl:someValuesFrom xsd:dateTime ] .
+
+ocd:Support rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ocd:topic ;
+            owl:someValuesFrom ocd:Proposal ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:supporter ;
+            owl:someValuesFrom ocd:User ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom ocd:User ;
+            owl:onProperty ocd:supporter ] .
+
+ocd:Tagging rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ocd:tagged ;
+            owl:someValuesFrom ocd:MacroTag ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:tag ;
+            owl:someValuesFrom ocd:Tag ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom ocd:Tag ;
+            owl:onProperty ocd:tag ] .
+
+ocd:commentCount a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain [ owl:unionOf ocd:Post,
+                ocd:Problem,
+                ocd:Proposal ] ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#integer> ;
+    rdfs:subPropertyOf ocd:counting .
+
+ocd:followersCount a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain [ owl:unionOf ocd:Post,
+                ocd:Problem,
+                ocd:Proposal ] ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#integer> ;
+    rdfs:subPropertyOf ocd:counting .
+
+ocd:supportCount a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain [ owl:unionOf ocd:Post,
+                ocd:Problem,
+                ocd:Proposal ] ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#integer> ;
+    rdfs:subPropertyOf ocd:counting .
+
+ocd:Link rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ocd:url ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:description ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:created ;
+            owl:someValuesFrom xsd:dateTime ] .
+
+ocd:Triplestore rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty ocd:relatedOntology ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:software ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:contact ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:url ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:relatedOntology ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty ocd:contact ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty ocd:software ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:created ;
+            owl:someValuesFrom xsd:dateTime ] .
+
+ocd:author a owl:ObjectProperty,
+        owl:functionalProperty ;
+    rdfs:domain [ owl:unionOf ocd:Comment,
+                ocd:Inspiration,
+                ocd:Post,
+                ocd:Problem,
+                ocd:Proposal ] ;
+    rdfs:range ocd:User .
+
+ocd:name a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain [ owl:unionOf ocd:City,
+                ocd:Competition,
+                ocd:Neighborhood,
+                ocd:Prize,
+                ocd:State,
+                ocd:User ] ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:title a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain [ owl:unionOf ocd:Inspiration,
+                ocd:MacroTag,
+                ocd:Post,
+                ocd:Problem,
+                ocd:Proposal ] ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#string> .
+
+ocd:Comment rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ocd:topic ;
+            owl:someValuesFrom ocd:Proposal ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:author ;
+            owl:someValuesFrom ocd:User ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:type ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:created ;
+            owl:someValuesFrom xsd:dateTime ] .
+
+ocd:Neighborhood rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ocd:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:city ;
+            owl:someValuesFrom ocd:City ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:name ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:relevance ;
+            owl:someValuesFrom xsd:integer ] .
+
+ocd:Observatory rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ocd:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:boolean ;
+            owl:onProperty ocd:emailTrigger ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:user ;
+            owl:someValuesFrom ocd:User ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:emailTrigger ;
+            owl:someValuesFrom xsd:boolean ] .
+
+ocd:Tag rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ocd:text ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty ocd:text ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:relevance ;
+            owl:someValuesFrom xsd:integer ] .
+
+ocd:City rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ocd:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:state ;
+            owl:someValuesFrom ocd:State ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:name ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:relevance ;
+            owl:someValuesFrom xsd:integer ] .
+
+ocd:Inspiration rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ocd:title ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:image ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty ocd:image ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:author ;
+            owl:someValuesFrom ocd:User ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:competition ;
+            owl:someValuesFrom ocd:Competition ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:description ;
+            owl:someValuesFrom xsd:string ] .
+
+ocd:Prize rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ocd:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:offerer ;
+            owl:someValuesFrom ocd:User ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:competition ;
+            owl:someValuesFrom ocd:Competition ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:topic ;
+            owl:someValuesFrom ocd:Problem ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:name ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:description ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom ocd:User ;
+            owl:onProperty ocd:offerer ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:updated ;
+            owl:someValuesFrom xsd:dateTime ] .
+
+ocd:State rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ocd:relevance ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:name ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:abbreviation ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty ocd:abbreviation ] .
+
+ocd:relevance a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain [ owl:unionOf ocd:City,
+                ocd:Neighborhood,
+                ocd:Post,
+                ocd:Problem,
+                ocd:Proposal,
+                ocd:State,
+                ocd:Tag,
+                ocd:User ] ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#integer> .
+
+ocd:Image rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ocd:type ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty ocd:filename ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:size ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:filename ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:integer ;
+            owl:onProperty ocd:size ] .
+
+ocd:Competition rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ocd:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty ocd:authorDescription ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:regulation ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:start ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:longDescription ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty ocd:regulation ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:authorDescription ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty ocd:awards ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty ocd:shortDescription ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:shortDescription ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:dateTime ;
+            owl:onProperty ocd:start ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:name ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:partners ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty ocd:partners ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:awards ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty ocd:longDescription ] .
+
+ocd:Problem rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ocd:commentCount ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:supportCount ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:relevance ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:body ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:followersCount ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:author ;
+            owl:someValuesFrom ocd:User ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:title ;
+            owl:someValuesFrom xsd:string ],
+        ocd:Post .
+
+ocd:Post rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ocd:body ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:relevance ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:integer ;
+            owl:onProperty ocd:supportCount ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:commentCount ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:title ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:supportCount ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:integer ;
+            owl:onProperty ocd:commentCount ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:followersCount ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom xsd:integer ;
+            owl:onProperty ocd:followersCount ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:author ;
+            owl:someValuesFrom ocd:User ] .
+
+ocd:Proposal rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ocd:author ;
+            owl:someValuesFrom ocd:User ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:title ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:commentCount ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:followersCount ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:supportCount ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:body ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:relevance ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        ocd:Post .
+
+ocd:created a owl:DatatypeProperty,
+        owl:functionalProperty ;
+    rdfs:domain [ owl:unionOf ocd:City,
+                ocd:Comment,
+                ocd:Competition,
+                ocd:Image,
+                ocd:Inspiration,
+                ocd:Link,
+                ocd:Login,
+                ocd:MacroTag,
+                ocd:Neighborhood,
+                ocd:Observatory,
+                ocd:Place,
+                ocd:Post,
+                ocd:Prize,
+                ocd:Problem,
+                ocd:Proposal,
+                ocd:State,
+                ocd:Support,
+                ocd:Tagging,
+                ocd:Triplestore,
+                ocd:User ] ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#XMLSchema#dateTime> .
+
+ocd:User rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:string ;
+            owl:onProperty ocd:condition ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:condition ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:mbox ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:relevance ;
+            owl:someValuesFrom xsd:integer ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:created ;
+            owl:someValuesFrom xsd:dateTime ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:type ;
+            owl:someValuesFrom xsd:string ],
+        [ a owl:Restriction ;
+            owl:onProperty ocd:mbox ] .
+

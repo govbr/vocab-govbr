@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/thematicAxix">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Eixo temático</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/thematicAxix"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/PublicConsultation">
+    <skos:altLabel xml:lang="pt">Consulta pública federal</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Consulta pública</skos:prefLabel>
+    <skos:definition xml:lang="pt">mecanismo participativo, a se realizar em prazo definido, de caráter consultivo, aberto a qualquer interessado, que visa a receber contribuições por escrito da sociedade civil sobre determinado assunto, na forma definida no seu ato de convocação (PNPS)</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ParticipativeMoment">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:related rdf:resource="http://purl.org/socialparticipation/vbs/ConsultationMethodology"/>
+    <skos:prefLabel xml:lang="pt">Momento participativo</skos:prefLabel>
+    <skos:related rdf:resource="http://purl.org/socialparticipation/vbs/InteractionZone"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ConsultationMethodology">
+    <skos:altLabel xml:lang="pt">Procedimento metodológico</skos:altLabel>
+    <skos:prefLabel xml:lang="pt">Metodologia de consulta pública</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Theme">
+    <skos:prefLabel xml:lang="pt">Tema</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+</rdf:RDF>

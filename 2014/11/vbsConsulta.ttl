@@ -1,0 +1,28 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vbs: <http://purl.org/socialparticipation/vbs/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vbs:ParticipativeMoment a skos:Concept ;
+    skos:prefLabel "Momento participativo"@pt ;
+    skos:related vbs:ConsultationMethodology,
+        vbs:InteractionZone .
+
+vbs:PublicConsultation a skos:Concept ;
+    skos:altLabel "Consulta pública federal"@pt ;
+    skos:definition "mecanismo participativo, a se realizar em prazo definido, de caráter consultivo, aberto a qualquer interessado, que visa a receber contribuições por escrito da sociedade civil sobre determinado assunto, na forma definida no seu ato de convocação (PNPS)"@pt ;
+    skos:prefLabel "Consulta pública"@pt .
+
+vbs:Theme a skos:Concept ;
+    skos:prefLabel "Tema"@pt .
+
+vbs:ConsultationMethodology a skos:Concept ;
+    skos:altLabel "Procedimento metodológico"@pt ;
+    skos:prefLabel "Metodologia de consulta pública"@pt .
+
+vbs:thematicAxix a skos:Concept ;
+    skos:broader vbs:thematicAxix ;
+    skos:prefLabel "Eixo temático"@pt .
+

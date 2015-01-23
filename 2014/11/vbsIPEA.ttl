@@ -1,0 +1,433 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vbs: <http://purl.org/socialparticipation/vbs/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vbs:ipeaAbrigosParaCriancasEAdolescentes a skos:Concept ;
+    skos:prefLabel "Abrigos para crianças e adolescentes"@pt .
+
+vbs:ipeaAcaoColetiva a skos:Concept ;
+    skos:prefLabel "Ação coletiva"@pt .
+
+vbs:ipeaAcaoPolicial a skos:Concept ;
+    skos:prefLabel "Ação policial"@pt .
+
+vbs:ipeaAnaliseHistorica a skos:Concept ;
+    skos:prefLabel "Análise histórica"@pt .
+
+vbs:ipeaApoioMonetarioAInfancia a skos:Concept ;
+    skos:prefLabel "Apoio monetário à infância"@pt .
+
+vbs:ipeaAreasDeConcentracao a skos:Concept ;
+    skos:prefLabel "Áreas de concentração"@pt .
+
+vbs:ipeaArranjoFisicoDoEspacoPublico a skos:Concept ;
+    skos:prefLabel "Arranjo físico do espaço público"@pt .
+
+vbs:ipeaAssistenciaSocial a skos:Concept ;
+    skos:prefLabel "Assistência social"@pt .
+
+vbs:ipeaAudienciasPublicas a skos:Concept ;
+    skos:prefLabel "Audiências públicas"@pt .
+
+vbs:ipeaAvaliacaoDaParticipacaoSocial a skos:Concept ;
+    skos:prefLabel "Avaliação da participação social"@pt .
+
+vbs:ipeaBemEstarSocial a skos:Concept ;
+    skos:prefLabel "Bem-estar social"@pt .
+
+vbs:ipeaBeneficioInfantilUniversal a skos:Concept ;
+    skos:prefLabel "Benefício infantil universal"@pt .
+
+vbs:ipeaBeneficiosPrevidenciarios a skos:Concept ;
+    skos:prefLabel "Benefícios previdenciários"@pt .
+
+vbs:ipeaBolsaFamilia a skos:Concept ;
+    skos:prefLabel "Bolsa família"@pt .
+
+vbs:ipeaCasamento a skos:Concept ;
+    skos:prefLabel "Casamento"@pt .
+
+vbs:ipeaCasasLaresParaCriancasEAdolescentes a skos:Concept ;
+    skos:prefLabel "Casas-lares para crianças e adolescentes"@pt .
+
+vbs:ipeaChoquesPositivosDeRenda a skos:Concept ;
+    skos:prefLabel "Choques positivos de renda"@pt .
+
+vbs:ipeaCidadania a skos:Concept ;
+    skos:prefLabel "Cidadania"@pt .
+
+vbs:ipeaCodefat a skos:Concept ;
+    skos:prefLabel "Conselho Deliberativo do Fundo de Amparo ao Trabalhador (Codefat)"@pt .
+
+vbs:ipeaCombateAProbreza a skos:Concept ;
+    skos:prefLabel "Combate à probreza"@pt .
+
+vbs:ipeaCondicoesDeVida a skos:Concept ;
+    skos:prefLabel "Condições de vida"@pt .
+
+vbs:ipeaConferenciaNacionalDeSegurancaPublica a skos:Concept ;
+    skos:prefLabel "Conferência Nacional de Segurança Pública"@pt .
+
+vbs:ipeaConferenciasDePoliticasPublicas a skos:Concept ;
+    skos:prefLabel "Conferências de políticas públicas"@pt .
+
+vbs:ipeaConferenciasNacionais a skos:Concept ;
+    skos:prefLabel "Conferências nacionais"@pt .
+
+vbs:ipeaConselhoNacionalDeSegurancaPublica a skos:Concept ;
+    skos:prefLabel "Conselho Nacional de Segurança Pública"@pt .
+
+vbs:ipeaConselhosDePoliticasPublicas a skos:Concept ;
+    skos:prefLabel "Conselhos de políticas públicas"@pt .
+
+vbs:ipeaConselhosFederaisDePoliticaSocial a skos:Concept ;
+    skos:prefLabel "Conselhos federais de política social"@pt .
+
+vbs:ipeaConselhosMunicipais a skos:Concept ;
+    skos:prefLabel "Conselhos Municipais"@pt .
+
+vbs:ipeaConselhosNacionais a skos:Concept ;
+    skos:prefLabel "Conselhos nacionais"@pt .
+
+vbs:ipeaControleSocialOrcamentario a skos:Concept ;
+    skos:prefLabel "Controle social orçamentário"@pt .
+
+vbs:ipeaCooperacaoVersusDesercao a skos:Concept ;
+    skos:prefLabel "Cooperação versus deserção"@pt .
+
+vbs:ipeaCorrecaoDeSelecaoNaoParametrica a skos:Concept ;
+    skos:prefLabel "Correção de seleção não paramétrica"@pt .
+
+vbs:ipeaCotas a skos:Concept ;
+    skos:prefLabel "Cotas"@pt .
+
+vbs:ipeaCuidadosDeLongaDuracao a skos:Concept ;
+    skos:prefLabel "Cuidados de longa duração"@pt .
+
+vbs:ipeaDadosEstatisticos a skos:Concept ;
+    skos:prefLabel "Dados estatísticos"@pt .
+
+vbs:ipeaDeficitPublico a skos:Concept ;
+    skos:prefLabel "Déficit público"@pt .
+
+vbs:ipeaDemandasSociais a skos:Concept ;
+    skos:prefLabel "Demandas sociais"@pt .
+
+vbs:ipeaDemocraciaParticipativa a skos:Concept ;
+    skos:prefLabel "Democracia participativa"@pt .
+
+vbs:ipeaDesigualdadeDeRenda a skos:Concept ;
+    skos:prefLabel "Desigualdade de renda"@pt .
+
+vbs:ipeaDesigualdadeSalarial a skos:Concept ;
+    skos:prefLabel "Desigualdade salarial"@pt .
+
+vbs:ipeaDesigualdadesDeGenero a skos:Concept ;
+    skos:prefLabel "Desigualdades de gênero"@pt .
+
+vbs:ipeaDesigualdadesRaciais a skos:Concept ;
+    skos:prefLabel "Desigualdades raciais"@pt .
+
+vbs:ipeaDesigualdadesRegionais a skos:Concept ;
+    skos:prefLabel "Desigualdades regionais"@pt .
+
+vbs:ipeaDeslocamentoUrbano a skos:Concept ;
+    skos:prefLabel "Deslocamento urbano"@pt .
+
+vbs:ipeaDesproporcionalidadeEleitoral a skos:Concept ;
+    skos:prefLabel "Desproporcionalidade eleitoral"@pt .
+
+vbs:ipeaDeterminantesEconomicas a skos:Concept ;
+    skos:prefLabel "Determinantes econômicas"@pt .
+
+vbs:ipeaDireitosHumanos a skos:Concept ;
+    skos:prefLabel "Direitos humanos"@pt .
+
+vbs:ipeaDiscriminacaoDeGenero a skos:Concept ;
+    skos:prefLabel "Discriminação de gênero"@pt .
+
+vbs:ipeaDiscriminacaoRacial a skos:Concept ;
+    skos:prefLabel "Discriminação racial"@pt .
+
+vbs:ipeaEcaEstatutoDaCriancaEDoAdolescente a skos:Concept ;
+    skos:prefLabel "ECA - Estatuto da Criança e do Adolescente"@pt .
+
+vbs:ipeaEducandarios a skos:Concept ;
+    skos:prefLabel "Educandários"@pt .
+
+vbs:ipeaErradicacaoDaPobreza a skos:Concept ;
+    skos:prefLabel "Erradicação da pobreza"@pt .
+
+vbs:ipeaEscravismo a skos:Concept ;
+    skos:prefLabel "Escravismo"@pt .
+
+vbs:ipeaEspacosParticipativos a skos:Concept ;
+    skos:prefLabel "Espaços participativos"@pt .
+
+vbs:ipeaEstatutoPolitico a skos:Concept ;
+    skos:prefLabel "Estatuto político"@pt .
+
+vbs:ipeaEstruturaDeClasses a skos:Concept ;
+    skos:prefLabel "Estrutura de classes"@pt .
+
+vbs:ipeaEstruturaSocial a skos:Concept ;
+    skos:prefLabel "Estrutura social"@pt .
+
+vbs:ipeaExtremamentePobres a skos:Concept ;
+    skos:prefLabel "Extremamente pobres"@pt .
+
+vbs:ipeaFavelas a skos:Concept ;
+    skos:prefLabel "Favelas"@pt .
+
+vbs:ipeaFelicidade a skos:Concept ;
+    skos:prefLabel "Felicidade"@pt .
+
+vbs:ipeaGastoGovernamental a skos:Concept ;
+    skos:prefLabel "Gasto governamental"@pt .
+
+vbs:ipeaGastosSociais a skos:Concept ;
+    skos:prefLabel "Gastos sociais"@pt .
+
+vbs:ipeaGestaoDePoliticasPublicas a skos:Concept ;
+    skos:prefLabel "Gestão de políticas públicas"@pt .
+
+vbs:ipeaGruposSociaisMinoritarios a skos:Concept ;
+    skos:prefLabel "Grupos sociais minoritários"@pt .
+
+vbs:ipeaHomicidios a skos:Concept ;
+    skos:prefLabel "Homicídios"@pt .
+
+vbs:ipeaHomicidiosOcultos a skos:Concept ;
+    skos:prefLabel "Homicídios Ocultos"@pt .
+
+vbs:ipeaIdosos a skos:Concept ;
+    skos:prefLabel "Idosos"@pt .
+
+vbs:ipeaImpunidade a skos:Concept ;
+    skos:prefLabel "Impunidade"@pt .
+
+vbs:ipeaInclusaoDasMinorias a skos:Concept ;
+    skos:prefLabel "Inclusão das minorias"@pt .
+
+vbs:ipeaIndiceDeVulnerabilidade a skos:Concept ;
+    skos:prefLabel "Índice de Vulnerabilidade"@pt .
+
+vbs:ipeaInfancia a skos:Concept ;
+    skos:prefLabel "Infância"@pt .
+
+vbs:ipeaInstitucionalizacaoDaParticipacao a skos:Concept ;
+    skos:prefLabel "Institucionalização da participação"@pt .
+
+vbs:ipeaInstituicoesParticipativas a skos:Concept ;
+    skos:prefLabel "Instituições participativas"@pt .
+
+vbs:ipeaJogosDoDilemaDosPrisioneiros a skos:Concept ;
+    skos:prefLabel "Jogos do dilema dos prisioneiros"@pt .
+
+vbs:ipeaJuventude a skos:Concept ;
+    skos:prefLabel "Juventude"@pt .
+
+vbs:ipeaKeyword a skos:Concept ;
+    skos:prefLabel "keyword"@pt .
+
+vbs:ipeaMarketingDeSetorPublico a skos:Concept ;
+    skos:prefLabel "Marketing de setor público"@pt .
+
+vbs:ipeaMarketingSocial a skos:Concept ;
+    skos:prefLabel "Marketing social"@pt .
+
+vbs:ipeaMecanismosComportamentaisESociais a skos:Concept ;
+    skos:prefLabel "Mecanismos comportamentais e sociais"@pt .
+
+vbs:ipeaMensuracaoDaPobreza a skos:Concept ;
+    skos:prefLabel "Mensuração da pobreza"@pt .
+
+vbs:ipeaMoralidade a skos:Concept ;
+    skos:prefLabel "Moralidade"@pt .
+
+vbs:ipeaMortesViolentas a skos:Concept ;
+    skos:prefLabel "Mortes Violentas"@pt .
+
+vbs:ipeaMulheres a skos:Concept ;
+    skos:prefLabel "Mulheres"@pt .
+
+vbs:ipeaNecessidadesDeFinanciamentoDoSetorPublico a skos:Concept ;
+    skos:prefLabel "Necessidades de Financiamento do Setor Público"@pt .
+
+vbs:ipeaNovaClasseMediaBrasileira a skos:Concept ;
+    skos:prefLabel "Nova classe média brasileira"@pt .
+
+vbs:ipeaOrcamentoPublico a skos:Concept ;
+    skos:prefLabel "Orçamento público"@pt .
+
+vbs:ipeaOrfanatos a skos:Concept ;
+    skos:prefLabel "Orfanatos"@pt .
+
+vbs:ipeaOrganizacoesDaSociedadeCivil a skos:Concept ;
+    skos:prefLabel "Organizações da Sociedade Civil"@pt .
+
+vbs:ipeaPNRS a skos:Concept ;
+    skos:prefLabel "Plano Nacional de Resíduos Sólidos (PNRS)"@pt .
+
+vbs:ipeaParticipacao a skos:Concept ;
+    skos:prefLabel "Participação"@pt .
+
+vbs:ipeaParticipacaoDaSociedadeCivil a skos:Concept ;
+    skos:prefLabel "Participação da sociedade civil"@pt .
+
+vbs:ipeaParticipacaoPolitica a skos:Concept ;
+    skos:prefLabel "Participação política"@pt .
+
+vbs:ipeaParticipacaoSocial a skos:Concept ;
+    skos:prefLabel "Participação social"@pt .
+
+vbs:ipeaPluralidade a skos:Concept ;
+    skos:prefLabel "Pluralidade"@pt .
+
+vbs:ipeaPobreza a skos:Concept ;
+    skos:prefLabel "Pobreza"@pt .
+
+vbs:ipeaPobrezaExtrema a skos:Concept ;
+    skos:prefLabel "Pobreza extrema"@pt .
+
+vbs:ipeaPoderLegislativo a skos:Concept ;
+    skos:prefLabel "Poder Legislativo"@pt .
+
+vbs:ipeaPoliticaDeDireitosHumanos a skos:Concept ;
+    skos:prefLabel "Política de direitos humanos"@pt .
+
+vbs:ipeaPoliticaFiscal a skos:Concept ;
+    skos:prefLabel "Política fiscal"@pt .
+
+vbs:ipeaPoliticaNacionalDaJuventude a skos:Concept ;
+    skos:prefLabel "Política Nacional da Juventude"@pt .
+
+vbs:ipeaPoliticasParticipativas a skos:Concept ;
+    skos:prefLabel "Políticas participativas"@pt .
+
+vbs:ipeaPoliticasPublicas a skos:Concept ;
+    skos:prefLabel "Políticas públicas"@pt .
+
+vbs:ipeaPoliticasPublicasParaOIdoso a skos:Concept ;
+    skos:prefLabel "Políticas públicas para o idoso"@pt .
+
+vbs:ipeaPoliticasSetoriais a skos:Concept ;
+    skos:prefLabel "Políticas setoriais"@pt .
+
+vbs:ipeaPoliticasSociais a skos:Concept ;
+    skos:prefLabel "Políticas sociais"@pt .
+
+vbs:ipeaPopulacaoIdosa a skos:Concept ;
+    skos:prefLabel "População idosa"@pt .
+
+vbs:ipeaProcessoOrcamentario a skos:Concept ;
+    skos:prefLabel "Processo orçamentário"@pt .
+
+vbs:ipeaProgramaBolsaFamilia a skos:Concept ;
+    skos:prefLabel "Programa Bolsa Família"@pt .
+
+vbs:ipeaProgramaDeGarantiaDeRendaMinima a skos:Concept ;
+    skos:prefLabel "Programa de Garantia de Renda Mínima"@pt .
+
+vbs:ipeaProgramasGovernamentais a skos:Concept ;
+    skos:prefLabel "Programas governamentais"@pt .
+
+vbs:ipeaProgramasSetoriais a skos:Concept ;
+    skos:prefLabel "Programas setoriais"@pt .
+
+vbs:ipeaProgramasSociais a skos:Concept ;
+    skos:prefLabel "Programas sociais"@pt .
+
+vbs:ipeaProjetoDemocraticoParticipativo a skos:Concept ;
+    skos:prefLabel "Projeto Democrático-Participativo"@pt .
+
+vbs:ipeaProtecaoSocial a skos:Concept ;
+    skos:prefLabel "Proteção social"@pt .
+
+vbs:ipeaQualidadeDeVida a skos:Concept ;
+    skos:prefLabel "Qualidade de vida"@pt .
+
+vbs:ipeaReferencialRepublicano a skos:Concept ;
+    skos:prefLabel "Referencial republicano"@pt .
+
+vbs:ipeaReformaOrcamentaria a skos:Concept ;
+    skos:prefLabel "Reforma orçamentária"@pt .
+
+vbs:ipeaRegrasEleitorais a skos:Concept ;
+    skos:prefLabel "Regras eleitorais"@pt .
+
+vbs:ipeaRegulamentacao a skos:Concept ;
+    skos:prefLabel "Regulamentação"@pt .
+
+vbs:ipeaRendaMinima a skos:Concept ;
+    skos:prefLabel "Renda mínima"@pt .
+
+vbs:ipeaRepresentacaoPolitica a skos:Concept ;
+    skos:prefLabel "Representação política"@pt .
+
+vbs:ipeaRepresentacaoPoliticaDasMinorias a skos:Concept ;
+    skos:prefLabel "Representação política das minorias"@pt .
+
+vbs:ipeaSIM a skos:Concept ;
+    skos:prefLabel "Sistema de Informação sobre Mortalidade (SIM)"@pt .
+
+vbs:ipeaSalarioFamilia a skos:Concept ;
+    skos:prefLabel "Salário família"@pt .
+
+vbs:ipeaSegurancaPublica a skos:Concept ;
+    skos:prefLabel "Segurança Pública"@pt .
+
+vbs:ipeaSistemaEleitoral a skos:Concept ;
+    skos:prefLabel "Sistema eleitoral"@pt .
+
+vbs:ipeaSistemaPoliticoEleitoral a skos:Concept ;
+    skos:prefLabel "Sistema político-eleitoral"@pt .
+
+vbs:ipeaSituacoesProblemaQueCarecemDeAcoesColetivas a skos:Concept ;
+    skos:prefLabel "Situações-problema que carecem de ações coletivas"@pt .
+
+vbs:ipeaSociedadeCivil a skos:Concept ;
+    skos:prefLabel "Sociedade civil"@pt .
+
+vbs:ipeaSuicidio a skos:Concept ;
+    skos:prefLabel "Suicídio"@pt .
+
+vbs:ipeaTempoDeTrabalho a skos:Concept ;
+    skos:prefLabel "Tempo de trabalho"@pt .
+
+vbs:ipeaTempoDeViagem a skos:Concept ;
+    skos:prefLabel "Tempo de viagem"@pt .
+
+vbs:ipeaTempoLivre a skos:Concept ;
+    skos:prefLabel "Tempo livre"@pt .
+
+vbs:ipeaTrabalho a skos:Concept ;
+    skos:prefLabel "Trabalho"@pt .
+
+vbs:ipeaTraficoDeEscravos a skos:Concept ;
+    skos:prefLabel "Tráfico de escravos"@pt .
+
+vbs:ipeaTraficoEscravistaPernambucano a skos:Concept ;
+    skos:prefLabel "Tráfico escravista pernambucano"@pt .
+
+vbs:ipeaTransporteUrbano a skos:Concept ;
+    skos:prefLabel "Transporte urbano"@pt .
+
+vbs:ipeaValoresSociais a skos:Concept ;
+    skos:prefLabel "Valores sociais"@pt .
+
+vbs:ipeaViolencia a skos:Concept ;
+    skos:prefLabel "Violência"@pt .
+
+vbs:ipeaViolenciaLetal a skos:Concept ;
+    skos:prefLabel "Violência letal"@pt .
+
+vbs:ipeaViolenciaUrbana a skos:Concept ;
+    skos:prefLabel "Violência Urbana"@pt .
+
+vbs:ipeaVulnerabilidade a skos:Concept ;
+    skos:prefLabel "Vulnerabilidade"@pt .
+

@@ -1,0 +1,91 @@
+@prefix obs: <http://purl.org/socialparticipation/obs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+obs:Accessibility a owl:Class ;
+    rdfs:label "Acessibilidade"@pt .
+
+obs:CivilSociety a owl:Class ;
+    rdfs:label "Sociedade civil"@pt .
+
+obs:Communication a owl:Class ;
+    rdfs:label "Comunicação"@pt .
+
+obs:Contribution a owl:Class ;
+    rdfs:label "Contribuição"@pt .
+
+obs:Decree8243 a owl:Class ;
+    rdfs:label "Decreto 8.243"@pt .
+
+obs:Dialogue a owl:Class ;
+    rdfs:label "Diálogo"@pt .
+
+obs:DirectDemocracy a owl:Class ;
+    rdfs:label "Democracia direta"@pt .
+
+obs:Diversity a owl:Class ;
+    rdfs:label "Diversidade"@pt .
+
+obs:EventTransmission a owl:Class ;
+    rdfs:label "Transmissão de evento"@pt .
+
+obs:ExpectedProduct a owl:Class ;
+    rdfs:label "Produto esperado"@pt .
+
+obs:FederalPublicAdministration a owl:Class ;
+    rdfs:label "Administração pública federal"@pt .
+
+obs:FreeSoftware a owl:Class ;
+    rdfs:label "Software livre"@pt .
+
+obs:Internet a owl:Class ;
+    rdfs:label "Internet"@pt ;
+    rdfs:subClassOf obs:ICT .
+
+obs:Methodology a owl:Class ;
+    rdfs:label "Metodologia"@pt .
+
+obs:Mobilization a owl:Class ;
+    rdfs:label "Mobilização"@pt .
+
+obs:Objective a owl:Class ;
+    rdfs:label "Objetivo"@pt .
+
+obs:OpenData a owl:Class ;
+    rdfs:label "Dados abertos"@pt .
+
+obs:RemoteParticipation a owl:Class ;
+    rdfs:label "Participação remota"@pt ;
+    rdfs:subClassOf obs:SocialParticipation .
+
+obs:SocialNetwork a owl:Class ;
+    rdfs:label "Rede social"@pt .
+
+obs:SocialParticipationVirtualEnvironment a owl:Class ;
+    rdfs:label "Ambiente virtual de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
+
+obs:TermsOfUse a owl:Class ;
+    rdfs:label "Termos de uso"@pt .
+
+obs:GovernanceMethod a owl:Class ;
+    rdfs:label "Método de governo"@pt .
+
+obs:ICT a owl:Class ;
+    rdfs:label "TIC"@pt ;
+    rdfs:comment "Tecnologias de Informação e Comunicação"@pt .
+
+obs:ParticipationInstanceOrMechanism a owl:Class ;
+    rdfs:label "Instância ou mecanismo de participação social"@pt .
+
+obs:ParticipationMechanism a owl:Class ;
+    rdfs:label "Mecanismo de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:SocialParticipation a owl:Class ;
+    rdfs:label "Participação social"@pt ;
+    rdfs:subClassOf obs:GovernanceMethod .
+

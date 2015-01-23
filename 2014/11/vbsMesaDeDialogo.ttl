@@ -1,0 +1,129 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vbs: <http://purl.org/socialparticipation/vbs/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vbs:AuditReport a skos:Concept ;
+    skos:prefLabel "Relatório de auditoria"@pt .
+
+vbs:Complaint a skos:Concept ;
+    skos:prefLabel "Denúncia"@pt .
+
+vbs:ConsensualCompromise a skos:Concept ;
+    skos:prefLabel "Compromisso consensual"@pt .
+
+vbs:Coordinate a skos:Concept ;
+    skos:prefLabel "Coordenação"@pt .
+
+vbs:CouncilMinute a skos:Concept ;
+    skos:prefLabel "Ata de conselho"@pt .
+
+vbs:CreationOrdinance a skos:Concept ;
+    skos:prefLabel "Portaria de criação"@pt .
+
+vbs:Demand a skos:Concept ;
+    skos:prefLabel "Demanda"@pt .
+
+vbs:DialogueTable a skos:Concept ;
+    skos:altLabel "Mesa de diálogo federal "@pt ;
+    skos:broader vbs:ParticipationMechanism ;
+    skos:definition "mecanismo de debate e de negociação com a participação dos setores da sociedade civil e do governo diretamente envolvidos no intuito de prevenir, mediar e solucionar conflitos sociais (PNPS)"@pt ;
+    skos:prefLabel "Mesa de diálogo"@pt .
+
+vbs:ExecutiveOffice a skos:Concept ;
+    skos:prefLabel "Secretaria executiva"@pt .
+
+vbs:FederalProgram a skos:Concept ;
+    skos:prefLabel "Programa federal"@pt .
+
+vbs:GuidingMechanism a skos:Concept ;
+    skos:prefLabel "Mecanismo orientador"@pt .
+
+vbs:Letter a skos:Concept ;
+    skos:prefLabel "Carta"@pt .
+
+vbs:ManagementBody a skos:Concept ;
+    skos:prefLabel "Corpo gestor"@pt .
+
+vbs:NormativeAct a skos:Concept ;
+    skos:prefLabel "Ato normativo"@pt .
+
+vbs:NormativeOrdinance a skos:Concept ;
+    skos:prefLabel "Portaria normativa"@pt .
+
+vbs:Participant a skos:Concept ;
+    skos:prefLabel "Participante"@pt .
+
+vbs:ParticipationInstance a skos:Concept ;
+    skos:altLabel "Mecanismo de participação social"@pt ;
+    skos:broader vbs:ParticipationInstanceOrMechanism ;
+    skos:prefLabel "Instância de participação social"@pt ;
+    skos:related vbs:ParticipationMechanism .
+
+vbs:Periodicity a skos:Concept ;
+    skos:prefLabel "Periodicidade"@pt .
+
+vbs:Petition a skos:Concept ;
+    skos:prefLabel "Requerimento"@pt .
+
+vbs:PublicAgency a skos:Concept ;
+    skos:prefLabel "Órgão público"@pt .
+
+vbs:PublicPolicy a skos:Concept ;
+    skos:prefLabel "Política pública"@pt .
+
+vbs:ReferenceDocument a skos:Concept ;
+    skos:prefLabel "Documento de referência"@pt .
+
+vbs:Regiment a skos:Concept ;
+    skos:prefLabel "Regimento"@pt .
+
+vbs:SGPR a skos:Concept ;
+    skos:altLabel "Secretaria-Geral da Presidência da República"@pt,
+        "Secretaria-Geral da Presidência da República (SGPR)"@pt,
+        "Secretaria-Geral da Presidência da República - SGPR"@pt ;
+    skos:prefLabel "SGPR"@pt .
+
+vbs:SocialMovementOffice a skos:Concept ;
+    skos:prefLabel "Ofício de movimento social"@pt .
+
+vbs:SocialParticipationIteration a skos:Concept ;
+    skos:prefLabel "Iteração com instância ou mecanismo de participação social"@pt .
+
+vbs:WorkGroup a skos:Concept ;
+    skos:prefLabel "Grupo de trabalho"@pt .
+
+vbs:composition a skos:Concept ;
+    skos:prefLabel "composição"@pt .
+
+vbs:convene a skos:Concept ;
+    skos:prefLabel "convocar"@pt .
+
+vbs:coordinate a skos:Concept ;
+    skos:prefLabel "coordenar"@pt .
+
+vbs:creation a skos:Concept ;
+    skos:prefLabel "criação"@pt .
+
+vbs:divulge a skos:Concept ;
+    skos:prefLabel "divulgar"@pt .
+
+vbs:member a skos:Concept ;
+    skos:prefLabel "membro"@pt .
+
+vbs:organization a skos:Concept ;
+    skos:prefLabel "organização"@pt .
+
+vbs:problem a skos:Concept ;
+    skos:prefLabel "problema"@pt .
+
+vbs:ParticipationInstanceOrMechanism a skos:Concept ;
+    skos:prefLabel "Instância ou mecanismo de participação social"@pt .
+
+vbs:ParticipationMechanism a skos:Concept ;
+    skos:altLabel "Instância de participação social"@pt ;
+    skos:broader vbs:ParticipationInstanceOrMechanism ;
+    skos:prefLabel "Mecanismo de participação social"@pt .
+

@@ -1,0 +1,72 @@
+@prefix obs: <http://purl.org/socialparticipation/obs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+obs:CGUAimedDenunciation a owl:Class ;
+    rdfs:label "Denúncia direcinada à CGU"@pt,
+        "Denúncia direcionada à CGU"@pt ;
+    rdfs:subClassOf obs:IndividualManifestation .
+
+obs:Decree8243 a owl:Class ;
+    rdfs:label "Decreto 8.243"@pt .
+
+obs:FederalServiceRelatedCommunication a owl:Class ;
+    rdfs:label "Manifestação sobre serviço público prestado por órgão ou entidade federal"@pt ;
+    rdfs:subClassOf obs:IndividualManifestation .
+
+obs:Improvement a owl:Class ;
+    rdfs:label "Aprimoramento"@pt .
+
+obs:LAIRequest a owl:Class ;
+    rdfs:label "Pedido de LAI (Lei de Acesso à Informação)"@pt ;
+    rdfs:subClassOf obs:IndividualManifestation .
+
+obs:OGU a owl:Class ;
+    rdfs:label "OGU (Ouvidoria Geral da União)"@pt .
+
+obs:OmbudsmanAgency a owl:Class ;
+    rdfs:label "Ouvidoria"@pt ;
+    rdfs:subClassOf obs:ParticipationInstance .
+
+obs:PerformedActivity a owl:Class ;
+    rdfs:label "Atividade desempenhada"@pt .
+
+obs:PopularParticipation a owl:Class ;
+    rdfs:label "Participação popular"@pt ;
+    rdfs:subClassOf obs:SocialParticipation .
+
+obs:PublicPolicy a owl:Class ;
+    rdfs:label "Política pública"@pt .
+
+obs:PublicService a owl:Class ;
+    rdfs:label "Serviço público"@pt .
+
+obs:SatisfactionStatistics a owl:Class ;
+    rdfs:label "Estatísticas de satisfação"@pt .
+
+obs:SocialControl a owl:Class ;
+    rdfs:label "Controle social"@pt .
+
+obs:StateMinister a owl:Class ;
+    rdfs:label "Ministro de estado"@pt .
+
+obs:GovernanceMethod a owl:Class ;
+    rdfs:label "Método de governo"@pt .
+
+obs:ParticipationInstance a owl:Class ;
+    rdfs:label "Instância de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:ParticipationInstanceOrMechanism a owl:Class ;
+    rdfs:label "Instância ou mecanismo de participação social"@pt .
+
+obs:SocialParticipation a owl:Class ;
+    rdfs:label "Participação social"@pt ;
+    rdfs:subClassOf obs:GovernanceMethod .
+
+obs:IndividualManifestation a owl:Class ;
+    rdfs:label "Manifestação individual"@pt .
+

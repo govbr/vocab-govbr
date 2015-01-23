@@ -1,0 +1,171 @@
+@prefix obs: <http://purl.org/socialparticipation/obs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+obs:AuditReport a owl:Class ;
+    rdfs:label "Relatório de auditoria"@pt ;
+    rdfs:subClassOf obs:ReferenceDocument .
+
+obs:Complaint a owl:Class ;
+    rdfs:label "Denúncia"@pt .
+
+obs:Coordinate a owl:Class ;
+    rdfs:label "Coordenação"@pt .
+
+obs:CouncilMinute a owl:Class ;
+    rdfs:label "Ata de conselho"@pt .
+
+obs:Demand a owl:Class ;
+    rdfs:label "Demanda"@pt .
+
+obs:DialogueTable a owl:Class ;
+    rdfs:label "Mesa de diálogo"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
+
+obs:ExecutiveOffice a owl:Class ;
+    rdfs:label "Secretaria executiva"@pt ;
+    rdfs:subClassOf obs:PublicAgency .
+
+obs:FederalProgram a owl:Class ;
+    rdfs:label "Programa federal"@pt .
+
+obs:Letter a owl:Class ;
+    rdfs:label "Carta"@pt ;
+    rdfs:subClassOf obs:ReferenceDocument .
+
+obs:Petition a owl:Class ;
+    rdfs:label "Requerimento"@pt ;
+    rdfs:subClassOf obs:ReferenceDocument .
+
+obs:PublicPolicy a owl:Class ;
+    rdfs:label "Política pública"@pt .
+
+obs:Regiment rdfs:subClassOf obs:ReferenceDocument .
+
+obs:SocialMovementOffice a owl:Class ;
+    rdfs:label "Ofício de movimento social"@pt .
+
+obs:WorkGroup a owl:Class ;
+    rdfs:label "Grupo de trabalho"@pt ;
+    rdfs:subClassOf obs:PublicAgency .
+
+obs:articulates a owl:ObjectProperty ;
+    rdfs:label "articula"@pt ;
+    rdfs:range obs:SGPR .
+
+obs:composition a owl:ObjectProperty ;
+    rdfs:label "composição"@pt,
+        "possui"@pt ;
+    rdfs:range obs:ManagementBody .
+
+obs:convenes a owl:ObjectProperty ;
+    rdfs:label "convoca"@pt ;
+    rdfs:range obs:SGPR .
+
+obs:coordinates a owl:ObjectProperty ;
+    rdfs:label "coordena"@pt ;
+    rdfs:range obs:SGPR .
+
+obs:creation a owl:ObjectProperty ;
+    rdfs:label "criação"@pt ;
+    rdfs:range obs:CreationOrdinance .
+
+obs:defines a owl:ObjectProperty ;
+    rdfs:label "define"@pt ;
+    rdfs:range obs:ConsensualCompromise .
+
+obs:delivers a owl:ObjectProperty ;
+    rdfs:label "entrega"@pt .
+
+obs:directs a owl:ObjectProperty ;
+    rdfs:label "orienta"@pt ;
+    rdfs:range obs:PublicAgency .
+
+obs:divulges a owl:ObjectProperty ;
+    rdfs:label "divulga"@pt ;
+    rdfs:range obs:SGPR .
+
+obs:includes a owl:ObjectProperty ;
+    rdfs:label "inclui"@pt .
+
+obs:iterate a owl:ObjectProperty ;
+    rdfs:label "itera"@pt ;
+    rdfs:range obs:ParticipationInstanceOrMechanism .
+
+obs:member a owl:ObjectProperty ;
+    rdfs:label "membro"@pt ;
+    rdfs:range obs:Participant .
+
+obs:membersChoiceMethod a owl:DatatypeProperty ;
+    rdfs:label "método de escolha dos membros"@pt ;
+    rdfs:range xsd:string .
+
+obs:organization a owl:ObjectProperty ;
+    rdfs:label "organização"@pt .
+
+obs:periodicity a owl:DatatypeProperty ;
+    rdfs:label "periodicidade"@pt .
+
+obs:permeates a owl:ObjectProperty ;
+    rdfs:label "permeia"@pt .
+
+obs:problem a owl:DatatypeProperty ;
+    rdfs:label "problema"@pt ;
+    rdfs:range xsd:string .
+
+obs:purpose a owl:DatatypeProperty ;
+    rdfs:label "propósito"@pt ;
+    rdfs:range xsd:string .
+
+obs:reason a owl:ObjectProperty ;
+    rdfs:label "motivo"@pt .
+
+obs:type a owl:ObjectProperty ;
+    rdfs:label "tipo"@pt ;
+    rdfs:range obs:GuidingMechanism .
+
+obs:ConsensualCompromise a owl:Class ;
+    rdfs:label "Compromisso consensual"@pt ;
+    rdfs:subClassOf obs:NormativeAct .
+
+obs:CreationOrdinance a owl:Class ;
+    rdfs:label "Portaria de criação"@pt ;
+    rdfs:subClassOf obs:NormativeOrdinance .
+
+obs:GuidingMechanism a owl:Class ;
+    rdfs:label "Mecanismo orientador"@pt .
+
+obs:ManagementBody a owl:Class ;
+    rdfs:label "Corpo gestor"@pt .
+
+obs:NormativeOrdinance a owl:Class ;
+    rdfs:label "Portaria normativa"@pt ;
+    rdfs:subClassOf obs:NormativeAct,
+        obs:ReferenceDocument .
+
+obs:Participant a owl:Class ;
+    rdfs:label "Participante"@pt .
+
+obs:ParticipationMechanism a owl:Class ;
+    rdfs:label "Mecanismo de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:NormativeAct a owl:Class ;
+    rdfs:label "Ato normativo"@pt .
+
+obs:ParticipationInstanceOrMechanism a owl:Class ;
+    rdfs:label "Instância ou mecanismo de participação social"@pt .
+
+obs:PublicAgency a owl:Class ;
+    rdfs:label "Órgão público"@pt .
+
+obs:SGPR a owl:Class ;
+    rdfs:label "SGPR"@pt ;
+    rdfs:comment "Secretaria-Geral da Presidência da República"@pt .
+
+obs:ReferenceDocument a owl:Class ;
+    rdfs:label "Documento de referência"@pt .
+
