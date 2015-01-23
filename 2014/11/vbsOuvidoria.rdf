@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/OmbudsmanAgency">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/ParticipationInstanceOrMechanism"/>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/OGU"/>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/OmbudsmanNationalSystem"/>
+    <skos:altLabel xml:lang="pt">Ouvidoria pública</skos:altLabel>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/SAC"/>
+    <skos:altLabel xml:lang="pt">Ouvidoria pública federal</skos:altLabel>
+    <skos:definition xml:lang="pt">instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública</skos:definition>
+    <skos:prefLabel xml:lang="pt">Ouvidoria</skos:prefLabel>
+    <skos:altLabel xml:lang="pt">Ouvidoria federal</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ParticipationInstance">
+    <skos:prefLabel xml:lang="pt">Instância de participação social</skos:prefLabel>
+    <skos:altLabel xml:lang="pt">Instância participativa</skos:altLabel>
+    <skos:altLabel xml:lang="pt">Instituição participativa</skos:altLabel>
+    <skos:related rdf:resource="http://purl.org/socialparticipation/vbs/ParticipationMechanism"/>
+    <skos:altLabel xml:lang="pt">Espaço participativo</skos:altLabel>
+    <skos:altLabel xml:lang="pt">Espaço de participação social</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Law">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/Act"/>
+    <skos:prefLabel xml:lang="pt">Lei</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/CivilControl">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/Control"/>
+    <skos:prefLabel xml:lang="pt">Controle civil</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ExternalControl">
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/Control"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Controle externo</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Suggestion">
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/Manifestation"/>
+    <skos:prefLabel xml:lang="pt">Sugestão</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/PassiveOmbudsmanAgency">
+    <skos:related rdf:resource="http://purl.org/socialparticipation/vbs/ActiveOmbudsmanAgency"/>
+    <skos:prefLabel xml:lang="pt">Ouvidoria passiva</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/OmbudsmanAgency"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Manifestation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/OmbudsmanAgency"/>
+    <skos:prefLabel xml:lang="pt">Manifestação</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Compliment">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/Manifestation"/>
+    <skos:prefLabel xml:lang="pt">Elogio</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/NotOrganizedCivilSociety">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/Participant"/>
+    <skos:prefLabel xml:lang="pt">Sociedade civil não organizada</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/IdentityReservation">
+    <skos:prefLabel xml:lang="pt">Reserva de identidade</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/PublicAgency">
+    <skos:prefLabel xml:lang="pt">Órgão público</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/IndirectPublicAdministrationAgency">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Órgão da administração pública indireta</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/PublicAgency"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Whistleblower">
+    <skos:prefLabel xml:lang="pt">Denunciante</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/Participant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Act">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Ato normativo</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Ordinance">
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/Act"/>
+    <skos:prefLabel xml:lang="pt">Portaria</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/AnonymousManifestation">
+    <skos:prefLabel xml:lang="pt">Manifestação anônima</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/OmbudsmanNationalSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Sistema Federal de Ouvidorias</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Contributor">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/Participant"/>
+    <skos:prefLabel xml:lang="pt">Contribuidor</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/PublicAdministrationAgency">
+    <skos:prefLabel xml:lang="pt">Órgão da administração pública</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/PublicAgency"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Complaint">
+    <skos:prefLabel xml:lang="pt">Reclamação</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/Manifestation"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Participant">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Participante</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Request">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/Manifestation"/>
+    <skos:prefLabel xml:lang="pt">Solicitação</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ActiveOmbudsmanAgency">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Ouvidoria ativa</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/OmbudsmanAgency"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ParticipationInstanceOrMechanism">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Instância ou mecanismo de participação social</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Ombudsman">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Ouvidor</skos:prefLabel>
+    <skos:related rdf:resource="http://purl.org/socialparticipation/vbs/OmbudsmanAgency"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/SAC">
+    <skos:prefLabel xml:lang="pt">SAC (Sistema de Atendimento ao Cidadão)</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Client">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/Participant"/>
+    <skos:prefLabel xml:lang="pt">Cliente</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Secretariat">
+    <skos:prefLabel xml:lang="pt">Secretaria</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/Ministry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/InternalControl">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Controle interno</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/Control"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Denunciation">
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/Manifestation"/>
+    <skos:prefLabel xml:lang="pt">Denúncia</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/OGU">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">OGU (Ouvidoria Geral da União)</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Rioter">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Manifestante</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/Participant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/LAI">
+    <skos:prefLabel xml:lang="pt">LAI (Lei de Acesso à Informação)</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Ministry">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Ministério</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Control">
+    <skos:prefLabel xml:lang="pt">Controle</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ParticipationMechanism">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Mecanismo de participação social</skos:prefLabel>
+  </rdf:Description>
+</rdf:RDF>

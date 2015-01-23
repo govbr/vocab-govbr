@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaParticipacaoSocial">
+    <skos:prefLabel xml:lang="pt">Participação social</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaPoliticasPublicasParaOIdoso">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Políticas públicas para o idoso</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaCasasLaresParaCriancasEAdolescentes">
+    <skos:prefLabel xml:lang="pt">Casas-lares para crianças e adolescentes</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaSistemaEleitoral">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Sistema eleitoral</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaDesigualdadesRegionais">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Desigualdades regionais</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaProgramasSociais">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Programas sociais</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaValoresSociais">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Valores sociais</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaAudienciasPublicas">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Audiências públicas</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaGruposSociaisMinoritarios">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Grupos sociais minoritários</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaAreasDeConcentracao">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Áreas de concentração</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaConselhosDePoliticasPublicas">
+    <skos:prefLabel xml:lang="pt">Conselhos de políticas públicas</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaFavelas">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Favelas</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaCodefat">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Conselho Deliberativo do Fundo de Amparo ao Trabalhador (Codefat)</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaSegurancaPublica">
+    <skos:prefLabel xml:lang="pt">Segurança Pública</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaEstatutoPolitico">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Estatuto político</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaRegrasEleitorais">
+    <skos:prefLabel xml:lang="pt">Regras eleitorais</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaProgramaBolsaFamilia">
+    <skos:prefLabel xml:lang="pt">Programa Bolsa Família</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaApoioMonetarioAInfancia">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Apoio monetário à infância</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaDeficitPublico">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Déficit público</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaDesigualdadeDeRenda">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Desigualdade de renda</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaDiscriminacaoDeGenero">
+    <skos:prefLabel xml:lang="pt">Discriminação de gênero</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaPoliticasParticipativas">
+    <skos:prefLabel xml:lang="pt">Políticas participativas</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaRepresentacaoPolitica">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Representação política</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaAnaliseHistorica">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Análise histórica</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaSituacoesProblemaQueCarecemDeAcoesColetivas">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Situações-problema que carecem de ações coletivas</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaTempoDeTrabalho">
+    <skos:prefLabel xml:lang="pt">Tempo de trabalho</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaTransporteUrbano">
+    <skos:prefLabel xml:lang="pt">Transporte urbano</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaGastoGovernamental">
+    <skos:prefLabel xml:lang="pt">Gasto governamental</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaCondicoesDeVida">
+    <skos:prefLabel xml:lang="pt">Condições de vida</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaOrganizacoesDaSociedadeCivil">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Organizações da Sociedade Civil</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaDemandasSociais">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Demandas sociais</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaProcessoOrcamentario">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Processo orçamentário</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaAcaoPolicial">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Ação policial</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaMarketingSocial">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Marketing social</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaSistemaPoliticoEleitoral">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Sistema político-eleitoral</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaPoliticaFiscal">
+    <skos:prefLabel xml:lang="pt">Política fiscal</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaPluralidade">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Pluralidade</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaEstruturaDeClasses">
+    <skos:prefLabel xml:lang="pt">Estrutura de classes</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaConselhosFederaisDePoliticaSocial">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Conselhos federais de política social</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaReformaOrcamentaria">
+    <skos:prefLabel xml:lang="pt">Reforma orçamentária</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaConselhosMunicipais">
+    <skos:prefLabel xml:lang="pt">Conselhos Municipais</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaParticipacaoDaSociedadeCivil">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Participação da sociedade civil</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaTraficoEscravistaPernambucano">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Tráfico escravista pernambucano</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaConferenciasDePoliticasPublicas">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Conferências de políticas públicas</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaCasamento">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Casamento</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaBeneficiosPrevidenciarios">
+    <skos:prefLabel xml:lang="pt">Benefícios previdenciários</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaTempoDeViagem">
+    <skos:prefLabel xml:lang="pt">Tempo de viagem</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaPoliticasPublicas">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Políticas públicas</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaConselhoNacionalDeSegurancaPublica">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Conselho Nacional de Segurança Pública</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaHomicidios">
+    <skos:prefLabel xml:lang="pt">Homicídios</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaDemocraciaParticipativa">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Democracia participativa</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaKeyword">
+    <skos:prefLabel xml:lang="pt">keyword</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaConferenciasNacionais">
+    <skos:prefLabel xml:lang="pt">Conferências nacionais</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaBeneficioInfantilUniversal">
+    <skos:prefLabel xml:lang="pt">Benefício infantil universal</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaViolenciaUrbana">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Violência Urbana</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaAcaoColetiva">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Ação coletiva</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaSociedadeCivil">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Sociedade civil</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaTrabalho">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Trabalho</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaExtremamentePobres">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Extremamente pobres</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaEcaEstatutoDaCriancaEDoAdolescente">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">ECA - Estatuto da Criança e do Adolescente</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaIndiceDeVulnerabilidade">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Índice de Vulnerabilidade</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaPoderLegislativo">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Poder Legislativo</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaPobreza">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Pobreza</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaPopulacaoIdosa">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">População idosa</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaCotas">
+    <skos:prefLabel xml:lang="pt">Cotas</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaDesigualdadesRaciais">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Desigualdades raciais</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaViolenciaLetal">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Violência letal</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaConferenciaNacionalDeSegurancaPublica">
+    <skos:prefLabel xml:lang="pt">Conferência Nacional de Segurança Pública</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaBolsaFamilia">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Bolsa família</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaDireitosHumanos">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Direitos humanos</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaDiscriminacaoRacial">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Discriminação racial</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaAbrigosParaCriancasEAdolescentes">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Abrigos para crianças e adolescentes</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaMensuracaoDaPobreza">
+    <skos:prefLabel xml:lang="pt">Mensuração da pobreza</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaCuidadosDeLongaDuracao">
+    <skos:prefLabel xml:lang="pt">Cuidados de longa duração</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaDadosEstatisticos">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Dados estatísticos</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaConselhosNacionais">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Conselhos nacionais</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaRegulamentacao">
+    <skos:prefLabel xml:lang="pt">Regulamentação</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaBemEstarSocial">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Bem-estar social</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaDesproporcionalidadeEleitoral">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Desproporcionalidade eleitoral</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaOrcamentoPublico">
+    <skos:prefLabel xml:lang="pt">Orçamento público</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaDeslocamentoUrbano">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Deslocamento urbano</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaReferencialRepublicano">
+    <skos:prefLabel xml:lang="pt">Referencial republicano</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaIdosos">
+    <skos:prefLabel xml:lang="pt">Idosos</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaCooperacaoVersusDesercao">
+    <skos:prefLabel xml:lang="pt">Cooperação versus deserção</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaTraficoDeEscravos">
+    <skos:prefLabel xml:lang="pt">Tráfico de escravos</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaRendaMinima">
+    <skos:prefLabel xml:lang="pt">Renda mínima</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaOrfanatos">
+    <skos:prefLabel xml:lang="pt">Orfanatos</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaQualidadeDeVida">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Qualidade de vida</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaEspacosParticipativos">
+    <skos:prefLabel xml:lang="pt">Espaços participativos</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaDeterminantesEconomicas">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Determinantes econômicas</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaChoquesPositivosDeRenda">
+    <skos:prefLabel xml:lang="pt">Choques positivos de renda</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaEducandarios">
+    <skos:prefLabel xml:lang="pt">Educandários</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaCombateAProbreza">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Combate à probreza</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaAvaliacaoDaParticipacaoSocial">
+    <skos:prefLabel xml:lang="pt">Avaliação da participação social</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaInstituicoesParticipativas">
+    <skos:prefLabel xml:lang="pt">Instituições participativas</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaSuicidio">
+    <skos:prefLabel xml:lang="pt">Suicídio</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaTempoLivre">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Tempo livre</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaPobrezaExtrema">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Pobreza extrema</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaPoliticaDeDireitosHumanos">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Política de direitos humanos</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaMarketingDeSetorPublico">
+    <skos:prefLabel xml:lang="pt">Marketing de setor público</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaGastosSociais">
+    <skos:prefLabel xml:lang="pt">Gastos sociais</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaViolencia">
+    <skos:prefLabel xml:lang="pt">Violência</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaProgramasGovernamentais">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Programas governamentais</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaCidadania">
+    <skos:prefLabel xml:lang="pt">Cidadania</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaProgramaDeGarantiaDeRendaMinima">
+    <skos:prefLabel xml:lang="pt">Programa de Garantia de Renda Mínima</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaVulnerabilidade">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Vulnerabilidade</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaGestaoDePoliticasPublicas">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Gestão de políticas públicas</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaPoliticaNacionalDaJuventude">
+    <skos:prefLabel xml:lang="pt">Política Nacional da Juventude</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaDesigualdadeSalarial">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Desigualdade salarial</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaPoliticasSetoriais">
+    <skos:prefLabel xml:lang="pt">Políticas setoriais</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaEstruturaSocial">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Estrutura social</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaPNRS">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Plano Nacional de Resíduos Sólidos (PNRS)</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaMortesViolentas">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Mortes Violentas</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaSIM">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Sistema de Informação sobre Mortalidade (SIM)</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaJogosDoDilemaDosPrisioneiros">
+    <skos:prefLabel xml:lang="pt">Jogos do dilema dos prisioneiros</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaHomicidiosOcultos">
+    <skos:prefLabel xml:lang="pt">Homicídios Ocultos</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaProjetoDemocraticoParticipativo">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Projeto Democrático-Participativo</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaDesigualdadesDeGenero">
+    <skos:prefLabel xml:lang="pt">Desigualdades de gênero</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaParticipacaoPolitica">
+    <skos:prefLabel xml:lang="pt">Participação política</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaProtecaoSocial">
+    <skos:prefLabel xml:lang="pt">Proteção social</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaInfancia">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Infância</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaRepresentacaoPoliticaDasMinorias">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Representação política das minorias</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaErradicacaoDaPobreza">
+    <skos:prefLabel xml:lang="pt">Erradicação da pobreza</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaMoralidade">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Moralidade</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaNecessidadesDeFinanciamentoDoSetorPublico">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Necessidades de Financiamento do Setor Público</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaSalarioFamilia">
+    <skos:prefLabel xml:lang="pt">Salário família</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaMecanismosComportamentaisESociais">
+    <skos:prefLabel xml:lang="pt">Mecanismos comportamentais e sociais</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaNovaClasseMediaBrasileira">
+    <skos:prefLabel xml:lang="pt">Nova classe média brasileira</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaControleSocialOrcamentario">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Controle social orçamentário</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaAssistenciaSocial">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Assistência social</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaMulheres">
+    <skos:prefLabel xml:lang="pt">Mulheres</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaCorrecaoDeSelecaoNaoParametrica">
+    <skos:prefLabel xml:lang="pt">Correção de seleção não paramétrica</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaJuventude">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Juventude</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaParticipacao">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Participação</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaInclusaoDasMinorias">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Inclusão das minorias</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaArranjoFisicoDoEspacoPublico">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Arranjo físico do espaço público</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaInstitucionalizacaoDaParticipacao">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Institucionalização da participação</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaProgramasSetoriais">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Programas setoriais</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaEscravismo">
+    <skos:prefLabel xml:lang="pt">Escravismo</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaPoliticasSociais">
+    <skos:prefLabel xml:lang="pt">Políticas sociais</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaFelicidade">
+    <skos:prefLabel xml:lang="pt">Felicidade</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ipeaImpunidade">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Impunidade</skos:prefLabel>
+  </rdf:Description>
+</rdf:RDF>

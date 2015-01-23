@@ -1,0 +1,43 @@
+@prefix obs: <http://purl.org/socialparticipation/obs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+obs:ConferenceMethodology a owl:Class ;
+    rdfs:label "Metodologia de consulta"@pt .
+
+obs:InteractionZone a owl:Class ;
+    rdfs:label "Zona de interação"@pt .
+
+obs:ParticipativeMoment a owl:Class ;
+    rdfs:label "Momento participativo"@pt .
+
+obs:PublicConsultation a owl:Class ;
+    rdfs:label "Consulta pública"@pt .
+
+obs:Theme a owl:Class ;
+    rdfs:label "Tema"@pt .
+
+obs:event a owl:ObjectProperty ;
+    rdfs:label "evento"@pt .
+
+obs:has a owl:ObjectProperty ;
+    rdfs:label "possui"@pt .
+
+obs:interface a owl:ObjectProperty ;
+    rdfs:label "interface"@pt .
+
+obs:methodology a owl:ObjectProperty ;
+    rdfs:label "metodologia"@pt .
+
+obs:phrase a owl:DatatypeProperty ;
+    rdfs:label "frase de referência"@pt ;
+    rdfs:comment "frase de referência do tema da consulta"@pt ;
+    rdfs:range xsd:string .
+
+obs:thematicAxes a owl:DatatypeProperty ;
+    rdfs:label "eixos temáticos"@pt ;
+    rdfs:range xsd:string .
+

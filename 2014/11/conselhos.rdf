@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:obs="http://purl.org/socialparticipation/obs/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CNPC">
+    <obs:meetingsFrequency>Consultivo</obs:meetingsFrequency>
+    <obs:regulationAct>Portaria 28 de 19/03/2010 </obs:regulationAct>
+    <obs:creationAct>Decreto 5.520 de 24/08/2005 </obs:creationAct>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.534482</obs:civilSocietyRepresentativesProportion>
+    <obs:disposition>Consultivo</obs:disposition>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.465517</obs:governmentRepresentativesProportion>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:conferencesCount>Duas edições</obs:conferencesCount>
+    <obs:linkedAgency>Ministério da cultura</obs:linkedAgency>
+    <obs:internalGovernanceBodyMemberCriterion>Titulares do poder público</obs:internalGovernanceBodyMemberCriterion>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</obs:governmentMembersCount>
+    <obs:thematicArea>Políticas sociais</obs:thematicArea>
+    <obs:presidencySelectionMethod>A(o) Ministra(o) é a(o) presidenta(e)</obs:presidencySelectionMethod>
+    <obs:abbreviation>CNPC</obs:abbreviation>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</obs:civilSocietyMembersCount>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:presidentialQualityVote>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:parity>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:adReferendumDecisions>
+    <obs:agendaPreparation>Órgão de governança</obs:agendaPreparation>
+    <obs:civilSocietySelectionMethod>Outro</obs:civilSocietySelectionMethod>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2005</obs:yearCreated>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</obs:membersCount>
+    <obs:creationActType>Decreto</obs:creationActType>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:limitedMandate>
+    <obs:internalGovernanceBodyName>Comitê de integração de política cultural </obs:internalGovernanceBodyName>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:internalGovernanceBody>
+    <obs:name>Conselho Nacional de Política Cultural </obs:name>
+    <obs:policy>Plano nacional de Cultura </obs:policy>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+    <obs:linkedPolicy>Política ou Plano nacional</obs:linkedPolicy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CNS">
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.833333</obs:civilSocietyRepresentativesProportion>
+    <obs:linkedAgency>Ministério da saúde</obs:linkedAgency>
+    <obs:thematicArea>Políticas sociais</obs:thematicArea>
+    <obs:policy>SUS </obs:policy>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.166666</obs:governmentRepresentativesProportion>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</obs:governmentMembersCount>
+    <obs:presidencySelectionMethod>Eleições internas</obs:presidencySelectionMethod>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</obs:membersCount>
+    <obs:conferencesCount>Quatro edições ou mais</obs:conferencesCount>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:parity>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:presidentialQualityVote>
+    <obs:creationActType>Lei</obs:creationActType>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <obs:regulationAct>RESOLUÇÃO nº 407, DE 12 DE SETEMBRO DE 2008 </obs:regulationAct>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:adReferendumDecisions>
+    <obs:internalGovernanceBodyMemberCriterion>Representantes de cada segmento</obs:internalGovernanceBodyMemberCriterion>
+    <obs:name>Conselho Nacional de Saúde </obs:name>
+    <obs:creationAct>Lei 8.142 de 28/12/1990 </obs:creationAct>
+    <obs:disposition>Deliberativo</obs:disposition>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:civilSocietySelectionMethod>Eleições</obs:civilSocietySelectionMethod>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:internalGovernanceBody>
+    <obs:meetingsFrequency>Deliberativo</obs:meetingsFrequency>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1990</obs:yearCreated>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</obs:civilSocietyMembersCount>
+    <obs:abbreviation>CNS</obs:abbreviation>
+    <obs:linkedPolicy>Sistema</obs:linkedPolicy>
+    <obs:agendaPreparation>Órgão de governança</obs:agendaPreparation>
+    <obs:internalGovernanceBodyName>Mesa diretora </obs:internalGovernanceBodyName>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:limitedMandate>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CONAETI">
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</obs:governmentMembersCount>
+    <obs:regulationAct>Regimento Interno </obs:regulationAct>
+    <obs:presidencySelectionMethod>Titular específico de um cargo</obs:presidencySelectionMethod>
+    <obs:civilSocietySelectionMethod>Estabelecido no regimento</obs:civilSocietySelectionMethod>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</obs:membersCount>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:limitedMandate>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:presidentialQualityVote>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:internalGovernanceBody>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2003</obs:yearCreated>
+    <obs:linkedAgency>Ministério do trabalho</obs:linkedAgency>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:adReferendumDecisions>
+    <obs:thematicArea>Políticas sociais</obs:thematicArea>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:creationActType>Portaria</obs:creationActType>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:conference>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.60606</obs:governmentRepresentativesProportion>
+    <obs:name>Comissão Nacional de Erradicação do Trabalho Infantil </obs:name>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:meetingsFrequency>Sem informação</obs:meetingsFrequency>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:parity>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</obs:civilSocietyMembersCount>
+    <obs:creationAct>Portaria MTE nº. 952, de 08 de julho de 2003 </obs:creationAct>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.393939</obs:civilSocietyRepresentativesProportion>
+    <obs:abbreviation>CONAETI</obs:abbreviation>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CDDPH">
+    <obs:regulationAct>LEI No 4.319, DE 16 DE MARÇO DE 1964 </obs:regulationAct>
+    <obs:conferencesCount>Quatro edições ou mais</obs:conferencesCount>
+    <obs:name>Conselho de Defesa dos Direitos da Pessoa Humana </obs:name>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</obs:governmentMembersCount>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <obs:presidencySelectionMethod>A(o) Ministra(o) é a(o) presidenta(e)</obs:presidencySelectionMethod>
+    <obs:linkedAgency>Secretaria de direitos humanos da presidência da república</obs:linkedAgency>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:parity>
+    <obs:creationAct>LEI No 4.319, DE 16 DE MARÇO DE 1964 </obs:creationAct>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</obs:civilSocietyMembersCount>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.384615</obs:civilSocietyRepresentativesProportion>
+    <obs:civilSocietySelectionMethod>Estabelecido no regimento</obs:civilSocietySelectionMethod>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:limitedMandate>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1964</obs:yearCreated>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</obs:membersCount>
+    <obs:abbreviation>CDDPH</obs:abbreviation>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:internalGovernanceBody>
+    <obs:thematicArea>Políticas sociais</obs:thematicArea>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.615384</obs:governmentRepresentativesProportion>
+    <obs:linkedPolicy>Política ou Plano nacional</obs:linkedPolicy>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+    <obs:meetingsFrequency>Sem informação</obs:meetingsFrequency>
+    <obs:creationActType>Lei</obs:creationActType>
+    <obs:policy>PNDH </obs:policy>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CONDRAF">
+    <obs:abbreviation>CONDRAF</obs:abbreviation>
+    <obs:conferencesCount>Uma edição</obs:conferencesCount>
+    <obs:civilSocietySelectionMethod>Indicado pelo ministro</obs:civilSocietySelectionMethod>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</obs:civilSocietyMembersCount>
+    <obs:meetingsFrequency>Deliberativo</obs:meetingsFrequency>
+    <obs:agendaPreparation>Secretaria Executiva</obs:agendaPreparation>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:presidentialQualityVote>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</obs:governmentRepresentativesProportion>
+    <obs:regulationAct>Resolução nº 35 de 10 de janeiro de 2004 </obs:regulationAct>
+    <obs:thematicArea>Desenvolvimento econômico</obs:thematicArea>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:adReferendumDecisions>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:internalGovernanceBody>
+    <obs:linkedAgency>Ministério do desenvolvimento agrário</obs:linkedAgency>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</obs:governmentMembersCount>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</obs:civilSocietyRepresentativesProportion>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:limitedMandate>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:parity>
+    <obs:creationAct>DECRETO Nº 4.854, DE 8 DE OUTUBRO DE 2003 </obs:creationAct>
+    <obs:creationActType>Decreto</obs:creationActType>
+    <obs:name>Conselho Nacional de Desenvolvimento Rural Sustentável </obs:name>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2003</obs:yearCreated>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</obs:membersCount>
+    <obs:presidencySelectionMethod>A(o) Ministra(o) é a(o) presidenta(e)</obs:presidencySelectionMethod>
+    <obs:disposition>Deliberativo</obs:disposition>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CONADE">
+    <obs:internalGovernanceBodyMemberCriterion>Presidente das comissões</obs:internalGovernanceBodyMemberCriterion>
+    <obs:civilSocietySelectionMethod>Eleições</obs:civilSocietySelectionMethod>
+    <obs:policy>Lei n 7853 de 24 de outubro 1989 </obs:policy>
+    <obs:creationAct>Decreto nº 3.298, de 20 de dezembro de 1999 </obs:creationAct>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:parity>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+    <obs:linkedPolicy>Estatuto</obs:linkedPolicy>
+    <obs:linkedAgency>Secretaria de direitos humanos da presidência da república</obs:linkedAgency>
+    <obs:creationActType>Decreto</obs:creationActType>
+    <obs:internalGovernanceBodyName>Presidência Ampliada </obs:internalGovernanceBodyName>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1999</obs:yearCreated>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</obs:civilSocietyRepresentativesProportion>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</obs:civilSocietyMembersCount>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:adReferendumDecisions>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</obs:governmentRepresentativesProportion>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</obs:governmentMembersCount>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:internalGovernanceBody>
+    <obs:name>Conselho Nacional dos Direitos da Pessoa Portadora de Deficiência </obs:name>
+    <obs:meetingsFrequency>Deliberativo</obs:meetingsFrequency>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:thematicArea>Políticas sociais</obs:thematicArea>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:limitedMandate>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</obs:membersCount>
+    <obs:disposition>Deliberativo</obs:disposition>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:presidentialQualityVote>
+    <obs:agendaPreparation>Secretaria Executiva</obs:agendaPreparation>
+    <obs:regulationAct>RESOLUÇÃO N o 35, DE 6 DE JULHO DE 2005 </obs:regulationAct>
+    <obs:abbreviation>CONADE</obs:abbreviation>
+    <obs:conferencesCount>Duas edições</obs:conferencesCount>
+    <obs:presidencySelectionMethod>Eleições internas</obs:presidencySelectionMethod>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CNPIR">
+    <obs:disposition>Consultivo</obs:disposition>
+    <obs:linkedAgency>Secretaria de promoção da igualdade racial</obs:linkedAgency>
+    <obs:presidencySelectionMethod>A(o) Ministra(o) é a(o) presidenta(e)</obs:presidencySelectionMethod>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2003</obs:yearCreated>
+    <obs:creationActType>Decreto</obs:creationActType>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:internalGovernanceBody>
+    <obs:policy>PNPIR </obs:policy>
+    <obs:meetingsFrequency>Consultivo</obs:meetingsFrequency>
+    <obs:linkedPolicy>Política ou Plano nacional</obs:linkedPolicy>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <obs:conferencesCount>Duas edições</obs:conferencesCount>
+    <obs:name>Conselho Nacional de Promoção da Igualdade Racial </obs:name>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:abbreviation>CNPIR</obs:abbreviation>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</obs:governmentRepresentativesProportion>
+    <obs:agendaPreparation>Secretaria Executiva</obs:agendaPreparation>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</obs:civilSocietyMembersCount>
+    <obs:creationAct>DECRETO Nº 4.885, DE 20 DE NOVEMBRO DE 2003. </obs:creationAct>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</obs:civilSocietyRepresentativesProportion>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:presidentialQualityVote>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</obs:membersCount>
+    <obs:thematicArea>Garantia de direitos</obs:thematicArea>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</obs:governmentMembersCount>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:adReferendumDecisions>
+    <obs:civilSocietySelectionMethod>Escolhido em processo seletivo</obs:civilSocietySelectionMethod>
+    <obs:regulationAct>RESOLUÇÃO Nº 1, DE 7 DE NOVEMBRO DE 2005 </obs:regulationAct>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:parity>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:limitedMandate>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CNPCT">
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:internalGovernanceBody>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:presidentialQualityVote>
+    <obs:agendaPreparation>Presidência</obs:agendaPreparation>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</obs:membersCount>
+    <obs:abbreviation>CNPCT</obs:abbreviation>
+    <obs:meetingsFrequency>Deliberativo</obs:meetingsFrequency>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:limitedMandate>
+    <obs:regulationAct>PORTARIA Nº 86, DE 12 DE MARÇO DE 2008 </obs:regulationAct>
+    <obs:linkedPolicy>Política ou Plano nacional</obs:linkedPolicy>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</obs:civilSocietyRepresentativesProportion>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:conference>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <obs:civilSocietySelectionMethod>Estabelecido no regimento</obs:civilSocietySelectionMethod>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2006</obs:yearCreated>
+    <obs:name>Comissão Nacional de Desenvolvimento Sustentável dos Povos e Comunidades Tradicionais </obs:name>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:adReferendumDecisions>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:parity>
+    <obs:linkedAgency>Ministério do desenvolvimento social</obs:linkedAgency>
+    <obs:creationAct>DECRETO DE 13 DE JULHO DE 2006 </obs:creationAct>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</obs:governmentRepresentativesProportion>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</obs:governmentMembersCount>
+    <obs:thematicArea>Garantia de direitos</obs:thematicArea>
+    <obs:creationActType>Decreto</obs:creationActType>
+    <obs:disposition>Deliberativo</obs:disposition>
+    <obs:policy>Política Nacional de Desenvolvimento Sustentável dos Povos e Comunidades Tradicionais </obs:policy>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</obs:civilSocietyMembersCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CNES">
+    <obs:creationActType>Decreto</obs:creationActType>
+    <obs:presidencySelectionMethod>A(o) Ministra(o) é a(o) presidenta(e)</obs:presidencySelectionMethod>
+    <obs:name>Conselho Nacional de Economia Solidária </obs:name>
+    <obs:civilSocietySelectionMethod>Estabelecido no regimento</obs:civilSocietySelectionMethod>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.339285</obs:governmentRepresentativesProportion>
+    <obs:conferencesCount>Duas edições</obs:conferencesCount>
+    <obs:agendaPreparation>Órgão de governança</obs:agendaPreparation>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.660714</obs:civilSocietyRepresentativesProportion>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</obs:civilSocietyMembersCount>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:limitedMandate>
+    <obs:policy>Programa Economia Solidária em Desenvolvimento </obs:policy>
+    <obs:disposition>Consultivo</obs:disposition>
+    <obs:regulationAct>Resolução nº1 de 7 de dezembro de 2006. </obs:regulationAct>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:parity>
+    <obs:linkedAgency>Ministério do trabalho</obs:linkedAgency>
+    <obs:linkedPolicy>Política ou Plano nacional</obs:linkedPolicy>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2003</obs:yearCreated>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:adReferendumDecisions>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</obs:governmentMembersCount>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</obs:membersCount>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:internalGovernanceBody>
+    <obs:internalGovernanceBodyName>Comitê Permanente </obs:internalGovernanceBodyName>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:presidentialQualityVote>
+    <obs:meetingsFrequency>Consultivo</obs:meetingsFrequency>
+    <obs:creationAct>DECRETO Nº 5.811, DE 21 DE JUNHO DE 2006 </obs:creationAct>
+    <obs:thematicArea>Desenvolvimento econômico</obs:thematicArea>
+    <obs:internalGovernanceBodyMemberCriterion>Eleições</obs:internalGovernanceBodyMemberCriterion>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:abbreviation>CNES</obs:abbreviation>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CNDM">
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</obs:governmentMembersCount>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:abbreviation>CNDM</obs:abbreviation>
+    <obs:civilSocietySelectionMethod>Escolhido em processo seletivo</obs:civilSocietySelectionMethod>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:reformulationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2008</obs:reformulationYear>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:internalGovernanceBody>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:presidentialQualityVote>
+    <obs:presidencySelectionMethod>A(o) Ministra(o) é a(o) presidenta(e)</obs:presidencySelectionMethod>
+    <obs:reformulationActType>Decreto</obs:reformulationActType>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6</obs:civilSocietyRepresentativesProportion>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:limitedMandate>
+    <obs:linkedPolicy>Política ou Plano nacional</obs:linkedPolicy>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1985</obs:yearCreated>
+    <obs:disposition>Deliberativo</obs:disposition>
+    <obs:creationAct>Lei no 7.353, de 29 de agosto de 1985 </obs:creationAct>
+    <obs:internalGovernanceBodyName>Coordenação Política </obs:internalGovernanceBodyName>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:adReferendumDecisions>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</obs:membersCount>
+    <obs:reformulationAct rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">DECRETO Nº 6.412, DE 25 DE MARÇO DE 2008 </obs:reformulationAct>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+    <obs:thematicArea>Garantia de direitos</obs:thematicArea>
+    <obs:internalGovernanceBodyMemberCriterion>Presidente das comissões</obs:internalGovernanceBodyMemberCriterion>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:parity>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</obs:civilSocietyMembersCount>
+    <obs:conferencesCount>Três edições</obs:conferencesCount>
+    <obs:agendaPreparation>Secretaria Executiva</obs:agendaPreparation>
+    <obs:linkedAgency>Secretaria de políticas para mulheres</obs:linkedAgency>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.4</obs:governmentRepresentativesProportion>
+    <obs:meetingsFrequency>Deliberativo</obs:meetingsFrequency>
+    <obs:name>Conselho Nacional dos Direitos da Mulher </obs:name>
+    <obs:policy>PNPM </obs:policy>
+    <obs:regulationAct>Regimento Interno </obs:regulationAct>
+    <obs:creationActType>Lei</obs:creationActType>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:reformulation>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CNRH">
+    <obs:policy>SISNAMA </obs:policy>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:parity>
+    <obs:conferencesCount>Tres edições</obs:conferencesCount>
+    <obs:linkedPolicy>Sistema</obs:linkedPolicy>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:limitedMandate>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.68421</obs:governmentRepresentativesProportion>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:presidentialQualityVote>
+    <obs:linkedAgency>Ministério do meio ambiente</obs:linkedAgency>
+    <obs:civilSocietySelectionMethod>Outro</obs:civilSocietySelectionMethod>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</obs:civilSocietyMembersCount>
+    <obs:disposition>Deliberativo</obs:disposition>
+    <obs:regulationAct>Decreto 2.612 de 03/06/1998 revogado pelo decreto 4.613 de 11/03/2003 </obs:regulationAct>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:internalGovernanceBody>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.315789</obs:civilSocietyRepresentativesProportion>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</obs:governmentMembersCount>
+    <obs:presidencySelectionMethod>A(o) Ministra(o) é a(o) presidenta(e)</obs:presidencySelectionMethod>
+    <obs:creationAct>Lei 9.433 de 08/01/1997 </obs:creationAct>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1997</obs:yearCreated>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:adReferendumDecisions>
+    <obs:creationActType>Lei</obs:creationActType>
+    <obs:abbreviation>CNRH</obs:abbreviation>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:meetingsFrequency>Deliberativo</obs:meetingsFrequency>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <obs:name>Conselho Nacional de Recursos Hídricos </obs:name>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">57</obs:membersCount>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:agendaPreparation>Secretaria Executiva</obs:agendaPreparation>
+    <obs:thematicArea>Infraestrutura e recursos naturais</obs:thematicArea>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CNCD">
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</obs:civilSocietyMembersCount>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</obs:membersCount>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:reformulation>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+    <obs:regulationAct>Portaria nº 524, de 29 de março de 2011 </obs:regulationAct>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</obs:governmentRepresentativesProportion>
+    <obs:civilSocietySelectionMethod>Escolhido em processo seletivo</obs:civilSocietySelectionMethod>
+    <obs:disposition>Deliberativo</obs:disposition>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:linkedPolicy>Política ou Plano nacional</obs:linkedPolicy>
+    <obs:name>Conselho Nacional de Combate à Discriminação </obs:name>
+    <obs:reformulationAct rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">Decreto n° 7.388,de 09 dezembro de 2010 </obs:reformulationAct>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</obs:yearCreated>
+    <obs:thematicArea>Garantia de direitos</obs:thematicArea>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:parity>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:presidentialQualityVote>
+    <obs:creationActType>Decreto</obs:creationActType>
+    <obs:presidencySelectionMethod>Eleições internas</obs:presidencySelectionMethod>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:limitedMandate>
+    <obs:conferencesCount>Duas edições</obs:conferencesCount>
+    <obs:linkedAgency>Secretaria de direitos humanos da presidência da república</obs:linkedAgency>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:meetingsFrequency>Deliberativo</obs:meetingsFrequency>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</obs:governmentMembersCount>
+    <obs:policy>PNLGBT </obs:policy>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:adReferendumDecisions>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:reformulationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</obs:reformulationYear>
+    <obs:reformulationActType>Decreto</obs:reformulationActType>
+    <obs:creationAct>DECRETO Nº 3.952, DE 4 DE OUTUBRO DE 2001. </obs:creationAct>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</obs:civilSocietyRepresentativesProportion>
+    <obs:abbreviation>CNCD</obs:abbreviation>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:internalGovernanceBody>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CNPS">
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:conference>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.4</obs:governmentRepresentativesProportion>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:parity>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:adReferendumDecisions>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:linkedAgency>Ministério da previdência social</obs:linkedAgency>
+    <obs:creationAct>Lei nº 8.213, de 24 de julho de 1991 </obs:creationAct>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:presidentialQualityVote>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:limitedMandate>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</obs:governmentMembersCount>
+    <obs:creationActType>Lei</obs:creationActType>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</obs:civilSocietyMembersCount>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</obs:membersCount>
+    <obs:abbreviation>CNPS</obs:abbreviation>
+    <obs:thematicArea>Políticas sociais</obs:thematicArea>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:internalGovernanceBody>
+    <obs:disposition>Deliberativo</obs:disposition>
+    <obs:regulationAct>RESOLUÇÃO Nº 1.212, DE 10 DE ABRIL DE 2002. – Regimento Interno </obs:regulationAct>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1991</obs:yearCreated>
+    <obs:name>Conselho Nacional de Previdência Social </obs:name>
+    <obs:presidencySelectionMethod>A(o) Ministra(o) é a(o) presidenta(e)</obs:presidencySelectionMethod>
+    <obs:meetingsFrequency>Deliberativo</obs:meetingsFrequency>
+    <obs:civilSocietySelectionMethod>Estabelecido no regimento</obs:civilSocietySelectionMethod>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6</obs:civilSocietyRepresentativesProportion>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CONSEA">
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2003</obs:yearCreated>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:limitedMandate>
+    <obs:linkedAgency>Presidência da república</obs:linkedAgency>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</obs:governmentMembersCount>
+    <obs:policy>SISAN </obs:policy>
+    <obs:regulationAct>Portaria nº 960, de 10 de dezembro de 2004 </obs:regulationAct>
+    <obs:abbreviation>CONSEA</obs:abbreviation>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</obs:civilSocietyMembersCount>
+    <obs:presidencySelectionMethod>Eleições internas</obs:presidencySelectionMethod>
+    <obs:meetingsFrequency>Consultivo</obs:meetingsFrequency>
+    <obs:conferencesCount>Quatro edições ou mais</obs:conferencesCount>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.333333</obs:governmentRepresentativesProportion>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:presidentialQualityVote>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:adReferendumDecisions>
+    <obs:linkedPolicy>Sistema</obs:linkedPolicy>
+    <obs:disposition>Consultivo</obs:disposition>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">57</obs:membersCount>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <obs:name>Conselho Nacional de Segurança Alimentar e Nutricional </obs:name>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:parity>
+    <obs:civilSocietySelectionMethod>Indicado pelo ministro</obs:civilSocietySelectionMethod>
+    <obs:creationAct>Decreto 5.079 de 12/05/2004 </obs:creationAct>
+    <obs:creationActType>Decreto</obs:creationActType>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:internalGovernanceBody>
+    <obs:thematicArea>Políticas sociais</obs:thematicArea>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.666666</obs:civilSocietyRepresentativesProportion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CNT">
+    <obs:agendaPreparation>Presidência</obs:agendaPreparation>
+    <obs:name>Conselho Nacional de Turismo </obs:name>
+    <obs:meetingsFrequency>Sem informação</obs:meetingsFrequency>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</obs:civilSocietyMembersCount>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:presidentialQualityVote>
+    <obs:creationAct>Decreto nº 6705 de 19 de dezembro de 2008 </obs:creationAct>
+    <obs:abbreviation>CNT</obs:abbreviation>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">29</obs:governmentMembersCount>
+    <obs:civilSocietySelectionMethod>Escolhido em processo seletivo</obs:civilSocietySelectionMethod>
+    <obs:linkedAgency>Ministério do turismo</obs:linkedAgency>
+    <obs:regulationAct>Portaria nº 55, de 2 de abril de 2009 </obs:regulationAct>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:limitedMandate>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:thematicArea>Desenvolvimento econômico</obs:thematicArea>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2008</obs:yearCreated>
+    <obs:presidencySelectionMethod>A(o) Ministra(o) é a(o) presidenta(e)</obs:presidencySelectionMethod>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:parity>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">71</obs:membersCount>
+    <obs:creationActType>Decreto</obs:creationActType>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:internalGovernanceBody>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.40845</obs:governmentRepresentativesProportion>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:conference>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.591549</obs:civilSocietyRepresentativesProportion>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:adReferendumDecisions>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#Concidades">
+    <obs:presidencySelectionMethod>A(o) Ministra(o) é a(o) presidenta(e)</obs:presidencySelectionMethod>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49</obs:civilSocietyMembersCount>
+    <obs:creationAct>Lei nº 10.257, de 10 de julho de 2001 </obs:creationAct>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2003</obs:yearCreated>
+    <obs:linkedPolicy>Estatuto</obs:linkedPolicy>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:presidentialQualityVote>
+    <obs:internalGovernanceBodyName>Coordenação executiva </obs:internalGovernanceBodyName>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:parity>
+    <obs:civilSocietySelectionMethod>Eleições</obs:civilSocietySelectionMethod>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.430232</obs:governmentRepresentativesProportion>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:limitedMandate>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</obs:governmentMembersCount>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:regulationAct>Resolução normativa nº de 8 de junho de 2006 </obs:regulationAct>
+    <obs:policy>Estatuto das cidades </obs:policy>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.569767</obs:civilSocietyRepresentativesProportion>
+    <obs:thematicArea>Infraestrutura e recursos naturais</obs:thematicArea>
+    <obs:name>Conselho das Cidades </obs:name>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">86</obs:membersCount>
+    <obs:creationActType>Lei</obs:creationActType>
+    <obs:conferencesCount>Quatro edições ou mais</obs:conferencesCount>
+    <obs:agendaPreparation>Órgão de governança</obs:agendaPreparation>
+    <obs:internalGovernanceBodyMemberCriterion>Representantes de cada segmento</obs:internalGovernanceBodyMemberCriterion>
+    <obs:abbreviation>Concidades</obs:abbreviation>
+    <obs:linkedAgency>Ministério das cidades</obs:linkedAgency>
+    <obs:meetingsFrequency>Deliberativo</obs:meetingsFrequency>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:adReferendumDecisions>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:internalGovernanceBody>
+    <obs:disposition>Deliberativo</obs:disposition>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CNPI">
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.371428</obs:governmentRepresentativesProportion>
+    <obs:abbreviation>CNPI</obs:abbreviation>
+    <obs:agendaPreparation>Conselheiros</obs:agendaPreparation>
+    <obs:creationAct>Decreto de 22/03/2006 </obs:creationAct>
+    <obs:civilSocietySelectionMethod>Estabelecido no regimento</obs:civilSocietySelectionMethod>
+    <obs:conferencesCount>Uma edição</obs:conferencesCount>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.628571</obs:civilSocietyRepresentativesProportion>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</obs:civilSocietyMembersCount>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</obs:membersCount>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:limitedMandate>
+    <obs:disposition>Consultivo</obs:disposition>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2006</obs:yearCreated>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:presidentialQualityVote>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:parity>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</obs:governmentMembersCount>
+    <obs:meetingsFrequency>Consultivo</obs:meetingsFrequency>
+    <obs:linkedAgency>Ministério da justiça</obs:linkedAgency>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:creationActType>Decreto</obs:creationActType>
+    <obs:presidencySelectionMethod>Titular específico de um cargo</obs:presidencySelectionMethod>
+    <obs:regulationAct>Portaria 1.396 de 15/08/2007 </obs:regulationAct>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:adReferendumDecisions>
+    <obs:name>Comissão Nacional de Política Indigenista </obs:name>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:internalGovernanceBody>
+    <obs:thematicArea>Garantia de direitos</obs:thematicArea>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CONJUVE">
+    <obs:conferencesCount>Duas edições</obs:conferencesCount>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</obs:civilSocietyMembersCount>
+    <obs:regulationAct>Regimento interno - 23/09/2005 </obs:regulationAct>
+    <obs:agendaPreparation>Presidência</obs:agendaPreparation>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:limitedMandate>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:presidentialQualityVote>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</obs:governmentMembersCount>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.333333</obs:governmentRepresentativesProportion>
+    <obs:name>Conselho Nacional de Juventude </obs:name>
+    <obs:abbreviation>CONJUVE</obs:abbreviation>
+    <obs:thematicArea>Políticas sociais</obs:thematicArea>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.666666</obs:civilSocietyRepresentativesProportion>
+    <obs:linkedPolicy>Política ou Plano nacional</obs:linkedPolicy>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2005</obs:yearCreated>
+    <obs:policy>Política Nacional de Juventude </obs:policy>
+    <obs:presidencySelectionMethod>Eleições internas</obs:presidencySelectionMethod>
+    <obs:disposition>Consultivo</obs:disposition>
+    <obs:civilSocietySelectionMethod>Indicado pelo ministro</obs:civilSocietySelectionMethod>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</obs:membersCount>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:adReferendumDecisions>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:meetingsFrequency>Consultivo</obs:meetingsFrequency>
+    <obs:linkedAgency>Secretaria-geral da presidência da república</obs:linkedAgency>
+    <obs:creationAct>Lei 11.129 de 30/06/2005 </obs:creationAct>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:internalGovernanceBody>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <obs:creationActType>Lei</obs:creationActType>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:parity>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CNAS">
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:abbreviation>CNAS</obs:abbreviation>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1993</obs:yearCreated>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:adReferendumDecisions>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</obs:civilSocietyRepresentativesProportion>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:presidentialQualityVote>
+    <obs:regulationAct>Resolução nº 6 de 9 de fevereiro de 2011 </obs:regulationAct>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:parity>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <obs:civilSocietySelectionMethod>Eleições</obs:civilSocietySelectionMethod>
+    <obs:creationAct>Lei n.º 8.742, de 7 de dezembro de 1993 – Lei Orgânica da Assistência Social – LOAS </obs:creationAct>
+    <obs:presidencySelectionMethod>Eleições internas</obs:presidencySelectionMethod>
+    <obs:linkedAgency>Ministério do desenvolvimento social</obs:linkedAgency>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</obs:governmentRepresentativesProportion>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</obs:governmentMembersCount>
+    <obs:name>Conselho Nacional de Assistência Social </obs:name>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</obs:membersCount>
+    <obs:conferencesCount>Quatro edições ou mais</obs:conferencesCount>
+    <obs:thematicArea>Políticas sociais</obs:thematicArea>
+    <obs:creationActType>Lei</obs:creationActType>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:limitedMandate>
+    <obs:agendaPreparation>Órgão de governança</obs:agendaPreparation>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</obs:civilSocietyMembersCount>
+    <obs:internalGovernanceBodyMemberCriterion>Presidente das comissões</obs:internalGovernanceBodyMemberCriterion>
+    <obs:meetingsFrequency>Deliberativo</obs:meetingsFrequency>
+    <obs:internalGovernanceBodyName>Presidência Ampliada </obs:internalGovernanceBodyName>
+    <obs:policy>SUAS </obs:policy>
+    <obs:linkedPolicy>Sistema</obs:linkedPolicy>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:internalGovernanceBody>
+    <obs:disposition>Deliberativo</obs:disposition>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CONAPE">
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:creationActType>Decreto</obs:creationActType>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:internalGovernanceBody>
+    <obs:regulationAct>PORTARIA No- 266, DE 28 DE SETEMBRO DE 2004 </obs:regulationAct>
+    <obs:conferencesCount>Três edições</obs:conferencesCount>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:parity>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</obs:civilSocietyMembersCount>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:limitedMandate>
+    <obs:civilSocietySelectionMethod>Eleições</obs:civilSocietySelectionMethod>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:adReferendumDecisions>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.50909</obs:governmentRepresentativesProportion>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2003</obs:yearCreated>
+    <obs:presidencySelectionMethod>A(o) Ministra(o) é a(o) presidenta(e)</obs:presidencySelectionMethod>
+    <obs:agendaPreparation>Secretaria Executiva</obs:agendaPreparation>
+    <obs:name>Conselho Nacional de Aqüicultura e Pesca </obs:name>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:presidentialQualityVote>
+    <obs:abbreviation>CONAPE</obs:abbreviation>
+    <obs:disposition>Consultivo</obs:disposition>
+    <obs:thematicArea>Desenvolvimento econômico</obs:thematicArea>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</obs:governmentMembersCount>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55</obs:membersCount>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:creationAct>DECRETO Nº 5.069, DE 5 DE MAIO DE 2004 </obs:creationAct>
+    <obs:linkedAgency>Ministério de aquicultura e pesca</obs:linkedAgency>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.490909</obs:civilSocietyRepresentativesProportion>
+    <obs:meetingsFrequency>Consultivo</obs:meetingsFrequency>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CONASP ">
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+    <obs:conferencesCount>Uma edição</obs:conferencesCount>
+    <obs:regulationAct>Portaria 4.026 de 10/12/2010 </obs:regulationAct>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:parity>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</obs:governmentMembersCount>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</obs:yearCreated>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</obs:membersCount>
+    <obs:linkedAgency>Ministério da justiça</obs:linkedAgency>
+    <obs:internalGovernanceBodyMemberCriterion>Representantes de cada segmento</obs:internalGovernanceBodyMemberCriterion>
+    <obs:abbreviation>CONASP </obs:abbreviation>
+    <obs:civilSocietySelectionMethod>Eleições</obs:civilSocietySelectionMethod>
+    <obs:disposition>Deliberativo</obs:disposition>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:reformulation>
+    <obs:reformulationActType>Decreto</obs:reformulationActType>
+    <obs:meetingsFrequency>Deliberativo</obs:meetingsFrequency>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:limitedMandate>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.32258</obs:governmentRepresentativesProportion>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:presidentialQualityVote>
+    <obs:thematicArea>Políticas sociais</obs:thematicArea>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.677419</obs:civilSocietyRepresentativesProportion>
+    <obs:reformulationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</obs:reformulationYear>
+    <obs:agendaPreparation>Presidência</obs:agendaPreparation>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:internalGovernanceBodyName>Comissão Permanente de Ética </obs:internalGovernanceBodyName>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</obs:civilSocietyMembersCount>
+    <obs:reformulationAct rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">Decreto nº 7.413, de 30 de dezembro de 2010. </obs:reformulationAct>
+    <obs:creationActType>Decreto</obs:creationActType>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:internalGovernanceBody>
+    <obs:creationAct>Decreto nº. 98.936 de 08/01/1990 </obs:creationAct>
+    <obs:name>Conselho Nacional de Segurança Pública </obs:name>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:adReferendumDecisions>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CNDI">
+    <obs:linkedPolicy>Estatuto</obs:linkedPolicy>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:parity>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:internalGovernanceBody>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</obs:membersCount>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:presidentialQualityVote>
+    <obs:disposition>Deliberativo</obs:disposition>
+    <obs:civilSocietySelectionMethod>Eleições</obs:civilSocietySelectionMethod>
+    <obs:creationActType>Decreto</obs:creationActType>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</obs:governmentRepresentativesProportion>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2004</obs:yearCreated>
+    <obs:regulationAct>Resolução nº1, de 24 de janeiro de 2005 </obs:regulationAct>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:limitedMandate>
+    <obs:policy>Estatuto do idoso </obs:policy>
+    <obs:name>Conselho Nacional dos Direitos do Idoso </obs:name>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</obs:governmentMembersCount>
+    <obs:creationAct>DECRETO Nº 5.109, DE 17 DE JUNHO DE 2004. </obs:creationAct>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</obs:civilSocietyMembersCount>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:adReferendumDecisions>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:thematicArea>Políticas sociais</obs:thematicArea>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:abbreviation>CNDI</obs:abbreviation>
+    <obs:conferencesCount>Três edições</obs:conferencesCount>
+    <obs:linkedAgency>Secretaria de direitos humanos da presidência da república</obs:linkedAgency>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</obs:civilSocietyRepresentativesProportion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CONAMA">
+    <obs:meetingsFrequency>Deliberativo</obs:meetingsFrequency>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:internalGovernanceBody>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.281818</obs:civilSocietyRepresentativesProportion>
+    <obs:disposition>Deliberativo</obs:disposition>
+    <obs:linkedAgency>Ministério do meio ambiente</obs:linkedAgency>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</obs:membersCount>
+    <obs:thematicArea>Infraestrutura e recursos naturais</obs:thematicArea>
+    <obs:linkedPolicy>Sistema</obs:linkedPolicy>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</obs:governmentMembersCount>
+    <obs:creationActType>Lei</obs:creationActType>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <obs:internalGovernanceBodyMemberCriterion>Representantes de cada segmento</obs:internalGovernanceBodyMemberCriterion>
+    <obs:civilSocietySelectionMethod>Estabelecido no regimento</obs:civilSocietySelectionMethod>
+    <obs:presidencySelectionMethod>A(o) Ministra(o) é a(o) presidenta(e)</obs:presidencySelectionMethod>
+    <obs:regulationAct>Portaria 168 de 10/06/2005</obs:regulationAct>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">31</obs:civilSocietyMembersCount>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1981</obs:yearCreated>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:adReferendumDecisions>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:parity>
+    <obs:policy>SISNAMA </obs:policy>
+    <obs:abbreviation>CONAMA</obs:abbreviation>
+    <obs:agendaPreparation>Secretaria Executiva</obs:agendaPreparation>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.718181</obs:governmentRepresentativesProportion>
+    <obs:creationAct>Lei 6.938 de 31/08/1981 </obs:creationAct>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:internalGovernanceBodyName>Comitê de Integração de Políticas Ambientais </obs:internalGovernanceBodyName>
+    <obs:name>Conselho Nacional do Meio Ambiente </obs:name>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:limitedMandate>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:conferencesCount>Três edições</obs:conferencesCount>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:presidentialQualityVote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Council#CONANDA">
+    <obs:creationActType>Lei</obs:creationActType>
+    <obs:conference rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:conference>
+    <obs:meetingsFrequency>Deliberativo</obs:meetingsFrequency>
+    <obs:limitedMandate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:limitedMandate>
+    <obs:membersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</obs:membersCount>
+    <obs:internalGovernanceBody rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:internalGovernanceBody>
+    <obs:conferencesCount>Quatro edições ou mais</obs:conferencesCount>
+    <obs:civilSocietyMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</obs:civilSocietyMembersCount>
+    <obs:policy>ECA </obs:policy>
+    <obs:presidencySelectionMethod>Eleições internas</obs:presidencySelectionMethod>
+    <obs:civilSocietyRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</obs:civilSocietyRepresentativesProportion>
+    <obs:agendaPreparation>Secretaria Executiva</obs:agendaPreparation>
+    <obs:yearCreated rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1991</obs:yearCreated>
+    <obs:linkedPolicy>Estatuto</obs:linkedPolicy>
+    <obs:civilSocietySelectionMethod>Eleições</obs:civilSocietySelectionMethod>
+    <obs:abbreviation>CONANDA</obs:abbreviation>
+    <obs:governmentMembersCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</obs:governmentMembersCount>
+    <obs:parity rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:parity>
+    <obs:linkedAgency>Secretaria de direitos humanos da presidência da república</obs:linkedAgency>
+    <obs:executiveSecretary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:executiveSecretary>
+    <obs:name>Conselho Nacional dos Direitos da Criança e do Adolescente </obs:name>
+    <obs:reformulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:reformulation>
+    <obs:commission rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:commission>
+    <obs:presidentialQualityVote rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:presidentialQualityVote>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Council"/>
+    <obs:adReferendumDecisions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:adReferendumDecisions>
+    <obs:governmentRepresentativesProportion rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</obs:governmentRepresentativesProportion>
+    <obs:disposition>Deliberativo</obs:disposition>
+    <obs:thematicArea>Políticas sociais</obs:thematicArea>
+    <obs:creationAct>LEI Nº 8.242, DE 12 DE OUTUBRO DE 1991 </obs:creationAct>
+    <obs:regulationAct>Regimento Interno do CONANDA </obs:regulationAct>
+  </rdf:Description>
+</rdf:RDF>

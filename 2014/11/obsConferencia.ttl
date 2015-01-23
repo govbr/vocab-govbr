@@ -1,0 +1,463 @@
+@prefix obs: <http://purl.org/socialparticipation/obs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+obs:ChamberOfDeputies a owl:Class ;
+    rdfs:label "Câmara dos deputados"@pt ;
+    rdfs:subClassOf obs:PublicAgency .
+
+obs:Commission a owl:Class ;
+    rdfs:label "Comissão"@pt,
+        "Comissão da organização nacional"@pt ;
+    rdfs:subClassOf obs:ParticipationInstance .
+
+obs:Committee a owl:Class ;
+    rdfs:label "Comissão da organização nacional"@pt .
+
+obs:Conference a owl:Class ;
+    rdfs:label "Conferência"@pt ;
+    rdfs:comment "Conferências são processos nacionais de promoção do diálogo entre governo e sociedade"@pt ;
+    rdfs:subClassOf obs:ParticipationInstance .
+
+obs:ConferenceMethodology a owl:Class ;
+    rdfs:label "Metodologia de conferência"@pt .
+
+obs:Coordination a owl:Class ;
+    rdfs:label "Comissão da organização nacional"@pt .
+
+obs:Coordinator a owl:Class ;
+    rdfs:label "Comissão da organização nacional"@pt .
+
+obs:Counsel a owl:Class ;
+    rdfs:label "Comissão da organização nacional"@pt .
+
+obs:Decree a owl:Class ;
+    rdfs:label "Decreto presidencial"@pt ;
+    rdfs:subClassOf obs:NormativeAct .
+
+obs:DialogueTable a owl:Class ;
+    rdfs:label "Mesa de diálogo"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
+
+obs:DistrictConference a owl:Class ;
+    rdfs:label "Conferência distrital"@pt ;
+    rdfs:comment "Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+
+obs:EconomicDevelopment a owl:Class ;
+    rdfs:label "Desenvolvimento econômico"@pt ;
+    rdfs:comment "arranjos produtivos locais, assistência técnica e extensão rural, desenvolvimento regional e desenvolvimento rural sustentável e solidário"@pt ;
+    rdfs:subClassOf obs:PolicyArea .
+
+obs:ExtraordinaryConference a owl:Class ;
+    rdfs:label "Conferência extraordinária"@pt ;
+    rdfs:comment "Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo"@pt .
+
+obs:FreeConference a owl:Class ;
+    rdfs:label "Conferência livre"@pt ;
+    rdfs:comment "Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+
+obs:Goals a owl:Class ;
+    rdfs:label "Objetivos"@pt .
+
+obs:Group a owl:Class ;
+    rdfs:label "Comissão da organização nacional"@pt .
+
+obs:GuaranteeOfRights a owl:Class ;
+    rdfs:label "Garantia de direitos"@pt ;
+    rdfs:comment "criança e adolescente, educação, juventude, LGBT, mulheres e pessoa idosa"@pt ;
+    rdfs:subClassOf obs:PolicyArea .
+
+obs:Infrastructure a owl:Class ;
+    rdfs:label "Infraestrutura"@pt ;
+    rdfs:comment "cidades"@pt ;
+    rdfs:subClassOf obs:PolicyArea .
+
+obs:InterCouncilForum a owl:Class ;
+    rdfs:label "Fórum interconselhos"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
+
+obs:IntercityConferente a owl:Class ;
+    rdfs:label "Conferência intermunicipal"@pt ;
+    rdfs:comment "Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+
+obs:Lecture a owl:Class ;
+    rdfs:label "Palestra"@pt ;
+    rdfs:subClassOf obs:ParticipativeMoment .
+
+obs:Ministry a owl:Class ;
+    rdfs:label "Ministério"@pt ;
+    rdfs:subClassOf obs:PublicAgency .
+
+obs:MunicipalConference a owl:Class ;
+    rdfs:label "Conferência municipal"@pt ;
+    rdfs:comment "Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+
+obs:NationalConference a owl:Class ;
+    rdfs:label "Conferência nacional"@pt ;
+    rdfs:comment "Uma fase é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+
+obs:NationalOrganizationCommissionComponent a owl:Class ;
+    rdfs:label "Componente da comissão de organização nacional"@pt .
+
+obs:NaturalResources a owl:Class ;
+    rdfs:label "Recursos naturais"@pt ;
+    rdfs:comment "meio ambiente"@pt ;
+    rdfs:subClassOf obs:PolicyArea .
+
+obs:NonGovernmentalForum a owl:Class ;
+    rdfs:label "Fórum não governamental"@pt ;
+    rdfs:subClassOf obs:PublicAgency .
+
+obs:Ombusdmen a owl:Class ;
+    rdfs:label "Ouvidoria"@pt ;
+    rdfs:subClassOf obs:ParticipationInstance .
+
+obs:Ordinance a owl:Class ;
+    rdfs:label "Portaria ministerial ou interministerial"@pt ;
+    rdfs:subClassOf obs:NormativeAct .
+
+obs:Positions a owl:Class ;
+    rdfs:label "Vagas"@pt .
+
+obs:Presidency a owl:Class ;
+    rdfs:label "Comissão da organização nacional"@pt .
+
+obs:PublicAudience a owl:Class ;
+    rdfs:label "Audiência pública"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
+
+obs:PublicConsultation a owl:Class ;
+    rdfs:label "Consulta pública"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
+
+obs:Quotas a owl:Class ;
+    rdfs:label "Cotas"@pt .
+
+obs:Rapporteur a owl:Class ;
+    rdfs:label "Comissão da organização nacional"@pt .
+
+obs:RegionalConference a owl:Class ;
+    rdfs:label "Conferência regional"@pt ;
+    rdfs:comment "Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+
+obs:Resolution a owl:Class ;
+    rdfs:label "Resolução de conselho"@pt ;
+    rdfs:subClassOf obs:NormativeAct .
+
+obs:Secretariat a owl:Class ;
+    rdfs:label "Secretaria"@pt ;
+    rdfs:comment "Secretaria com status ministerial"@pt ;
+    rdfs:subClassOf obs:PublicAgency .
+
+obs:Secretary a owl:Class ;
+    rdfs:label "Comissão da organização nacional"@pt .
+
+obs:SocialPolicies a owl:Class ;
+    rdfs:label "Políticas sociais"@pt ;
+    rdfs:comment "assistência social, cultura, saúde, segurança alimentar e nutricional"@pt ;
+    rdfs:subClassOf obs:PolicyArea .
+
+obs:StateConference a owl:Class ;
+    rdfs:label "Conferência estadual"@pt ;
+    rdfs:comment "Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+
+obs:Subcommittee a owl:Class ;
+    rdfs:label "Comissão da organização nacional"@pt .
+
+obs:ThematicPlenary a owl:Class ;
+    rdfs:label "Plenária intermediária"@pt,
+        "Plenária temática"@pt ;
+    rdfs:subClassOf obs:Plenary .
+
+obs:Theme a owl:Class ;
+    rdfs:label "Tema"@pt .
+
+obs:VirtualConference a owl:Class ;
+    rdfs:label "Conferência virtual"@pt ;
+    rdfs:comment "Uma etapa é um evento participativo, enquanto a conferência em si é o processo todo"@pt .
+
+obs:VirtualParticipationEnvironment a owl:Class ;
+    rdfs:label "Ambente virtual de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationMechanism .
+
+obs:WorkGroup a owl:Class ;
+    rdfs:label "Grupo de trabalho"@pt ;
+    rdfs:subClassOf obs:ParticipativeMoment .
+
+obs:Workshop a owl:Class ;
+    rdfs:label "Oficina"@pt ;
+    rdfs:subClassOf obs:ParticipativeMoment .
+
+obs:area a owl:ObjectProperty ;
+    rdfs:label "área"@pt ;
+    rdfs:range obs:PolicyArea .
+
+obs:commission a owl:ObjectProperty ;
+    rdfs:label "comissão"@pt ;
+    rdfs:range obs:NationalOrganizationCommission .
+
+obs:composition a owl:ObjectProperty ;
+    rdfs:label "composição"@pt ;
+    rdfs:range obs:ManagementBody .
+
+obs:conselho rdfs:label "conselho"@pt ;
+    rdfs:range obs:Council .
+
+obs:convocation a owl:ObjectProperty ;
+    rdfs:label "convocação"@pt ;
+    rdfs:range obs:ConveningDocument .
+
+obs:councilPositions a owl:DatatypeProperty ;
+    rdfs:label "vagas para membros do conselho"@pt ;
+    rdfs:range xsd:integer .
+
+obs:datePublished a owl:DatatypeProperty ;
+    rdfs:label "data de publicação"@pt ;
+    rdfs:range xsd:dateTime .
+
+obs:delegateFocus a owl:DatatypeProperty ;
+    rdfs:label "delegados referência para observação de gênero"@pt ;
+    rdfs:comment "Para a contabilização da incidência de gênero dentre os participantes, se somente os delegados foram considerados, o objeto é True"@pt ;
+    rdfs:range xsd:boolen .
+
+obs:delegates a owl:DatatypeProperty ;
+    rdfs:label "delegados"@pt ;
+    rdfs:range xsd:integer .
+
+obs:deputy a owl:DatatypeProperty ;
+    rdfs:label "adjunta"@pt ;
+    rdfs:comment "A componente é adjunta"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:description a owl:DatatypeProperty ;
+    rdfs:label "descrição"@pt ;
+    rdfs:range xsd:string .
+
+obs:edition a owl:DatatypeProperty ;
+    rdfs:label "edição"@pt ;
+    rdfs:range xsd:integer .
+
+obs:editorial a owl:DatatypeProperty ;
+    rdfs:label "editorial"@pt ;
+    rdfs:comment "A componente é editorial"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:entity a owl:ObjectProperty ;
+    rdfs:label "entidade"@pt ;
+    rdfs:range obs:ManagementBody .
+
+obs:etnicGroup a owl:DatatypeProperty ;
+    rdfs:label "grupo étnico"@pt ;
+    rdfs:range xsd:integer .
+
+obs:evaluationPurpose a owl:DatatypeProperty ;
+    rdfs:label "avaliação"@pt ;
+    rdfs:comment "possui a conferência objetivo de avaliação?"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:executive a owl:DatatypeProperty ;
+    rdfs:label "executiva"@pt ;
+    rdfs:comment "A componente é executiva"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:form a owl:ObjectProperty ;
+    rdfs:label "forma"@pt ;
+    rdfs:range obs:InteractionDialogueForm .
+
+obs:general a owl:DatatypeProperty ;
+    rdfs:label "geral"@pt ;
+    rdfs:comment "A componente é geral"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:governmental a owl:DatatypeProperty ;
+    rdfs:label "governamentais"@pt ;
+    rdfs:range xsd:integer .
+
+obs:governmentalPositions a owl:DatatypeProperty ;
+    rdfs:label "vagas governamentais"@pt ;
+    rdfs:range xsd:integer .
+
+obs:guests a owl:DatatypeProperty ;
+    rdfs:label "convidados"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:has a owl:ObjectProperty ;
+    rdfs:label "possui"@pt .
+
+obs:incorporates a owl:ObjectProperty ;
+    rdfs:label "incorpora"@pt ;
+    rdfs:range obs:ParticipativeMoment .
+
+obs:methodology a owl:ObjectProperty ;
+    rdfs:label "metodologia"@pt .
+
+obs:municipalities a owl:DatatypeProperty ;
+    rdfs:label "municípios"@pt ;
+    rdfs:comment "número de municípios envolvidos na etapa"@pt ;
+    rdfs:range xsd:integer .
+
+obs:name a owl:DatatypeProperty ;
+    rdfs:label "nome"@pt ;
+    rdfs:range xsd:string .
+
+obs:nonGovernmental a owl:DatatypeProperty ;
+    rdfs:label "não governamentais"@pt ;
+    rdfs:range xsd:integer .
+
+obs:nonGovernmentalPositions a owl:DatatypeProperty ;
+    rdfs:label "vagas não governamentais"@pt ;
+    rdfs:range xsd:integer .
+
+obs:numericReference a owl:DatatypeProperty ;
+    rdfs:label "referêcia numérica"@pt ;
+    rdfs:range xsd:string .
+
+obs:other a owl:ObjectProperty ;
+    rdfs:label "outro"@pt ;
+    rdfs:range obs:OtherGroup .
+
+obs:participants a owl:DatatypeProperty ;
+    rdfs:label "participantes"@pt ;
+    rdfs:range xsd:integer .
+
+obs:participationPurpose a owl:DatatypeProperty ;
+    rdfs:label "participação"@pt ;
+    rdfs:comment "possui a conferência objetivo de participação?"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:phrase a owl:DatatypeProperty ;
+    rdfs:label "frase de referência"@pt ;
+    rdfs:comment "frase de referência do tema da conferência"@pt ;
+    rdfs:range xsd:string .
+
+obs:predicts a owl:ObjectProperty ;
+    rdfs:label "prevê"@pt ;
+    rdfs:range obs:ParticipativeMoment .
+
+obs:proposals a owl:DatatypeProperty ;
+    rdfs:label "propostas aprovadas"@pt ;
+    rdfs:comment "número de propostas aprovadas na etapa"@pt ;
+    rdfs:range xsd:integer .
+
+obs:proposalsFormulation a owl:DatatypeProperty ;
+    rdfs:label "formulação de propostas"@pt,
+        "início"@pt,
+        "término"@pt ;
+    rdfs:range xsd:boolean,
+        xsd:dateTime .
+
+obs:proposalsLimit a owl:DatatypeProperty ;
+    rdfs:label "limite de propostas"@pt ;
+    rdfs:range xsd:integer .
+
+obs:proposalsPriorization a owl:DatatypeProperty ;
+    rdfs:label "priorização de propostas"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:propositionPurpose a owl:DatatypeProperty ;
+    rdfs:label "proposição"@pt ;
+    rdfs:comment "possui a conferência objetivo de proposição?"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:quantity a owl:DatatypeProperty ;
+    rdfs:label "quantidade"@pt ;
+    rdfs:range xsd:integer .
+
+obs:regiment a owl:ObjectProperty ;
+    rdfs:label "regimento"@pt .
+
+obs:responsibleAgency a owl:ObjectProperty ;
+    rdfs:label "órgão responsável"@pt ;
+    rdfs:range obs:PublicAgency .
+
+obs:schedulingPurpose a owl:DatatypeProperty ;
+    rdfs:label "agendamento"@pt ;
+    rdfs:comment "possui a conferência objetivo de agendamento?"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:special a owl:DatatypeProperty ;
+    rdfs:label "especial"@pt ;
+    rdfs:comment "A componente é especial"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:step a owl:ObjectProperty ;
+    rdfs:label "etapa"@pt ;
+    rdfs:range obs:ConferenceStep .
+
+obs:thematicAxes a owl:DatatypeProperty ;
+    rdfs:label "eixos temáticos"@pt ;
+    rdfs:range xsd:string .
+
+obs:unidentified a owl:DatatypeProperty ;
+    rdfs:label "não identificados"@pt ;
+    rdfs:comment "participantes não identificados"@pt ;
+    rdfs:range xsd:integer .
+
+obs:women a owl:DatatypeProperty ;
+    rdfs:label "mulheres"@pt ;
+    rdfs:comment "número de mulheres participantes ou reservado para mulheres"@pt ;
+    rdfs:range xsd:integer .
+
+obs:working a owl:DatatypeProperty ;
+    rdfs:label "de trabalho"@pt ;
+    rdfs:comment "A componente é de trabalho"@pt ;
+    rdfs:range xsd:boolean .
+
+obs:year a owl:DatatypeProperty ;
+    rdfs:label "ano"@pt ;
+    rdfs:range xsd:gYear .
+
+obs:ConferenceStep a owl:Class ;
+    rdfs:label "Etapa de conferência"@pt ;
+    rdfs:comment "Uma etapa é um evento participativo e também é chamada de conferência, enquanto 'a' conferência é o processo todo"@pt .
+
+obs:ConveningDocument a owl:Class ;
+    rdfs:label "Ato normativo"@pt .
+
+obs:Council a owl:Class ;
+    rdfs:label "Conselho"@pt ;
+    rdfs:subClassOf obs:ParticipationInstance,
+        obs:PublicAgency .
+
+obs:InteractionDialogueForm a owl:Class ;
+    rdfs:label "Forma de interação e diálogo"@pt .
+
+obs:NationalOrganizationCommission a owl:Class ;
+    rdfs:label "Comissão da organização nacional"@pt .
+
+obs:OtherGroup a owl:Class ;
+    rdfs:label "Outro Grupo"@pt .
+
+obs:Plenary a owl:Class ;
+    rdfs:label "Plenária"@pt ;
+    rdfs:subClassOf obs:ParticipativeMoment .
+
+obs:ManagementBody a owl:Class ;
+    rdfs:label "Corpo gestor"@pt .
+
+obs:ParticipationInstanceOrMechanism a owl:Class ;
+    rdfs:label "Instância ou mecanismo de participação social"@pt .
+
+obs:NormativeAct a owl:Class ;
+    rdfs:label "Ato normativo"@pt .
+
+obs:ParticipationInstance a owl:Class ;
+    rdfs:label "Instância de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:ParticipationMechanism a owl:Class ;
+    rdfs:label "Mecanismo de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:ParticipativeMoment a owl:Class ;
+    rdfs:label "Momento participativo"@pt .
+
+obs:PolicyArea a owl:Class ;
+    rdfs:label "Área de política"@pt .
+
+obs:PublicAgency a owl:Class ;
+    rdfs:label "Órgão público"@pt .
+

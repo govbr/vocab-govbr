@@ -1,0 +1,154 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vbs: <http://purl.org/socialparticipation/vbs/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vbs:AnonymousManifestation a skos:Concept ;
+    skos:prefLabel "Manifestação anônima"@pt .
+
+vbs:CivilControl a skos:Concept ;
+    skos:broader vbs:Control ;
+    skos:prefLabel "Controle civil"@pt .
+
+vbs:Client a skos:Concept ;
+    skos:broader vbs:Participant ;
+    skos:prefLabel "Cliente"@pt .
+
+vbs:Complaint a skos:Concept ;
+    skos:broader vbs:Manifestation ;
+    skos:prefLabel "Reclamação"@pt .
+
+vbs:Compliment a skos:Concept ;
+    skos:broader vbs:Manifestation ;
+    skos:prefLabel "Elogio"@pt .
+
+vbs:Contributor a skos:Concept ;
+    skos:broader vbs:Participant ;
+    skos:prefLabel "Contribuidor"@pt .
+
+vbs:Denunciation a skos:Concept ;
+    skos:broader vbs:Manifestation ;
+    skos:prefLabel "Denúncia"@pt .
+
+vbs:ExternalControl a skos:Concept ;
+    skos:broader vbs:Control ;
+    skos:prefLabel "Controle externo"@pt .
+
+vbs:IdentityReservation a skos:Concept ;
+    skos:prefLabel "Reserva de identidade"@pt .
+
+vbs:IndirectPublicAdministrationAgency a skos:Concept ;
+    skos:broader vbs:PublicAgency ;
+    skos:prefLabel "Órgão da administração pública indireta"@pt .
+
+vbs:InternalControl a skos:Concept ;
+    skos:broader vbs:Control ;
+    skos:prefLabel "Controle interno"@pt .
+
+vbs:LAI a skos:Concept ;
+    skos:prefLabel "LAI (Lei de Acesso à Informação)"@pt .
+
+vbs:Law a skos:Concept ;
+    skos:broader vbs:Act ;
+    skos:prefLabel "Lei"@pt .
+
+vbs:NotOrganizedCivilSociety a skos:Concept ;
+    skos:broader vbs:Participant ;
+    skos:prefLabel "Sociedade civil não organizada"@pt .
+
+vbs:Ombudsman a skos:Concept ;
+    skos:prefLabel "Ouvidor"@pt ;
+    skos:related vbs:OmbudsmanAgency .
+
+vbs:Ordinance a skos:Concept ;
+    skos:broader vbs:Act ;
+    skos:prefLabel "Portaria"@pt .
+
+vbs:ParticipationInstance a skos:Concept ;
+    skos:altLabel "Espaço de participação social"@pt,
+        "Espaço participativo"@pt,
+        "Instituição participativa"@pt,
+        "Instância participativa"@pt ;
+    skos:prefLabel "Instância de participação social"@pt ;
+    skos:related vbs:ParticipationMechanism .
+
+vbs:PassiveOmbudsmanAgency a skos:Concept ;
+    skos:broader vbs:OmbudsmanAgency ;
+    skos:prefLabel "Ouvidoria passiva"@pt ;
+    skos:related vbs:ActiveOmbudsmanAgency .
+
+vbs:PublicAdministrationAgency a skos:Concept ;
+    skos:broader vbs:PublicAgency ;
+    skos:prefLabel "Órgão da administração pública"@pt .
+
+vbs:Request a skos:Concept ;
+    skos:broader vbs:Manifestation ;
+    skos:prefLabel "Solicitação"@pt .
+
+vbs:Rioter a skos:Concept ;
+    skos:broader vbs:Participant ;
+    skos:prefLabel "Manifestante"@pt .
+
+vbs:Secretariat a skos:Concept ;
+    skos:broader vbs:Ministry ;
+    skos:prefLabel "Secretaria"@pt .
+
+vbs:Suggestion a skos:Concept ;
+    skos:broader vbs:Manifestation ;
+    skos:prefLabel "Sugestão"@pt .
+
+vbs:Whistleblower a skos:Concept ;
+    skos:broader vbs:Participant ;
+    skos:prefLabel "Denunciante"@pt .
+
+vbs:ActiveOmbudsmanAgency a skos:Concept ;
+    skos:broader vbs:OmbudsmanAgency ;
+    skos:prefLabel "Ouvidoria ativa"@pt .
+
+vbs:Ministry a skos:Concept ;
+    skos:prefLabel "Ministério"@pt .
+
+vbs:OGU a skos:Concept ;
+    skos:prefLabel "OGU (Ouvidoria Geral da União)"@pt .
+
+vbs:OmbudsmanNationalSystem a skos:Concept ;
+    skos:prefLabel "Sistema Federal de Ouvidorias"@pt .
+
+vbs:ParticipationInstanceOrMechanism a skos:Concept ;
+    skos:prefLabel "Instância ou mecanismo de participação social"@pt .
+
+vbs:ParticipationMechanism a skos:Concept ;
+    skos:prefLabel "Mecanismo de participação social"@pt .
+
+vbs:SAC a skos:Concept ;
+    skos:prefLabel "SAC (Sistema de Atendimento ao Cidadão)"@pt .
+
+vbs:Act a skos:Concept ;
+    skos:prefLabel "Ato normativo"@pt .
+
+vbs:PublicAgency a skos:Concept ;
+    skos:prefLabel "Órgão público"@pt .
+
+vbs:Control a skos:Concept ;
+    skos:prefLabel "Controle"@pt .
+
+vbs:OmbudsmanAgency a skos:Concept ;
+    skos:altLabel "Ouvidoria federal"@pt,
+        "Ouvidoria pública"@pt,
+        "Ouvidoria pública federal"@pt ;
+    skos:broader vbs:OGU,
+        vbs:OmbudsmanNationalSystem,
+        vbs:ParticipationInstanceOrMechanism,
+        vbs:SAC ;
+    skos:definition "instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública"@pt ;
+    skos:prefLabel "Ouvidoria"@pt .
+
+vbs:Manifestation a skos:Concept ;
+    skos:broader vbs:OmbudsmanAgency ;
+    skos:prefLabel "Manifestação"@pt .
+
+vbs:Participant a skos:Concept ;
+    skos:prefLabel "Participante"@pt .
+

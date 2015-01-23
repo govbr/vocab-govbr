@@ -1,0 +1,87 @@
+@prefix obs: <http://purl.org/socialparticipation/obs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+obs:CivilSocietyRepresentant a owl:Class ;
+    rdfs:label "Representante da sociedade civil"@pt ;
+    rdfs:subClassOf obs:Participant .
+
+obs:Conference a owl:Class ;
+    rdfs:label "Conferência"@pt ;
+    rdfs:subClassOf obs:ParticipationInstance .
+
+obs:ConveningDocument a owl:Class ;
+    rdfs:label "Documento convocatório"@pt .
+
+obs:Decree8243 a owl:Class ;
+    rdfs:label "Decreto 8.243"@pt .
+
+obs:Directive a owl:Class ;
+    rdfs:label "Diretriz"@pt .
+
+obs:DistrictConference a owl:Class ;
+    rdfs:label "Conferência distrital"@pt ;
+    rdfs:subClassOf obs:ConferenceStep .
+
+obs:Evaluation a owl:Class ;
+    rdfs:label "Avaliação"@pt .
+
+obs:Formulation a owl:Class ;
+    rdfs:label "Formulação"@pt .
+
+obs:GovernmentRepresentant a owl:Class ;
+    rdfs:label "Representante do governo"@pt ;
+    rdfs:subClassOf obs:Participant .
+
+obs:ManagementBody a owl:Class ;
+    rdfs:label "Corpo gestor"@pt .
+
+obs:Methodology a owl:Class ;
+    rdfs:label "Metodologia"@pt .
+
+obs:MunicipalConference a owl:Class ;
+    rdfs:label "Conferência municipal"@pt ;
+    rdfs:subClassOf obs:ConferenceStep .
+
+obs:Objective a owl:Class ;
+    rdfs:label "Objetivo"@pt .
+
+obs:PerformedActivity a owl:Class ;
+    rdfs:label "Atividade desempenhada"@pt .
+
+obs:ReferenceDocument a owl:Class ;
+    rdfs:label "Documento de referência"@pt .
+
+obs:RegionalConference a owl:Class ;
+    rdfs:label "Conferência regional"@pt ;
+    rdfs:subClassOf obs:ConferenceStep .
+
+obs:Resolution a owl:Class ;
+    rdfs:label "Resolução"@pt .
+
+obs:StateConference a owl:Class ;
+    rdfs:label "Conferência estadual"@pt ;
+    rdfs:subClassOf obs:ConferenceStep .
+
+obs:Theme a owl:Class ;
+    rdfs:label "Tema"@pt .
+
+obs:TrackingModel a owl:Class ;
+    rdfs:label "Modelo de acompanhamento"@pt .
+
+obs:ParticipationInstance a owl:Class ;
+    rdfs:label "Instância de participação social"@pt ;
+    rdfs:subClassOf obs:ParticipationInstanceOrMechanism .
+
+obs:ParticipationInstanceOrMechanism a owl:Class ;
+    rdfs:label "Instância ou mecanismo de participação social"@pt .
+
+obs:Participant a owl:Class ;
+    rdfs:label "Participante"@pt .
+
+obs:ConferenceStep a owl:Class ;
+    rdfs:label "Etapa de conferência"@pt .
+

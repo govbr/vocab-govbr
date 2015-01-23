@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/SocialControl">
+    <skos:prefLabel xml:lang="pt">Controle social</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/HistoricallyExcludedGroup">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Grupo historicamente excluído</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/DirectFederalAdministration">
+    <skos:prefLabel xml:lang="pt">Administração pública federal direta</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Implementation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Implementação</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/PlanningAndBudgetingCycle">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Ciclo de planejamento e orçamento</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/SGPR">
+    <skos:altLabel xml:lang="pt">Secretaria-Geral da Presidência da República</skos:altLabel>
+    <skos:prefLabel xml:lang="pt">SGPR</skos:prefLabel>
+    <skos:altLabel xml:lang="pt">Secretaria-Geral da Presidência da República (SGPR)</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/SocialParticipation">
+    <skos:prefLabel xml:lang="pt">Participação social</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/VirtualConference">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:scopeNote xml:lang="pt">Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo</skos:scopeNote>
+    <skos:prefLabel xml:lang="pt">Conferência virtual</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/ConferenceStep"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/GovernmentDecision">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Decisão de governo</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ActiveCitizenship">
+    <skos:prefLabel xml:lang="pt">Cidadania ativa</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Item">
+    <skos:scopeNote xml:lang="pt">Inciso de texto legal (ex. decreto). O conceito oode ser usado em outros contextos.</skos:scopeNote>
+    <skos:prefLabel xml:lang="pt">Inciso</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/InterestedPart">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Parte interessada</skos:prefLabel>
+    <skos:related xml:lang="pt">http://purl.org/socialparticipation/vbs/AffectedPart</skos:related>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ConsultationObject">
+    <skos:scopeNote xml:lang="pt">objeto de consulta pública.</skos:scopeNote>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Objeto de consulta</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/VirtualParticipationEnvironment">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Ambiente virtual</skos:prefLabel>
+    <skos:altLabel xml:lang="pt">Ambiente virtual de participação social</skos:altLabel>
+    <skos:definition xml:lang="pt">mecanismo de interação social que utiliza tecnologias de informação e de comunicação, em especial a internet, para promover o diálogo entre administração pública federal e sociedade civil (PNPS)</skos:definition>
+    <skos:definition xml:lang="pt">mecanismo participativo, a se realizar em prazo definido, de caráter consultivo, aberto a qualquer interessado, que visa a receber contribuições por escrito da sociedade civil sobre determinado assunto, na forma definida no seu ato de convocação (PNPS)</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ConferenceMoment">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:scopeNote xml:lang="pt">momento de conferência. O conceito pode ser útil em outros contextos</skos:scopeNote>
+    <skos:related xml:lang="pt">http://purl.org/socialparticipation/vbs/Methodology</skos:related>
+    <skos:prefLabel xml:lang="pt">Momento</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/SNPS">
+    <skos:prefLabel xml:lang="pt">SNPS</skos:prefLabel>
+    <skos:altLabel xml:lang="pt">Sistema Nacional de Participação Social</skos:altLabel>
+    <skos:altLabel xml:lang="pt">Sistema Nacional de Participação Social - SNPS</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:altLabel xml:lang="pt">Sistema Nacional de Participação Social (SNPS)</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/TransparentChoiceCriteria">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Critério transparente de escolha</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Coordination">
+    <skos:prefLabel xml:lang="pt">Coordenação</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/CivilSocietyNominatedRepresentative">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Representante indicado pela sociedade civil</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/TechnicalAndAdministrativeSupport">
+    <skos:prefLabel xml:lang="pt">Suporte técnico-administrativo</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/NationalConferenceReferenceDocuments">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Documentos de referência da conferência nacional</skos:prefLabel>
+    <skos:related rdf:resource="http://purl.org/socialparticipation/vbs/Conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/PNPS">
+    <skos:prefLabel xml:lang="pt">PNPS</skos:prefLabel>
+    <skos:altLabel xml:lang="pt">Política Nacional de Participação Social - PNPS</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:altLabel xml:lang="pt">Política Nacional de Participação Social</skos:altLabel>
+    <skos:altLabel xml:lang="pt">Política Nacional de Participação Social (PNPS)</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/MachineReadableData">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Dado legível por máquina</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Paragraph">
+    <skos:prefLabel xml:lang="pt">Parágrafo</skos:prefLabel>
+    <skos:scopeNote xml:lang="pt">Parágrafo de texto legal (ex. decreto). O conceito oode ser usado em outros contextos.</skos:scopeNote>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/DeliberativeNature">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Natureza deliberativa</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/DirectParticipation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Participação direta</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Council">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Conselho</skos:prefLabel>
+    <skos:definition xml:lang="pt">instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas (PNPS)</skos:definition>
+    <skos:altLabel xml:lang="pt">Conselho gestor</skos:altLabel>
+    <skos:definition xml:lang="pt">Espaços públicos vinculados a órgãos do Poder Executivo, tendo por finalidade permitir a participação da sociedade na definição de prioridades para a agenda política, bem como na formulação, no acompanhamento e no controle das políticas públicas (IPEA 2013)</skos:definition>
+    <skos:altLabel xml:lang="pt">Conselho nacional de políticas públicas</skos:altLabel>
+    <skos:altLabel xml:lang="pt">Conselho de políticas públicas</skos:altLabel>
+    <skos:scopeNote xml:lang="pt">espaço contínuo de participação social</skos:scopeNote>
+    <skos:scopeNote xml:lang="pt">Espaço participativo com a finalidade de incidir nas políticas públicas de determinado tema, nos quais é prevista certa permanência no tempo, composto por representantes do poder público e da sociedade civil, esta podendo ser dividida em diferentes segmentos.</skos:scopeNote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/TermsOfUse">
+    <skos:prefLabel xml:lang="pt">Termos de uso</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Basis">
+    <skos:scopeNote xml:lang="pt">fundamento para proposta colocada em consulta pública. Conceito pode ser útil em outros contextos.</skos:scopeNote>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Fundamento</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/SocialDemandsMonitoringTable">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Mesa de Monitoramento das Demandas Sociais</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/AgendaForwarding">
+    <skos:prefLabel xml:lang="pt">Encaminhamento de pauta</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/CivilSociety">
+    <skos:definition xml:lang="pt">o cidadão, os coletivos, os movimentos sociais institucionalizados ou não institucionalizados, suas redes e suas organizações (PNPS)</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Sociedade civil</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/RemoteParticipation">
+    <skos:altLabel xml:lang="pt">Participação virtual</skos:altLabel>
+    <skos:prefLabel xml:lang="pt">Participação remota</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/PublicAction">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Ação pública</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/InterestedPerson">
+    <skos:broader xml:lang="pt">http://purl.org/socialparticipation/vbs/InterestedPart</skos:broader>
+    <skos:prefLabel xml:lang="pt">Pessoa interessada</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:related xml:lang="pt">http://purl.org/socialparticipation/vbs/AffectedPart</skos:related>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ConferenceSchedule">
+    <skos:related rdf:resource="http://purl.org/socialparticipation/vbs/Conference"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:altLabel xml:lang="pt">Calendário de processos conferenciais</skos:altLabel>
+    <skos:prefLabel xml:lang="pt">Calendário de conferência</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/CGU">
+    <skos:prefLabel xml:lang="pt">Controladoria-Geral da União</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:altLabel xml:lang="pt">Controladoria-Geral da União</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ParticipationInstanceOrMechanism">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Instância ou mecanismo de participação social</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Conclusion">
+    <skos:prefLabel xml:lang="pt">Conclusão</skos:prefLabel>
+    <skos:scopeNote xml:lang="pt">conclusão de fórum interconselhos. O conceito pode ser usado em outros contextos</skos:scopeNote>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Entity">
+    <skos:prefLabel xml:lang="pt">Entidade</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/SGPRHeadStateMinister">
+    <skos:prefLabel xml:lang="pt">Ministro de estado-chefe da Secretaria Geral da Presidência da República</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/FreeAccess">
+    <skos:prefLabel xml:lang="pt">Acesso livre</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Representative">
+    <skos:prefLabel xml:lang="pt">Representante</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/DiversityAssurance">
+    <skos:prefLabel xml:lang="pt">Garantia de diversidade</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:scopeNote xml:lang="pt">Garantia de diversidade de ambiente online de participação social. Conceito pode ser usado em outros contextos.</skos:scopeNote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/RelevantPublicServiceProvision">
+    <skos:prefLabel xml:lang="pt">Provisão de serviço público relevante</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/IndirectFederalAdministration">
+    <skos:prefLabel xml:lang="pt">Administração pública federal indireta</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Timely">
+    <skos:prefLabel xml:lang="pt">Tempo hábil</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/RepublicPresident">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Presidenta da República</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/RepresentativeDemocracy">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Democracia representativa</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Periodicity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Periodicidade</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Formulation">
+    <skos:prefLabel xml:lang="pt">Formulação</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ConsultiveNature">
+    <skos:prefLabel xml:lang="pt">Natureza consultiva</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/PersonWithDisabilities">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Pessoa com deficiência</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Guest">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Convidado</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ConferenceStep">
+    <skos:prefLabel xml:lang="pt">Etapa de conferência</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:scopeNote xml:lang="pt">Uma etapa é um evento participativo e também é chamada de conferência, enquanto 'a' conferência é o processo todo</skos:scopeNote>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/Conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/InterministerialCollegialInstance">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Instância colegiada interministerial</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/OGU">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">OGU</skos:prefLabel>
+    <skos:altLabel xml:lang="pt">Ouvidoria-Geral da União</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/TIC">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">TIC</skos:prefLabel>
+    <skos:altLabel xml:lang="pt">Tecnologias de informação e comunicação</skos:altLabel>
+    <skos:altLabel xml:lang="pt">Tecnologias de informação e comunicação (TIC)</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Strengthen">
+    <skos:prefLabel xml:lang="pt">Fortalecer</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Presidency">
+    <skos:prefLabel xml:lang="pt">Presidência da República</skos:prefLabel>
+    <skos:altLabel xml:lang="pt">Presidência</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Conference">
+    <skos:prefLabel xml:lang="pt">Conferência</skos:prefLabel>
+    <skos:definition xml:lang="pt">instância periódica de debate, de formulação e de avaliação sobre temas específicos e de interesse público, com a participação de representantes do governo e da sociedade civil, podendo contemplar etapas estaduais, distrital, municipais ou regionais, para propor diretrizes e ações acerca do tema tratado (PNPS)</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="pt">Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo</skos:definition>
+    <skos:definition xml:lang="pt">Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas</skos:definition>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/ParticipationInstance"/>
+    <skos:altLabel xml:lang="pt">Conferência nacional</skos:altLabel>
+    <skos:altLabel xml:lang="pt">Conferência de políticas públicas</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Transparency">
+    <skos:prefLabel xml:lang="pt">Transparência</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/FreeLicense">
+    <skos:prefLabel xml:lang="pt">Licença livre</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/CommunicationStrategy">
+    <skos:prefLabel xml:lang="pt">Estratégia de comunicação</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Guideline">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Diretriz</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Execution">
+    <skos:prefLabel xml:lang="pt">Execução</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ParticipationMechanism">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Mecanismo de participação social</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/ParticipationInstanceOrMechanism"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Selection">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Seleção</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/NormativeCharacterResolution">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Resolução normativa</skos:prefLabel>
+    <skos:altLabel xml:lang="pt">Resolução de caráter normativo</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Study">
+    <skos:prefLabel xml:lang="pt">Estudo</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Delegate">
+    <skos:prefLabel xml:lang="pt">Delegado</skos:prefLabel>
+    <skos:scopeNote xml:lang="pt">metodologia de conferência. O conceito pode ser útil em outros contextos</skos:scopeNote>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ConflictSolution">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Solução do conflito</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ParticipantPerson">
+    <skos:broader xml:lang="pt">http://purl.org/socialparticipation/vbs/InterestedPart</skos:broader>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Pessoa participante</skos:prefLabel>
+    <skos:related xml:lang="pt">http://purl.org/socialparticipation/vbs/AffectedPart</skos:related>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Parity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Paridade</skos:prefLabel>
+    <skos:scopeNote xml:lang="pt">paridade é um conceito local, podendo por exemplo, ser considerada proporção igual de membros do governo e da sociedade ou proporção igual entre dois segmentos ou setores que são considerados prioritários pelo Conselho</skos:scopeNote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/OmbudsmanAgency">
+    <skos:altLabel xml:lang="pt">Ouvidoria federal</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:altLabel xml:lang="pt">Ouvidoria pública</skos:altLabel>
+    <skos:prefLabel xml:lang="pt">Ouvidoria</skos:prefLabel>
+    <skos:altLabel xml:lang="pt">Ouvidoria pública federal</skos:altLabel>
+    <skos:definition xml:lang="pt">instância de controle e participação social responsável pelo tratamento das reclamações, solicitações, denúncias, sugestões e elogios relativos às políticas e aos serviços públicos, prestados sob qualquer forma ou regime, com vistas ao aprimoramento da gestão pública (PNPS)</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/FreeConference">
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/ConferenceStep"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Conferência livre</skos:prefLabel>
+    <skos:scopeNote xml:lang="pt">Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo</skos:scopeNote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/FreeSoftware">
+    <skos:prefLabel xml:lang="pt">Software livre</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/FederalGovernmentPolicy">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Política do governo federal</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/EarmarkedAppropriations">
+    <skos:prefLabel xml:lang="pt">Dotações consignadas</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Ministry">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Ministério</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Definition">
+    <skos:prefLabel xml:lang="pt">Definição</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/renewal">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:scopeNote xml:lang="pt">Este conceito foi trazido do campo dos conselhos, pode ser aplicável em outros contextos.</skos:scopeNote>
+    <skos:prefLabel xml:lang="pt">Recondução</skos:prefLabel>
+    <skos:scopeNote xml:lang="pt">Quando há 'limite de mandato', há limite para recondução.</skos:scopeNote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/PublicPolicy">
+    <skos:prefLabel xml:lang="pt">Política pública</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ActPublicity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Publicidade do ato</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/NationalConference">
+    <skos:scopeNote xml:lang="pt">Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo</skos:scopeNote>
+    <skos:prefLabel xml:lang="pt">Conferência nacional</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/ConferenceStep"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/SocialMovement">
+    <skos:prefLabel xml:lang="pt">Movimento social</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/RegionalConference">
+    <skos:scopeNote xml:lang="pt">Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo</skos:scopeNote>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/ConferenceStep"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Conferência regional</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/SpecialSocialMeaning">
+    <skos:prefLabel xml:lang="pt">Especial significado social</skos:prefLabel>
+    <skos:related rdf:resource="http://purl.org/socialparticipation/vbs/SpecialPoliticalMeaning"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Commision">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Comissão</skos:prefLabel>
+    <skos:definition xml:lang="pt">instância colegiada temática, instituída por ato normativo, criada para o diálogo entre a sociedade civil e o governo em torno de objetivo específico, com prazo de funcionamento vinculado ao cumprimento de suas finalidades</skos:definition>
+    <skos:altLabel xml:lang="pt">Comissão de políticas públicas</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/OpenData">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Dado aberto</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/CollegialInstance">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Instância colegiada</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Counselor">
+    <skos:prefLabel xml:lang="pt">Conselheiro</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/PublicConsultation">
+    <skos:definition xml:lang="pt">mecanismo participativo, a se realizar em prazo definido, de caráter consultivo, aberto a qualquer interessado, que visa a receber contribuições por escrito da sociedade civil sobre determinado assunto, na forma definida no seu ato de convocação (PNPS)</skos:definition>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Consulta pública</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/MobilizationStrategy">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Estratégia de mobilização</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Bylaws">
+    <skos:prefLabel xml:lang="pt">Regimento interno</skos:prefLabel>
+    <skos:altLabel xml:lang="pt">Estatuto</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Integration">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Integração</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Registration">
+    <skos:prefLabel xml:lang="pt">Cadastro</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Meeting">
+    <skos:prefLabel xml:lang="pt">Reunião</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/StateConference">
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/ConferenceStep"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:scopeNote xml:lang="pt">Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo</skos:scopeNote>
+    <skos:prefLabel xml:lang="pt">Conferência estadual</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/DOU">
+    <skos:altLabel xml:lang="pt">Diário Oficial da União</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">DOU</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/SpecialPoliticalMeaning">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Especial significado político</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Methodology">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:altLabel xml:lang="pt">Procedimento de metodologia de conferência</skos:altLabel>
+    <skos:prefLabel xml:lang="pt">Metodologia</skos:prefLabel>
+    <skos:related rdf:resource="http://purl.org/socialparticipation/vbs/Conference"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Subparagraph">
+    <skos:prefLabel xml:lang="pt">Alínea</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:scopeNote xml:lang="pt">Alínea de texto legal (ex. decreto). O conceito oode ser usado em outros contextos.</skos:scopeNote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/AudienceObject">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:scopeNote xml:lang="pt">objeto de audiência pública.</skos:scopeNote>
+    <skos:prefLabel xml:lang="pt">Objeto de audiência</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ParticipationInstance">
+    <skos:prefLabel xml:lang="pt">Instância de participação social</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:related rdf:resource="http://purl.org/socialparticipation/vbs/ParticipationMechanism"/>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/ParticipationInstanceOrMechanism"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Moment">
+    <skos:scopeNote xml:lang="pt">momento de realização de audiência pública. O conceito pode ser útil em outros contextos</skos:scopeNote>
+    <skos:altLabel xml:lang="pt">Momento</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Momento de realização</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ResolutionTrackingModel">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Modelo de acompanhamento de resolução</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Turnover">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Rotatividade</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/DirectDemocracy">
+    <skos:prefLabel xml:lang="pt">Democracia direta</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Contribution">
+    <skos:prefLabel xml:lang="pt">Contribuição</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/MunicipalConference">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/ConferenceStep"/>
+    <skos:scopeNote xml:lang="pt">Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo</skos:scopeNote>
+    <skos:prefLabel xml:lang="pt">Conferência municipal</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Employee">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Empregado</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/DemocraticDialogueInstance">
+    <skos:prefLabel xml:lang="pt">Instância democrática de diálogo</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/SocialNetwork">
+    <skos:prefLabel xml:lang="pt">Rede social</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Internet">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Internet</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/NormativeAct">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Ato normativo</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Diversity">
+    <skos:prefLabel xml:lang="pt">Diversidade</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/AutonomyExpression">
+    <skos:prefLabel xml:lang="pt">Expressão de autonomia</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Proposal">
+    <skos:prefLabel xml:lang="pt">Proposta</skos:prefLabel>
+    <skos:scopeNote xml:lang="pt">proposta colocada em consulta pública. Conceito pode ser útil em outros contextos.</skos:scopeNote>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/CitizenRight">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Direito do cidadão</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Competence">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Competência</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Nature">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Natureza</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ResponseCompromise">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Compromisso de resposta</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/RegulatoryAgency">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Agência reguladora</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Agenda">
+    <skos:prefLabel xml:lang="pt">Pauta</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Evaluation">
+    <skos:prefLabel xml:lang="pt">Avaliação</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/SectorialPolicy">
+    <skos:prefLabel xml:lang="pt">Política setorial</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Promotion">
+    <skos:altLabel xml:lang="pt">Fomento</skos:altLabel>
+    <skos:prefLabel xml:lang="pt">Promoção</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ExtraordinaryConference">
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/ConferenceStep"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Conferência extraordinária</skos:prefLabel>
+    <skos:scopeNote xml:lang="pt">Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo</skos:scopeNote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/FederalGovernmentProgram">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Programa do governo federal</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/InterCouncilForum">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Fórum interconselhos</skos:prefLabel>
+    <skos:definition xml:lang="pt">mecanismo para o diálogo entre representantes dos conselhos e comissões de políticas públicas, no intuito de acompanhar as políticas públicas e os programas governamentais, formulando recomendações para aprimorar sua intersetorialidade e transversalidade (PNPS)</skos:definition>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/EnterIntoForce">
+    <skos:prefLabel xml:lang="pt">Entrar em vigor</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/SocialNetworkTool">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Ferramenta de rede social</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/CivilSocietyElectedRepresentative">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Representante eleito pela sociedade civil</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Citizenship">
+    <skos:prefLabel xml:lang="pt">Cidadania</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/VoluntaryObligation">
+    <skos:prefLabel xml:lang="pt">Obrigação voluntaria</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:altLabel xml:lang="pt">Obrigação voluntariamente assumida</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/TechnicalMaterial">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Material técnico</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Independence">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Independência</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/CGPS">
+    <skos:altLabel xml:lang="pt">Comitê Governamental de Participação Social</skos:altLabel>
+    <skos:prefLabel xml:lang="pt">CGPS</skos:prefLabel>
+    <skos:altLabel xml:lang="pt">Comitê Governamental de Participação Social (SNPS)</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:altLabel xml:lang="pt">Comitê Governamental de Participação Social - SNPS</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/CivilSocietyOrganization">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Organização da sociedade civil</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Article">
+    <skos:prefLabel xml:lang="pt">Artigo</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:scopeNote xml:lang="pt">Artigo de texto legal (ex. decreto). O conceito oode ser usado em outros contextos.</skos:scopeNote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Systematization">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Sistematização</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/InstitutionalSupport">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Apoio institucional</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/SocialNetworkEnvironment">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Ambiente de rede social</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Caput">
+    <skos:prefLabel xml:lang="pt">Caput</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/GovernmentDebate">
+    <skos:prefLabel xml:lang="pt">Debate de governo</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Constitution">
+    <skos:prefLabel xml:lang="pt">Constituição</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/JuridicalSubject">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Assunto jurídico</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/AffectedPart">
+    <skos:prefLabel xml:lang="pt">Parte afetada</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/AffectedPerson">
+    <skos:prefLabel xml:lang="pt">Pessoa afetada</skos:prefLabel>
+    <skos:broader xml:lang="pt">http://purl.org/socialparticipation/vbs/AffectedPart</skos:broader>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/SocialParticipationTechnologicalTool">
+    <skos:prefLabel xml:lang="pt">Ferramenta tecnológica de participação social</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/DialogueTable">
+    <skos:definition xml:lang="pt">mecanismo de debate e de negociação com a participação dos setores da sociedade civil e do governo diretamente envolvidos no intuito de prevenir, mediar e solucionar conflitos sociais (PNPS)</skos:definition>
+    <skos:prefLabel xml:lang="pt">Mesa de diálogo</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/PublicAudience">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:definition xml:lang="pt">mecanismo participativo de caráter presencial, consultivo, aberto a qualquer interessado, com a possibilidade de manifestação oral dos participantes, cujo objetivo é subsidiar decisões governamentais (PNPS)</skos:definition>
+    <skos:prefLabel xml:lang="pt">Audiência pública</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Recomendation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:scopeNote xml:lang="pt">recomendação de fórum interconselhos. O conceito pode ser usado em outros contextos</skos:scopeNote>
+    <skos:prefLabel xml:lang="pt">Recomendação</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/BoardFund">
+    <skos:prefLabel xml:lang="pt">Fundo do conselho</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Theme">
+    <skos:prefLabel xml:lang="pt">Tema</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Government">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Governo</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Providence">
+    <skos:prefLabel xml:lang="pt">Providência</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/WorkConditionAndRelation">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Condições e relações do trabalho</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Member">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Membro</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Monitoring">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Monitoramento</skos:prefLabel>
+    <skos:altLabel xml:lang="pt">Acompanhamento</skos:altLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/GovernmentPartnershipCelebration">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Celebração de parceria com a administração pública</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/PublicAgent">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Agente público</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Attribution">
+    <skos:prefLabel xml:lang="pt">Atribuição</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ParticipativeDemocracy">
+    <skos:prefLabel xml:lang="pt">Democracia participativa</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/FreeFunctioning">
+    <skos:prefLabel xml:lang="pt">Livre funcionamento</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/IntercityConferente">
+    <skos:scopeNote xml:lang="pt">Uma etapa é um evento participativo, também chamado de conferência, enquanto a conferência em si é o processo todo</skos:scopeNote>
+    <skos:prefLabel xml:lang="pt">Conferência intermunicipal</skos:prefLabel>
+    <skos:broader rdf:resource="http://purl.org/socialparticipation/vbs/ConferenceStep"/>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/OperationPeriod">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Período de operação</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/SectorialProgram">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Programa setorial</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/FreeTechnology">
+    <skos:prefLabel xml:lang="pt">Tecnologia livre</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Autonomy">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Autonomia</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/PSPB">
+    <skos:altLabel xml:lang="pt">Portal do Software Público Brasileiro (PSPB)</skos:altLabel>
+    <skos:altLabel xml:lang="pt">PSPB</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Portal do Software Público Brasileiro</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Debate">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Debate</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Dialogue">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Diálogo</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/CivilHouse">
+    <skos:altLabel xml:lang="pt">Casa Civil da Presidência da República</skos:altLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Casa Civil</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Establish">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Instituir</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Subgroup">
+    <skos:prefLabel xml:lang="pt">Subgrupo</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Articulate">
+    <skos:prefLabel xml:lang="pt">Articular</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/FederatedEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Ente federado</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/FederalPublicAdministration">
+    <skos:prefLabel xml:lang="pt">Administração pública federal</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ConveningDocument">
+    <skos:prefLabel xml:lang="pt">Documento convocatório</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Employer">
+    <skos:prefLabel xml:lang="pt">Empregador</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Product">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Produto</skos:prefLabel>
+    <skos:scopeNote xml:lang="pt">Produto de ambiente online de participação social. Conceito pode ser usado em outros contextos.</skos:scopeNote>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/VulnerableGroup">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Grupo vulnerável</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/GovernmentMethod">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Método de governo</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/ExecutiveSecretary">
+    <skos:prefLabel xml:lang="pt">Secretário executivo</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/SourceCode">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Código fonte</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/MinistryAct">
+    <skos:prefLabel xml:lang="pt">Ato do ministro</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/Decree">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="pt">Decreto</skos:prefLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/vbs/RegulatoryImpactAnalysis">
+    <skos:prefLabel xml:lang="pt">Análise de impacto regulatório</skos:prefLabel>
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+</rdf:RDF>

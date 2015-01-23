@@ -1,0 +1,173 @@
+@prefix obs: <http://purl.org/socialparticipation/obs/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+obs:Articulation a owl:Class ;
+    rdfs:label "Articulação"@pt ;
+    rdfs:subClassOf obs:Effect .
+
+obs:DialogueTextualBase a owl:Class ;
+    rdfs:label "Texto base para diálogo"@pt ;
+    rdfs:subClassOf obs:Document .
+
+obs:Evaluation a owl:Class ;
+    rdfs:label "Avaliação"@pt ;
+    rdfs:subClassOf obs:Effect .
+
+obs:ExternalSocietyQualification a owl:Class ;
+    rdfs:label "Capacitação de sociedade externa"@pt ;
+    rdfs:subClassOf obs:PoliticalSocialization .
+
+obs:FinalReport a owl:Class ;
+    rdfs:label "Relatório final"@pt ;
+    rdfs:subClassOf obs:DocumentaryResult .
+
+obs:GeneralDescription a owl:Class ;
+    rdfs:label "Descrição geral"@pt .
+
+obs:InvitationLetter a owl:Class ;
+    rdfs:label "Carta convite"@pt ;
+    rdfs:subClassOf obs:Document .
+
+obs:Letter a owl:Class ;
+    rdfs:label "Carta"@pt ;
+    rdfs:subClassOf obs:DocumentaryResult .
+
+obs:Manual a owl:Class ;
+    rdfs:label "Manual"@pt ;
+    rdfs:subClassOf obs:Document .
+
+obs:MonitoringReport a owl:Class ;
+    rdfs:label "Relatório de monitoramento"@pt ;
+    rdfs:subClassOf obs:Document .
+
+obs:Motion a owl:Class ;
+    rdfs:label "Moção"@pt ;
+    rdfs:subClassOf obs:DocumentaryResult .
+
+obs:NationalPlan a owl:Class ;
+    rdfs:label "Plano nacional"@pt ;
+    rdfs:subClassOf obs:DocumentaryResult .
+
+obs:NationalPlanMaturing a owl:Class ;
+    rdfs:label "Amadurecimento do plano nacional"@pt ;
+    rdfs:subClassOf obs:Effect .
+
+obs:NormativeAct a owl:Class ;
+    rdfs:label "Ato normativo"@pt ;
+    rdfs:subClassOf obs:Document .
+
+obs:ParticipantQualification a owl:Class ;
+    rdfs:label "Capacitação de participante"@pt ;
+    rdfs:subClassOf obs:PoliticalSocialization .
+
+obs:ParticipatoryCultureStrengthening a owl:Class ;
+    rdfs:label "Fortalecimento da cultura participativa"@pt ;
+    rdfs:subClassOf obs:Effect .
+
+obs:ProposalFormulation a owl:Class ;
+    rdfs:label "Formulação de proposta"@pt ;
+    rdfs:subClassOf obs:Effect .
+
+obs:ProposalsNotebook a owl:Class ;
+    rdfs:label "Caderno de propostas"@pt ;
+    rdfs:subClassOf obs:DocumentaryResult .
+
+obs:PublicAgencyIntegration a owl:Class ;
+    rdfs:label "Integração de órgãos públicos"@pt ;
+    rdfs:subClassOf obs:Effect .
+
+obs:PublicPolicyReshaping a owl:Class ;
+    rdfs:label "Remodelagem de política pública"@pt ;
+    rdfs:subClassOf obs:Effect .
+
+obs:Regiment a owl:Class ;
+    rdfs:label "Regimento"@pt ;
+    rdfs:subClassOf obs:Document .
+
+obs:Regulation a owl:Class ;
+    rdfs:label "Regulamento"@pt ;
+    rdfs:subClassOf obs:Document .
+
+obs:Resolution a owl:Class ;
+    rdfs:label "Resolução"@pt ;
+    rdfs:subClassOf obs:DocumentaryResult .
+
+obs:Video a owl:Class ;
+    rdfs:label "Video"@pt ;
+    rdfs:subClassOf obs:Document .
+
+obs:composes a owl:ObjectProperty ;
+    rdfs:label "compõe"@pt .
+
+obs:description a owl:DatatypeProperty ;
+    rdfs:label "descrição"@pt ;
+    rdfs:range xsd:string .
+
+obs:feeds a owl:ObjectProperty ;
+    rdfs:label "alimenta"@pt ;
+    rdfs:range obs:Conference .
+
+obs:has a owl:ObjectProperty ;
+    rdfs:label "possui"@pt ;
+    rdfs:range obs:Document .
+
+obs:name a owl:DatatypeProperty ;
+    rdfs:label "nome"@pt ;
+    rdfs:range xsd:string .
+
+obs:produces a owl:ObjectProperty ;
+    rdfs:label "produz"@pt ;
+    rdfs:range obs:Result .
+
+obs:sets a owl:ObjectProperty ;
+    rdfs:label "estabelece"@pt ;
+    rdfs:range obs:Theme .
+
+obs:step a owl:ObjectProperty ;
+    rdfs:label "etapa"@pt ;
+    rdfs:range obs:ConferenceStep .
+
+obs:thematicAxes a owl:DatatypeProperty ;
+    rdfs:label "eixos temáticos"@pt ;
+    rdfs:range xsd:string .
+
+obs:triggersElaboration a owl:ObjectProperty ;
+    rdfs:label "provoca elaboração"@pt .
+
+obs:Conference a owl:Class ;
+    rdfs:label "Conferência"@pt ;
+    rdfs:comment "Conferências são processos nacionais de promoção do diálogo entre governo e sociedade"@pt ;
+    rdfs:subClassOf obs:ParticipationInstance .
+
+obs:ConferenceStep a owl:Class ;
+    rdfs:label "Etapa de conferência"@pt .
+
+obs:ParticipationInstance a owl:Class ;
+    rdfs:label "Instância de participação social"@pt .
+
+obs:Theme a owl:Class ;
+    rdfs:label "Tema"@pt .
+
+obs:PoliticalSocialization a owl:Class ;
+    rdfs:label "Socialização política"@pt ;
+    rdfs:subClassOf obs:Effect .
+
+obs:Result a owl:Class ;
+    rdfs:label "Resultado"@pt .
+
+obs:DocumentaryResult a owl:Class ;
+    rdfs:label "Resultado documental"@pt ;
+    rdfs:subClassOf obs:Document,
+        obs:Result .
+
+obs:Effect a owl:Class ;
+    rdfs:label "Efeito"@pt ;
+    rdfs:subClassOf obs:Result .
+
+obs:Document a owl:Class ;
+    rdfs:label "Documento"@pt .
+

@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:obs="http://purl.org/socialparticipation/obs/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://purl.org/socialparticipation/obs/Conference#1">
+    <obs:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2007</obs:year>
+    <obs:thematicAxes>Universalizar direitos em um contexto de desigualdades; II. Violência, segurança pública e acesso à justiça;mIII. Pacto federativo e responsabilidades dos três Poderes, do Ministério Público e da Defensoria Pública; IV. Educação e cultura em direitos humanos; V. Interação democrática entre Estado e sociedade civil emVI. Desenvolvimento e direitos humanos.</obs:thematicAxes>
+    <obs:responsibleBody>Secretaria Nacional de Juventude e do Conselho Nacional de Juventude </obs:responsibleBody>
+    <obs:nationalPhaseWorkGroupProposalsLimit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:nationalPhaseWorkGroupProposalsLimit>
+    <obs:councilVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</obs:councilVacanciesNationalOrganizationComission>
+    <obs:participationPurpose rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:participationPurpose>
+    <obs:nationalPhaseCountReference>Delegados da etapa nacional</obs:nationalPhaseCountReference>
+    <obs:nativeDelegatesQuotaSpecification>38 conselheiros(as) do CONDRAF representantes da sociedade civil - titulates e suplentes; 38 conselheiros(as) do CONDRAF representantes governamentais - titulares e suplentes; 71 representantes de órgãos públicos do poder executivo federal</obs:nativeDelegatesQuotaSpecification>
+    <obs:name>Conferência de Medicamentos e Assistência Farmacêutica</obs:name>
+    <obs:extraordinaryPhases rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:extraordinaryPhases>
+    <obs:theme>Construção do Sistema Nacional Articulado de Educação </obs:theme>
+    <obs:nationalOrganizationComission>Coordenação geral; Grupo executivo.</obs:nationalOrganizationComission>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">324</obs:regimentGovernmentalVacanciesCount>
+    <obs:realizationPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P20M</obs:realizationPeriod>
+    <obs:nativeDelegatesQuotaSpecification>28 membros do Grupo de Trabalho Nacional </obs:nativeDelegatesQuotaSpecification>
+    <obs:nationalPhaseParticipantsCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</obs:nationalPhaseParticipantsCount>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">792</obs:regimentDelegatesCount>
+    <obs:theme>Concretizar Direitos Humanos de Crianças e Adolescentes: investimento Obrigatório </obs:theme>
+    <obs:responsibleBody>Ministério da Educação</obs:responsibleBody>
+    <obs:edition>Décima Segunda Edição</obs:edition>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</obs:nativeDelegatesQuotaCount>
+    <obs:thematicArea>Garantia de direitos </obs:thematicArea>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">108</obs:nativeDelegatesQuotaCount>
+    <obs:nationalPhaseWomenCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</obs:nationalPhaseWomenCount>
+    <obs:intermediaryPlenary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:intermediaryPlenary>
+    <obs:municipalPhases rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:municipalPhases>
+    <obs:theme>Acessibilidade – Você também tem Compromisso </obs:theme>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</obs:nativeDelegatesQuotaCount>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1005</obs:regimentDelegatesCount>
+    <obs:thematicAxes>A atmosfera e as mudanças climáticas; a biodiversidade e a questão da homogeneização, das queimadas e desmatamentos; a água e o problema da escassez, da poluição e da desertificação; energia e mobilidade</obs:thematicAxes>
+    <obs:statePhasesProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</obs:statePhasesProposalsLimitCount>
+    <obs:realizationPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P14M</obs:realizationPeriod>
+    <obs:thematicAxes>Gestão democrática, controle social, integração e federalismo; financiamento e gestão da política pública de segurança; valorização profissional e otimização das condições de trabalho; repressão qualificada da criminalidade; prevenção social do crime e das violências e construção da paz; diretrizes para o Sistema Penitenciário;diretrizes para o sistema de prevenção, atendimentos emergenciais e acidentes</obs:thematicAxes>
+    <obs:name>Conferência da Criança e do Adolescente</obs:name>
+    <obs:responsibleBody>Conselho Nacional de Economia Solidária; Secretaria Nacional de Economia Solidária </obs:responsibleBody>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">255</obs:regimentGovernmentalVacanciesCount>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">527</obs:regimentNongovernmentalVacanciesCount>
+    <obs:thematicAxes>4.1 - Sistema Nacional de Atendimento Socioeducativo (SINASE) como marco regulatório do atendimento socioeducativo; 4.2 – Plano Nacional de Convivência Familiar e Comunitária: marco regulatório da política de proteção.; 4.3 – Orçamento criança e adolescente: garantia de direitos</obs:thematicAxes>
+    <obs:nativeDelegatesQuotaSpecification>Conselho Nacional de Política Cultural (52); Conselhos Estaduais de Cultura (54)</obs:nativeDelegatesQuotaSpecification>
+    <obs:name>Conferência de Saúde</obs:name>
+    <obs:quotasPrediction rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:quotasPrediction>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">285</obs:regimentGovernmentalVacanciesCount>
+    <obs:nativeDelegatesQuotaSpecification>63 integrantes, titulares e suplentes, do Conselho Nacional dos Direitos da Mulher</obs:nativeDelegatesQuotaSpecification>
+    <obs:responsibleBody>Ministério da Saúde; Secretaria de Direitos Humanos da Presidência da República </obs:responsibleBody>
+    <obs:councilVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</obs:councilVacanciesNationalOrganizationComission>
+    <obs:theme>O Compromisso de Todos por um Envelhecimento digno no Brasil </obs:theme>
+    <obs:municipalPhasesProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</obs:municipalPhasesProposalsLimitCount>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">420</obs:regimentNongovernmentalVacanciesCount>
+    <obs:edition>Quinta edição</obs:edition>
+    <obs:lectures rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:lectures>
+    <obs:thematicArea>Políticas sociais</obs:thematicArea>
+    <obs:thematicAxes>Gestão Democrática e Conselho Nacional das Cidades; Princípios e Diretrizes da Política Nacional de Desenvolvimento Urbano; Linhas de Ações e Prioridades da Política Nacional de Desenvolvimento Urbano</obs:thematicAxes>
+    <obs:nationalOrganizationComission>Comissão Executiva; Subcomissão de Conteúdo e Metodologia; Sub-Comissão de Mobilização; Subcomissão de Infra-estrutura e Financiamento; Subcomissão Local; Grupo Operacional</obs:nationalOrganizationComission>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</obs:regimentDelegatesCount>
+    <obs:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2005</obs:year>
+    <obs:sectorPhases rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:sectorPhases>
+    <obs:callAct>DECRETO DE 18 DE DEZEMBRO DE 2003 </obs:callAct>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144</obs:nativeDelegatesQuotaCount>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">582</obs:regimentGovernmentalVacanciesCount>
+    <obs:thematicAxes>Análise da realidade brasileira a partir da Política Nacional de Promoção da Igualdade Racial; Impacto das políticas de igualdade racial implementadas pelos entes federativos a partir dos eixos temáticos: Educação, Saúde, Trabalho, Segurança e Terra; Compartilhamento da agenda nacional com o Plano de Ação de Durban; Gestão pública, participação e controle social: compartilhando o poder de decisão; análise do impacto das políticas implementadas, para além das fronteiras, com destaque na área de relações internacionais, para protocolos firmados com os países do continente africano.</obs:thematicAxes>
+    <obs:callAct>Portaria Ministerial nº 318, de 04 de março de 2004 </obs:callAct>
+    <obs:council>Conselho Nacional de Desenvolvimento Rural Sustentável</obs:council>
+    <obs:nationalPhaseProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</obs:nationalPhaseProposalsLimitCount>
+    <obs:council>Conselho Nacional de Defesa Civil</obs:council>
+    <obs:callAct>DECRETO DE 14 DE JULHO 2005 </obs:callAct>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">346</obs:regimentGovernmentalVacanciesCount>
+    <obs:theme>Direitos Humanos e Políticas Públicas: O caminho para garantir a cidadania de Gays, Lésbicas, Bissexuais, Travestis e Transexuais </obs:theme>
+    <obs:role>Conselho é responsável ou corresponsável</obs:role>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1480</obs:regimentDelegatesCount>
+    <obs:name>Conferência dos Direitos da Pessoa Idosa</obs:name>
+    <obs:ethnicQuota>68 </obs:ethnicQuota>
+    <obs:thematicAxes>Participação e Controle Social; Questão Federativa; Política de Desenvolvimento Regional e Metropolitana; Financiamento do Desenvolvimento Urbano.</obs:thematicAxes>
+    <obs:thematicAxes>I - Juventude: Democracia, Participação e Desenvolvimento Nacional; II - Parâmetros e Diretrizes da Política Nacional de Juventude; e III - Desafios e Prioridades para as políticas Públicas de Juventude.</obs:thematicAxes>
+    <obs:nationalOrganizationComission>Comissão executiva; Comissão de Comunicação; Comissão de Articulação e Mobilização; Comissão de Infraestrutura.</obs:nationalOrganizationComission>
+    <obs:callAct>Portaria Interministerial nº 453 de 17 de março de 2004 </obs:callAct>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:callAct>Portaria nº 262 de 12/08/2003 </obs:callAct>
+    <obs:council>Conselho Nacional de Educação</obs:council>
+    <obs:thematicAxes>Intervenções urbanas e a integração de políticas; Intervenções urbanas e o controle social; Intervenções urbanas e os recursos; Capacidade administrativa e de planejamento e estrutura institucional; Receitas municipais e ampliação de receitas próprias; Sistema nacional de desenvolvimento urbano; Política nacional de prevenção e mediação de conflitos fundiários urbanos.</obs:thematicAxes>
+    <obs:nationalOrganizationComission>Comitê executivo; Subcomissão Temática e de Relatoria; Subcomissão de Comunicação; Subcomissão de Infraestrutura; Subcomissão de Articulação e de Mobilização.</obs:nationalOrganizationComission>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:callAct>Portaria conjunta nº 1 de 17/12/2010 </obs:callAct>
+    <obs:nationalOrganizationComission>Comissão executiva; Assessoria especial de Comunicação Social; Assessoria especial de Articulação e mobilização; Assessoria especial de Organização; Assessoria especial de Sistematização e Parlamentar.</obs:nationalOrganizationComission>
+    <obs:thematicArea>Desenvolvimento econômico</obs:thematicArea>
+    <obs:theme>2ª Geração de Políticas para Arranjos Produtivos Locais: Competitividade e Sustentabilidade </obs:theme>
+    <obs:councilVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</obs:councilVacanciesNationalOrganizationComission>
+    <obs:nationalOrganizationComission>Comissão Temática e de Programação; Comissão de Comunicação Social; Comissão de Articulação e Mobilização; Comissão de Organização; Comissão de relatoria</obs:nationalOrganizationComission>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1348</obs:regimentGovernmentalVacanciesCount>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">204</obs:regimentGovernmentalVacanciesCount>
+    <obs:nationalOrganizationComission>Comissão executiva (coordenador geral, coordenador adjunto, secretário geral, secretário adjunto); Comissão de Comunicação; Comissão de Articulação e Mobilização; Comissão de Infraestrutura</obs:nationalOrganizationComission>
+    <obs:nativeDelegatesQuotaSpecification>Titulares e respectivos suplentes de: representantes dos Ministérios e Secretarias Especiais do Governo Federal; membros do Conselho Nacional do Esporte; membros da Comissão Organizadora Nacional; um representante da Comissão de Educação, Cultura e Esporte do Senado Federal e um representante da Comissão de Turismo e Desporto da Câmara dos Deputados; os secretários estaduais de esporte e lazer ou autoridade equivalente; os representantes das entidades nacionais de administração do esporte; os representantes da sociedade civil organizada. Todos indicados pela CON.</obs:nativeDelegatesQuotaSpecification>
+    <obs:nativeDelegatesQuotaSpecification>Titulares do Conselho Nacional de Promoção da Igualdade Racial</obs:nativeDelegatesQuotaSpecification>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1054</obs:regimentGovernmentalVacanciesCount>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">316</obs:regimentGovernmentalVacanciesCount>
+    <obs:nationalOrganizationComission>Grupo de Trabalho Nacional; Secretaria Executiva</obs:nationalOrganizationComission>
+    <obs:responsibleBody>Ministério do Trabalho e Emprego; Conselho Nacional dos Direitos da Criança e do Adolescente; Conselho Nacional da Juventude; Secretaria Nacional da Juventude </obs:responsibleBody>
+    <obs:thematicAxes>Política de saúde na seguridade social, segundo os princípios da integralidade, universalidade e equidade; Participação da comunidade e controle social; Gestão do SUS (Financiamento, Pacto pela Saúde e Relação Público x Privado, Gestão do Sistema, do Trabalho e da Educação em Saúde.</obs:thematicAxes>
+    <obs:theme>Produzir e aplicar conhecimento na busca da universalidade e equidade, com qualidade da assistência à saúde da população </obs:theme>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</obs:regimentNongovernmentalVacanciesCount>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">215</obs:regimentGovernmentalVacanciesCount>
+    <obs:thematicAxes>Sistema agroalimentar mundial e abastecimento interno, organismos e acordos internacionais; Componentes de segurança alimentar e nutricional em um plano nacional de reforma agrária; Políticas de apoio e fortalecimento da agricultura familiar e do agroextrativismo; Sementes, recursos genéticos e a questão dos transgênicos; Acesso aos alimentos e educação para o consumo alimentar; Ações de promoção e vigilância em nutrição e saúde; Alimentação e educação nutricional nas escolas e creches; Preservação da cultura alimentar; Indicadores de segurança alimentar e nutricional e instrumentos de gestão e controle social; Programas de transferência de renda; Participação social na formulação e implementação de políticas de segurança alimentar e nutricional; Instrumentos de promoção do direito humano à alimentação; Acesso e uso dos recursos naturais e água; Programas e instrumentos para geração de trabalho e renda; Alimentação e a promoção de modos de vida saudáveis; Mutirões, coleta e doação de alimentos.</obs:thematicAxes>
+    <obs:thematicAxes>Gestão Pública da Cultura; Cultura é Direito e Cidadania; Economia da Cultura; Patrimônio Cultural; Comunicação é Cultura.</obs:thematicAxes>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">648</obs:regimentNongovernmentalVacanciesCount>
+    <obs:nationalPhaseNewProposalsFormulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:nationalPhaseNewProposalsFormulation>
+    <obs:nationalOrganizationComission>Coordenação; Comitê de Acessibilidade; Comitê de Comunicação; Comitê Editorial; Comitê Executivo.</obs:nationalOrganizationComission>
+    <obs:realizationPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P7M</obs:realizationPeriod>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">386</obs:regimentDelegatesCount>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">172</obs:nativeDelegatesQuotaCount>
+    <obs:thematicAxes>A Política Nacional de Ciência, Tecnologia e Inovação em Saúde; A Agenda Nacional de Prioridades de Pesquisa em Saúde.</obs:thematicAxes>
+    <obs:name>Conferência LGBT</obs:name>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:thematicAxes>I - análise da realidade brasileira: social, econômica, política, cultural e os desafios para a construção da igualdade de gênero, na perspectiva do fortalecimento da autonomia econômica, social, cultural e política das mulheres, e que contribuam para a erradicação da pobreza extrema e exercício pleno da cidadania pelas mulheres brasileiras; II - definição de prioridades de políticas para o próximo período, tendo como base a avaliação, atualização e aprimoramento das ações e políticas propostas no II Plano Nacional de Políticas para as Mulheres, sua execução e impactos.</obs:thematicAxes>
+    <obs:theme>Alimentação Adequada e Saudável: Direito de Todos </obs:theme>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1090</obs:regimentDelegatesCount>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">877</obs:regimentNongovernmentalVacanciesCount>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">750</obs:regimentGovernmentalVacanciesCount>
+    <obs:theme>Trabalhadores da saúde e a saúde de todos os brasileiros: práticas de trabalho, de gestão, de formação e de participação </obs:theme>
+    <obs:callAct>Decreto sem número de 01/12/2006 </obs:callAct>
+    <obs:realizationPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P2M</obs:realizationPeriod>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">204</obs:regimentNongovernmentalVacanciesCount>
+    <obs:ethnicQuota>36 </obs:ethnicQuota>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:thematicAxes>Direito à Saúde; Controle Social e Gestão Participativa; Desafios Indígenas Atuais; Trabalhadores indígenas e não indígenas em saúde; Segurança Alimentar, Nutricional e Desenvolvimento Sustentável</obs:thematicAxes>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:responsibleBody>Secretaria Especial de Direitos Humanos</obs:responsibleBody>
+    <obs:ethnicQuota>60 </obs:ethnicQuota>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1600</obs:regimentDelegatesCount>
+    <obs:realizationPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P17M</obs:realizationPeriod>
+    <obs:council>Conselho de Representantes de Brasileiros no Exterior - CRBE</obs:council>
+    <obs:responsibleBody>Ministério de Desenvolvimento, Indústria e Comércio Exterior; Grupo de Trabalho para Arranjos Produtivos Locais </obs:responsibleBody>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">114</obs:nativeDelegatesQuotaCount>
+    <obs:thematicAxes>1 – O papel da Sociedade e do Estado na formulação, execução e monitoramento de uma política para a criança e o adolescente; 2- 2 – A Participação Social na Promoção da Igualdade e Valorização da Diversidade; – A Participação Social na Elaboração, Acompanhamento e Fiscalização do Orçamento Público.</obs:thematicAxes>
+    <obs:workGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:workGroups>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:municipalitiesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</obs:municipalitiesCount>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">232</obs:regimentGovernmentalVacanciesCount>
+    <obs:sectorPhases rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:sectorPhases>
+    <obs:council>Conselho Nacional das Cidades - CONCIDADES</obs:council>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1420</obs:regimentDelegatesCount>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:thematicAxes>Reflexão sobre a realidade brasileira, do ponto de vista da sociedade e da estrutura do Estado, considerando os mecanismos de reprodução da discriminação, do racismo e das desigualdades raciais; Avaliação das ações e políticas públicas desenvolvidas para a promoção da igualdade racial nas três instâncias de governo: municipal, estadual e federal, bem como o cumprimento dos compromissos internacionais objetos de acordos, tratados e convenções; Proposição de diretrizes para a Política Nacional de Promoção da Igualdade Racial e Étnica considerando a perspectiva de gênero, cultura e religião.</obs:thematicAxes>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1468</obs:regimentDelegatesCount>
+    <obs:theme>Inclusão, Participação e Desenvolvimento - Um novo jeito de avançar </obs:theme>
+    <obs:callAct>RESOLUÇÃO Nº 120 , DE 14 DE DEZEMBRO DE 2006 </obs:callAct>
+    <obs:theme>Vamos cuidar do Brasil, fortalecendo o Sistema Nacional do Meio Ambiente-SISNAMA </obs:theme>
+    <obs:name>Conferência de Educação Básica</obs:name>
+    <obs:callAct>Portaria Nº 16, de 29 de janeiro de 2009 </obs:callAct>
+    <obs:nationalPhaseProposalsLimit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:nationalPhaseProposalsLimit>
+    <obs:name>Conferência do Meio Ambiente</obs:name>
+    <obs:ethnicQuota>54 </obs:ethnicQuota>
+    <obs:callAct>DECRETO DE 1o- DE JUNHO DE 2011 </obs:callAct>
+    <obs:edition>Décima Edição</obs:edition>
+    <obs:thematicAxes>Educação e Construção da Cidadania; Controle Social, Gestão Participativa e Saúde Bucal; Formação e Trabalho em Saúde Bucal; Financiamento e Organização da Atenção em Saúde Bucal</obs:thematicAxes>
+    <obs:callAct>Decreto sem número de 11/02/2005 </obs:callAct>
+    <obs:virtualPhases rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:virtualPhases>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:nationalPhaseWorkGroupProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</obs:nationalPhaseWorkGroupProposalsLimitCount>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">576</obs:regimentGovernmentalVacanciesCount>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:statePhases rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:statePhases>
+    <obs:callAct>Portaria Ministerial nº 539, de 25 de outubro de 2007 </obs:callAct>
+    <obs:nativeDelegatesQuotaPrediction rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:nativeDelegatesQuotaPrediction>
+    <obs:responsibleBody>Ministério da Saúde; Ministério do Meio Ambiente; Ministério das Cidades </obs:responsibleBody>
+    <obs:theme>SUAS – PLANO 10: Estratégias e Metas para Implementação da Política Nacional de Assistência Social </obs:theme>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3212</obs:regimentDelegatesCount>
+    <obs:nationalPhaseWorkGroupProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</obs:nationalPhaseWorkGroupProposalsLimitCount>
+    <obs:responsibleBody>Secretaria Especial de direitos Humanos e Conselho Nacional dos direitos da Pessoa portadora de Deficiência - CONADE </obs:responsibleBody>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">106</obs:nativeDelegatesQuotaCount>
+    <obs:nationalOrganizationComission>coordenação geral; comissão de comunicação; comissão de administração e infraestrutura; comissão de articulação e mobilização; comissão de finanças; comissão de relatoria</obs:nationalOrganizationComission>
+    <obs:lectures rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:lectures>
+    <obs:edition>Primeira Edição</obs:edition>
+    <obs:theme>Trabalhar sim; adoecer não </obs:theme>
+    <obs:callAct>Resolução nº 111 de 14/06/2005 </obs:callAct>
+    <obs:callAct>DECRETO DE 22 DE DEZEMBRO DE 2005 </obs:callAct>
+    <obs:councilVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</obs:councilVacanciesNationalOrganizationComission>
+    <obs:nationalOrganizationComission>Equipe de articulação e mobilização; equipe de comunicação, divulgação e documentação; equipe de logística; equipe de relatoria e supervisão; equipe de elaboração do regimento interno e regulamento.</obs:nationalOrganizationComission>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</obs:nativeDelegatesQuotaCount>
+    <obs:thematicAxes>Desenvolvimento socioeconômico e ambiental; Reforma Agrária e acesso aos recursos ambientais; Qualidade de vida no Brasil rural; Participação Política e organização social</obs:thematicAxes>
+    <obs:unidentifiedPersonsCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</obs:unidentifiedPersonsCount>
+    <obs:thematicAxes>Biodiversidade e Florestas; Qualidade Ambiental nos Assentamentos Humanos; Água e Recursos Hídricos; Elementos de uma Estratégia Nacional para o Desenvolvimento Sustentável; Fortalecimento do SISNAMA e Controle Social</obs:thematicAxes>
+    <obs:theme>Avançando na gestão democrática das cidades </obs:theme>
+    <obs:callAct>DECRETO DE 05 DE MARÇO DE 2008 </obs:callAct>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">735</obs:regimentGovernmentalVacanciesCount>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:ethnicQuota>Sim - sem número, apenas proporções assim definidas: 5% comunidades tradicionais; 5% indígenas </obs:ethnicQuota>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">990</obs:regimentNongovernmentalVacanciesCount>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1178</obs:regimentNongovernmentalVacanciesCount>
+    <obs:theme>APLs como Estratégia de Desenvolvimento </obs:theme>
+    <obs:womenQuota>Sim - sem número, apenas proporção de 30% para delegados eleitos nas estaduais </obs:womenQuota>
+    <obs:nativeDelegatesQuotaSpecification>Membros titulares e suplentes da Comissão Organizadora Nacional</obs:nativeDelegatesQuotaSpecification>
+    <obs:virtualPhases rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:virtualPhases>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1488</obs:regimentNongovernmentalVacanciesCount>
+    <obs:callAct>Portaria Interministerial nº Não se aplica4, de 28 de abril de 2004 </obs:callAct>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:womenQuota>324 </obs:womenQuota>
+    <obs:callAct>Resolução normativa nº 10 de 30/06/2009 </obs:callAct>
+    <obs:name>Conferência de Ciência Tecnologia e Inovação</obs:name>
+    <obs:nationalPhaseCountReference>Participantes da etapa Nacional</obs:nationalPhaseCountReference>
+    <obs:theme>Os avanços, os desafios e as perspectivas da Política Nacional de Promoção da Igualdade Racial </obs:theme>
+    <obs:thematicAxes>Criação e Implementação de Conselhos das Cidades, Planos, Fundos e seus "Conselhos Gestores nos níveis Federal, Estadual, Municipal e no Distrito Federal; Aplicação do Estatuto da Cidade e dos Planos Diretores e a Efetivação da Função Social da Propriedade do Solo Urbano; A Integração da Política Urbana no Território: Política Fundiária, Mobilidade e Acessibilidade Urbana, Habitação e Saneamento; e Relação entre os Programas Governamentais – como PAC e Minha Casa, Minha Vida – e a Política de Desenvolvimento Urbano."</obs:thematicAxes>
+    <obs:name>Conferência de Aqüicultura e Pesca</obs:name>
+    <obs:callAct>Decreto de 23 de julho de 2004 </obs:callAct>
+    <obs:nationalOrganizationComission>subcomissão executiva; subcomissão especial, temática e de sistematização; subcomissão de articulação e mobilização; subcomissão logístico-financeira; subcomissão de comunicação e divulgação</obs:nationalOrganizationComission>
+    <obs:nationalOrganizationComission>I -Comissão Especial Temática e de Relatoria; II - Comissão Especial de Comunicação; III - Comissão Especial de Infra-estrutura; IV - Comissão Especial de Articulação e Mobilização; V - Comissão Especial de Regimento e Regulamento.</obs:nationalOrganizationComission>
+    <obs:nationalPhaseProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</obs:nationalPhaseProposalsLimitCount>
+    <obs:role>Conselho não é nem responsável, nem corresponsável</obs:role>
+    <obs:theme>A construção da Política Nacional de Segurança Alimentar e Nutricional </obs:theme>
+    <obs:thematicAxes>Acesso à Assistência Farmacêutica: A relação dos setores público e privado de atenção à saúde; Pesquisa e desenvolvimento tecnólogico para a produção nacional de medicamentos; Qualidade na Assistência Farmacêutica, formação e capacitação de recursos humanos.</obs:thematicAxes>
+    <obs:name>Conferência do Desenvolvimento Rural Sustentável</obs:name>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2731</obs:regimentDelegatesCount>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">408</obs:regimentDelegatesCount>
+    <obs:responsibleBody>Ministério do Planejamento, Orçamento e Gestão</obs:responsibleBody>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</obs:nativeDelegatesQuotaCount>
+    <obs:nationalPhaseProposalsPriorization rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:nationalPhaseProposalsPriorization>
+    <obs:name>Conferência da Cultura</obs:name>
+    <obs:nativeDelegatesQuotaSpecification>Titulares ou suplentes do Conselho Nacional de Saúde</obs:nativeDelegatesQuotaSpecification>
+    <obs:theme>Construindo o Sistema Nacional Articulado de Educação: Plano Nacional de Educação, Diretrizes e Estratégias de Ação </obs:theme>
+    <obs:thematicAxes>Avanços, limites e desafios da economia solidária no atual contexto socioeconômico, político, cultural e ambiental nacional e internacional; direito a formas de organização econômica baseadas no trabalho associado, na propriedade coletiva, na cooperação, na autogestão, na sustentabilidade e na solidariedade, como modelo de desenvolvimento; a organização do sistema nacional de economia solidária</obs:thematicAxes>
+    <obs:theme>Avaliação da rede nacional de proteção e defesa dos direitos da pessoa idosa: avanços e desafios </obs:theme>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">333</obs:regimentNongovernmentalVacanciesCount>
+    <obs:theme>Participação e Controle Social no Sistema Único de Assistência Social (SUAS) </obs:theme>
+    <obs:name>Conferência de Economia Solidária</obs:name>
+    <obs:callAct>Decreto de 5 de junho de 2003 </obs:callAct>
+    <obs:responsibleBody>Ministério da Ciência e Tecnologia</obs:responsibleBody>
+    <obs:callAct>Decreto sem número de 01/12/2010 </obs:callAct>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">366</obs:regimentGovernmentalVacanciesCount>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">767</obs:regimentGovernmentalVacanciesCount>
+    <obs:theme>Construindo a Política Nacional de Desenvolvimento Urbano </obs:theme>
+    <obs:theme>Construindo Diretrizes da Política e do Plano Decenal </obs:theme>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">667</obs:regimentDelegatesCount>
+    <obs:name>Conferência de Saúde Indígena</obs:name>
+    <obs:evaluationPurpose rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:evaluationPurpose>
+    <obs:theme>Lema: "A Multiplicação" e tema: "Construindo uma política democrática e integrada para aqüicultura e pesca". </obs:theme>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:name>Conferência de Aprendizagem Profissional</obs:name>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">588</obs:regimentNongovernmentalVacanciesCount>
+    <obs:callAct>DECRETO DE 20 DE JANEIRO DE 2009 </obs:callAct>
+    <obs:responsibleBody>Secretaria de Política para as Mulheres e Conselho Nacional dos Direitos das Mulheres </obs:responsibleBody>
+    <obs:nativeDelegatesQuotaSpecification>Titulares ou respectivos suplentes do Conselho Nacional de Saúde; Titulares ou respectivos suplentes da Comissão Intersetorial de Saúde Mental do Conselho Nacional de Saúde; representantes de entidades nacionais, de usuários de serviços de saúde e dos profissionais de saúde e dos representantes de gestores e prestadores de serviços de saúde indicados pelo CNS; representantes dos ministérios e entidades intersetoriais, indicados pela comissão organizadora; demais entidades indicadas pela comissão organizadora.</obs:nativeDelegatesQuotaSpecification>
+    <obs:theme>Construindo o Sistema Nacional de Esporte e Lazer </obs:theme>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">108</obs:regimentNongovernmentalVacanciesCount>
+    <obs:thematicAxes>Das condições gerais da Implementação da Acessibilidade; Da implementação da acessibilidade arquitetônica, urbanística e de transportes; Da acessibilidade à informação, à comunicação e às ajudas técnicas.</obs:thematicAxes>
+    <obs:councilVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</obs:councilVacanciesNationalOrganizationComission>
+    <obs:name>Conferência das Comunidades Brasileiras no Exterior</obs:name>
+    <obs:thematicAxes>O Plano Decenal; Os direitos socioassistencias; O Controle Social e o protagonismo dos usuários; Financiamento; Gestão do Trabalho; Intersetorialidade entre as políticas sociais e destas com o desenvolvimento econômico.</obs:thematicAxes>
+    <obs:nationalOrganizationComission>Subcomitê de Geração de Riqueza; Subcomitê de Inclusão Social; Subcomitê de Áreas de Interesse Nacional; Subcomitê de Presença Internacional; Subcomitê de Gestão e Regulamentação</obs:nationalOrganizationComission>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">203</obs:regimentGovernmentalVacanciesCount>
+    <obs:name>Conferência de Gestão do Trabalho e Educação em Saúde</obs:name>
+    <obs:callAct>Portaria Ministerial nº 009, de 14 de janeiro de 2009 </obs:callAct>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2672</obs:regimentDelegatesCount>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1080</obs:regimentDelegatesCount>
+    <obs:nativeDelegatesQuotaSpecification>108 conselho e 108 indicados pelo governo federal nos estados e DF</obs:nativeDelegatesQuotaSpecification>
+    <obs:thematicAxes>Sistema Nacional de Ciência, Tecnologia e Inovação; Inovação Estratégica; Pesquisa, Desenvolvimento e Inovação em Áreas Estratégicas; Ciência, Tecnologia e Inovação para o Desenvolvimento Social</obs:thematicAxes>
+    <obs:edition>Nona Edição</obs:edition>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:theme>Saúde e Qualidade de Vida: Políticas de Estado e Desenvolvimento </obs:theme>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</obs:nativeDelegatesQuotaCount>
+    <obs:thematicAxes>Educação escolar e territorialidade dos povos indígenas; práticas pedagógicas indígenas; políticas, gestão e financiamento da educação escolar indígena; participação e controle social; diretrizes para educação escolar indígena</obs:thematicAxes>
+    <obs:thematicAxes>Inclusão Produtiva e Responsabilidade Social; "Crédito e Microcrédito Produtivo para APLs"; "Inovação, Conhecimento e Tecnologia";"Ampliação do Acesso aos Mercados Locais, Regionais, Nacionais e Internacionais"; "Cooperação e Governança: Novas Perspectivas e Abordagens"; "O papel do Desenvolvimento Profissional no Desenvolvimento das APLs"; "Grandes, Médias e Pequenas Empresas em APL. O Tamanho da Firma Importa?"; "APLs de Serviços e Serviços em APls"; "O Papel Governamental no Desenvolvimento dos APLs e Coordenação das Esferas Nacional, Regional e Estadual"; "Encontro de Grandes Empreendimentos e APLs"; "APLs e Grandes Eventos: Qual é o Legado?"; "Planejamento, Execução e Avaliação: Melhores Práticas e Novos Modelos de Gestão"</obs:thematicAxes>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">348</obs:regimentNongovernmentalVacanciesCount>
+    <obs:callAct>Resolução Nº 1. de 30 de dezembro de 2009 </obs:callAct>
+    <obs:ethnicQuota>104 </obs:ethnicQuota>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">328</obs:regimentGovernmentalVacanciesCount>
+    <obs:edition>Oitava Edição</obs:edition>
+    <obs:nationalPhaseWorkGroupProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</obs:nationalPhaseWorkGroupProposalsLimitCount>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">198</obs:regimentGovernmentalVacanciesCount>
+    <obs:realizationPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P16M</obs:realizationPeriod>
+    <obs:theme>Avanços na Consolidação do Sistema Único de Assistência Social – SUAS, com a Valorização dos Trabalhadores e a Qualificação da Gestão dos Serviços, Programas e Projetos </obs:theme>
+    <obs:theme>Mudanças Ambientais Globais </obs:theme>
+    <obs:callAct>Decreto de 29 de abril 2010 </obs:callAct>
+    <obs:ethnicQuota>600 no total: 360 - população negra; 48 - população indígena; 96 - outros grupos etnorraciais representados no CNPIR; 96 - população branca da sociedade civil comprometida com a promoção da igualdade racial </obs:ethnicQuota>
+    <obs:callAct>DECRETO DE 12 DE AGOSTO DE 2010 </obs:callAct>
+    <obs:name>Conferência de Ciência, Tecnologia e Inovação em Saúde</obs:name>
+    <obs:council>Conselho Nacional dos Direitos da Pessoa Portadora de Deficiência - CONADE</obs:council>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">309</obs:regimentDelegatesCount>
+    <obs:ethnicQuota>Sim - 50% de trabalhadores índigenas da FUNAI </obs:ethnicQuota>
+    <obs:otherQuota>54 </obs:otherQuota>
+    <obs:edition>Sétima Edição</obs:edition>
+    <obs:responsibleBody>Ministério das Cidades</obs:responsibleBody>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">640</obs:regimentGovernmentalVacanciesCount>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">534</obs:regimentNongovernmentalVacanciesCount>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">607</obs:regimentGovernmentalVacanciesCount>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">710</obs:regimentNongovernmentalVacanciesCount>
+    <obs:realizationPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P8M</obs:realizationPeriod>
+    <obs:nativeDelegatesQuotaSpecification>Conselho Nacional de Assistência Social - CNAS</obs:nativeDelegatesQuotaSpecification>
+    <obs:thematicAxes>Recursos Hídricos; Biodiversidade, flora, fauna nativas e espaços territoriais protegidos; Infra-estrutura: transportes e energia; Agricultura, pecuária, recursos pesqueiros e silvicultura; Meio ambiente urbano; Mudanças climáticas.</obs:thematicAxes>
+    <obs:nativeDelegatesQuotaSpecification>Conselheiros - CNDI - Conselho Nacional dos direitos do Idoso</obs:nativeDelegatesQuotaSpecification>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2571</obs:regimentDelegatesCount>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">960</obs:regimentDelegatesCount>
+    <obs:nationalOrganizationComission>Coordenação; Logística e Programação e sistematização</obs:nationalOrganizationComission>
+    <obs:realizationPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P1M</obs:realizationPeriod>
+    <obs:callAct>RESOLUÇÃO Nº 86 DE 12 DE MARÇO DE 2003 </obs:callAct>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">572</obs:regimentDelegatesCount>
+    <obs:realizationPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P6M</obs:realizationPeriod>
+    <obs:name>Conferência de Saúde do Trabalhador</obs:name>
+    <obs:responsibleBody>Ministério do Esporte</obs:responsibleBody>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">216</obs:regimentDelegatesCount>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">264</obs:regimentGovernmentalVacanciesCount>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">323</obs:regimentGovernmentalVacanciesCount>
+    <obs:guestVacanciesPrediction rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:guestVacanciesPrediction>
+    <obs:thematicAxes>Cultura e Educação; Trabalho, Previdência e Saúde; Serviços consulares e Regularização migratória; Representação política</obs:thematicAxes>
+    <obs:theme>“Democracia, Desenvolvimento e Direitos Humanos: superando as desigualdades” </obs:theme>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:theme>Construindo uma Política Democrática e Integrada para as Cidades </obs:theme>
+    <obs:nationalPhaseProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</obs:nationalPhaseProposalsLimitCount>
+    <obs:nationalOrganizationComission>Comissão de Divulgação e Mobilização; Comissão de Dinâmica e Sistematização; Comissão de Infraestrutura e Logística </obs:nationalOrganizationComission>
+    <obs:thematicAxes>Recursos hídricos; biodiversidade, flora, fauna nativas e espaços territoriais protegidos; infraestrutura: transporte e energia; agricultura, pecuária, recursos pesqueiros e silvicultura; meio ambiente urbano; mudanças climáticas</obs:thematicAxes>
+    <obs:council>Conselho Nacional de Meio Ambiente; Conselho Nacional de Recursos Hídricos</obs:council>
+    <obs:council>Conselho Nacional de Promoção da Igualdade Racial</obs:council>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:edition>Segunda Edição</obs:edition>
+    <obs:municipalPhases rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:municipalPhases>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</obs:nativeDelegatesQuotaCount>
+    <obs:guestVacanciesPrediction rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:guestVacanciesPrediction>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1170</obs:regimentDelegatesCount>
+    <obs:responsibleBody>Secretaria de Direitos Humanos e Conselho Nacional dos Direitos do Idoso </obs:responsibleBody>
+    <obs:schedulingPurpose rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:schedulingPurpose>
+    <obs:intercityPhases rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:intercityPhases>
+    <obs:nationalOrganizationComission>Comissão executiva; Comissão de relatoria; Comissão de comunicação; Comissão de infra-estrutura</obs:nationalOrganizationComission>
+    <obs:realizationPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P11M</obs:realizationPeriod>
+    <obs:theme>Brasileiros no Mundo </obs:theme>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">527</obs:regimentGovernmentalVacanciesCount>
+    <obs:theme>O Direito às Formas de Organização Econômica Baseada no Trabalho Associado, na Propriedade Coletiva, na Cooperação e na Autogestão, Reafirmando a Econômia Solidária como Estratégia e Política de Desenvolvimento </obs:theme>
+    <obs:thematicAxes>Desafios para a efetivação da defesa civil no século XXI: estado, sociedade, clima, desigualdade e desenvolvimento; políticas públicas de atenção integral ao cidadão: o paradigma da assistência humanitária; mobilização e participação da sociedade na prevenção e no controle sobre a efetivação da política pública de defesa civil</obs:thematicAxes>
+    <obs:thematicAxes>I – Juventude: Democracia, Participação e Desenvolvimento Nacional; II – Plano Nacional de Juventude: prioridades 2011-2015; III – Articulação e integração das políticas públicas de juventude.</obs:thematicAxes>
+    <obs:theme>Os Papéis das Instituições Governamentais e Não-governamentais no Apoio aos APLs e os Instrumentos e Mecanismos de Apoio Existentes </obs:theme>
+    <obs:callAct>Decreto de 10 de maio de 2007 </obs:callAct>
+    <obs:thematicAxes>Papel da educação profissional e tecnológica no desenvolvimento nacional e nas políticas de inclusão social; financiamento da educação profissional e tecnológica; organização institucional e instâncias de governo e da sociedade civil; estratégias operacionais de desenvolvimento da educação profissional e tecnológica; a relação da educação profissional e tecnológica com a universalização da educação básica - ensino médio integrado</obs:thematicAxes>
+    <obs:nationalOrganizationComission>Grupo Executivo; Subcomissão de Conteúdo e Metodologia; Subcomissão de Infra-estrutura, Mobilização e Comunicação</obs:nationalOrganizationComission>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1672</obs:regimentDelegatesCount>
+    <obs:responsibleBody>Ministério do Meio Ambiente e Ministério da Educação </obs:responsibleBody>
+    <obs:otherQuotaSpecification>9 idosos do meio rural </obs:otherQuotaSpecification>
+    <obs:nationalOrganizationComission>subcomissão executiva; subcomissão de mobilização, articulação e comunicação; subcomissão de finanças e infraestrutura; subcomissão temática e de sistematização</obs:nationalOrganizationComission>
+    <obs:municipalPhasesProposalsLimit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:municipalPhasesProposalsLimit>
+    <obs:thematicAxes>Estratégias para a estruturação da gestão do trabalho no SUAS; Reordenamento e qualificação dos serviços socioassistenciais; Fortalecimento da participação e do controle social; A centralidade do SUAS na erradicação da extrema pobreza no Brasil.</obs:thematicAxes>
+    <obs:thematicAxes>a. situação da pesca (frota, tecnologias, pescadores e pescadoras); b. estado atual da aqüicultura; c. beneficiamento e comercialização; d. ação governamental para o setor; e. alternativas para o desenvolvimento da pesca e aqüicultura.</obs:thematicAxes>
+    <obs:nationalOrganizationComission>Presidência; Comissão Especial Temática; Comissão Especial de Comunicação; Comissão Especial de Infra-estrutura; Comissão Especial de Articulação e Mobilização; Comissão Especial de Regimento e Regulamento; Comissão Especial de Relatoria; Grupo Operacional.</obs:nationalOrganizationComission>
+    <obs:otherQuotaSpecification>Comunidades de assentamentos rurais; Movimento de Meninos e Meninas de Rua - MNMMR </obs:otherQuotaSpecification>
+    <obs:freePhases rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:freePhases>
+    <obs:responsibleBody>Ministério das Relações Exteriores</obs:responsibleBody>
+    <obs:statePhasesProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</obs:statePhasesProposalsLimitCount>
+    <obs:ethnicQuota>308: Indígenas - 56; Quilombolas - 56; Povos de Terreiro - 56; População negra em geral - 112; Outros povos e comunidades tradicionais - 28 </obs:ethnicQuota>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">357</obs:regimentNongovernmentalVacanciesCount>
+    <obs:callType>Portaria interministerial</obs:callType>
+    <obs:callAct>Portaria Ministerial nº 879, de 8 de maio de 2002. </obs:callAct>
+    <obs:theme>Educação Profissional como Estratégia para o Desenvolvimento e a Inclusão Social </obs:theme>
+    <obs:nationalPhaseWorkGroupProposalsLimit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:nationalPhaseWorkGroupProposalsLimit>
+    <obs:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</obs:year>
+    <obs:theme>Defesa Civil e Assistência Humanitária: Por uma Ação Integral e Contínua </obs:theme>
+    <obs:statePhasesProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</obs:statePhasesProposalsLimitCount>
+    <obs:thematicAxes>Geração de Riqueza; Inclusão Social; Áreas de Interesse Nacional; Presença Internacional; Gestão e Regulamentação</obs:thematicAxes>
+    <obs:nativeDelegatesQuotaSpecification>Conselheiras - CNDM - Conselho Nacional dos Direitos da Mulher</obs:nativeDelegatesQuotaSpecification>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:nativeDelegatesQuotaSpecification>Titulares e suplentes do Conselho Nacional de Saúde</obs:nativeDelegatesQuotaSpecification>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1054</obs:regimentNongovernmentalVacanciesCount>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1446</obs:regimentNongovernmentalVacanciesCount>
+    <obs:edition>Quarta Edição</obs:edition>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">293</obs:regimentGovernmentalVacanciesCount>
+    <obs:nationalOrganizationComission>Comitê executivo; Comissão interministerial; Comitê interno de apoio</obs:nationalOrganizationComission>
+    <obs:theme>Políticas para as Mulheres: um desafio para a igualdade numa perspectiva de gênero </obs:theme>
+    <obs:callAct>Decreto de 19 de outubro de 2007 </obs:callAct>
+    <obs:responsibleBody>Ministério da Saúde, Ministério do Trabalho e Emprego; Ministério da Previdência Social </obs:responsibleBody>
+    <obs:callAct>Resolução Normativa nº 4 de 06/12/2006 </obs:callAct>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1634</obs:regimentDelegatesCount>
+    <obs:thematicAxes>Os desafios da construção de um sistema nacional articulado de educação; democratização da gestão e qualidade social da educação básica; construção do regime de colaboração entre os sistemas de ensino, tendo como um dos instrumentos o financiamento da educação; inclusão e diversidade na educação básica; formação e valorização profissional</obs:thematicAxes>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:theme>Por um Brasil Rural com Gente: Sustentabilidade, Inclusão, Diversidade e Solidariedade </obs:theme>
+    <obs:name>Conferência dos Povos Indígenas</obs:name>
+    <obs:name>Conferência de Arranjos Produtivos Locais</obs:name>
+    <obs:nationalOrganizationComission>Subcomissão de Relatoria; Subcomissão de Comunicação; Sucomissão de Infra-estrutura; Subcomissão de Articulação e Mobilização; Subcomissão de Regimento e Regulamento</obs:nationalOrganizationComission>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2663</obs:regimentDelegatesCount>
+    <obs:thematicAxes>1. Ações para efetivação dos direitos das pessoas idosas quanto à promoção, proteção e defesa; 2; Enfrentamento à violência; 3.Atenção à saúde; 4. Previdência Social; 5. Assistência Social; 6. Educação, cultura, esporte e lazer; 7. Transporte, cidades e meio ambiente; 8. Gestão, participação e controle democrático; 9.Financiamento.</obs:thematicAxes>
+    <obs:nativeDelegatesQuotaSpecification>Titulares e suplentes do Conselho Nacional de Saúde; Os coordenadores e seus respectivos suplentes da plenária nacional dos conselhos de saúde.</obs:nativeDelegatesQuotaSpecification>
+    <obs:callAct>Decreto de 16 de abril de 2009 </obs:callAct>
+    <obs:thematicAxes>Estrutura: organização, agentes e competências; Recursos Humanos e Formação; Gestão e Controle Social; Financiamento</obs:thematicAxes>
+    <obs:thematicAxes>Produção de conteúdo; meios de distribuição; cidadania: direitos e deveres</obs:thematicAxes>
+    <obs:nativeDelegatesQuotaSpecification>Membros do Conselho Nacional de Meio Ambiente; membros do Conselho Nacional de Recursos Hídricos </obs:nativeDelegatesQuotaSpecification>
+    <obs:otherQuotaSpecification>Pessoas pobres </obs:otherQuotaSpecification>
+    <obs:nationalOrganizationComission>Comissão executiva; Coordenação da Comissão Operacional; Comissão de Mobilização; Comissão de Sistematização; Comissão de Informática</obs:nationalOrganizationComission>
+    <obs:nativeDelegatesQuotaSpecification>Conselho Nacional de Segurança Alimentar e Nutricional - CONSEA - 100</obs:nativeDelegatesQuotaSpecification>
+    <obs:nationalOrganizationComission>Coordenação executiva</obs:nationalOrganizationComission>
+    <obs:council>Conselho de Defesa dos Direitos da Pessoa Humana - CDDPH; Conselho Nacional dos Direitos da Criança e do Adolescente - CONANDA; Conselho Nacional dos Direitos da Pessoa Portadora de Deficiência - CONADE; Conselho Nacional dos Direitos do Idoso - CNDI; Conselho Nacional de Combate à Discriminação - CNCD e Comissão Nacional para a Erradicação do Trabalho Escravo - CONATRAE.</obs:council>
+    <obs:responsibleBody>Ministério da Saúde; Ministério da Ciência e Tecnologia; Ministério da Educação </obs:responsibleBody>
+    <obs:extraordinaryPhases rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:extraordinaryPhases>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">118</obs:nativeDelegatesQuotaCount>
+    <obs:edition>Décima Terceira Edição</obs:edition>
+    <obs:nationalOrganizationComission>I -Comissão Especial Temática e de Relatoria; II - Comissão Especial de Comunicação;III - Comissão de Articulação e Mobilização.</obs:nationalOrganizationComission>
+    <obs:callAct>DECRETO DE 29 DE ABRIL DE 2008 </obs:callAct>
+    <obs:nativeDelegatesQuotaSpecification>69 integrantes, titulares e suplentes, do Conselho Nacional dos Direitos da Mulher</obs:nativeDelegatesQuotaSpecification>
+    <obs:councilVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</obs:councilVacanciesNationalOrganizationComission>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:callAct>DECRETO DE 29 DE ABRIL DE 2008. </obs:callAct>
+    <obs:councilVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</obs:councilVacanciesNationalOrganizationComission>
+    <obs:nationalOrganizationComission>subcomissão de infraestrutura e logística; subcomissão de metodologia e sistematização; subcomissão de divulgação; coordenação executiva</obs:nationalOrganizationComission>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">148</obs:nativeDelegatesQuotaCount>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</obs:nativeDelegatesQuotaCount>
+    <obs:responsibleBody>Secretaria Especial dos Direitos Humanos; Conselho de Defesa dos Direitos da Pessoa Humana </obs:responsibleBody>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">765</obs:regimentNongovernmentalVacanciesCount>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</obs:nativeDelegatesQuotaCount>
+    <obs:callAct>Decreto de 5 de maio de 2003 </obs:callAct>
+    <obs:thematicAxes>Autonomia Política dos Povos Indígenas; Questão fundiária (Territórios Indígenas e Patrimônio Indígena); Educação; Saúde; Políticas Públicas para Índios Urbanos.</obs:thematicAxes>
+    <obs:statePhasesProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</obs:statePhasesProposalsLimitCount>
+    <obs:nativeDelegatesQuotaSpecification>Membros titulares do Conselho Nacional do Esporte; um representante, titular e suplente, das comissões específicas que tratam dos assuntos do esporte na Câmara dos Deputados e no Senado Federal; representantes, titulares e suplentes, das entidades nacionais de administração do esporte e da sociedade civil organizada escolhidos pela CON.</obs:nativeDelegatesQuotaSpecification>
+    <obs:realizationPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P18M</obs:realizationPeriod>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1069</obs:regimentDelegatesCount>
+    <obs:name>Conferência do Esporte</obs:name>
+    <obs:nationalPhaseProposalsLimit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:nationalPhaseProposalsLimit>
+    <obs:nationalPhaseWorkGroupProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</obs:nationalPhaseWorkGroupProposalsLimitCount>
+    <obs:callAct>Portaria Normativa nº 11 de 24 de abril de 2007 </obs:callAct>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1383</obs:regimentNongovernmentalVacanciesCount>
+    <obs:callAct>Decreto sem número de 22/05/2003 </obs:callAct>
+    <obs:nativeDelegatesQuotaSpecification>Representantes do Movimento de Meninos e Meninas de Rua (MNMMR)</obs:nativeDelegatesQuotaSpecification>
+    <obs:callAct>Portaria nº 180 de 31/08/2005 </obs:callAct>
+    <obs:callAct>Portaria Ministerial nº 133, de 20 de outubro de 2005 </obs:callAct>
+    <obs:callType>Decreto</obs:callType>
+    <obs:nativeDelegatesQuotaSpecification>Conselheiros - Conjuve - Conselho Nacional da Juventude</obs:nativeDelegatesQuotaSpecification>
+    <obs:theme>3ª Conferência Nacional de Saúde Bucal: acesso e qualidade, superando a exclusão social </obs:theme>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">508</obs:regimentDelegatesCount>
+    <obs:nationalPhaseProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</obs:nationalPhaseProposalsLimitCount>
+    <obs:thematicAxes>Democratização das Relações de Trabalho; Diretrizes de Carreiras; Gestão por Competências e Avaliação de Desempenho; Sistemas e Processos em Gestão de Pessoas</obs:thematicAxes>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">599</obs:regimentGovernmentalVacanciesCount>
+    <obs:nativeDelegatesQuotaSpecification>Conselheiros do Conselho Nacional dos Direitos da Pessoa Portadora de Deficiência</obs:nativeDelegatesQuotaSpecification>
+    <obs:callAct>DECRETO DE 15 DE MARÇO DE 2011 </obs:callAct>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">820</obs:regimentDelegatesCount>
+    <obs:linkedCouncil rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:linkedCouncil>
+    <obs:thematicAxes>Desafios para a efetivação do direito humano à saúde no Século XXI: Estado, Sociedade e Padrões de Desenvolvimento; Políticas públicas para a saúde e qualidade de vida: o SUS na Seguridade Social e o Pacto pela Saúde; A participação da sociedade na efetivação do direito humano à saúde.</obs:thematicAxes>
+    <obs:ethnicQuota>A delegação de negras e negros da sociedade civil deve espelhar a população dos estados (IBGE) </obs:ethnicQuota>
+    <obs:municipalPhasesProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</obs:municipalPhasesProposalsLimitCount>
+    <obs:responsibleBody>Secretaria Especial de direitos Humanos e Conselho Nacional dos direitos da pessoa Idosa </obs:responsibleBody>
+    <obs:nativeDelegatesQuotaSpecification>Representantes, titular e suplente, dos Ministérios e Secretarias Especiais do Governo Federal; membros do Conselho Nacional do Esporte; um representante, titular e suplente, das comissões específicas que tratam dos assuntos do esporte na Câmara dos Deputados e no Senado Federal; gestores estaduais de esporte e lazer; representantes, titulares e suplentes, das entidades nacionais de administração do esporte; representantes da sociedade civil organizada, escolhidos pela CON</obs:nativeDelegatesQuotaSpecification>
+    <obs:theme>Avanços, Dificuldades e Desafios na Implementação da Política de Desenvolvimento Urbano </obs:theme>
+    <obs:responsibleBody>Ministério da Saúde</obs:responsibleBody>
+    <obs:callType>Resolução</obs:callType>
+    <obs:callAct>DECRETO DE 18 DE MAIO DE 2011 </obs:callAct>
+    <obs:council>Conselho Nacional de Saúde; Conselho Nacional de Meio Ambiente; Conselho Nacional das Cidades; Conselho Nacional de Recursos Hídricos</obs:council>
+    <obs:thematicAxes>Saúde Mental e Políticas de Estado: pactuar caminhos intersetoriais; Consolidar a rede de atenção psicossocial e fortalecer os movimentos sociais; Direitos Humanos e cidadania como desafio ético e intersetorial</obs:thematicAxes>
+    <obs:realizationPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P13M</obs:realizationPeriod>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">492</obs:regimentNongovernmentalVacanciesCount>
+    <obs:council>Conselho Nacional de Juventude</obs:council>
+    <obs:nationalOrganizationComission>Subcomissão de Conteúdo e Metodologia; Subcomissão Executiva; Subcomissão de Mobilização</obs:nationalOrganizationComission>
+    <obs:responsibleBody>Ministério da Integração Nacional</obs:responsibleBody>
+    <obs:callAct>DECRETO DE 17 DE JANEIRO DE 2007 </obs:callAct>
+    <obs:theme>Desenvolvendo ideias para desenvolver o Brasil </obs:theme>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2095</obs:regimentDelegatesCount>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1372</obs:regimentDelegatesCount>
+    <obs:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2009</obs:year>
+    <obs:thematicAxes>Eixo 1 – Promoção e Universalização de Direitos em um Contexto de Desigualdades; Eixo 2 – Proteção e Defesa no Enfrentamento das Violações de Direitos Humanos de Crianças e Adolescentes; Eixo 3 – Fortalecimento do Sstema de Garantia de Direitos; Eixo 4 – Participação de Crianças e Adolescente em Espaços de Construção da Cidadania; Eixo 5 – Gestão da Política.</obs:thematicAxes>
+    <obs:intermediaryPlenary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:intermediaryPlenary>
+    <obs:council>Conselho Nacional do Meio Ambiente (CONAMA) e Comissões Estaduais Interinstitucionais de Educação Ambiental</obs:council>
+    <obs:callAct>Portaria nº 292 de 30/08/2006 </obs:callAct>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</obs:nativeDelegatesQuotaCount>
+    <obs:theme>Esporte, Lazer e Desenvolvimento Humano </obs:theme>
+    <obs:nationalPhaseProposalsPriorization rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:nationalPhaseProposalsPriorization>
+    <obs:name>Conferência Infanto-Juvenil pelo Meio Ambiente</obs:name>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">580</obs:regimentDelegatesCount>
+    <obs:council>Conselho Nacional do Esporte</obs:council>
+    <obs:responsibleBody>Conselho gestor da política</obs:responsibleBody>
+    <obs:name>Conferência da Promoção da Igualdade Racial</obs:name>
+    <obs:callAct>Portaria Interministerial Nº 2, de 6 de abril de 2006 </obs:callAct>
+    <obs:participantsCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</obs:participantsCount>
+    <obs:theme>Sem informação </obs:theme>
+    <obs:responsibleBody>Ministério do Trabalho e Emprego; Ministério do Desenvolvimento Agrário; Ministério do Desenvolvimento Social e Combate a Fome </obs:responsibleBody>
+    <obs:responsibleBody>Ministério do Desenvolvimento Agrário; Conselho Nacional de Desenvolvimento Rural Sustentável </obs:responsibleBody>
+    <obs:theme>Não se aplica </obs:theme>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63</obs:nativeDelegatesQuotaCount>
+    <obs:name>Conferência da Juventude</obs:name>
+    <obs:nationalPhaseProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</obs:nationalPhaseProposalsLimitCount>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2741</obs:regimentDelegatesCount>
+    <obs:name>Conferência dos Direitos da Pessoa com Deficiência</obs:name>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">934</obs:regimentNongovernmentalVacanciesCount>
+    <obs:ethnicQuota>450 </obs:ethnicQuota>
+    <obs:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2004</obs:year>
+    <obs:nationalOrganizationComission>Coordenação-Executiva; Comissão de mobilização; Comissão Recursal e de Validação; Comissão de Sistematização; Comissão Logística e Cultural.</obs:nationalOrganizationComission>
+    <obs:theme>Levante sua Bandeira </obs:theme>
+    <obs:evaluationPurpose rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:evaluationPurpose>
+    <obs:callAct>PORTARIA Nº 179, DE 28 DE AGOSTO DE 2003 </obs:callAct>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">578</obs:regimentGovernmentalVacanciesCount>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:name>Conferência de Comunicação</obs:name>
+    <obs:intercityPhases rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:intercityPhases>
+    <obs:nationalOrganizationComission>Subcomissão Executiva; Subcomissão Temática, de Sistematização e Relatoria; Subcomissão de Metodologia; Subcomissão de Articulação e Mobilização</obs:nationalOrganizationComission>
+    <obs:thematicAxes>Desenvolvimento e Sustentabilidade Sócio-ambiental no campo, na cidade e na floresta; Trabalho, Ambiente e Saúde: desafios dos processos de produção e consumo nos territórios; Democracia, Educação, Saúde e Ambiente: políticas para construção de territórios sustentáveis.</obs:thematicAxes>
+    <obs:name>Conferência de Educação Profissional e Tecnológica</obs:name>
+    <obs:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2011</obs:year>
+    <obs:edition>Décima Primeira Edição</obs:edition>
+    <obs:callAct>Portaria Nº 1062 de 26 de Agosto de 2008 </obs:callAct>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">946</obs:regimentNongovernmentalVacanciesCount>
+    <obs:name>Conferência de Segurança Pública</obs:name>
+    <obs:callAct>DECRETO DE 5 DE SETEMBRO DE 2007. </obs:callAct>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">71</obs:nativeDelegatesQuotaCount>
+    <obs:council>Conselho Nacional de Saúde; Conselho Nacional de Assistência Social</obs:council>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">276</obs:regimentGovernmentalVacanciesCount>
+    <obs:thematicAxes>Como garantir a integralidade e a transversalidade da ação do Estado em sáude dos(as) trabalhadores(as)?; Como incomporar a saúde dos(as) trabalhadores(as) nas políticas de desenvolvimento sustentável do País?; Como efetivar e ampliar o controle social em saúde dos(as) trabalhadores(as)?</obs:thematicAxes>
+    <obs:theme>Efetivando o Acesso, a Qualidade e a Humanização na Assistência Farmacêutica, com Controle Social </obs:theme>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2884</obs:regimentDelegatesCount>
+    <obs:thematicAxes>Segurança Alimentar e Nutricional nas estratégias de desenvolvimento; Política Nacional de Segurança Alimentar e Nutricional; Sistema Nacional de Segurança Alimentar e Nutricional</obs:thematicAxes>
+    <obs:ethnicQuota>60 - comunidade indígena; 70 - comunidades quilombolas; 35 - comunidades ciganas; 40 - comunidades de terreiro </obs:ethnicQuota>
+    <obs:councilVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</obs:councilVacanciesNationalOrganizationComission>
+    <obs:responsibleBody>a coordenação conjunta da Secretaria de Direitos Humanos da Presidência da República e do Conselho Nacional de Combate à Discriminação </obs:responsibleBody>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">822</obs:regimentDelegatesCount>
+    <obs:theme>Segurança com Cidadania: participe dessa mudança </obs:theme>
+    <obs:plenary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:plenary>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">588</obs:regimentDelegatesCount>
+    <obs:callAct>Decreto de 05 de junho de 2003 </obs:callAct>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</obs:nativeDelegatesQuotaCount>
+    <obs:theme>“Construindo a Rede de Proteção e Defesa da Pessoa Idosa”, </obs:theme>
+    <obs:otherQuota>27 </obs:otherQuota>
+    <obs:realizationPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P4M</obs:realizationPeriod>
+    <obs:nativeDelegatesQuotaSpecification>Conselheiros - CONAPE - Conselho Nacional de Aquicultura e Pesca </obs:nativeDelegatesQuotaSpecification>
+    <obs:councilVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">71</obs:councilVacanciesNationalOrganizationComission>
+    <obs:theme>A Saúde Ambiental na cidade, no campo e na floresta: construindo cidadania, qualidade de vida e territórios sustentáveis </obs:theme>
+    <obs:callAct>Portaria nº 46 de 10/07/2009 </obs:callAct>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1177</obs:regimentDelegatesCount>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</obs:regimentDelegatesCount>
+    <obs:theme>APL: Inovação, Desenvolvimento e Sustentabilidade - Novas Formas de Olhar o Espaço Produtivo </obs:theme>
+    <obs:nativeDelegatesQuotaSpecification>um delegado indicado por cada gestor estadual de Educação Profissional e Tecnológica; um delegado indicado pelo Ministério da Educação; um delegado indicado pelo Conselho Nacional de Educação; um delegado indicado pelo UNDIME Nacional; um delegado incicado pelo CONSED; um delegado indicado pelo Fórum Nacional de Secretários Estaduais de Ciência e Tecnologia; um delegado indicado pela Confederação Nacional dos Trabalhadores em Educação; um delegado indicado pela União Nacional de Estudantes Secundaristas; um delegado indicado pelo CONDETUF; um delegado indicado pelo CONEAF; um delegado indicado pelo CONCEFET; um delegado indicado pelo Ministério Público da União; todos os integrantes da Comissão Organizadora Nacional</obs:nativeDelegatesQuotaSpecification>
+    <obs:ethnicQuota>291: Indígenas - 56; Quilombolas - 65; Comunidades de Terreiro - 56; Negros em geral - 114 </obs:ethnicQuota>
+    <obs:theme>Vamos cuidar do Brasil, fortalecendo o Sistema Nacional do Meio Ambiente - SISNAMA </obs:theme>
+    <obs:quotasPrediction rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:quotasPrediction>
+    <obs:nationalPhaseApprovedProposalsCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</obs:nationalPhaseApprovedProposalsCount>
+    <obs:council>Conselho Nacional de Meio Ambiente; Conselho Nacional de Recursos Hídricos; Conselho do Desenvolvimento Econômico e Social</obs:council>
+    <obs:theme>Acesso e acolhimento com qualidade - um desafio para o SUS; Sub-eixos: Política de saúde na seguridade social, segundo os princípios da integralidade, universalidade e equidade; Participação da comunidade e controle social; Gestão do SUS (Financiamento, Pacto pela Saúde e Relação Público x Privado, Gestão do Sistema, do Trabalho e da Educação em Saúde. </obs:theme>
+    <obs:theme>A construção do subsistema de educação escolar indígena </obs:theme>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:nativeDelegatesQuotaSpecification>Titulares dos órgãos de defesa civil municipal e estadual; conselheiros do Conselho Nacional de Defesa Civil - CONDEC, titulares ou suplentes; membros da Comissão Organizadora Nacional da 1ª CNDC</obs:nativeDelegatesQuotaSpecification>
+    <obs:theme>Economia Solidária como Estratégia e Política de Desenvolvimento </obs:theme>
+    <obs:thematicAxes>Desafios à implementação do Sistema Nacional de Direitos Humanos (SNDH); Princípios, estrutura e estratégia de implementação do Sistema Nacional de Direitos Humanos (SNDH); Compromissos dos diversos setores da sociedade com a implementação do Sistema Nacional de Direitos Humanos (SNDH); Prioridades de atuação à Secretaria Especial dos Direitos Humanos da Presidência da República com a implementação do Sistema Nacional de Direitos Humanos (SNDH); Estratégia de seguimento, monitoramento e avaliação das deliberações da IX Conferência Nacional de Direitos Humanos.</obs:thematicAxes>
+    <obs:realizationPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P12M</obs:realizationPeriod>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">216</obs:nativeDelegatesQuotaCount>
+    <obs:callAct>Portaria conjunta nº 1 de 04/09/2008 </obs:callAct>
+    <obs:thematicAxes>I - Ações para efetivação dos direitos das pessoas idosas quanto à promoção, proteção e defesa; II - Enfrentamento à violência contra a pessoa idosa; III - Atenção à Saúde da pessoa idosa; IV - Previdência Social; V - Assistência Social à pessoa idosa; VI - Financiamento e orçamento público das ações necessárias para a efetivação dos direitos das pessoas idosas; VII - Educação, Cultura, Esporte e Lazer para as pessoas idosas; VIII - Controle Social: o papel dos Conselhos</obs:thematicAxes>
+    <obs:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2003</obs:year>
+    <obs:responsibleBody>Secretaria Nacional de Juventude e do Conselho Nacional de Juventude. </obs:responsibleBody>
+    <obs:name>Conferência de Políticas para Mulheres</obs:name>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1207</obs:regimentDelegatesCount>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</obs:nativeDelegatesQuotaCount>
+    <obs:nationalOrganizationComission>Comissão executiva (coordenador geral, coordenadores adjuntos, secretário-geral, secretários-adjuntos, relator geral, relator adjunto); Comissão Temática e de Relatoria; Comissão de Comunicação; Comissão de Infraestrutura.</obs:nationalOrganizationComission>
+    <obs:callAct>DECRETO DE 28 DE NOVEMBRO DE 2007 </obs:callAct>
+    <obs:nationalOrganizationComission>Não se aplica</obs:nationalOrganizationComission>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3068</obs:regimentDelegatesCount>
+    <obs:callAct>Portaria Ministerial nº 592 de 20 de abril de 2005 </obs:callAct>
+    <obs:nationalPhaseNewProposalsFormulation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:nationalPhaseNewProposalsFormulation>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</obs:regimentNongovernmentalVacanciesCount>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1358</obs:regimentGovernmentalVacanciesCount>
+    <obs:council>Conselho Nacional de Combate à Discriminação - LGBT</obs:council>
+    <obs:callAct>Portaria Ministerial nº 963, de 23 de junho de 2005 </obs:callAct>
+    <obs:nationalOrganizationComission>I - Comissão Temática; II - Comissão de Comunicação; III - Comissão de Articulação e Mobilização; IV – Comissão de Relatoria.</obs:nationalOrganizationComission>
+    <obs:statePhases rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:statePhases>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">840</obs:regimentDelegatesCount>
+    <obs:nationalOrganizationComission>Coordenação-Executiva</obs:nationalOrganizationComission>
+    <obs:theme>Política de Estado para Ciência, Tecnologia e Inovação com vista ao Desenvolvimento Sustentável </obs:theme>
+    <obs:council>Conselho Nacional do Esporte; Conselho Nacional dos Direitos da Criança e Adolescente</obs:council>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</obs:regimentDelegatesCount>
+    <obs:responsibleBody>Fundação Nacional do Índio</obs:responsibleBody>
+    <obs:council>Conselho Nacional de Economia Solidária</obs:council>
+    <obs:realizationPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P10M</obs:realizationPeriod>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">378</obs:regimentNongovernmentalVacanciesCount>
+    <obs:responsibleBody>Ministério do Desenvolvimento, Indústria e Comércio Exterior; Grupo de Trabalho para Arranjos Produtivos Locais </obs:responsibleBody>
+    <obs:nativeDelegatesQuotaSpecification>Conselheiros do Conselho Nacional dos Direitos da Criança e do Adolescente (Conanda)</obs:nativeDelegatesQuotaSpecification>
+    <obs:callAct>Decreto sem número de 03/09/2003 </obs:callAct>
+    <obs:theme>Por um Desenvolvimento Sustentável com Soberania e Segurança Alimentar e Nutricional </obs:theme>
+    <obs:thematicArea>Infraestrutura e recursos naturais </obs:thematicArea>
+    <obs:name>Conferência de Saúde Ambiental</obs:name>
+    <obs:councilVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</obs:councilVacanciesNationalOrganizationComission>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1178</obs:regimentDelegatesCount>
+    <obs:nativeDelegatesQuotaSpecification>Conselho Nacional de Segurança Alimentar e Nutricional - CONSEA - 114 (76 sociedade e 38 governo)</obs:nativeDelegatesQuotaSpecification>
+    <obs:theme>Controle Social, Participação e Garantia de Direitos – Por uma Política para a Criança e o Adolescente </obs:theme>
+    <obs:responsibleBody>Secretaria Especial de Políticas de Promoção da Igualdade Racial; Conselho Nacional de Promoção da Igualdade Racial </obs:responsibleBody>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1186</obs:regimentDelegatesCount>
+    <obs:edition>Sexta Edição</obs:edition>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">882</obs:regimentNongovernmentalVacanciesCount>
+    <obs:nationalOrganizationComission>I - Subcomissão Temática e de Relatoria; II - Subcomissão de Comunicação;III - Subcomissão de Articulação e Mobilização.</obs:nationalOrganizationComission>
+    <obs:otherQuota>9 idosos do meio rural </obs:otherQuota>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</obs:regimentGovernmentalVacanciesCount>
+    <obs:thematicAxes>Mudanças climáticas; biodiversidade; segurança alimentar e nutricional; diversidade étnico-racial</obs:thematicAxes>
+    <obs:theme>Vivendo a Diversidade na Escola </obs:theme>
+    <obs:schedulingPurpose rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:schedulingPurpose>
+    <obs:callAct>Portaria nº 241, de 31 de agosto de 2005 </obs:callAct>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">108</obs:regimentGovernmentalVacanciesCount>
+    <obs:theme>Saúde: um direito de todos e dever do Estado - A saúde que temos, o SUS que queremos </obs:theme>
+    <obs:nationalPhaseWorkGroupProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</obs:nationalPhaseWorkGroupProposalsLimitCount>
+    <obs:nationalPhaseProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</obs:nationalPhaseProposalsLimitCount>
+    <obs:responsibleBody>coordenação tripartite da Secretaria Especial dos Direitos Humanos da Presidência da República – SEDH, a Comissão de Direitos Humanos e Minorias da Câmara dos Deputados – CDHM, e do Fórum de Entidades Nacionais de Direitos Humanos – FENDH </obs:responsibleBody>
+    <obs:freePhases rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:freePhases>
+    <obs:responsibleBody>Câmara dos Deputados</obs:responsibleBody>
+    <obs:nationalOrganizationComission>Secretaria executiva</obs:nationalOrganizationComission>
+    <obs:nativeDelegatesQuotaSpecification>Conselho Nacional de Política Cultural</obs:nativeDelegatesQuotaSpecification>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">295</obs:regimentGovernmentalVacanciesCount>
+    <obs:callAct>Decreto de 8 de dezembro de 2008 </obs:callAct>
+    <obs:theme>Por um país livre da pobreza e da discriminação: promovendo a cidadania LGBT </obs:theme>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1200</obs:regimentDelegatesCount>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">594</obs:regimentNongovernmentalVacanciesCount>
+    <obs:theme>Autonomia e igualdade para as mulheres </obs:theme>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2301</obs:regimentNongovernmentalVacanciesCount>
+    <obs:councilVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</obs:councilVacanciesNationalOrganizationComission>
+    <obs:callAct>RESOLUÇÃO Nº 103 DE 27 DE ABRIL DE 2005 </obs:callAct>
+    <obs:responsibleBody>Secretaria Especial de Aqüicultura e Pesca</obs:responsibleBody>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">756</obs:regimentNongovernmentalVacanciesCount>
+    <obs:thematicAxes>Avanços, ameaças e perspectivas para a efetivação do direito humano à alimentação adequada e saudável e da soberania alimentar; Plano Nacional de Segurança Alimentar e Nutricional; Sistema e Política Nacional de Segurança Alimentar e Nutricional</obs:thematicAxes>
+    <obs:thematicAxes>Esporte e alto rendimento; Esporte educacional; Futebol; Esporte, lazer e qualidade de vida; Direito ao esporte e ao lazer; Esporte, economia e negócios; Esporte, administração e legislação; Esporte e conhecimento</obs:thematicAxes>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</obs:nativeDelegatesQuotaCount>
+    <obs:responsibleBody>Ministério das Cidades; Conselho Nacional das Cidades </obs:responsibleBody>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2467</obs:regimentNongovernmentalVacanciesCount>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</obs:nativeDelegatesQuotaCount>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2681</obs:regimentDelegatesCount>
+    <obs:nationalOrganizationComission>Presidência; Logística; Programação; Sistematização</obs:nationalOrganizationComission>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">181</obs:nativeDelegatesQuotaCount>
+    <obs:theme>A consolidação de uma política de Estado para o desenvolvimento sustentável da aquicultura e pesca </obs:theme>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2250</obs:regimentNongovernmentalVacanciesCount>
+    <obs:realizationPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P5M</obs:realizationPeriod>
+    <obs:name>Conferência de Direitos Humanos</obs:name>
+    <obs:theme>Cultura, Diversidade, Cidadania e Desenvolvimento </obs:theme>
+    <obs:nationalPhaseProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</obs:nationalPhaseProposalsLimitCount>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:nativeDelegatesQuotaSpecification>Integrantes da Comissão Organizadora e da Comissão Nacional de Educação Escolar Indígena</obs:nativeDelegatesQuotaSpecification>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">960</obs:regimentNongovernmentalVacanciesCount>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">545</obs:regimentGovernmentalVacanciesCount>
+    <obs:name>Conferência de Segurança Alimentar e Nutricional</obs:name>
+    <obs:otherQuota>200 </obs:otherQuota>
+    <obs:council>Conselho Nacional dos Direitos do Idoso</obs:council>
+    <obs:nativeDelegatesQuotaSpecification>Conselho Nacional de Segurança Alimentar e Nutricional - CONSEA - 118 (84 sociedade e 34 governo)</obs:nativeDelegatesQuotaSpecification>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180</obs:nativeDelegatesQuotaCount>
+    <obs:responsibleBody>Ministério das Comunicações</obs:responsibleBody>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:thematicAxes>Sem informação </obs:thematicAxes>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">572</obs:regimentNongovernmentalVacanciesCount>
+    <obs:thematicAxes>Migrações, controles migratórios e emigração de brasileiros; A situação dos brasileiros nas diferentes regiões do mundo; Possibilidades e limites de ação governamental em benefício de brasileiros no exterior; Associações e redes de brasileiros no exterior, mídia e remessas.</obs:thematicAxes>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">731</obs:regimentGovernmentalVacanciesCount>
+    <obs:realizationPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P9M</obs:realizationPeriod>
+    <obs:name>Conferência de Saúde Bucal</obs:name>
+    <obs:name>Conferência de Assistência Social</obs:name>
+    <obs:workshops rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:workshops>
+    <obs:nationalPhaseWorkGroupProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</obs:nationalPhaseWorkGroupProposalsLimitCount>
+    <obs:council>Conselho Nacional dos Direitos da Criança e do Adolescente; Conselho Nacional da Juventude</obs:council>
+    <obs:responsibleBody>Ministério do Meio Ambiente</obs:responsibleBody>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">646</obs:regimentNongovernmentalVacanciesCount>
+    <obs:theme>O Crédito e o Financiamento às Micro e Pequenas Empresas </obs:theme>
+    <obs:nativeDelegatesQuotaPrediction rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:nativeDelegatesQuotaPrediction>
+    <obs:nationalPhaseWorkGroupProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</obs:nationalPhaseWorkGroupProposalsLimitCount>
+    <obs:nationalOrganizationComission>Coordenação; Subcomissão Programática; Subcomissão de Comunicação; Subcomissão de Articulação do Protagonismo do Usuário da Rede Socioassistencial nas Conferências de Assistência Social; Subcomissão de Acessibilidade; Subcomissão de Infraestrutura.</obs:nationalOrganizationComission>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2193</obs:regimentNongovernmentalVacanciesCount>
+    <obs:callAct>Decreto sem número de 16/03/2006 </obs:callAct>
+    <obs:theme>Assistência Social como Política de Inclusão: uma Nova Agenda para a Cidadania - LOAS 10 anos </obs:theme>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">786</obs:regimentNongovernmentalVacanciesCount>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1326</obs:regimentDelegatesCount>
+    <obs:nationalOrganizationComission>comitê executivo</obs:nationalOrganizationComission>
+    <obs:council>Conselho Nacional de Aquicultura e Pesca (CONAPE)</obs:council>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">644</obs:regimentNongovernmentalVacanciesCount>
+    <obs:council>Conselho Nacional dos Direitos das Mulheres</obs:council>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1626</obs:regimentDelegatesCount>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">811</obs:regimentDelegatesCount>
+    <obs:theme>Compromissos e Responsabilidades para Assegurar Proteção Social pelo SUAS - Sistema Único de Assistência Social </obs:theme>
+    <obs:name>Conferência das Cidades</obs:name>
+    <obs:thematicAxes>O processo histórico da participação popular no país: nossa cidade e territórios em movimento; A trajetória e significado do controle social na política de assistência social: a diretriz constitucional em debate; O protagonismo do usuário, o seu lugar político no SUAS: uma construção inadiável; Os conselhos de assistência social e o SUAS: composição, dinâmica, caráter da representação e processo de escolha; As bases para garantia do financiamento da assistência social: a justiça tributária que queremos; A democratização da gestão do SUAS: participação e articulação intergovernamental; As entidades de assistência social e o vínculo SUAS: controle social, participação popular e gestão interna; O trabalhador do SUAS e o protagonismo dos usuários: bases para uma atuação democrática e participativa.</obs:thematicAxes>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:nationalPhaseMenCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</obs:nationalPhaseMenCount>
+    <obs:thematicAxes>Papel do Estado na Garantia do Direito à Educação de Qualidade: organização e regulação da educação nacional; Qualidade da Educação, Gestão Democrática e Avaliação; Democratização do Acesso, Permanência e Sucesso Escolar; Formação e Valorização dos/das Profissionais da Educação; Financiamento da Educação e Controle Social; Justiça Social, Educação e Trabalho: inclusão, diversidade e igualdade</obs:thematicAxes>
+    <obs:councilVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</obs:councilVacanciesNationalOrganizationComission>
+    <obs:nationalOrganizationComission>Coordenação geral; Comitê executivo.</obs:nationalOrganizationComission>
+    <obs:council>Conselho de Defesa dos Direitos da Pessoa Humana </obs:council>
+    <obs:workGroups rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:workGroups>
+    <obs:callAct>Portaria Normativa nº 10 de 3 de setembro de 2008 </obs:callAct>
+    <obs:thematicAxes>Produção simbólica e diversidade cultural; Cultura, cidade e cidadania; Cultura e desenvolvimento sustentável; Cultura e economia criativa; Gestão e institucionalidade da cultura.</obs:thematicAxes>
+    <obs:callAct>Decreto de 27 de outubro de 2009 </obs:callAct>
+    <obs:councilVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</obs:councilVacanciesNationalOrganizationComission>
+    <obs:theme>Juventude, Desenvolvimento e Efetivação de Direitos </obs:theme>
+    <obs:nationalOrganizationComission>1) Coordenação Geral; 2) Coordenação de Logística; 3) Coordenação da Programação Técnica; 4) Coordenação de Comunicação Social</obs:nationalOrganizationComission>
+    <obs:callAct>RESOLUÇÃO Nº 134 DE 16 DE MARÇO DE 2009 </obs:callAct>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1729</obs:regimentDelegatesCount>
+    <obs:municipalPhasesProposalsLimit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:municipalPhasesProposalsLimit>
+    <obs:nationalPhaseWorkGroupProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</obs:nationalPhaseWorkGroupProposalsLimitCount>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">798</obs:regimentGovernmentalVacanciesCount>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">167</obs:nativeDelegatesQuotaCount>
+    <obs:nationalOrganizationComission>Grupo de trabalho logístico; Grupo de trabalho financeiro; Grupo de trabalho programático; Grupo de trabalho de sistematização</obs:nationalOrganizationComission>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</obs:regimentGovernmentalVacanciesCount>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:thematicAxes>Direito à Saúde; A Seguridade Social e a Saúde; A Intersetorialidade das Ações de Saúde; As três Esferas de Governo e a Construção do SUS; A Organização da Atenção à Saúde; Gestão Participativa; O Trabalho na Saúde; Ciência e Tecnologia e a Saúde; O Financiamento da Saúde; Comunicação e Informação em Saúde</obs:thematicAxes>
+    <obs:theme>Vamos cuidar do Brasil: Política Integrada e Uso Sustentável dos Recursos Naturais </obs:theme>
+    <obs:thematicArea>Apoio à Gestão</obs:thematicArea>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">615</obs:regimentGovernmentalVacanciesCount>
+    <obs:name>Conferência de Educação</obs:name>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">857</obs:regimentNongovernmentalVacanciesCount>
+    <obs:theme>Construindo o Sistema Nacional de Direitos Humanos </obs:theme>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">184</obs:nativeDelegatesQuotaCount>
+    <obs:theme>Estado e sociedade construindo as políticas de Cultura </obs:theme>
+    <rdf:type rdf:resource="http://purl.org/socialparticipation/obs/Conference"/>
+    <obs:nationalOrganizationComission>Comissão executiva (coordenador geral, secretário geral, relator geral); Comissão Especial Temática; Comissão Especial de Comunicação; Comissão Especial de Infra-estrutura; Comissão Especial de Articulação e Mobilização; Comissão Especial de Regimento e Regulamento; Comissão Especial de Relatoria</obs:nationalOrganizationComission>
+    <obs:nativeDelegatesQuotaSpecification>Conselho Nacional das Cidades - CONCIDADES</obs:nativeDelegatesQuotaSpecification>
+    <obs:womenQuota>Sim - sem número, apenas proporção de 20% </obs:womenQuota>
+    <obs:nationalOrganizationComission>Comissão Executiva</obs:nationalOrganizationComission>
+    <obs:nativeDelegatesQuotaSpecification>Membros titulares e suplentes da comissão organizadora da conferência nacional</obs:nativeDelegatesQuotaSpecification>
+    <obs:theme>tema "Consolidação da política nacional da aqüicultura e pesca" e como lema "Aqüicultura e pesca: uma política de desenvolvimento sustentável para o Brasil" </obs:theme>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2500</obs:regimentDelegatesCount>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">420</obs:regimentGovernmentalVacanciesCount>
+    <obs:nativeDelegatesQuotaSpecification>Titulares e suplentes do Conselho Nacional de Promoção da Igualdade Racial</obs:nativeDelegatesQuotaSpecification>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:thematicAxes>Sistema Único de Segurança Pública (SUSP); O Direito Humano à Alimentação; A criação do Conselho Nacional de Direitos Humanos e o Sistema de Proteção aos Direitos Humanos; Orçamento e Direitos Humanos; Educação em Direitos Humanos; Monitoramento do Projeto “Relatores Nacionais para os Direitos Humanos Econômicos, Sociais e Culturais”; Estratégia de Construção de uma proposta de Sistema Nacional de Proteção aos Direitos Humanos.</obs:thematicAxes>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">496</obs:regimentGovernmentalVacanciesCount>
+    <obs:nationalOrganizationComission>Comissão executiva</obs:nationalOrganizationComission>
+    <obs:council>Conselho Nacional de Segurança Alimentar e Nutricional - CONSEA</obs:council>
+    <obs:responsibleBody>Ministério da Cultura</obs:responsibleBody>
+    <obs:council>Conselho Nacional de Política Cultural</obs:council>
+    <obs:linkedCouncil rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:linkedCouncil>
+    <obs:thematicAxes>Serviços de assistência consular, assistência social, direitos humanos (gênero) e saúde; Políticas para as comunidades brasileiras no exterior, trabalho, previdência social e temas econômicos; Cultura, educação e comunicação.</obs:thematicAxes>
+    <obs:thematicAxes>Sistema Nacional de Esporte e Lazer; Formação e Valorização profissional; Esporte, Lazer e Educação; Esporte, Saúde e Qualidade de vida; Ciência, Tecnologia e Inovação; Esporte de Alto Rendimento; Futebol; Financiamento do Esporte; Infraestrutura Esportiva; Esporte e Economia</obs:thematicAxes>
+    <obs:workshops rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:workshops>
+    <obs:propositionPurpose rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:propositionPurpose>
+    <obs:councilVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</obs:councilVacanciesNationalOrganizationComission>
+    <obs:thematicAxes>Direitos socioassistenciais; Gestão; Recursos Humanos; Financiamento; Controle social.</obs:thematicAxes>
+    <obs:nationalOrganizationComission>Comissão executiva (coordenador geral, coordenadores adjuntos, secretário-geral, secretário-adjunto, relator geral, relator adjunto); Comissão de Programação; Comissão de Comunicação Social; Comissão de Articulação e Mobilização; Comissão de Logística e Infra-estrutura; Comissão de Relatoria</obs:nationalOrganizationComission>
+    <obs:thematicAxes>a) saúde e reabilitação profissional; b) educação e trabalho; c) acessibilidade.</obs:thematicAxes>
+    <obs:callAct>Decreto de 3 de março de 2011 </obs:callAct>
+    <obs:responsibleBody>Ministério da Justiça</obs:responsibleBody>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</obs:nativeDelegatesQuotaCount>
+    <obs:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2006</obs:year>
+    <obs:governmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</obs:governmentalVacanciesNationalOrganizationComission>
+    <obs:theme>Pacto Pela Paz – Uma Construção Possível </obs:theme>
+    <obs:thematicAxes>I – Análise da realidade brasileira: social, econômica, política, cultural e os desafios para a construção da igualdade na perspectiva da implementação do PNPM, avaliação das ações e políticas propostas no PNPM, sua execução e impacto; II – Participação das mulheres nos espaços de poder.</obs:thematicAxes>
+    <obs:statePhasesProposalsLimit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:statePhasesProposalsLimit>
+    <obs:thematicAxes>Os fundamentos da economia solidária e seu papel para a construção de um desenvolvimento sustentável, democrático e socialmente justo; o balanço do acúmulo da economia solidária e das políticas públicas implementadas; prioridades e estratégias de atuação para políticas e programas de economia solidária e mecanismos de participação e controle social</obs:thematicAxes>
+    <obs:callAct>Decreto de 21 de janeiro de 2004 </obs:callAct>
+    <obs:theme>avanços e enfrentar desafios </obs:theme>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</obs:nativeDelegatesQuotaCount>
+    <obs:nationalOrganizationComission>Comitê executivo; O regimento não traz subcomissões, mas indica que a comissão organizadora terá cinco coordenadores: Coordenador Geral; Secretário Geral; Relator Geral e Relator Adjunto; Coordenador de Comunicação e Informação; Coordenador de Articulação e Mobilização; Coordenador de Infra-Estrutura.</obs:nationalOrganizationComission>
+    <obs:responsibleBody>Ministério do Desenvolvimento Social e Combate a Fome e Conselho Nacional de Assistência Social - CNAS </obs:responsibleBody>
+    <obs:plenary rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:plenary>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">667</obs:regimentNongovernmentalVacanciesCount>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:callAct>Decreto de 14 de maio de 2009. </obs:callAct>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:nativeDelegatesQuotaCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</obs:nativeDelegatesQuotaCount>
+    <obs:name>Conferência de Educação Escolar Indígena</obs:name>
+    <obs:municipalPhasesProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</obs:municipalPhasesProposalsLimitCount>
+    <obs:participationPurpose rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:participationPurpose>
+    <obs:regimentDelegatesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1539</obs:regimentDelegatesCount>
+    <obs:nationalOrganizationComission>Comissão de mobilização; Comissão de sistematização; Comissão de operações</obs:nationalOrganizationComission>
+    <obs:edition>Terceira Edição</obs:edition>
+    <obs:regimentNongovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">305</obs:regimentNongovernmentalVacanciesCount>
+    <obs:callType>Portaria ministerial</obs:callType>
+    <obs:edition>Décima Quarta Edição</obs:edition>
+    <obs:name>Conferência de Recursos Humanos da Administração Pública Federal</obs:name>
+    <obs:thematicAxes>Aspectos científicos das Mudanças Climáticas; O regime internacional das Mudanças Climáticas; O Brasil e as Mudanças Climáticas;Educação Ambiental e as Mudanças Climáticas.</obs:thematicAxes>
+    <obs:council>Conselho Nacional de Assistência Social - CNAS</obs:council>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:thematicAxes>Gestão do trabalho; Educação na saúde; Participação do trabalhador na gestão e negociação do trabalho e na gestão da educação na saúde; Financiamento do trabalho e da educação na saúde, pela União, pelos estados e pelos municípios; Controle social na gestão do trabalho e educação na saúde; Produção e incorporação de saberes a partir das práticas de trabalho, de gestão, de formação e de participação, com foco no cuidado e na saúde do trabalhador do SUS.</obs:thematicAxes>
+    <obs:theme>Distrito Sanitário Especial Indígena: território de produção de saúde, proteção e valorização das tradições </obs:theme>
+    <obs:theme>Comunicação: meios para a construção de direitos e de cidadania na era digital </obs:theme>
+    <obs:regimentGovernmentalVacanciesCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">231</obs:regimentGovernmentalVacanciesCount>
+    <obs:thematicAxes>Assistência Social: Conceber a Política para Realizar o Direito; Organização e Gestão: Planejar Localmente para Descentralizar e Democratizar o Direito; Financiamento - Assegurar Recursos para Garantir a Política; Mobilização e Participação como Estratégia para Fortalecer o Controle Social.</obs:thematicAxes>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:council>Conselho Nacional dos Direitos da Criança e do Adolescente – Conanda</obs:council>
+    <obs:statePhasesProposalsLimit rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</obs:statePhasesProposalsLimit>
+    <obs:callAct>Portaria Ministerial nº 1506, de 31 de agosto de 2006 </obs:callAct>
+    <obs:councilVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</obs:councilVacanciesNationalOrganizationComission>
+    <obs:theme>Vamos cuidar do Brasil: Mudanças climáticas </obs:theme>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:thematicAxes>I - Análise da realidade brasileira: social, econômica, política, cultural e os desafios para a construção da igualdade; II - Avaliação das ações e políticas públicas desenvolvidas para as mulheres nas três instâncias de governo: municipal, estadual e federal frente aos compromissos internacionais - acordos, tratados e convenções; III - Proposição de diretrizes da Política Nacional para as mulheres numa perspectiva de gênero, apontando as prioridades dos próximos anos.</obs:thematicAxes>
+    <obs:name>Conferência de Saúde Mental</obs:name>
+    <obs:name>Conferência de Defesa Civil e Assistência Humanitária</obs:name>
+    <obs:councilVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</obs:councilVacanciesNationalOrganizationComission>
+    <obs:statePhasesProposalsLimitCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</obs:statePhasesProposalsLimitCount>
+    <obs:nongovernmentalVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</obs:nongovernmentalVacanciesNationalOrganizationComission>
+    <obs:responsibleBody>Ministério da Assitência Social e Conselho Nacional de Assistência Social - CNAS </obs:responsibleBody>
+    <obs:councilVacanciesNationalOrganizationComission rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</obs:councilVacanciesNationalOrganizationComission>
+    <obs:theme>Plano Decenal de Esporte e Lazer: 10 pontos em 10 anos para projetar o Brasil entre os 10 mais </obs:theme>
+    <obs:realizationPeriod rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">P3M</obs:realizationPeriod>
+    <obs:nationalOrganizationComission>I - Comissão Organizadora; II – Comitê Executivo; e III – Secretaria Executiva.</obs:nationalOrganizationComission>
+    <obs:theme>Saúde Mental direito e compromisso de todos: consolidar avanços e enfrentar desafios </obs:theme>
+    <obs:propositionPurpose rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obs:propositionPurpose>
+    <obs:year rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2008</obs:year>
+    <obs:callAct>Decreto de 3 de agosto de 2009 </obs:callAct>
+    <obs:council>Conselho Nacional de Saúde</obs:council>
+  </rdf:Description>
+</rdf:RDF>

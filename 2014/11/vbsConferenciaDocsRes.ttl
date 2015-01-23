@@ -1,0 +1,67 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vbs: <http://purl.org/socialparticipation/vbs/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vbs:Conference a skos:Concept ;
+    skos:altLabel "Conferência de políticas públicas"@pt,
+        "Conferência nacional"@pt ;
+    skos:definition "Instância colegiada temática permanente, instituída por ato normativo, de diálogo entre a sociedade civil e o governo para promover a participação no processo decisório e na gestão de políticas públicas"@pt,
+        "Processo periódico de promoção do diálogo entre governo e sociedade, realizado em etapas, tipicamente convocadas pelo Executivo"@pt ;
+    skos:prefLabel "Conferência"@pt .
+
+vbs:ConferenceStep a skos:Concept ;
+    skos:prefLabel "Etapa de conferência"@pt .
+
+vbs:DialogueTextualBase a skos:Concept ;
+    skos:prefLabel "Texto base para diálogo"@pt .
+
+vbs:ExternalSocietyQualification a skos:Concept ;
+    skos:broader vbs:PoliticalSocialization ;
+    skos:prefLabel "Capacitação de sociedade externa"@pt .
+
+vbs:InvitationLetter a skos:Concept ;
+    skos:prefLabel "Carta convite"@pt .
+
+vbs:Letter a skos:Concept ;
+    skos:prefLabel "Carta"@pt .
+
+vbs:Manual a skos:Concept ;
+    skos:prefLabel "Manual"@pt .
+
+vbs:MonitoringReport a skos:Concept ;
+    skos:prefLabel "Relatório de monitoramento"@pt .
+
+vbs:Motion a skos:Concept ;
+    skos:prefLabel "Moção"@pt .
+
+vbs:NationalPlan a skos:Concept ;
+    skos:prefLabel "Plano nacional"@pt .
+
+vbs:NormativeAct a skos:Concept ;
+    skos:prefLabel "Ato normativo"@pt .
+
+vbs:ParticipantQualification a skos:Concept ;
+    skos:broader vbs:PoliticalSocialization ;
+    skos:prefLabel "Capacitação de participante"@pt .
+
+vbs:ParticipativeCulture a skos:Concept ;
+    skos:prefLabel "Cultura participativa"@pt .
+
+vbs:ProposalsNotebook a skos:Concept ;
+    skos:prefLabel "Caderno de propostas"@pt .
+
+vbs:Regiment a skos:Concept ;
+    skos:prefLabel "Regimento"@pt .
+
+vbs:Regulation a skos:Concept ;
+    skos:prefLabel "Regulamento"@pt .
+
+vbs:Resolution a skos:Concept ;
+    skos:prefLabel "Resolução"@pt .
+
+vbs:PoliticalSocialization a skos:Concept ;
+    skos:prefLabel "Socialização política"@pt .
+
